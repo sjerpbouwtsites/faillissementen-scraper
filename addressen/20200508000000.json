@@ -1,0 +1,116 @@
+[
+  {
+    "adres": "Hoogoorddreef 15 1101BA Amsterdam",
+    "straat": "Hoogoorddreef 15",
+    "postcode": "1101BA",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Schoolstraat 192 2252CN Voorschoten",
+    "straat": "Schoolstraat 192",
+    "postcode": "2252CN",
+    "plaatsnaam": "Voorschoten"
+  },
+  {
+    "adres": "Zuider Parallelweg 46 6953DD Dieren",
+    "straat": "Zuider Parallelweg 46",
+    "postcode": "6953DD",
+    "plaatsnaam": "Dieren"
+  },
+  {
+    "adres": "Sint-Eustatius 18 7333NX Apeldoorn",
+    "straat": "Sint-Eustatius 18",
+    "postcode": "7333NX",
+    "plaatsnaam": "Apeldoorn"
+  },
+  {
+    "adres": "Industriestraat 12 7091DC Dinxperlo",
+    "straat": "Industriestraat 12",
+    "postcode": "7091DC",
+    "plaatsnaam": "Dinxperlo"
+  },
+  {
+    "adres": "Willemsweg 211 6531DJ Nijmegen",
+    "straat": "Willemsweg 211",
+    "postcode": "6531DJ",
+    "plaatsnaam": "Nijmegen"
+  },
+  {
+    "adres": "Hoofdstraat 33 6436CB Amstenrade",
+    "straat": "Hoofdstraat 33",
+    "postcode": "6436CB",
+    "plaatsnaam": "Amstenrade"
+  },
+  {
+    "adres": "Bosbeeklaan 63 5991MA Baarlo",
+    "straat": "Bosbeeklaan 63",
+    "postcode": "5991MA",
+    "plaatsnaam": "Baarlo"
+  },
+  {
+    "adres": "van Coehoornstraat 5 5916PH Venlo",
+    "straat": "van Coehoornstraat 5",
+    "postcode": "5916PH",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Spoorweglaan 2 6221BS Maastricht",
+    "straat": "Spoorweglaan 2",
+    "postcode": "6221BS",
+    "plaatsnaam": "Maastricht"
+  },
+  {
+    "adres": "Grote Blerickse Bergenwg 15 5927PB Venlo",
+    "straat": "Grote Blerickse Bergenwg 15",
+    "postcode": "5927PB",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Busplein 36 1315KV Almere",
+    "straat": "Busplein 36",
+    "postcode": "1315KV",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Audioweg 5 1322AT Almere",
+    "straat": "Audioweg 5",
+    "postcode": "1322AT",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Kamp 15 77 8225DA Lelystad",
+    "straat": "Kamp 15 77",
+    "postcode": "8225DA",
+    "plaatsnaam": "Lelystad"
+  },
+  {
+    "adres": "Chroomstraat 6 8211AS Lelystad",
+    "straat": "Chroomstraat 6",
+    "postcode": "8211AS",
+    "plaatsnaam": "Lelystad"
+  },
+  {
+    "adres": "James Cookroute 50 1363KG Almere",
+    "straat": "James Cookroute 50",
+    "postcode": "1363KG",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Kerkweg 27 1961JA Heemskerk",
+    "straat": "Kerkweg 27",
+    "postcode": "1961JA",
+    "plaatsnaam": "Heemskerk"
+  },
+  {
+    "adres": "Kanaalstraat 55 4388BK Oost-Souburg",
+    "straat": "Kanaalstraat 55",
+    "postcode": "4388BK",
+    "plaatsnaam": "Oost-Souburg"
+  },
+  {
+    "adres": "Moggestraat 19 4301LE Zierikzee",
+    "straat": "Moggestraat 19",
+    "postcode": "4301LE",
+    "plaatsnaam": "Zierikzee"
+  }
+]

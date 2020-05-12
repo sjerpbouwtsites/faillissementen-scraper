@@ -1,0 +1,250 @@
+[
+  {
+    "route": "20200501000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-01T00:00:00.000Z"
+  },
+  {
+    "route": "20200502000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-02T00:00:00.000Z"
+  },
+  {
+    "route": "20200503000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-03T00:00:00.000Z"
+  },
+  {
+    "route": "20200504000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-04T00:00:00.000Z"
+  },
+  {
+    "route": "20200505000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-05T00:00:00.000Z"
+  },
+  {
+    "route": "20200506000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-06T00:00:00.000Z"
+  },
+  {
+    "route": "20200507000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-07T00:00:00.000Z"
+  },
+  {
+    "route": "20200508000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-08T00:00:00.000Z"
+  },
+  {
+    "route": "20200509000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-09T00:00:00.000Z"
+  },
+  {
+    "route": "20200510000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-10T00:00:00.000Z"
+  },
+  {
+    "route": "20200511000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-11T00:00:00.000Z"
+  },
+  {
+    "route": "20200512000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-12T00:00:00.000Z"
+  },
+  {
+    "route": "20200513000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-13T00:00:00.000Z"
+  },
+  {
+    "route": "20200514000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-14T00:00:00.000Z"
+  },
+  {
+    "route": "20200515000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-15T00:00:00.000Z"
+  },
+  {
+    "route": "20200516000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-16T00:00:00.000Z"
+  },
+  {
+    "route": "20200517000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-17T00:00:00.000Z"
+  },
+  {
+    "route": "20200518000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-18T00:00:00.000Z"
+  },
+  {
+    "route": "20200519000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-19T00:00:00.000Z"
+  },
+  {
+    "route": "20200520000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-20T00:00:00.000Z"
+  },
+  {
+    "route": "20200521000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-21T00:00:00.000Z"
+  },
+  {
+    "route": "20200522000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-22T00:00:00.000Z"
+  },
+  {
+    "route": "20200523000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-23T00:00:00.000Z"
+  },
+  {
+    "route": "20200524000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-24T00:00:00.000Z"
+  },
+  {
+    "route": "20200525000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-25T00:00:00.000Z"
+  },
+  {
+    "route": "20200526000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-26T00:00:00.000Z"
+  },
+  {
+    "route": "20200527000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-27T00:00:00.000Z"
+  },
+  {
+    "route": "20200528000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-28T00:00:00.000Z"
+  },
+  {
+    "route": "20200529000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-29T00:00:00.000Z"
+  },
+  {
+    "route": "20200530000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-30T00:00:00.000Z"
+  },
+  {
+    "route": "20200531000000",
+    "gescraped": false,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-31T00:00:00.000Z"
+  }
+]

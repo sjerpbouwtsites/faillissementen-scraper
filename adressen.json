@@ -1,0 +1,1595 @@
+[
+  {
+    "adres": "Deventerweg 12 A 3843GD Harderwijk",
+    "straat": "Deventerweg 12 A",
+    "postcode": "3843GD",
+    "plaatsnaam": "Harderwijk",
+    "lat": "52.3337826",
+    "lon": "5.6384962",
+    "osm_id": "6965206"
+  },
+  {
+    "adres": "Luttekepoortstraat 5 3841AW Harderwijk",
+    "straat": "Luttekepoortstraat 5",
+    "postcode": "3841AW",
+    "plaatsnaam": "Harderwijk",
+    "lat": "52.3497105",
+    "lon": "5.6200737",
+    "osm_id": "2854646602"
+  },
+  {
+    "adres": "Gerdina's Hof 61 4191MX Geldermalsen",
+    "straat": "Gerdina's Hof 61",
+    "postcode": "4191MX",
+    "plaatsnaam": "Geldermalsen",
+    "lat": "51.8751507",
+    "lon": "5.2995359",
+    "osm_id": "2797551067"
+  },
+  {
+    "adres": "Zandweg 116 B 3454JZ De Meern",
+    "straat": "Zandweg 116 B",
+    "postcode": "3454JZ",
+    "plaatsnaam": "De Meern",
+    "lat": "52.0836833",
+    "lon": "5.0328658",
+    "osm_id": "7064382"
+  },
+  {
+    "adres": "Schapendrift 41 8075BA Elspeet",
+    "straat": "Schapendrift 41",
+    "postcode": "8075BA",
+    "plaatsnaam": "Elspeet",
+    "lat": "52.301055",
+    "lon": "5.7789399",
+    "osm_id": "2905442489"
+  },
+  {
+    "adres": "Rostockstraat 8 7418EL Deventer",
+    "straat": "Rostockstraat 8",
+    "postcode": "7418EL",
+    "plaatsnaam": "Deventer",
+    "lat": "52.2417894",
+    "lon": "6.1989306",
+    "osm_id": "5892595426"
+  },
+  {
+    "adres": "Weegakker 72 3851MD Ermelo",
+    "straat": "Weegakker 72",
+    "postcode": "3851MD",
+    "plaatsnaam": "Ermelo",
+    "lat": "52.2992726",
+    "lon": "5.6227603",
+    "osm_id": "2891721619"
+  },
+  {
+    "adres": "Staat 40 6031 EM Nederweert",
+    "straat": "Staat 40",
+    "postcode": "6031EM",
+    "plaatsnaam": "Nederweert",
+    "lat": "51.2806469",
+    "lon": "5.7537012",
+    "osm_id": "2827798287"
+  },
+  {
+    "adres": "Graafschap Hornelaan 116 A 6004HT Weert",
+    "straat": "Graafschap Hornelaan 116 A",
+    "postcode": "6004HT",
+    "plaatsnaam": "Weert",
+    "lat": "51.2609049",
+    "lon": "5.720584",
+    "osm_id": "7132314"
+  },
+  {
+    "adres": "Bergveste 4 3992DE Houten",
+    "straat": "Bergveste 4",
+    "postcode": "3992DE",
+    "plaatsnaam": "Houten",
+    "lat": "52.027059",
+    "lon": "5.1436149",
+    "osm_id": "2826447690"
+  },
+  {
+    "adres": "Koningin Wilhelminaplein 25 1062HJ Amsterdam",
+    "straat": "Koningin Wilhelminaplein 25",
+    "postcode": "1062HJ",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3535222",
+    "lon": "4.8410961",
+    "osm_id": "2795368019"
+  },
+  {
+    "adres": "Dieselweg 26 3752LB Bunschoten-Spakenburg",
+    "straat": "Dieselweg 26",
+    "postcode": "3752LB",
+    "plaatsnaam": "Bunschoten-Spakenburg",
+    "lat": "52.2280296",
+    "lon": "5.3661437",
+    "osm_id": "2711053218"
+  },
+  {
+    "adres": "Lient 43 3829EJ Hooglanderveen",
+    "straat": "Lient 43",
+    "postcode": "3829EJ",
+    "plaatsnaam": "Hooglanderveen",
+    "lat": "52.1836207",
+    "lon": "5.4306915",
+    "osm_id": "5297109039"
+  },
+  {
+    "adres": "Passage 52 3431LR Nieuwegein",
+    "straat": "Passage 52",
+    "postcode": "3431LR",
+    "plaatsnaam": "Nieuwegein",
+    "lat": "52.0288042",
+    "lon": "5.0810915",
+    "osm_id": "3004024375"
+  },
+  {
+    "adres": "Rijshoutweg 25 1505HL Zaandam",
+    "straat": "Rijshoutweg 25",
+    "postcode": "1505HL",
+    "plaatsnaam": "Zaandam",
+    "lat": "52.4223524",
+    "lon": "4.8494504",
+    "osm_id": "2896536441"
+  },
+  {
+    "adres": "Papierbaan 50 F 9672 BH Winschoten",
+    "straat": "Papierbaan 50 F",
+    "postcode": "9672BH",
+    "plaatsnaam": "Winschoten",
+    "lat": "53.1487108",
+    "lon": "7.0532801",
+    "osm_id": "195376543"
+  },
+  {
+    "adres": "Voorstraat 51 A 8801LA Franeker",
+    "straat": "Voorstraat 51 A",
+    "postcode": "8801LA",
+    "plaatsnaam": "Franeker",
+    "lat": "53.1865365",
+    "lon": "5.5417072",
+    "osm_id": "733822774"
+  },
+  {
+    "adres": "Papierbaan 50 F 9672BH Winschoten",
+    "straat": "Papierbaan 50 F",
+    "postcode": "9672BH",
+    "plaatsnaam": "Winschoten",
+    "lat": "53.1487108",
+    "lon": "7.0532801",
+    "osm_id": "195376543"
+  },
+  {
+    "adres": "Laanweg 4 3208LC Spijkenisse",
+    "straat": "Laanweg 4",
+    "postcode": "3208LC",
+    "plaatsnaam": "Spijkenisse",
+    "lat": "51.8579688",
+    "lon": "4.294592",
+    "osm_id": "2750119099"
+  },
+  {
+    "adres": "Middelland 27 c 2931AK Krimpen aan de Lek",
+    "straat": "Middelland 27 c",
+    "postcode": "2931AK",
+    "plaatsnaam": "Krimpen aan de Lek",
+    "lat": "51.8930092",
+    "lon": "4.6208768",
+    "osm_id": "7294852"
+  },
+  {
+    "adres": "4e Industriestraat 9 C 3133EK Vlaardingen",
+    "straat": "4e Industriestraat 9 C",
+    "postcode": "3133EK",
+    "plaatsnaam": "Vlaardingen",
+    "lat": "51.9023285",
+    "lon": "4.3298769",
+    "osm_id": "7553848"
+  },
+  {
+    "adres": "Torenstraat 6 5142ET Waalwijk",
+    "straat": "Torenstraat 6",
+    "postcode": "5142ET",
+    "plaatsnaam": "Waalwijk",
+    "lat": "51.6948924",
+    "lon": "5.0926347",
+    "osm_id": "2892362721"
+  },
+  {
+    "adres": "Spuiboulevard 334 3311GR Dordrecht",
+    "straat": "Spuiboulevard 334",
+    "postcode": "3311GR",
+    "plaatsnaam": "Dordrecht",
+    "lat": "51.8117216",
+    "lon": "4.6592654",
+    "osm_id": "2796109639"
+  },
+  {
+    "adres": "Bredaseweg 185 4872LA Etten-Leur",
+    "straat": "Bredaseweg 185",
+    "postcode": "4872LA",
+    "plaatsnaam": "Etten-Leur",
+    "lat": "51.5722654",
+    "lon": "4.6614378",
+    "osm_id": "2750862068"
+  },
+  {
+    "adres": "Kabelweg 21 1014BA Amsterdam",
+    "straat": "Kabelweg 21",
+    "postcode": "1014BA",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.390513",
+    "lon": "4.8463697",
+    "osm_id": "2738247067"
+  },
+  {
+    "adres": "Energieweg 10 2382NJ Zoeterwoude",
+    "straat": "Energieweg 10",
+    "postcode": "2382NJ",
+    "plaatsnaam": "Zoeterwoude",
+    "lat": "52.1406715",
+    "lon": "4.5239831",
+    "osm_id": "2901690856"
+  },
+  {
+    "adres": "Den Ham 37 2771WV Boskoop",
+    "straat": "Den Ham 37",
+    "postcode": "2771WV",
+    "plaatsnaam": "Boskoop",
+    "lat": "52.0685846",
+    "lon": "4.6605907",
+    "osm_id": "2695306341"
+  },
+  {
+    "adres": "Jac. P. Thijsseweg 13 2408ER Alphen aan den Rijn",
+    "straat": "Jac. P. Thijsseweg 13",
+    "postcode": "2408ER",
+    "plaatsnaam": "Alphen aan den Rijn",
+    "lat": "52.1284971",
+    "lon": "4.635201",
+    "osm_id": "2877456463"
+  },
+  {
+    "adres": "Dr Albert Schweitzerstraat 8 2861XX Bergambacht",
+    "straat": "Dr Albert Schweitzerstraat 8",
+    "postcode": "2861XX",
+    "plaatsnaam": "Bergambacht",
+    "lat": "51.9359124",
+    "lon": "4.7885371",
+    "osm_id": "2913105802"
+  },
+  {
+    "adres": "Park de Elsberg 26 2272DA Voorburg",
+    "straat": "Park de Elsberg 26",
+    "postcode": "2272DA",
+    "plaatsnaam": "Voorburg",
+    "lat": "52.0821166",
+    "lon": "4.3800688",
+    "osm_id": "2704841751"
+  },
+  {
+    "adres": "Pomonaplein 10 2564XP 's-Gravenhage",
+    "straat": "Pomonaplein 10",
+    "postcode": "2564XP",
+    "plaatsnaam": "'s-Gravenhage",
+    "lat": "52.0700692",
+    "lon": "4.2603993",
+    "osm_id": "2731661640"
+  },
+  {
+    "adres": "Laan van Westroijen 10 4003AZ Tiel",
+    "straat": "Laan van Westroijen 10",
+    "postcode": "4003AZ",
+    "plaatsnaam": "Tiel",
+    "lat": "51.9001039",
+    "lon": "5.4355058",
+    "osm_id": "3018770890"
+  },
+  {
+    "adres": "Stationsplein 4 3511ED Utrecht",
+    "straat": "Stationsplein 4",
+    "postcode": "3511ED",
+    "plaatsnaam": "Utrecht",
+    "lat": "52.0902568",
+    "lon": "5.1104318",
+    "osm_id": "5590870968"
+  },
+  {
+    "adres": "Piusplein 64 5038WP Tilburg",
+    "straat": "Piusplein 64",
+    "postcode": "5038WP",
+    "plaatsnaam": "Tilburg",
+    "lat": "51.5557868",
+    "lon": "5.0911807",
+    "osm_id": "4525298391"
+  },
+  {
+    "adres": "Oosterdokskade 145 1011DL Amsterdam",
+    "straat": "Oosterdokskade 145",
+    "postcode": "1011DL",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3757981",
+    "lon": "4.9085513",
+    "osm_id": "2743728707"
+  },
+  {
+    "adres": "Schutterstraat 17 1315VH Almere",
+    "straat": "Schutterstraat 17",
+    "postcode": "1315VH",
+    "plaatsnaam": "Almere",
+    "lat": "52.3703128",
+    "lon": "5.2184831",
+    "osm_id": "5918870001"
+  },
+  {
+    "adres": "Buitenhof 51 2513AH 's-Gravenhage",
+    "straat": "Buitenhof 51",
+    "postcode": "2513AH",
+    "plaatsnaam": "'s-Gravenhage",
+    "lat": "52.0788088",
+    "lon": "4.3096325",
+    "osm_id": "2722496806"
+  },
+  {
+    "adres": "Amstelstraat 2 1017DA Amsterdam",
+    "straat": "Amstelstraat 2",
+    "postcode": "1017DA",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3661756",
+    "lon": "4.8978329",
+    "osm_id": "2725878702"
+  },
+  {
+    "adres": "Binnenrotte 142 - 148 3011HC ROTTERDAM",
+    "straat": "Binnenrotte 142 - 148",
+    "postcode": "3011HC",
+    "plaatsnaam": "ROTTERDAM",
+    "lat": "51.9230394",
+    "lon": "4.484373",
+    "osm_id": "332035666"
+  },
+  {
+    "adres": "Poelestraat 18 9712KA Groningen",
+    "straat": "Poelestraat 18",
+    "postcode": "9712KA",
+    "plaatsnaam": "Groningen",
+    "lat": "53.2183788",
+    "lon": "6.5697837",
+    "osm_id": "4698549973"
+  },
+  {
+    "adres": "Sturriskolkweg 6 A 7051 HM Varsseveld",
+    "straat": "Sturriskolkweg 6 A",
+    "postcode": "7051HM",
+    "plaatsnaam": "Varsseveld",
+    "lat": "51.9371",
+    "lon": "6.46531",
+    "osm_id": "45515751"
+  },
+  {
+    "adres": "Lange Dreef 15 d 4131NJ Vianen",
+    "straat": "Lange Dreef 15 d",
+    "postcode": "4131NJ",
+    "plaatsnaam": "Vianen",
+    "lat": "51.9845508",
+    "lon": "5.1089936",
+    "osm_id": "723333062"
+  },
+  {
+    "adres": "Tuorrebout 59 9251TB Burgum",
+    "straat": "Tuorrebout 59",
+    "postcode": "9251TB",
+    "plaatsnaam": "Burgum",
+    "lat": "53.1967316",
+    "lon": "5.9786128",
+    "osm_id": "2820997360"
+  },
+  {
+    "adres": "Bisschop Bekkerslaan 10 5628RA Eindhoven",
+    "straat": "Bisschop Bekkerslaan 10",
+    "postcode": "5628RA",
+    "plaatsnaam": "Eindhoven",
+    "lat": "51.4763845",
+    "lon": "5.4810331",
+    "osm_id": "2734418921"
+  },
+  {
+    "adres": "Robbenstraat 1 5622AJ Eindhoven",
+    "straat": "Robbenstraat 1",
+    "postcode": "5622AJ",
+    "plaatsnaam": "Eindhoven",
+    "lat": "51.453709",
+    "lon": "5.4703372",
+    "osm_id": "2782149987"
+  },
+  {
+    "adres": "Pretorialaan 70 B 3072ER Rotterdam",
+    "straat": "Pretorialaan 70 B",
+    "postcode": "3072ER",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.9015522",
+    "lon": "4.4969707",
+    "osm_id": "142612583"
+  },
+  {
+    "adres": "Bergselaan 320 C 3038CM Rotterdam",
+    "straat": "Bergselaan 320 C",
+    "postcode": "3038CM",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.9319764",
+    "lon": "4.4626586",
+    "osm_id": "7526606"
+  },
+  {
+    "adres": "Aanwas 2 4704SC Roosendaal",
+    "straat": "Aanwas 2",
+    "postcode": "4704SC",
+    "plaatsnaam": "Roosendaal",
+    "lat": "51.5581376",
+    "lon": "4.453588",
+    "osm_id": "4663786211"
+  },
+  {
+    "adres": "Johan Huizingalaan 400 1066 JS Amsterdam",
+    "straat": "Johan Huizingalaan 400",
+    "postcode": "1066JS",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3402325",
+    "lon": "4.8264244",
+    "osm_id": "2808307759"
+  },
+  {
+    "adres": "Hooge Steenweg 15 5211 JN 's-Hertogenbosch",
+    "straat": "Hooge Steenweg 15",
+    "postcode": "5211JN",
+    "plaatsnaam": "'s-Hertogenbosch",
+    "lat": "51.6901138",
+    "lon": "5.3020216",
+    "osm_id": "2738311732"
+  },
+  {
+    "adres": "Diepenbrockstraat 265 2625XM Delft",
+    "straat": "Diepenbrockstraat 265",
+    "postcode": "2625XM",
+    "plaatsnaam": "Delft",
+    "lat": "51.9948682",
+    "lon": "4.3466533",
+    "osm_id": "2595412472"
+  },
+  {
+    "adres": "Houtenstraat 5 2801WD Gouda",
+    "straat": "Houtenstraat 5",
+    "postcode": "2801WD",
+    "plaatsnaam": "Gouda",
+    "lat": "52.0075467",
+    "lon": "4.7096277",
+    "osm_id": "2787986509"
+  },
+  {
+    "adres": "Zaagmolenpad 101 7008AH Doetinchem",
+    "straat": "Zaagmolenpad 101",
+    "postcode": "7008AH",
+    "plaatsnaam": "Doetinchem",
+    "lat": "51.9720143",
+    "lon": "6.2676724",
+    "osm_id": "2669411595"
+  },
+  {
+    "adres": "Riezebosweg 13 8171MG Vaassen",
+    "straat": "Riezebosweg 13",
+    "postcode": "8171MG",
+    "plaatsnaam": "Vaassen",
+    "lat": "52.2976066",
+    "lon": "5.9894041",
+    "osm_id": "2882220889"
+  },
+  {
+    "adres": "Constant Permekehof 9 1328AL Almere",
+    "straat": "Constant Permekehof 9",
+    "postcode": "1328AL",
+    "plaatsnaam": "Almere",
+    "lat": "52.3777648",
+    "lon": "5.2557588",
+    "osm_id": "2842695052"
+  },
+  {
+    "adres": "Hoenderparkweg 70 7335GV Apeldoorn",
+    "straat": "Hoenderparkweg 70",
+    "postcode": "7335GV",
+    "plaatsnaam": "Apeldoorn",
+    "lat": "52.1954069",
+    "lon": "5.9520867",
+    "osm_id": "2686707354"
+  },
+  {
+    "adres": "Ambachtsweg 41 6541DA Nijmegen",
+    "straat": "Ambachtsweg 41",
+    "postcode": "6541DA",
+    "plaatsnaam": "Nijmegen",
+    "lat": "51.8416668",
+    "lon": "5.8156749",
+    "osm_id": "2953576418"
+  },
+  {
+    "adres": "Grote Blerickse Bergenwg 15 5927PB Venlo",
+    "straat": "Grote Blerickse Bergenwg 15",
+    "postcode": "5927PB",
+    "plaatsnaam": "Venlo",
+    "lat": "51.363357",
+    "lon": "6.172851",
+    "osm_id": "5295787400"
+  },
+  {
+    "adres": "Weert 78 6231 SB Meerssen",
+    "straat": "Weert 78",
+    "postcode": "6231SB",
+    "plaatsnaam": "Meerssen",
+    "lat": "50.8838642",
+    "lon": "5.7345352",
+    "osm_id": "2821033146"
+  },
+  {
+    "adres": "IJsselmeerweg 100 1411DL Naarden",
+    "straat": "IJsselmeerweg 100",
+    "postcode": "1411DL",
+    "plaatsnaam": "Naarden",
+    "lat": "52.3207459",
+    "lon": "5.1408543",
+    "osm_id": "2866149238"
+  },
+  {
+    "adres": "Graftermeerstraat 41 2131AA Hoofddorp",
+    "straat": "Graftermeerstraat 41",
+    "postcode": "2131AA",
+    "plaatsnaam": "Hoofddorp",
+    "lat": "52.3129746",
+    "lon": "4.693742",
+    "osm_id": "2732764890"
+  },
+  {
+    "adres": "Robert Scottstraat 19 1056AW Amsterdam",
+    "straat": "Robert Scottstraat 19",
+    "postcode": "1056AW",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3748611",
+    "lon": "4.8454445",
+    "osm_id": "2808695747"
+  },
+  {
+    "adres": "Havenmeesterweg 1 1118CB SCHIPHOL",
+    "straat": "Havenmeesterweg 1",
+    "postcode": "1118CB",
+    "plaatsnaam": "SCHIPHOL",
+    "lat": "52.3077385",
+    "lon": "4.7630299",
+    "osm_id": "82690376"
+  },
+  {
+    "adres": "Danzigerbocht 45 L 1013AM Amsterdam",
+    "straat": "Danzigerbocht 45 L",
+    "postcode": "1013AM",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3968823",
+    "lon": "4.8782958",
+    "osm_id": "361257176"
+  },
+  {
+    "adres": "Ptolemaeuslaan 52 3528BP Utrecht",
+    "straat": "Ptolemaeuslaan 52",
+    "postcode": "3528BP",
+    "plaatsnaam": "Utrecht",
+    "lat": "52.0679078",
+    "lon": "5.0809868",
+    "osm_id": "2729313105"
+  },
+  {
+    "adres": "Simon Carmiggeltstraat 2 1011DJ Amsterdam",
+    "straat": "Simon Carmiggeltstraat 2",
+    "postcode": "1011DJ",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3762861",
+    "lon": "4.9060774",
+    "osm_id": "2743729128"
+  },
+  {
+    "adres": "Rokin 95 1012KM Amsterdam",
+    "straat": "Rokin 95",
+    "postcode": "1012KM",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3699816",
+    "lon": "4.8928733",
+    "osm_id": "4901150825"
+  },
+  {
+    "adres": "Spieringstraat 2 a 2801 ZM Gouda",
+    "straat": "Spieringstraat 2 a",
+    "postcode": "2801ZM",
+    "plaatsnaam": "Gouda",
+    "lat": "52.0098982",
+    "lon": "4.71324",
+    "osm_id": "7284469"
+  },
+  {
+    "adres": "Randenburgseweg 2 2811PR Reeuwijk",
+    "straat": "Randenburgseweg 2",
+    "postcode": "2811PR",
+    "plaatsnaam": "Reeuwijk",
+    "lat": "52.0576475",
+    "lon": "4.6704211",
+    "osm_id": "2695528248"
+  },
+  {
+    "adres": "Louis Braillelaan 80 2719EK Zoetermeer",
+    "straat": "Louis Braillelaan 80",
+    "postcode": "2719EK",
+    "plaatsnaam": "Zoetermeer",
+    "lat": "52.0462502",
+    "lon": "4.4826378",
+    "osm_id": "2602917790"
+  },
+  {
+    "adres": "Broekveldselaan 5 2411NL Bodegraven",
+    "straat": "Broekveldselaan 5",
+    "postcode": "2411NL",
+    "plaatsnaam": "Bodegraven",
+    "lat": "52.0731191",
+    "lon": "4.7444283",
+    "osm_id": "2805874405"
+  },
+  {
+    "adres": "'s-Gravenzandseweg 5 2291PE Wateringen",
+    "straat": "'s-Gravenzandseweg 5",
+    "postcode": "2291PE",
+    "plaatsnaam": "Wateringen",
+    "lat": "52.0114",
+    "lon": "4.2863713",
+    "osm_id": "2731196482"
+  },
+  {
+    "adres": "Frederik Hendriklaan 160 2582BJ 's-Gravenhage",
+    "straat": "Frederik Hendriklaan 160",
+    "postcode": "2582BJ",
+    "plaatsnaam": "'s-Gravenhage",
+    "lat": "52.0921574",
+    "lon": "4.2755937",
+    "osm_id": "2590920082"
+  },
+  {
+    "adres": "Molenstraat 99 6511HC Nijmegen",
+    "straat": "Molenstraat 99",
+    "postcode": "6511HC",
+    "plaatsnaam": "Nijmegen",
+    "lat": "51.8435008",
+    "lon": "5.8614775",
+    "osm_id": "597259999"
+  },
+  {
+    "adres": "Ganzenheuvel 71 6511WD Nijmegen",
+    "straat": "Ganzenheuvel 71",
+    "postcode": "6511WD",
+    "plaatsnaam": "Nijmegen",
+    "lat": "51.8487432",
+    "lon": "5.8621755",
+    "osm_id": "2469402091"
+  },
+  {
+    "adres": "Oestererf 11 6413LM Heerlen",
+    "straat": "Oestererf 11",
+    "postcode": "6413LM",
+    "plaatsnaam": "Heerlen",
+    "lat": "50.914368",
+    "lon": "5.9527687",
+    "osm_id": "2840186164"
+  },
+  {
+    "adres": "Weert 78 6231SB Meerssen",
+    "straat": "Weert 78",
+    "postcode": "6231SB",
+    "plaatsnaam": "Meerssen",
+    "lat": "50.8838642",
+    "lon": "5.7345352",
+    "osm_id": "2821033146"
+  },
+  {
+    "adres": "Reimsstraat 13 2711 EV Zoetermeer",
+    "straat": "Reimsstraat 13",
+    "postcode": "2711EV",
+    "plaatsnaam": "Zoetermeer",
+    "lat": "52.0613095",
+    "lon": "4.4953514",
+    "osm_id": "2607513647"
+  },
+  {
+    "adres": "Stieltjeslaan 10 1222RE Hilversum",
+    "straat": "Stieltjeslaan 10",
+    "postcode": "1222RE",
+    "plaatsnaam": "Hilversum",
+    "lat": "52.2337279",
+    "lon": "5.1783005",
+    "osm_id": "2878904059"
+  },
+  {
+    "adres": "Noord Zijperweg 36 1766HH Wieringerwaard",
+    "straat": "Noord Zijperweg 36",
+    "postcode": "1766HH",
+    "plaatsnaam": "Wieringerwaard",
+    "lat": "52.8351258",
+    "lon": "4.8596011",
+    "osm_id": "2708816427"
+  },
+  {
+    "adres": "Verrijn Stuartweg 22 B 1112AX Diemen",
+    "straat": "Verrijn Stuartweg 22 B",
+    "postcode": "1112AX",
+    "plaatsnaam": "Diemen",
+    "lat": "52.3329488",
+    "lon": "4.9640257",
+    "osm_id": "7043720"
+  },
+  {
+    "adres": "Boseind 14 5281RM Boxtel",
+    "straat": "Boseind 14",
+    "postcode": "5281RM",
+    "plaatsnaam": "Boxtel",
+    "lat": "51.5776791",
+    "lon": "5.3192895",
+    "osm_id": "4523055136"
+  },
+  {
+    "adres": "Herptseweg 23 5156JH Oudheusden",
+    "straat": "Herptseweg 23",
+    "postcode": "5156JH",
+    "plaatsnaam": "Oudheusden",
+    "lat": "51.7265777",
+    "lon": "5.1377341",
+    "osm_id": "2897444337"
+  },
+  {
+    "adres": "Rietwaard 2 5236WC 's-Hertogenbosch",
+    "straat": "Rietwaard 2",
+    "postcode": "5236WC",
+    "plaatsnaam": "'s-Hertogenbosch",
+    "lat": "51.7319314",
+    "lon": "5.3155453",
+    "osm_id": "2750456250"
+  },
+  {
+    "adres": "Hoogkoorpassage 1 5831DM Boxmeer",
+    "straat": "Hoogkoorpassage 1",
+    "postcode": "5831DM",
+    "plaatsnaam": "Boxmeer",
+    "lat": "51.6472156",
+    "lon": "5.9488329",
+    "osm_id": "2754641232"
+  },
+  {
+    "adres": "Hagelkruisweg 54 5751RR Deurne",
+    "straat": "Hagelkruisweg 54",
+    "postcode": "5751RR",
+    "plaatsnaam": "Deurne",
+    "lat": "51.4541248",
+    "lon": "5.8120112",
+    "osm_id": "2872986896"
+  },
+  {
+    "adres": "Oranjelaan 55 5741HE Beek en Donk",
+    "straat": "Oranjelaan 55",
+    "postcode": "5741HE",
+    "plaatsnaam": "Beek en Donk",
+    "lat": "51.5191982",
+    "lon": "5.6404603",
+    "osm_id": "2900701640"
+  },
+  {
+    "adres": "Spaarnestraat 57 7523VK Enschede",
+    "straat": "Spaarnestraat 57",
+    "postcode": "7523VK",
+    "plaatsnaam": "Enschede",
+    "lat": "52.2391527",
+    "lon": "6.8889166",
+    "osm_id": "2750247426"
+  },
+  {
+    "adres": "Schoenerweg 1 B 8042PJ Zwolle",
+    "straat": "Schoenerweg 1 B",
+    "postcode": "8042PJ",
+    "plaatsnaam": "Zwolle",
+    "lat": "52.5134036",
+    "lon": "6.0496567",
+    "osm_id": "246853749"
+  },
+  {
+    "adres": "Tweelingenlaan 57 7324BK Apeldoorn",
+    "straat": "Tweelingenlaan 57",
+    "postcode": "7324BK",
+    "plaatsnaam": "Apeldoorn",
+    "lat": "52.2411828",
+    "lon": "5.989022",
+    "osm_id": "2683585440"
+  },
+  {
+    "adres": "Daltonstraat 15 7461AC Rijssen",
+    "straat": "Daltonstraat 15",
+    "postcode": "7461AC",
+    "plaatsnaam": "Rijssen",
+    "lat": "52.313441",
+    "lon": "6.507753",
+    "osm_id": "2668589993"
+  },
+  {
+    "adres": "Westblaak 180 3012 KN Rotterdam",
+    "straat": "Westblaak 180",
+    "postcode": "3012KN",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.9164258",
+    "lon": "4.4757658",
+    "osm_id": "2610218013"
+  },
+  {
+    "adres": "Hoogoorddreef 15 1101 BA Amsterdam",
+    "straat": "Hoogoorddreef 15",
+    "postcode": "1101BA",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3082598",
+    "lon": "4.9452962",
+    "osm_id": "7251565970"
+  },
+  {
+    "adres": "Nijverheidsweg-Noord 60 80 3812 PM Amersfoort",
+    "straat": "Nijverheidsweg-Noord 60 80",
+    "postcode": "3812PM",
+    "plaatsnaam": "Amersfoort",
+    "lat": "52.1647574",
+    "lon": "5.372794",
+    "osm_id": "6986989"
+  },
+  {
+    "adres": "Schiedamsedijk 128 3134 KK Vlaardingen",
+    "straat": "Schiedamsedijk 128",
+    "postcode": "3134KK",
+    "plaatsnaam": "Vlaardingen",
+    "lat": "51.9080116",
+    "lon": "4.3669055",
+    "osm_id": "2778397663"
+  },
+  {
+    "adres": "Maliebaan 48 B 3581 CS Utrecht",
+    "straat": "Maliebaan 48 B",
+    "postcode": "3581CS",
+    "plaatsnaam": "Utrecht",
+    "lat": "52.0941996",
+    "lon": "5.1378064",
+    "osm_id": "650789894"
+  },
+  {
+    "adres": "Persoonshaven 117 3071CG Rotterdam",
+    "straat": "Persoonshaven 117",
+    "postcode": "3071CG",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.9061229",
+    "lon": "4.5106965",
+    "osm_id": "2788093049"
+  },
+  {
+    "adres": "De Veldoven 3 3342GR Hendrik-Ido-Ambacht",
+    "straat": "De Veldoven 3",
+    "postcode": "3342GR",
+    "plaatsnaam": "Hendrik-Ido-Ambacht",
+    "lat": "51.8388441",
+    "lon": "4.6198684",
+    "osm_id": "2740540962"
+  },
+  {
+    "adres": "Lylantse Plein 1 2908LH Capelle aan den IJssel",
+    "straat": "Lylantse Plein 1",
+    "postcode": "2908LH",
+    "plaatsnaam": "Capelle aan den IJssel",
+    "lat": "51.9547201",
+    "lon": "4.5683124",
+    "osm_id": "4613909489"
+  },
+  {
+    "adres": "Groene Hilledijk 201 B 02 3073AD Rotterdam",
+    "straat": "Groene Hilledijk 201 B 02",
+    "postcode": "3073AD",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.954848",
+    "lon": "4.442958",
+    "osm_id": "138996678"
+  },
+  {
+    "adres": "Backershagen 21 3078SB Rotterdam",
+    "straat": "Backershagen 21",
+    "postcode": "3078SB",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.8857536",
+    "lon": "4.5598276",
+    "osm_id": "2791464093"
+  },
+  {
+    "adres": "D. de Koninglaan 8 3209BS Hekelingen",
+    "straat": "D. de Koninglaan 8",
+    "postcode": "3209BS",
+    "plaatsnaam": "Hekelingen",
+    "lat": "51.824998",
+    "lon": "4.3492942",
+    "osm_id": "2748028544"
+  },
+  {
+    "adres": "'s-Gravelandseweg 258 3125BK Schiedam",
+    "straat": "'s-Gravelandseweg 258",
+    "postcode": "3125BK",
+    "plaatsnaam": "Schiedam",
+    "lat": "51.9340929",
+    "lon": "4.4000036",
+    "osm_id": "2785436883"
+  },
+  {
+    "adres": "Wolfend 21 2661DS Bergschenhoek",
+    "straat": "Wolfend 21",
+    "postcode": "2661DS",
+    "plaatsnaam": "Bergschenhoek",
+    "lat": "51.9875362",
+    "lon": "4.5096362",
+    "osm_id": "2593040615"
+  },
+  {
+    "adres": "Koninginneweg 1 3331CD Zwijndrecht",
+    "straat": "Koninginneweg 1",
+    "postcode": "3331CD",
+    "plaatsnaam": "Zwijndrecht",
+    "lat": "51.8215164",
+    "lon": "4.646619",
+    "osm_id": "2741749323"
+  },
+  {
+    "adres": "Hoogoorddreef 15 1101BA Amsterdam",
+    "straat": "Hoogoorddreef 15",
+    "postcode": "1101BA",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3082598",
+    "lon": "4.9452962",
+    "osm_id": "7251565970"
+  },
+  {
+    "adres": "Schoolstraat 192 2252CN Voorschoten",
+    "straat": "Schoolstraat 192",
+    "postcode": "2252CN",
+    "plaatsnaam": "Voorschoten",
+    "lat": "52.1242319",
+    "lon": "4.443891",
+    "osm_id": "2717648750"
+  },
+  {
+    "adres": "Zuider Parallelweg 46 6953DD Dieren",
+    "straat": "Zuider Parallelweg 46",
+    "postcode": "6953DD",
+    "plaatsnaam": "Dieren",
+    "lat": "52.0497226",
+    "lon": "6.1097755",
+    "osm_id": "2854797937"
+  },
+  {
+    "adres": "Sint-Eustatius 18 7333NX Apeldoorn",
+    "straat": "Sint-Eustatius 18",
+    "postcode": "7333NX",
+    "plaatsnaam": "Apeldoorn",
+    "lat": "52.1812146",
+    "lon": "5.9795453",
+    "osm_id": "2685483961"
+  },
+  {
+    "adres": "Industriestraat 12 7091DC Dinxperlo",
+    "straat": "Industriestraat 12",
+    "postcode": "7091DC",
+    "plaatsnaam": "Dinxperlo",
+    "lat": "51.8583554",
+    "lon": "6.4817443",
+    "osm_id": "2812662364"
+  },
+  {
+    "adres": "Willemsweg 211 6531DJ Nijmegen",
+    "straat": "Willemsweg 211",
+    "postcode": "6531DJ",
+    "plaatsnaam": "Nijmegen",
+    "lat": "51.8326867",
+    "lon": "5.84839",
+    "osm_id": "2848102891"
+  },
+  {
+    "adres": "Hoofdstraat 33 6436CB Amstenrade",
+    "straat": "Hoofdstraat 33",
+    "postcode": "6436CB",
+    "plaatsnaam": "Amstenrade",
+    "lat": "50.9409716",
+    "lon": "5.9238492",
+    "osm_id": "2770353101"
+  },
+  {
+    "adres": "Bosbeeklaan 63 5991MA Baarlo",
+    "straat": "Bosbeeklaan 63",
+    "postcode": "5991MA",
+    "plaatsnaam": "Baarlo",
+    "lat": "51.3208129",
+    "lon": "6.0897805",
+    "osm_id": "3000473101"
+  },
+  {
+    "adres": "van Coehoornstraat 5 5916PH Venlo",
+    "straat": "van Coehoornstraat 5",
+    "postcode": "5916PH",
+    "plaatsnaam": "Venlo",
+    "lat": "51.3895156",
+    "lon": "6.1845342",
+    "osm_id": "2924652467"
+  },
+  {
+    "adres": "Spoorweglaan 2 6221BS Maastricht",
+    "straat": "Spoorweglaan 2",
+    "postcode": "6221BS",
+    "plaatsnaam": "Maastricht",
+    "lat": "50.8491813",
+    "lon": "5.7048479",
+    "osm_id": "2809853770"
+  },
+  {
+    "adres": "Grote Blerickse Bergenwg 15 5927PB Venlo",
+    "straat": "Grote Blerickse Bergenwg 15",
+    "postcode": "5927PB",
+    "plaatsnaam": "Venlo",
+    "lat": "51.363357",
+    "lon": "6.172851",
+    "osm_id": "5295787400"
+  },
+  {
+    "adres": "Busplein 36 1315KV Almere",
+    "straat": "Busplein 36",
+    "postcode": "1315KV",
+    "plaatsnaam": "Almere",
+    "lat": "52.3743845",
+    "lon": "5.2179223",
+    "osm_id": "2839710787"
+  },
+  {
+    "adres": "Audioweg 5 1322AT Almere",
+    "straat": "Audioweg 5",
+    "postcode": "1322AT",
+    "plaatsnaam": "Almere",
+    "lat": "52.350607",
+    "lon": "5.1756433",
+    "osm_id": "2834603750"
+  },
+  {
+    "adres": "Kamp 15 77 8225DA Lelystad",
+    "straat": "Kamp 15 77",
+    "postcode": "8225DA",
+    "plaatsnaam": "Lelystad",
+    "lat": "52.5044398",
+    "lon": "5.4813643",
+    "osm_id": "2924330057"
+  },
+  {
+    "adres": "Chroomstraat 6 8211AS Lelystad",
+    "straat": "Chroomstraat 6",
+    "postcode": "8211AS",
+    "plaatsnaam": "Lelystad",
+    "lat": "52.5385383",
+    "lon": "5.5156993",
+    "osm_id": "2926064026"
+  },
+  {
+    "adres": "James Cookroute 50 1363KG Almere",
+    "straat": "James Cookroute 50",
+    "postcode": "1363KG",
+    "plaatsnaam": "Almere",
+    "lat": "52.351138",
+    "lon": "5.1444154",
+    "osm_id": "2834460872"
+  },
+  {
+    "adres": "Kerkweg 27 1961JA Heemskerk",
+    "straat": "Kerkweg 27",
+    "postcode": "1961JA",
+    "plaatsnaam": "Heemskerk",
+    "lat": "52.5105176",
+    "lon": "4.6693211",
+    "osm_id": "2905591850"
+  },
+  {
+    "adres": "Kanaalstraat 55 4388BK Oost-Souburg",
+    "straat": "Kanaalstraat 55",
+    "postcode": "4388BK",
+    "plaatsnaam": "Oost-Souburg",
+    "lat": "51.4640623",
+    "lon": "3.59951",
+    "osm_id": "2807344131"
+  },
+  {
+    "adres": "Moggestraat 19 4301LE Zierikzee",
+    "straat": "Moggestraat 19",
+    "postcode": "4301LE",
+    "plaatsnaam": "Zierikzee",
+    "lat": "51.6495004",
+    "lon": "3.9291975",
+    "osm_id": "2806605123"
+  },
+  {
+    "adres": "Lunterenstraat 150 2573PT 's-Gravenhage",
+    "straat": "Lunterenstraat 150",
+    "postcode": "2573PT",
+    "plaatsnaam": "'s-Gravenhage",
+    "lat": "52.0686586",
+    "lon": "4.2797327",
+    "osm_id": "2729489149"
+  },
+  {
+    "adres": "Platinastraat 39 2718SZ Zoetermeer",
+    "straat": "Platinastraat 39",
+    "postcode": "2718SZ",
+    "plaatsnaam": "Zoetermeer",
+    "lat": "52.0384472",
+    "lon": "4.5050089",
+    "osm_id": "7441408"
+  },
+  {
+    "adres": "Centaurusweg 148 b 5015TA Tilburg",
+    "straat": "Centaurusweg 148 b",
+    "postcode": "5015TA",
+    "plaatsnaam": "Tilburg",
+    "lat": "51.5743519",
+    "lon": "5.0968997",
+    "osm_id": "631912240"
+  },
+  {
+    "adres": "Patroonstraat 13 3861RN Nijkerk",
+    "straat": "Patroonstraat 13",
+    "postcode": "3861RN",
+    "plaatsnaam": "Nijkerk",
+    "lat": "52.2361425",
+    "lon": "5.484353",
+    "osm_id": "2717691661"
+  },
+  {
+    "adres": "Havenstraat 7 8081GN Elburg",
+    "straat": "Havenstraat 7",
+    "postcode": "8081GN",
+    "plaatsnaam": "Elburg",
+    "lat": "52.4499458",
+    "lon": "5.8307943",
+    "osm_id": "2864324287"
+  },
+  {
+    "adres": "Horsterweg 213 3853JC Ermelo",
+    "straat": "Horsterweg 213",
+    "postcode": "3853JC",
+    "plaatsnaam": "Ermelo",
+    "lat": "52.3122913",
+    "lon": "5.5913891",
+    "osm_id": "2891652706"
+  },
+  {
+    "adres": "Nijverheidsweg-Noord 60 80 3812PM Amersfoort",
+    "straat": "Nijverheidsweg-Noord 60 80",
+    "postcode": "3812PM",
+    "plaatsnaam": "Amersfoort",
+    "lat": "52.1647574",
+    "lon": "5.372794",
+    "osm_id": "6986989"
+  },
+  {
+    "adres": "Schiedamsedijk 128 3134KK Vlaardingen",
+    "straat": "Schiedamsedijk 128",
+    "postcode": "3134KK",
+    "plaatsnaam": "Vlaardingen",
+    "lat": "51.9080116",
+    "lon": "4.3669055",
+    "osm_id": "2778397663"
+  },
+  {
+    "adres": "Waarden 25 b 3831HA Leusden",
+    "straat": "Waarden 25 b",
+    "postcode": "3831HA",
+    "plaatsnaam": "Leusden",
+    "lat": "52.133936",
+    "lon": "5.4423521",
+    "osm_id": "180159391"
+  },
+  {
+    "adres": "Pluto 3 1785AN Den Helder",
+    "straat": "Pluto 3",
+    "postcode": "1785AN",
+    "plaatsnaam": "Den Helder",
+    "lat": "52.9461294",
+    "lon": "4.7780722",
+    "osm_id": "2858943677"
+  },
+  {
+    "adres": "Residence Juliana 1 1787PM Julianadorp",
+    "straat": "Residence Juliana 1",
+    "postcode": "1787PM",
+    "plaatsnaam": "Julianadorp",
+    "lat": "52.9081108",
+    "lon": "4.7197513",
+    "osm_id": "2858589133"
+  },
+  {
+    "adres": "Orionweg 55 8938AG Leeuwarden",
+    "straat": "Orionweg 55",
+    "postcode": "8938AG",
+    "plaatsnaam": "Leeuwarden",
+    "lat": "53.1998227",
+    "lon": "5.8466361",
+    "osm_id": "3064547068"
+  },
+  {
+    "adres": "Meer en Duin 38 2163 HC Lisse",
+    "straat": "Meer en Duin 38",
+    "postcode": "2163HC",
+    "plaatsnaam": "Lisse",
+    "lat": "52.2688791",
+    "lon": "4.5641004",
+    "osm_id": "2750166482"
+  },
+  {
+    "adres": "Haringsestraat 10 a 5443PD Haps",
+    "straat": "Haringsestraat 10 a",
+    "postcode": "5443PD",
+    "plaatsnaam": "Haps",
+    "lat": "51.6986031",
+    "lon": "5.8644808",
+    "osm_id": "6892568"
+  },
+  {
+    "adres": "Rondweg 27 A 5531AJ Bladel",
+    "straat": "Rondweg 27 A",
+    "postcode": "5531AJ",
+    "plaatsnaam": "Bladel",
+    "lat": "51.37115",
+    "lon": "5.24018",
+    "osm_id": "7189690"
+  },
+  {
+    "adres": "Mispelhoefstraat 31 B 5651GK Eindhoven",
+    "straat": "Mispelhoefstraat 31 B",
+    "postcode": "5651GK",
+    "plaatsnaam": "Eindhoven",
+    "lat": "51.46935",
+    "lon": "5.40695",
+    "osm_id": "7178605"
+  },
+  {
+    "adres": "Molenstraat 8 d 5581JV Waalre",
+    "straat": "Molenstraat 8 d",
+    "postcode": "5581JV",
+    "plaatsnaam": "Waalre",
+    "lat": "51.3857777",
+    "lon": "5.4431064",
+    "osm_id": "7183033"
+  },
+  {
+    "adres": "de Stater 20 b 5737RV Lieshout",
+    "straat": "de Stater 20 b",
+    "postcode": "5737RV",
+    "plaatsnaam": "Lieshout",
+    "lat": "51.5178786",
+    "lon": "5.6074281",
+    "osm_id": "539259771"
+  },
+  {
+    "adres": "Klokkenlaan 807 5231AX 's-Hertogenbosch",
+    "straat": "Klokkenlaan 807",
+    "postcode": "5231AX",
+    "plaatsnaam": "'s-Hertogenbosch",
+    "lat": "51.7147115",
+    "lon": "5.3102897",
+    "osm_id": "2755778307"
+  },
+  {
+    "adres": "Esp 248 A 5633AC Eindhoven",
+    "straat": "Esp 248 A",
+    "postcode": "5633AC",
+    "plaatsnaam": "Eindhoven",
+    "lat": "51.4881819",
+    "lon": "5.4951638",
+    "osm_id": "7159626"
+  },
+  {
+    "adres": "Bedrijvenpark Twente 305 7602KL Almelo",
+    "straat": "Bedrijvenpark Twente 305",
+    "postcode": "7602KL",
+    "plaatsnaam": "Almelo",
+    "lat": "52.3691438",
+    "lon": "6.6117513",
+    "osm_id": "2833263567"
+  },
+  {
+    "adres": "Berkenwoudestraat 40 3076JA Rotterdam",
+    "straat": "Berkenwoudestraat 40",
+    "postcode": "3076JA",
+    "plaatsnaam": "Rotterdam",
+    "lat": "51.8710379",
+    "lon": "4.5326781",
+    "osm_id": "2788989631"
+  },
+  {
+    "adres": "De Wetering 30 4906CT Oosterhout",
+    "straat": "De Wetering 30",
+    "postcode": "4906CT",
+    "plaatsnaam": "Oosterhout",
+    "lat": "51.65281",
+    "lon": "4.84329",
+    "osm_id": "7267782"
+  },
+  {
+    "adres": "De Wetering 28 4906CT Oosterhout",
+    "straat": "De Wetering 28",
+    "postcode": "4906CT",
+    "plaatsnaam": "Oosterhout",
+    "lat": "51.6538237",
+    "lon": "4.8433306",
+    "osm_id": "2853418829"
+  },
+  {
+    "adres": "Laan van Hildernisse-N 2 C 4617AE Bergen op Zoom",
+    "straat": "Laan van Hildernisse-N 2 C",
+    "postcode": "4617AE",
+    "plaatsnaam": "Bergen op Zoom",
+    "lat": "51.495922",
+    "lon": "4.295944",
+    "osm_id": "8392026"
+  },
+  {
+    "adres": "Rozenkransstraat 108 4711GC St",
+    "straat": "Rozenkransstraat 108",
+    "postcode": "4711GC",
+    "plaatsnaam": "St",
+    "lat": "51.552109",
+    "lon": "4.5816349",
+    "osm_id": "2789512166"
+  },
+  {
+    "adres": "Meer en Duin 38 2163HC Lisse",
+    "straat": "Meer en Duin 38",
+    "postcode": "2163HC",
+    "plaatsnaam": "Lisse",
+    "lat": "52.2688791",
+    "lon": "4.5641004",
+    "osm_id": "2750166482"
+  },
+  {
+    "adres": "De Cuserstraat 93 1081CN Amsterdam",
+    "straat": "De Cuserstraat 93",
+    "postcode": "1081CN",
+    "plaatsnaam": "Amsterdam",
+    "lat": "52.3233742",
+    "lon": "4.8582618",
+    "osm_id": "2819109988"
+  },
+  {
+    "adres": "Harderwijkstraat 309 2573ZJ 's-Gravenhage",
+    "straat": "Harderwijkstraat 309",
+    "postcode": "2573ZJ",
+    "plaatsnaam": "'s-Gravenhage",
+    "lat": "52.0618927",
+    "lon": "4.287358",
+    "osm_id": "2727319160"
+  },
+  {
+    "adres": "Wilhelmina Druckerstraat 13 2401KH Alphen aan den Rijn",
+    "straat": "Wilhelmina Druckerstraat 13",
+    "postcode": "2401KH",
+    "plaatsnaam": "Alphen aan den Rijn",
+    "lat": "52.1562396",
+    "lon": "4.6590739",
+    "osm_id": "2873546731"
+  },
+  {
+    "adres": "Dorpsstraat 9 e 2912CA Nieuwerkerk aan den IJssel",
+    "straat": "Dorpsstraat 9 e",
+    "postcode": "2912CA",
+    "plaatsnaam": "Nieuwerkerk aan den IJssel",
+    "lat": "51.9705676",
+    "lon": "4.6064676",
+    "osm_id": "131524991"
+  },
+  {
+    "adres": "Koekoeksweg 6 8084GM 't Harde",
+    "straat": "Koekoeksweg 6",
+    "postcode": "8084GM",
+    "plaatsnaam": "'t Harde",
+    "lat": "52.4206446",
+    "lon": "5.8778873",
+    "osm_id": "2874610150"
+  },
+  {
+    "adres": "Hamersestraat 27 6931EV Westervoort",
+    "straat": "Hamersestraat 27",
+    "postcode": "6931EV",
+    "plaatsnaam": "Westervoort",
+    "lat": "51.9640427",
+    "lon": "5.9741243",
+    "osm_id": "3165883403"
+  },
+  {
+    "adres": "Lindenhof 7 8051DD Hattem",
+    "straat": "Lindenhof 7",
+    "postcode": "8051DD",
+    "plaatsnaam": "Hattem",
+    "lat": "52.4661376",
+    "lon": "6.0735331",
+    "osm_id": "2503185555"
+  },
+  {
+    "adres": "De Ververt 1.243 6605AE Wijchen",
+    "straat": "De Ververt 1.243",
+    "postcode": "6605AE",
+    "plaatsnaam": "Wijchen",
+    "lat": "51.7987836",
+    "lon": "5.7306764",
+    "osm_id": "6904242"
+  },
+  {
+    "adres": "Doetinchemseweg 61 A 7007CB Doetinchem",
+    "straat": "Doetinchemseweg 61 A",
+    "postcode": "7007CB",
+    "plaatsnaam": "Doetinchem",
+    "lat": "51.9230105",
+    "lon": "6.3608224",
+    "osm_id": "551117147"
+  },
+  {
+    "adres": "Watertapweg 1 7011BP Gaanderen",
+    "straat": "Watertapweg 1",
+    "postcode": "7011BP",
+    "plaatsnaam": "Gaanderen",
+    "lat": "51.9357034",
+    "lon": "6.3468638",
+    "osm_id": "2671731217"
+  },
+  {
+    "adres": "Talmastraat 1 7021AT Zelhem",
+    "straat": "Talmastraat 1",
+    "postcode": "7021AT",
+    "plaatsnaam": "Zelhem",
+    "lat": "52.0039894",
+    "lon": "6.34552103648029",
+    "osm_id": "54526807"
+  },
+  {
+    "adres": "Hummeloseweg 16 A 7021AE Zelhem",
+    "straat": "Hummeloseweg 16 A",
+    "postcode": "7021AE",
+    "plaatsnaam": "Zelhem",
+    "lat": "52.0045934",
+    "lon": "6.3033722",
+    "osm_id": "6788694"
+  },
+  {
+    "adres": "Zanderskamp 93 6983CG Doesburg",
+    "straat": "Zanderskamp 93",
+    "postcode": "6983CG",
+    "plaatsnaam": "Doesburg",
+    "lat": "52.0016403",
+    "lon": "6.1298125",
+    "osm_id": "2732071853"
+  },
+  {
+    "adres": "van Gorkomhof 1 7009CZ Doetinchem",
+    "straat": "van Gorkomhof 1",
+    "postcode": "7009CZ",
+    "plaatsnaam": "Doetinchem",
+    "lat": "51.9774251",
+    "lon": "6.2898055",
+    "osm_id": "2669411503"
+  },
+  {
+    "adres": "Kerkstraat 87 6996AG Drempt",
+    "straat": "Kerkstraat 87",
+    "postcode": "6996AG",
+    "plaatsnaam": "Drempt",
+    "lat": "52.0100374",
+    "lon": "6.1768313",
+    "osm_id": "2671482716"
+  },
+  {
+    "adres": "Lavendelveld 21 7006SM Doetinchem",
+    "straat": "Lavendelveld 21",
+    "postcode": "7006SM",
+    "plaatsnaam": "Doetinchem",
+    "lat": "51.9650512",
+    "lon": "6.2499446",
+    "osm_id": "2669757177"
+  },
+  {
+    "adres": "Weerstraat 6 4001LD Tiel",
+    "straat": "Weerstraat 6",
+    "postcode": "4001LD",
+    "plaatsnaam": "Tiel",
+    "lat": "51.8872375",
+    "lon": "5.4376173",
+    "osm_id": "5718163932"
+  },
+  {
+    "adres": "Koninginneweg 11 1217KP Hilversum",
+    "straat": "Koninginneweg 11",
+    "postcode": "1217KP",
+    "plaatsnaam": "Hilversum",
+    "lat": "52.2295954",
+    "lon": "5.1673638",
+    "osm_id": "2878953501"
+  },
+  {
+    "adres": "Splijtbakweg 60 1333HJ Almere",
+    "straat": "Splijtbakweg 60",
+    "postcode": "1333HJ",
+    "plaatsnaam": "Almere",
+    "lat": "52.4033279",
+    "lon": "5.2692896",
+    "osm_id": "2842902318"
+  },
+  {
+    "adres": "Czarinastraat 6 1506RA Zaandam",
+    "straat": "Czarinastraat 6",
+    "postcode": "1506RA",
+    "plaatsnaam": "Zaandam",
+    "lat": "52.438743",
+    "lon": "4.8218096",
+    "osm_id": "2893595032"
+  },
+  {
+    "adres": "Dorpsweg 159 1676GK Twisk",
+    "straat": "Dorpsweg 159",
+    "postcode": "1676GK",
+    "plaatsnaam": "Twisk",
+    "lat": "52.7454045",
+    "lon": "5.0642389",
+    "osm_id": "2815828580"
+  },
+  {
+    "adres": "Westeind 54 7811 ME Emmen",
+    "straat": "Westeind 54",
+    "postcode": "7811ME",
+    "plaatsnaam": "Emmen",
+    "lat": "52.7883503",
+    "lon": "6.8908413",
+    "osm_id": "2630206423"
+  },
+  {
+    "adres": "Bomanshof 6 5611NJ Eindhoven",
+    "straat": "Bomanshof 6",
+    "postcode": "5611NJ",
+    "plaatsnaam": "Eindhoven",
+    "lat": "51.4315655",
+    "lon": "5.4839895",
+    "osm_id": "2755151102"
+  },
+  {
+    "adres": "Bentheimergraven 35 7577DA Oldenzaal",
+    "straat": "Bentheimergraven 35",
+    "postcode": "7577DA",
+    "plaatsnaam": "Oldenzaal",
+    "lat": "52.3201804",
+    "lon": "6.9237976",
+    "osm_id": "2827797144"
+  },
+  {
+    "adres": "Parkweg 37 7513AR Enschede",
+    "straat": "Parkweg 37",
+    "postcode": "7513AR",
+    "plaatsnaam": "Enschede",
+    "lat": "52.2206931",
+    "lon": "6.8829343",
+    "osm_id": "2775684760"
+  },
+  {
+    "adres": "Slabbecoornweg 36 a 4691RZ Tholen",
+    "straat": "Slabbecoornweg 36 a",
+    "postcode": "4691RZ",
+    "plaatsnaam": "Tholen",
+    "lat": "51.5401335",
+    "lon": "4.2324564",
+    "osm_id": "7259263"
+  }
+]

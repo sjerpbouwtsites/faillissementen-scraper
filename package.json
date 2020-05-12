@@ -1,0 +1,30 @@
+{
+  "name": "faillissementen-scraper",
+  "version": "1.0.0",
+  "description": "schraapt faillissementen van sites",
+  "main": "index.js",
+  "scripts": {
+    "doe": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjerpbouwtsites/faillissementen-scraper.git"
+  },
+  "keywords": [
+    "faillissementen",
+    "kraken",
+    "criminaliteit"
+  ],
+  "author": "Sjerp van Wouden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjerpbouwtsites/faillissementen-scraper/issues"
+  },
+  "homepage": "https://github.com/sjerpbouwtsites/faillissementen-scraper#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15"
+  }
+}
