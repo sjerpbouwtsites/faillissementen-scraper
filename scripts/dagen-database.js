@@ -1,5 +1,5 @@
 const fs = require("fs");
-const opties = require("./config.js");
+const { opties, opslagPad } = require("../config.js");
 
 function getDaysArray(start, end) {
   for (
@@ -37,7 +37,7 @@ function maakDagenDb() {
       };
     });
     fs.writeFileSync(
-      "opslag/dagenDb.json",
+      opslagPad("dagenDb"),
       JSON.stringify(dagenVoorDb, null, "  ")
     );
     console.log("dagen database gemaakt");
@@ -48,11 +48,11 @@ function maakDagenDb() {
 function pakDagenData() {
   return new Promise(async (resolve) => {
     let dagenDb;
-    let nieuweDb = !fs.existsSync("opslag/dagenDb.json");
+    let nieuweDb = !fs.existsSync(opslagPad("dagenDb"));
     if (nieuweDb) {
       dagenDb = await maakDagenDb();
     } else {
-      dagenDb = JSON.parse(fs.readFileSync("opslag/dagenDb.json"));
+      dagenDb = JSON.parse(fs.readFileSync(opslagPad("dagenDb")));
 
       //@TODO
       // // mss moet de database aangevuld worden.
@@ -145,7 +145,7 @@ async function zetGescraped({ gescraped, hadMeldingen }) {
     });
 
     fs.writeFileSync(
-      "opslag/dagenDb.json",
+      opslagPad("dagenDb"),
       JSON.stringify(nweDagenData, null, "  ")
     );
     resolve();
@@ -169,7 +169,7 @@ async function schrijfAdressenGepakt(dagenAdresTePakken) {
   });
 
   fs.writeFileSync(
-    "opslag/dagenDb.json",
+    opslagPad("dagenDb"),
     JSON.stringify(nweDagenData, null, "  ")
   );
 }
@@ -188,7 +188,7 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
   });
 
   fs.writeFileSync(
-    "opslag/dagenDb.json",
+    opslagPad("dagenDb"),
     JSON.stringify(nweDagenData, null, "  ")
   );
 }

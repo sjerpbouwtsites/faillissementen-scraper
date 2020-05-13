@@ -2,13 +2,15 @@
 // pakt niet alle dagen.
 // @TODO ook noteren welke requests nooit iets teruggegeven om uit scrape te halen
 
-// const fs = require("fs");
-// const axios = require("axios").default;
-const dagenDatabase = require("./dagen-database.js");
-//const opties = require("./config.js");
-const scraper = require("./scraper.js");
-const adressen = require("./adressen.js");
-const consolidatie = require("./consolidatie.js");
+const { scriptPad, opties } = require("./config.js");
+
+const dagenDatabase = require(scriptPad("dagen-database"));
+
+const scraper = require(scriptPad("scraper"));
+
+const adressen = require(scriptPad("adressen"));
+
+const consolidatie = require(scriptPad("consolidatie"));
 
 async function init() {
   try {

@@ -1073,10 +1073,10 @@
   },
   {
     "route": "20200513000000",
-    "gescraped": false,
-    "geconsolideerd": false,
-    "adresGepakt": false,
-    "hadMelding": false,
+    "gescraped": true,
+    "geconsolideerd": true,
+    "adresGepakt": true,
+    "hadMelding": true,
     "datum": "2020-05-13T23:00:00.000Z"
   },
   {

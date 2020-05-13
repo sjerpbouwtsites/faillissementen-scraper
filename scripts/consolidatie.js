@@ -1,6 +1,6 @@
 const fs = require("fs");
-const dagenDb = require("./dagen-database.js");
-const opties = require("./config.js");
+const { opties, scriptPad, opslagPad } = require("../config.js");
+const dagenDb = require(scriptPad("dagen-database"));
 
 async function consolideerResponsesEnAdressen() {
   return new Promise(async (resolve) => {
@@ -25,7 +25,7 @@ async function consolideerResponsesEnAdressen() {
     const publicatieData = dagenTeConsolideren
       .map((dag) => {
         return JSON.parse(
-          fs.readFileSync("opslag/responses/kvk/" + dag.route + ".json")
+          fs.readFileSync(opslagPad(`responses/kvk/${dag.route}`))
         );
       })
       .flat()
@@ -60,7 +60,7 @@ async function consolideerResponsesEnAdressen() {
         return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
       });
 
-    const adressen = JSON.parse(fs.readFileSync("opslag/adressen.json"));
+    const adressen = JSON.parse(fs.readFileSync(opslagPad("adressen")));
 
     console.log(
       "vergelijk ",
@@ -125,7 +125,7 @@ async function consolideerResponsesEnAdressen() {
     dagenDb.schrijfGeconsolideerd(dagenTeConsolideren);
 
     fs.writeFileSync(
-      "opslag/geconsolideerde-adressen.json",
+      opslagPad(`geconsolideerde-adressen`),
       JSON.stringify(verrijkteAdressen, null, "  ")
     );
     resolve();

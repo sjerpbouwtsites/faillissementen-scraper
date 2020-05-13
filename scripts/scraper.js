@@ -1,4 +1,4 @@
-const opties = require("./config.js");
+const { opslagPad, opties } = require("../config.js");
 const axios = require("axios").default;
 const fs = require("fs");
 
@@ -14,11 +14,11 @@ async function scrapeDagen(dagenTeDoen) {
   const teScrapen = opties.overschrijfAlleRequest
     ? nietGescrapedVolgensDb
     : nietGescrapedVolgensDb.filter((dbDag) => {
-        return !fs.existsSync("opslag/responses/kvk/" + dbDag.route + ".json");
+        return !fs.existsSync(opslagPad(`responses/kvk/${dbDag.route}`));
       });
 
   const exitTijd = teScrapen.length * 800 + 800;
-  console.log(`EXIT OVER ${exitTijd / 60000} minuten`);
+  console.log(`scraper klaar over ${exitTijd / 60000} minuten`);
 
   return new Promise((resolve) => {
     const gescraped = [];
@@ -42,7 +42,7 @@ async function scrapeDagen(dagenTeDoen) {
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {
                 fs.writeFileSync(
-                  "opslag/responses/kvk/" + dag.route + ".json",
+                  opslagPad(`responses/kvk/${dag.route}`),
                   JSON.stringify(response.data)
                 );
                 hadMeldingen.push(dag);

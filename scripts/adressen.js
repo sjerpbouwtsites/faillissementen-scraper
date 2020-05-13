@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
-const dagenDb = require("./dagen-database.js");
-const opties = require("./config.js");
+const { scriptPad, opslagPad, opties } = require("../config.js");
+const dagenDb = require(scriptPad("dagen-database"));
 
 async function consolideerAdressen() {
   // losse json naar één json bestand
@@ -15,8 +15,8 @@ async function consolideerAdressen() {
       return;
     }
 
-    const adressenDb = fs.existsSync("opslag/adressen.json")
-      ? JSON.parse(fs.readFileSync("opslag/adressen.json"))
+    const adressenDb = fs.existsSync(opslagPad("adressen"))
+      ? JSON.parse(fs.readFileSync(opslagPad("adressen")))
       : [];
 
     const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
@@ -24,7 +24,7 @@ async function consolideerAdressen() {
     // vinden welke adressen nog niet geconsolideerd zijn
     let teConsolideren = dagenAdresTePakken
       .map((dag) => {
-        const b = "opslag/adressen/" + dag.route + ".json";
+        const b = opslagPad("adressen/" + dag.route);
         if (!fs.existsSync(b)) {
           reject(b + " bestaat niet");
         }
@@ -45,10 +45,9 @@ async function consolideerAdressen() {
     // voor alle te consolideren request doen of..
     if (!opties.overschrijfAlleRequest) {
       teConsolideren = teConsolideren.filter((adres) => {
-        const bestandsNaam =
-          "opslag/responses/geo/" +
-          (adres.straat + adres.postcode).replace(/\W/g, "") +
-          ".json";
+        const bestandsNaam = opslagPad(
+          `responses/geo/${(adres.straat + adres.postcode).replace(/\W/g, "")}`
+        );
         if (fs.existsSync(bestandsNaam)) {
           geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
           return false;
@@ -59,12 +58,6 @@ async function consolideerAdressen() {
       nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
     }
 
-    console.log(
-      "consolideer: ",
-      teConsolideren.length,
-      " , uit fs",
-      geoRequestsBekend.length
-    );
     const geskiptWegensRateLimit = [];
     teConsolideren.forEach((c, index) => {
       setTimeout(function () {
@@ -75,12 +68,10 @@ async function consolideerAdressen() {
               "&format=json"
           )
           .then((r) => {
-            const bestandsNaam = (c.straat + c.postcode).replace(/\W/g, "");
-            fs.writeFile(
-              "opslag/responses/geo/" + bestandsNaam + ".json",
-              JSON.stringify(r.data[0]),
-              () => {}
+            const bestandsNaam = opslagPad(
+              `responses/geo/${(c.straat + c.postcode).replace(/\W/g, "")}`
             );
+            fs.writeFile(bestandsNaam, JSON.stringify(r.data[0]), () => {});
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
@@ -111,15 +102,15 @@ async function consolideerAdressen() {
 
     // na alle requests resolven...
     const exitTijd = teConsolideren.length * 1111 + 2000;
-    console.log("exit over", exitTijd / 60000, " minuten");
+    console.log("Adressen klaar over", exitTijd / 60000, " minuten");
     setTimeout(function () {
       console.log("schrijf nieuw geonsolideerd");
       fs.writeFileSync(
-        "opslag/adressen.json",
+        opslagPad(`adressen`),
         JSON.stringify(nieuwGeconsolideerd, null, "  ")
       );
       fs.writeFileSync(
-        "opslag/ratelimit-adressen.json",
+        opslagPad(`ratelimit-adressen`),
         JSON.stringify(geskiptWegensRateLimit, null, "  ")
       );
       dagenDb.schrijfAdressenGepakt(dagenAdresTePakken);
@@ -167,7 +158,7 @@ async function zoekAdressen() {
           ///////////////!!!!!!!!!/////
           dagTeVerrijken.adresGepakt = true;
           fs.writeFileSync(
-            "opslag/adressen/" + dagTeVerrijken.route + ".json",
+            opslagPad(`adressen/${dagTeVerrijken.route}`),
             JSON.stringify(uniekeAdressen, null, "  ")
           );
         }, draaiTijd);
@@ -270,7 +261,7 @@ function relevantePublicatieClusters(route) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const bnaam = "opslag/responses/kvk/" + route + ".json";
+      const bnaam = opslagPad(`responses/kvk/${route}`);
       if (!fs.existsSync(bnaam)) {
         reject(bnaam + " bestaat niet");
       }
