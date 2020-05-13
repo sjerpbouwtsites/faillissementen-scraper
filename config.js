@@ -2,7 +2,7 @@ module.exports = {
   negeerReedsGedaanBool: false,
   schrijfAlleRequestsWeg: true,
   overschrijfAlleRequest: false,
-  startDatum: "2020-05-01",
+  startDatum: "2019-01-01",
   eindDatum: "2020-05-31",
   volleDebug: false,
   toegestaneClusters: [
@@ -14,7 +14,7 @@ module.exports = {
     "neerlegging tussentijdse uitdelingslijst in faillissementen",
     "neerlegging slotuitdelingslijst in faillissementen",
   ],
-  ontoegestaneClusters: (ontoegestaneClusters = [
+  ontoegestaneClusters: [
     "rectificatie",
     "uitspraken schuldsanering",
     "zittingen in schuldsaneringen",
@@ -25,5 +25,5 @@ module.exports = {
     "uitspraken surseance",
     "schuldsaneringen",
     "zittingen in faillissementen",
-  ]),
+  ],
 };

@@ -165,6 +165,22 @@ async function schrijfAdressenGepakt(dagenAdresTePakken) {
   fs.writeFileSync("dagenDb.json", JSON.stringify(nweDagenData, null, "  "));
 }
 
+async function schrijfGeconsolideerd(geconsolideerdDagen) {
+  const dagenData = await pakDagenData();
+
+  const nweDagenData = dagenData.dagen.map((dbDag) => {
+    const isNieuwGeconsolideerd = geconsolideerdDagen.some(
+      (h) => h.route === dbDag.route
+    );
+
+    return Object.assign(dbDag, {
+      geconsolideerd: dbDag.geconsolideerd || isNieuwGeconsolideerd,
+    });
+  });
+
+  fs.writeFileSync("dagenDb.json", JSON.stringify(nweDagenData, null, "  "));
+}
+
 function schrijfTemp(bla, achtervoeging = "") {
   fs.writeFileSync(
     `temp${achtervoeging}.json`,
@@ -177,4 +193,5 @@ module.exports = {
   printDagenFijn,
   zetGescraped,
   schrijfAdressenGepakt,
+  schrijfGeconsolideerd,
 };

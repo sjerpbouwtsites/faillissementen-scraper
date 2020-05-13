@@ -64,7 +64,7 @@ async function consolideerResponsesEnAdressen() {
       "vergelijk ",
       adressen.length + " adressen met ",
       publicatieData.length,
-      " bestanden"
+      " publicaties"
     );
 
     dagenDb.schrijfTemp(publicatieData, 3);
@@ -94,10 +94,13 @@ async function consolideerResponsesEnAdressen() {
       });
     });
 
+    dagenDb.schrijfGeconsolideerd(dagenTeConsolideren);
+
     fs.writeFileSync(
       "geconsolideerde-adressen.json",
       JSON.stringify(verrijkteAdressen, null, "  ")
     );
+    resolve();
   });
 }
 
