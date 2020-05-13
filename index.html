@@ -79,7 +79,7 @@
       }
       .kvk-resultaat {
         max-height: calc(100% - 40px);
-        max-width: calc(100% - 110px);
+        max-width: calc(100% - 120px);
         overflow: auto;
         transform: translateX(0);
         transition: 0.2s ease;
@@ -89,12 +89,14 @@
       }
       .kvk-nummers {
         position: absolute;
-        max-height: calc(100% - 60px);
+        max-height: calc(100% - 70px);
+        overflow: auto;
         top: 10px;
         right: 10px;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        width: 129px;
         text-align: center;
         font-weight: bold;
         font-size: 20px;
@@ -124,6 +126,10 @@
       .kvk-resultaat ul li {
         flex-basis: 250px;
         font-size: 12px;
+      }
+      .leaflet-control-attribution > strong {
+        margin-left: 10px;
+        margin-right: 10px;
       }
     </style>
   </head>
@@ -200,7 +206,7 @@
           "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2plcnAtdmFuLXdvdWRlbiIsImEiOiJjajh5NmExaTAxa29iMzJwbDV0eXF4eXh4In0.HVBgF1SbusJzMwmjHcHS2w",
           {
             attribution:
-              '<strong>FUCK KSU OOST. NOOOORD </strong>Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+              '<span id="map-info"></span> <strong>NOOOORD</strong>Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
             id: "mapbox/streets-v11",
             tileSize: 512,
@@ -221,6 +227,9 @@
           })
           .then((faillissementenRes) => {
             faillissementen = faillissementenRes;
+
+            zetMapInfo(faillissementen);
+
             const markers = faillissementen.map((faillissement) => {
               // verder in het verleden opacity geven.
               let opacity = 1;
@@ -350,6 +359,24 @@
         // Take the difference between the dates and divide by milliseconds per day.
         // Round to nearest whole number to deal with DST.
         return Math.round((second - first) / (1000 * 60 * 60 * 24));
+      }
+
+      async function zetMapInfo(faillissementen) {
+        return new Promise((resolve) => {
+          let alleDatums = faillissementen
+            .map((f) => Number(f.datum.replace(/-/g, "999")))
+            .filter((datum) => datum > 20209990199901);
+          let hoogsteDatum = Math.max(...alleDatums)
+            .toString()
+            .replace(/[9]{3}/g, "-");
+          let laagsteDatum = Math.min(...alleDatums)
+            .toString()
+            .replace(/[9]{3}/g, "-");
+          document.getElementById(
+            "map-info"
+          ).innerHTML = `${faillissementen.length} faillissementsadressen uit de periode ${laagsteDatum} tot ${hoogsteDatum}`;
+          resolve();
+        });
       }
     </script>
   </body>
