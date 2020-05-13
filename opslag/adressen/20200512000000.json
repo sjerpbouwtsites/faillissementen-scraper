@@ -1,0 +1,164 @@
+[
+  {
+    "adres": "Meer en Duin 38 2163HC Lisse",
+    "straat": "Meer en Duin 38",
+    "postcode": "2163HC",
+    "plaatsnaam": "Lisse"
+  },
+  {
+    "adres": "De Cuserstraat 93 1081CN Amsterdam",
+    "straat": "De Cuserstraat 93",
+    "postcode": "1081CN",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Harderwijkstraat 309 2573ZJ 's-Gravenhage",
+    "straat": "Harderwijkstraat 309",
+    "postcode": "2573ZJ",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Wilhelmina Druckerstraat 13 2401KH Alphen aan den Rijn",
+    "straat": "Wilhelmina Druckerstraat 13",
+    "postcode": "2401KH",
+    "plaatsnaam": "Alphen aan den Rijn"
+  },
+  {
+    "adres": "Dorpsstraat 9 e 2912CA Nieuwerkerk aan den IJssel",
+    "straat": "Dorpsstraat 9 e",
+    "postcode": "2912CA",
+    "plaatsnaam": "Nieuwerkerk aan den IJssel"
+  },
+  {
+    "adres": "Koekoeksweg 6 8084GM 't Harde",
+    "straat": "Koekoeksweg 6",
+    "postcode": "8084GM",
+    "plaatsnaam": "'t Harde"
+  },
+  {
+    "adres": "Hamersestraat 27 6931EV Westervoort",
+    "straat": "Hamersestraat 27",
+    "postcode": "6931EV",
+    "plaatsnaam": "Westervoort"
+  },
+  {
+    "adres": "Lindenhof 7 8051DD Hattem",
+    "straat": "Lindenhof 7",
+    "postcode": "8051DD",
+    "plaatsnaam": "Hattem"
+  },
+  {
+    "adres": "De Ververt 1.243 6605AE Wijchen",
+    "straat": "De Ververt 1.243",
+    "postcode": "6605AE",
+    "plaatsnaam": "Wijchen"
+  },
+  {
+    "adres": "Doetinchemseweg 61 A 7007CB Doetinchem",
+    "straat": "Doetinchemseweg 61 A",
+    "postcode": "7007CB",
+    "plaatsnaam": "Doetinchem"
+  },
+  {
+    "adres": "Watertapweg 1 7011BP Gaanderen",
+    "straat": "Watertapweg 1",
+    "postcode": "7011BP",
+    "plaatsnaam": "Gaanderen"
+  },
+  {
+    "adres": "Talmastraat 1 7021AT Zelhem",
+    "straat": "Talmastraat 1",
+    "postcode": "7021AT",
+    "plaatsnaam": "Zelhem"
+  },
+  {
+    "adres": "Hummeloseweg 16 A 7021AE Zelhem",
+    "straat": "Hummeloseweg 16 A",
+    "postcode": "7021AE",
+    "plaatsnaam": "Zelhem"
+  },
+  {
+    "adres": "Zanderskamp 93 6983CG Doesburg",
+    "straat": "Zanderskamp 93",
+    "postcode": "6983CG",
+    "plaatsnaam": "Doesburg"
+  },
+  {
+    "adres": "van Gorkomhof 1 7009CZ Doetinchem",
+    "straat": "van Gorkomhof 1",
+    "postcode": "7009CZ",
+    "plaatsnaam": "Doetinchem"
+  },
+  {
+    "adres": "Kerkstraat 87 6996AG Drempt",
+    "straat": "Kerkstraat 87",
+    "postcode": "6996AG",
+    "plaatsnaam": "Drempt"
+  },
+  {
+    "adres": "Lavendelveld 21 7006SM Doetinchem",
+    "straat": "Lavendelveld 21",
+    "postcode": "7006SM",
+    "plaatsnaam": "Doetinchem"
+  },
+  {
+    "adres": "Weerstraat 6 4001LD Tiel",
+    "straat": "Weerstraat 6",
+    "postcode": "4001LD",
+    "plaatsnaam": "Tiel"
+  },
+  {
+    "adres": "Koninginneweg 11 1217KP Hilversum",
+    "straat": "Koninginneweg 11",
+    "postcode": "1217KP",
+    "plaatsnaam": "Hilversum"
+  },
+  {
+    "adres": "Splijtbakweg 60 1333HJ Almere",
+    "straat": "Splijtbakweg 60",
+    "postcode": "1333HJ",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Czarinastraat 6 1506RA Zaandam",
+    "straat": "Czarinastraat 6",
+    "postcode": "1506RA",
+    "plaatsnaam": "Zaandam"
+  },
+  {
+    "adres": "Dorpsweg 159 1676GK Twisk",
+    "straat": "Dorpsweg 159",
+    "postcode": "1676GK",
+    "plaatsnaam": "Twisk"
+  },
+  {
+    "adres": "Westeind 54 7811 ME Emmen",
+    "straat": "Westeind 54",
+    "postcode": "7811ME",
+    "plaatsnaam": "Emmen"
+  },
+  {
+    "adres": "Bomanshof 6 5611NJ Eindhoven",
+    "straat": "Bomanshof 6",
+    "postcode": "5611NJ",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Bentheimergraven 35 7577DA Oldenzaal",
+    "straat": "Bentheimergraven 35",
+    "postcode": "7577DA",
+    "plaatsnaam": "Oldenzaal"
+  },
+  {
+    "adres": "Parkweg 37 7513AR Enschede",
+    "straat": "Parkweg 37",
+    "postcode": "7513AR",
+    "plaatsnaam": "Enschede"
+  },
+  {
+    "adres": "Slabbecoornweg 36 a 4691RZ Tholen",
+    "straat": "Slabbecoornweg 36 a",
+    "postcode": "4691RZ",
+    "plaatsnaam": "Tholen"
+  }
+]

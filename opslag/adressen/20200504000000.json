@@ -1,0 +1,146 @@
+[
+  {
+    "adres": "Kabelweg 21 1014BA Amsterdam",
+    "straat": "Kabelweg 21",
+    "postcode": "1014BA",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Energieweg 10 2382NJ Zoeterwoude",
+    "straat": "Energieweg 10",
+    "postcode": "2382NJ",
+    "plaatsnaam": "Zoeterwoude"
+  },
+  {
+    "adres": "Den Ham 37 2771WV Boskoop",
+    "straat": "Den Ham 37",
+    "postcode": "2771WV",
+    "plaatsnaam": "Boskoop"
+  },
+  {
+    "adres": "Jac. P. Thijsseweg 13 2408ER Alphen aan den Rijn",
+    "straat": "Jac. P. Thijsseweg 13",
+    "postcode": "2408ER",
+    "plaatsnaam": "Alphen aan den Rijn"
+  },
+  {
+    "adres": "Dr Albert Schweitzerstraat 8 2861XX Bergambacht",
+    "straat": "Dr Albert Schweitzerstraat 8",
+    "postcode": "2861XX",
+    "plaatsnaam": "Bergambacht"
+  },
+  {
+    "adres": "Park de Elsberg 26 2272DA Voorburg",
+    "straat": "Park de Elsberg 26",
+    "postcode": "2272DA",
+    "plaatsnaam": "Voorburg"
+  },
+  {
+    "adres": "Pomonaplein 10 2564XP 's-Gravenhage",
+    "straat": "Pomonaplein 10",
+    "postcode": "2564XP",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Laan van Westroijen 10 4003AZ Tiel",
+    "straat": "Laan van Westroijen 10",
+    "postcode": "4003AZ",
+    "plaatsnaam": "Tiel"
+  },
+  {
+    "adres": "Stationsplein 4 3511ED Utrecht",
+    "straat": "Stationsplein 4",
+    "postcode": "3511ED",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Piusplein 64 5038WP Tilburg",
+    "straat": "Piusplein 64",
+    "postcode": "5038WP",
+    "plaatsnaam": "Tilburg"
+  },
+  {
+    "adres": "Oosterdokskade 145 1011DL Amsterdam",
+    "straat": "Oosterdokskade 145",
+    "postcode": "1011DL",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Schutterstraat 17 1315VH Almere",
+    "straat": "Schutterstraat 17",
+    "postcode": "1315VH",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Buitenhof 51 2513AH 's-Gravenhage",
+    "straat": "Buitenhof 51",
+    "postcode": "2513AH",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Amstelstraat 2 1017DA Amsterdam",
+    "straat": "Amstelstraat 2",
+    "postcode": "1017DA",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Binnenrotte 142 - 148 3011HC ROTTERDAM",
+    "straat": "Binnenrotte 142 - 148",
+    "postcode": "3011HC",
+    "plaatsnaam": "ROTTERDAM"
+  },
+  {
+    "adres": "Poelestraat 18 9712KA Groningen",
+    "straat": "Poelestraat 18",
+    "postcode": "9712KA",
+    "plaatsnaam": "Groningen"
+  },
+  {
+    "adres": "Sturriskolkweg 6 A 7051 HM Varsseveld",
+    "straat": "Sturriskolkweg 6 A",
+    "postcode": "7051HM",
+    "plaatsnaam": "Varsseveld"
+  },
+  {
+    "adres": "Lange Dreef 15 d 4131NJ Vianen",
+    "straat": "Lange Dreef 15 d",
+    "postcode": "4131NJ",
+    "plaatsnaam": "Vianen"
+  },
+  {
+    "adres": "Tuorrebout 59 9251TB Burgum",
+    "straat": "Tuorrebout 59",
+    "postcode": "9251TB",
+    "plaatsnaam": "Burgum"
+  },
+  {
+    "adres": "Bisschop Bekkerslaan 10 5628RA Eindhoven",
+    "straat": "Bisschop Bekkerslaan 10",
+    "postcode": "5628RA",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Robbenstraat 1 5622AJ Eindhoven",
+    "straat": "Robbenstraat 1",
+    "postcode": "5622AJ",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Pretorialaan 70 B 3072ER Rotterdam",
+    "straat": "Pretorialaan 70 B",
+    "postcode": "3072ER",
+    "plaatsnaam": "Rotterdam"
+  },
+  {
+    "adres": "Bergselaan 320 C 3038CM Rotterdam",
+    "straat": "Bergselaan 320 C",
+    "postcode": "3038CM",
+    "plaatsnaam": "Rotterdam"
+  },
+  {
+    "adres": "Aanwas 2 4704SC Roosendaal",
+    "straat": "Aanwas 2",
+    "postcode": "4704SC",
+    "plaatsnaam": "Roosendaal"
+  }
+]
