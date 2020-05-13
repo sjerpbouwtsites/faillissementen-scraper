@@ -2,6 +2,12 @@ const opties = require("./config.js");
 const axios = require("axios").default;
 const fs = require("fs");
 
+/**
+ * Plant requests naar de rechtspraak server in.
+ * Slaat evt. dit op in opslag/responses/kvk @TODO kvk / rechtspraak door elkaar gehaald.
+ * Als laatste in planning de resolve()
+ *
+ */
 async function scrapeDagen(dagenTeDoen) {
   const reedsGescraped = dagenTeDoen.filter((d) => d.gescraped);
   const nietGescrapedVolgensDb = dagenTeDoen.filter((d) => !d.gescraped);
@@ -12,28 +18,26 @@ async function scrapeDagen(dagenTeDoen) {
       });
 
   const exitTijd = teScrapen.length * 800 + 800;
-  console.log(
-    "EXIT OVER ",
-    exitTijd / 60000,
-    "minuten; scrape ",
-    teScrapen.length,
-    " dagen"
-  );
+  console.log(`EXIT OVER ${exitTijd / 60000} minuten`);
 
   return new Promise((resolve) => {
     const gescraped = [];
     const hadMeldingen = [];
     teScrapen.forEach((dag, index) => {
+      // wanneer de timeout vuurt
       const planningVanafNu = index * 800;
-      const url = `https://insolventies.rechtspraak.nl/Services/BekendmakingenService/haalOp/${dag.route}`;
 
       setTimeout(function () {
         axios
-          .get(url)
+          .get(
+            `https://insolventies.rechtspraak.nl/Services/BekendmakingenService/haalOp/${dag.route}`
+          )
           .then(function (response) {
             const iplus = index + 1;
             if (iplus % 10 === 0) {
-              console.log(iplus, " dagen gescraped");
+              console.log(
+                `${iplus} dagen gescraped, ${teScrapen.length - iplus} te gaan`
+              );
             }
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {

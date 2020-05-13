@@ -16,6 +16,7 @@
       crossorigin=""
     ></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -136,9 +137,53 @@
         margin-bottom: 0;
         line-height: 1.2;
       }
+      .marquee {
+        position: absolute;
+        background-color: black;
+        color: rgb(122, 21, 21);
+        font-weight: bold;
+        width: 200vw;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        transition: 0.2s ease-in;
+        transform: translateX(-100vw);
+      }
+      [disabled] {
+        opacity: 0.5;
+        filter: saturate(0.5);
+      }
+      [disabled]:hover {
+        cursor: wait;
+      }
+      /* .marquee.beweeg {
+        transform: translateX(-100vw);
+        display: flex;
+        justify-content: space-around;
+      }
+      .marquee-binnen-buiten {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+      }
+
+      .marquee-binnen {
+        letter-spacing: -1px;
+        display: block;
+        margin: 0 auto;
+      } */
+      .verborgen {
+        display: none;
+      }
     </style>
   </head>
   <body>
+    <!-- <div id="marquee" class="marquee verborgen">
+      <div class="marquee-binnen-buiten">
+        <span class="marquee-binnen" id="marquee-binnen"></span>
+      </div>
+    </div> -->
     <div id="mapid"></div>
     <div class="kvk-paneel" id="kvk-paneel">
       <div class="kvk-paneel-binnen">
@@ -203,6 +248,23 @@
           }
         });
         sessionStorage.setItem("snaptHet", JSON.stringify(eerdereAntwoorden));
+      }
+
+      if (!sessionStorage.getItem("marx-citaten")) {
+        fetch("opslag/marx.json")
+          .then((r) => r.json())
+          .then((marx) => {
+            sessionStorage.setItem("marx-citaten", JSON.stringify(marx));
+          });
+      }
+
+      function pakMarxCitaat() {
+        const m = JSON.parse(sessionStorage.getItem("marx-citaten"));
+        if (!m) {
+          return "";
+        }
+        const rIndex = Math.floor(Math.random() * m.length);
+        return m[rIndex];
       }
 
       function initMap() {
@@ -285,6 +347,7 @@
           .getElementsByTagName("body")[0]
           .addEventListener("click", function (e) {
             if (e.target.classList.contains("open-kvk")) {
+              e.target.setAttribute("disabled", true);
               const kvkNummers = faillissementen.find(
                 (f) => f.osm_id === e.target.getAttribute("data-osm-id")
               ).kvk;
@@ -311,11 +374,25 @@
           if (!geheelNieuw) {
             document.getElementById("kvk-resultaat").classList.add("ladend");
           }
+
+          document
+            .getElementById("sluit-kvk-paneel")
+            .setAttribute("title", pakMarxCitaat());
+
           axios
             .get(
               `https://zoeken.kvk.nl/search.ashx?handelsnaam=&kvknummer=${kvkNummer}&straat=&postcode=&huisnummer=&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken&_=1589332056667`
             )
             .then((kvkResponse) => {
+              setTimeout(() => {
+                //disabled van knop afhalen
+
+                const dis = document.querySelector(".open-kvk[disabled]");
+                if (dis) {
+                  dis.removeAttribute("disabled");
+                }
+              }, 500);
+
               document.getElementById("kvk-resultaat").innerHTML =
                 kvkResponse.data;
               if (geheelNieuw) {
@@ -355,6 +432,21 @@
           .getElementById("sluit-kvk-paneel")
           .addEventListener("click", function () {
             document.getElementById("sluit-kvk-paneel").classList.add("groot");
+
+            // print marx citaat naar sluitknop
+            if (Math.random() < 1) {
+              // document.getElementById("marquee").classList.add("beweeg");
+              // document.getElementById("marquee").classList.remove("verborgen");
+              // console.log(document.getElementById("marquee-binnen"));
+              // document.getElementById(
+              //   "marquee-binnen"
+              // ).innerHTML = pakMarxCitaat();
+              // setTimeout(function () {
+              //   document.getElementById("marquee").classList.remove("beweeg");
+              //   document.getElementById("marquee").classList.add("verborgen");
+              // }, 3500);
+            }
+
             setTimeout(function () {
               document.getElementById("kvk-paneel").classList.remove("open");
             }, 300);
