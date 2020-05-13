@@ -2,8 +2,8 @@ module.exports = {
   negeerReedsGedaanBool: false,
   schrijfAlleRequestsWeg: true,
   overschrijfAlleRequest: false,
-  startDatum: "2019-01-01",
-  eindDatum: "2020-05-31",
+  startDatum: "2020-01-01",
+  eindDatum: "2022-05-31",
   volleDebug: false,
   toegestaneClusters: [
     "einde faillissementen",

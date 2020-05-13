@@ -24,7 +24,9 @@ async function consolideerResponsesEnAdressen() {
     ];
     const publicatieData = dagenTeConsolideren
       .map((dag) => {
-        return JSON.parse(fs.readFileSync("responses/" + dag.route + ".json"));
+        return JSON.parse(
+          fs.readFileSync("opslag/responses/" + dag.route + ".json")
+        );
       })
       .flat()
       .map((bestand) => {
@@ -58,7 +60,7 @@ async function consolideerResponsesEnAdressen() {
         return p.Publicaties.join("\n");
       });
 
-    const adressen = JSON.parse(fs.readFileSync("adressen.json"));
+    const adressen = JSON.parse(fs.readFileSync("opslag/adressen.json"));
 
     console.log(
       "vergelijk ",
@@ -87,6 +89,7 @@ async function consolideerResponsesEnAdressen() {
         const dag = datumRegexCap[1].toString().padStart(2, "0");
         datum = `${datumRegexCap[3]}-${maand}-${dag}`;
       }
+      // const kvkRegexCap = pubBla.match(KvK\s?(\d{8}))
 
       return Object.assign(kaalAdres, {
         publicaties: pubBla,
@@ -97,7 +100,7 @@ async function consolideerResponsesEnAdressen() {
     dagenDb.schrijfGeconsolideerd(dagenTeConsolideren);
 
     fs.writeFileSync(
-      "geconsolideerde-adressen.json",
+      "opslag/geconsolideerde-adressen.json",
       JSON.stringify(verrijkteAdressen, null, "  ")
     );
     resolve();

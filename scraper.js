@@ -2,31 +2,7 @@ const opties = require("./config.js");
 const axios = require("axios").default;
 const fs = require("fs");
 
-// function sorteerInTeScrapenEnGedaan(dagenTeDoen) {
-//   return new Promise((resolve) => {
-//     let reedsGescraped = [];
-//     let teScrapen = [];
-//     if (!opties.overschrijfAlleRequest) {
-//       dagenTeDoen.forEach((dag, index) => {
-//         if (fs.existsSync("responses/" + dag.route + ".json")) {
-//           reedsGescraped.push(dag);
-//         } else {
-//           teScrapen.push(dag);
-//         }
-//       });
-//     }
-//     resolve({
-//       reedsGescraped,
-//       teScrapen,
-//     });
-//   });
-// }
-
 async function scrapeDagen(dagenTeDoen) {
-  // const { reedsGescraped, teScrapen } = await sorteerInTeScrapenEnGedaan(
-  //   dagenTeDoen
-  // );
-
   const reedsGescraped = dagenTeDoen.filter((d) => d.gescraped);
   const teScrapen = dagenTeDoen.filter((d) => !d.gescraped);
   const exitTijd = teScrapen.length * 800 + 800;
@@ -51,7 +27,7 @@ async function scrapeDagen(dagenTeDoen) {
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {
                 fs.writeFileSync(
-                  "responses/" + dag.route + ".json",
+                  "opslag/responses/" + dag.route + ".json",
                   JSON.stringify(response.data)
                 );
                 hadMeldingen.push(dag);

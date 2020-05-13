@@ -24,7 +24,7 @@ async function consolideerAdressen() {
     // vinden welke adressen nog niet geconsolideerd zijn
     const teConsolideren = dagenAdresTePakken
       .map((dag) => {
-        const b = "adressen/" + dag.route + ".json";
+        const b = "opslag/adressen/" + dag.route + ".json";
         if (!fs.existsSync(b)) {
           reject(b + " bestaat niet");
         }
@@ -134,7 +134,7 @@ async function zoekAdressen() {
           ///////////////!!!!!!!!!/////
           dagTeVerrijken.adresGepakt = true;
           fs.writeFileSync(
-            "adressen/" + dagTeVerrijken.route + ".json",
+            "opslag/adressen/" + dagTeVerrijken.route + ".json",
             JSON.stringify(uniekeAdressen, null, "  ")
           );
         }, draaiTijd);
@@ -237,7 +237,7 @@ function relevantePublicatieClusters(route) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const bnaam = "responses/" + route + ".json";
+      const bnaam = "opslag/responses/" + route + ".json";
       if (!fs.existsSync(bnaam)) {
         reject(bnaam + " bestaat niet");
       }

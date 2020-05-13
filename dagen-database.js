@@ -36,7 +36,10 @@ function maakDagenDb() {
         route: ISONaarRechtspraak(d),
       };
     });
-    fs.writeFileSync("dagenDb.json", JSON.stringify(dagenVoorDb, null, "  "));
+    fs.writeFileSync(
+      "opslag/dagenDb.json",
+      JSON.stringify(dagenVoorDb, null, "  ")
+    );
     console.log("dagen database gemaakt");
     resolve(dagenVoorDb);
   });
@@ -45,11 +48,11 @@ function maakDagenDb() {
 function pakDagenData() {
   return new Promise(async (resolve) => {
     let dagenDb;
-    let nieuweDb = !fs.existsSync("dagenDb.json");
+    let nieuweDb = !fs.existsSync("opslag/dagenDb.json");
     if (nieuweDb) {
       dagenDb = await maakDagenDb();
     } else {
-      dagenDb = JSON.parse(fs.readFileSync("dagenDb.json"));
+      dagenDb = JSON.parse(fs.readFileSync("opslag/dagenDb.json"));
 
       //@TODO
       // // mss moet de database aangevuld worden.
@@ -141,7 +144,10 @@ async function zetGescraped({ gescraped, hadMeldingen }) {
       };
     });
 
-    fs.writeFileSync("dagenDb.json", JSON.stringify(nweDagenData, null, "  "));
+    fs.writeFileSync(
+      "opslag/dagenDb.json",
+      JSON.stringify(nweDagenData, null, "  ")
+    );
     resolve();
   });
 }
@@ -162,7 +168,10 @@ async function schrijfAdressenGepakt(dagenAdresTePakken) {
     };
   });
 
-  fs.writeFileSync("dagenDb.json", JSON.stringify(nweDagenData, null, "  "));
+  fs.writeFileSync(
+    "opslag/dagenDb.json",
+    JSON.stringify(nweDagenData, null, "  ")
+  );
 }
 
 async function schrijfGeconsolideerd(geconsolideerdDagen) {
@@ -178,7 +187,10 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
     });
   });
 
-  fs.writeFileSync("dagenDb.json", JSON.stringify(nweDagenData, null, "  "));
+  fs.writeFileSync(
+    "opslag/dagenDb.json",
+    JSON.stringify(nweDagenData, null, "  ")
+  );
 }
 
 function schrijfTemp(bla, achtervoeging = "") {
