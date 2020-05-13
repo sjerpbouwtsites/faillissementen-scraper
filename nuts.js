@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { scriptPad, opslagPad } = require("./config.js");
+const { scriptPad, tempPad, opslagPad } = require("./config.js");
 
 function forceerSubpadMetSlash(sp) {
   const eersteTekenIsSlash = sp[0] === "/";
@@ -54,7 +54,38 @@ function schrijfOpslag(pad, data) {
   fs.writeFile(wpad, JSON.stringify(data, null, "  "), () => {});
 }
 
+function schrijfTemp(bla, achtervoeging = "") {
+  if (!fs.existsSync(tempPad)) {
+    fs.mkdirSync(tempPad);
+  }
+
+  fs.writeFileSync(
+    `tempPad${achtervoeging}.json`,
+    JSON.stringify(bla, null, "  ")
+  );
+}
+
+function DateNaarDatumGetal(dateObjectOfISOString) {
+  if (typeof dateObjectOfISOString === "string") {
+    return dateObjectOfISOString.split("T")[0].split("-").join("");
+  } else if (dateObjectOfISOString.hasOwnProperty("getDate")) {
+    return dateObjectOfISOString
+      .toISOString()
+      .split("T")[0]
+      .split("-")
+      .join("");
+  } else {
+    throw new Error([
+      "datum is niet wat verwacht wordt",
+      dateObjectOfISOString,
+      typeof dateObjectOfISOString,
+    ]);
+  }
+}
+
 module.exports = {
+  DateNaarDatumGetal,
+  schrijfTemp,
   legeCatch,
   maakScriptPad,
   maakOpslagPad,

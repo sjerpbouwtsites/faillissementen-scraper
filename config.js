@@ -21,7 +21,6 @@ const maanden = [
 ];
 module.exports = {
   opties: {
-    negeerReedsGedaanBool: false,
     schrijfAlleRequestsWeg: true,
     overschrijfAlleRequest: false,
     consolideerTelkensOpnieuw: true,

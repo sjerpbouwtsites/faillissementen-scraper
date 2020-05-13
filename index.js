@@ -2,6 +2,11 @@
 // pakt niet alle dagen.
 // @TODO ook noteren welke requests nooit iets teruggegeven om uit scrape te halen
 
+/**
+ * Ik gebruik JSON bestanden als databases. Data leeft in principe binnen functies in memory
+ * maar daarbuiten in JSON. De volgende functie kan evengoed weer dezelfde database aanroepen.
+ */
+
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
 

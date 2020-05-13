@@ -40,3 +40,7 @@ voor windows volg je `git clone https://github.com/sjerpbouwtsites/faillissement
 6. Ondertussen mag je je gaan ergeren aan mijn opzet om met een devserver te werken. Dat wilt zeggen dat ik m'n computer een server laat emuleren waarin ik de appvoorkant draai. Het makkelijkst is misscien VS code te installeren en hierbij in de map met de code een addon te gebruiker die 'm in een life server zet. Dat, of je kan https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment hier leren hoe je een server bouwt.
 
 ... ok wie vast loopt kan zich melden!
+
+## ISSUES
+
+- indien de start en einddata veranderen nadat dagenDb is aangemaakt, wordt dagenDb niet bijgewerkt met bv. een nieuwe reeks.

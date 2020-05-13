@@ -1,23 +1,30 @@
 const fs = require("fs");
-const { opties, nutsPad, tempPad } = require("../config.js");
-const { schrijfOpslag, maakOpslagPad } = require(nutsPad);
+const { opties, nutsPad } = require("../config.js");
+const { schrijfOpslag, maakOpslagPad, DateNaarDatumGetal } = require(nutsPad);
+
+/**
+ * CRUD voor de dagenDb.json.
+ * initialisatie indien bestand niet bestaat op basis van datums in config.
+ * Er wordt véél geschreven naar de json in plaats van data in memory te houden,
+ * mede vanwege rommelige / asyncrone aard van app.
+ * Zo weet je dat als je dagenDatabase.pakDagenDate() opvraagt het waarschijnlijk
+ * de meest actuele data van een andere functie is.
+ */
 
 function maakDagenDb() {
   return new Promise((resolve) => {
-    console.log("maak dagen database");
-    var daylist = getDaysArray(
+    var dagenLijst = pakDagenVerzameling(
       new Date(opties.startDatum),
       new Date(opties.eindDatum)
     );
-    const dagenVoorDb = daylist.map((d) => {
-      return {
-        gescraped: false,
-        geconsolideerd: false,
-        adresGepakt: false,
-        hadMelding: false,
+    const dagenVoorDb = dagenLijst.map((d) => {
+      return (ret = {
         datum: d,
-        route: ISONaarRechtspraak(d),
-      };
+        route: ISONaarRechtspraak(d), // API endpoint rechtbank
+        gescraped: false, // van rechtbank;
+        geconsolideerd: false, // adres en publicaties samengevoegd
+        adresGepakt: false, // van locationIQ server latlng geplukt;
+      });
     });
     schrijfOpslag("dagenDb", dagenVoorDb);
     console.log("dagen database gemaakt");
@@ -27,56 +34,34 @@ function maakDagenDb() {
 
 function pakDagenData() {
   return new Promise(async (resolve) => {
+    // db wordt uit JSON gehaald of hier gemaakt
     let dagenDb;
-    let nieuweDb = !fs.existsSync(maakOpslagPad("dagenDb"));
-    if (nieuweDb) {
+    let makenGebruikVanNieuweDb = !fs.existsSync(maakOpslagPad("dagenDb"));
+    if (makenGebruikVanNieuweDb) {
       dagenDb = await maakDagenDb();
     } else {
       dagenDb = JSON.parse(fs.readFileSync(maakOpslagPad("dagenDb")));
-
-      //@TODO
-      // // mss moet de database aangevuld worden.
-      // if (dagenDb[0].datum !== opties.startDatum || dagenDb[dagenDb.length - 1].datum !== opties.eindDatum) {
-      //   // maak opnieuw nieuwe
-      //   dagenDb = await maakDagenDb();
-      //   nieuweDb = true;
-
-      // }
     }
 
-    // een nieuwe db heeft datumobjecten,
-    // een reeds geschreven db heeft datumobjecten als string
-    const vandaag = nieuweDb
-      ? new Date()
-      : Number(new Date().toISOString().split("T")[0].split("-").join(""));
+    const vandaag = DateNaarDatumGetal(new Date());
 
+    // 'te doen' zijn nog niet gescraped van de rechtbank en zijn vandaag of eerder.
     let dagenTeDoen = dagenDb.filter((dbDag) => {
-      const vglMetVandaag = nieuweDb
-        ? dbDag.datum
-        : Number(dbDag.datum.split("T")[0].split("-").join(""));
+      const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
+      return !dbDag.gescraped && vglMetVandaag <= vandaag;
+    });
 
-      if (opties.negeerReedsGedaanBool) {
-        return vglMetVandaag <= vandaag;
-      } else {
-        return !dbDag.gescraped && vglMetVandaag <= vandaag;
-      }
-    });
-    let dagenTeConsolideren = dagenDb.filter((dbDag) => {
-      return (
-        dbDag.gescraped &&
-        (!dbDag.geconsolideerd || opties.consolideerTelkensOpnieuw) &&
-        dbDag.hadMelding &&
-        dbDag.adresGepakt
-      );
-    });
+    // Adres wordt vanaf locationIQ server gehaald na scrapen rechtbank
     let dagenAdresTePakken = dagenDb.filter((dbDag) => {
-      return (
-        dbDag.gescraped &&
-        !dbDag.geconsolideerd &&
-        dbDag.hadMelding &&
-        !dbDag.adresGepakt
-      );
+      return dbDag.gescraped && !dbDag.adresGepakt;
     });
+
+    // samenvoegen van adressen en rechtbank responses
+    // consolideerTelkensOpnieuw is eigenlijk een debugOptie
+    let dagenTeConsolideren = dagenAdresTePakken.filter((dbDag) => {
+      return !dbDag.geconsolideerd || opties.consolideerTelkensOpnieuw;
+    });
+
     resolve({
       dagen: dagenDb,
       dagenTeDoen,
@@ -86,22 +71,17 @@ function pakDagenData() {
   });
 }
 
-async function zetGescraped({ gescraped, hadMeldingen }) {
+// apart gehouden want is snel verwarrend
+async function zetGescraped({ gescraped }) {
   return new Promise(async (resolve) => {
     const dagenData = await pakDagenData();
 
     const nweDagenData = dagenData.dagen.map((dbDag) => {
       const isGescraped = gescraped.some((g) => g.route === dbDag.route);
-      const hadMelding = hadMeldingen.some((h) => h.route === dbDag.route);
 
-      return {
-        route: dbDag.route,
+      return Object.assign(dbDag, {
         gescraped: dbDag.gescraped || isGescraped,
-        geconsolideerd: dbDag.geconsolideerd,
-        adresGepakt: dbDag.adresGepakt,
-        hadMelding: dbDag.hadMelding || hadMelding,
-        datum: dbDag.datum,
-      };
+      });
     });
 
     schrijfOpslag("dagenDb", nweDagenData);
@@ -115,15 +95,9 @@ async function schrijfAdressenGepakt(dagenAdresTePakken) {
 
   const nweDagenData = dagenData.dagen.map((dbDag) => {
     const adresGepakt = dagenAdresTePakken.some((h) => h.route === dbDag.route);
-
-    return {
-      route: dbDag.route,
-      gescraped: dbDag.gescraped,
-      geconsolideerd: dbDag.geconsolideerd,
+    return Object.assign(dbDag, {
       adresGepakt: dbDag.adresGepakt || adresGepakt,
-      hadMelding: dbDag.hadMelding,
-      datum: dbDag.datum,
-    };
+    });
   });
 
   schrijfOpslag("dagenDb", nweDagenData);
@@ -136,7 +110,6 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
     const isNieuwGeconsolideerd = geconsolideerdDagen.some(
       (h) => h.route === dbDag.route
     );
-
     return Object.assign(dbDag, {
       geconsolideerd: dbDag.geconsolideerd || isNieuwGeconsolideerd,
     });
@@ -145,20 +118,21 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
   schrijfOpslag("dagenDb", nweDagenData);
 }
 
-function schrijfTemp(bla, achtervoeging = "") {
-  if (!fs.existsSync(tempPad)) {
-    fs.mkdirSync(tempPad);
-  }
+///// ///// ///// ///// ///// /////
 
-  fs.writeFileSync(
-    `tempPad${achtervoeging}.json`,
-    JSON.stringify(bla, null, "  ")
-  );
-}
+module.exports = {
+  schrijfTemp,
+  pakDagenData,
+  zetGescraped,
+  schrijfAdressenGepakt,
+  schrijfGeconsolideerd,
+};
 
-/////
+///// ///// ///// ///// ///// /////
 
-function getDaysArray(start, end) {
+// HULPJES VAN MAAKDAGENDB()
+
+function pakDagenVerzameling(start, end) {
   for (
     var arr = [], dt = new Date(start);
     dt <= end;
@@ -175,11 +149,3 @@ function ISONaarRechtspraak(d) {
   dd = dd.split("-");
   return dd.join("").padEnd(14, "0");
 }
-
-module.exports = {
-  schrijfTemp,
-  pakDagenData,
-  zetGescraped,
-  schrijfAdressenGepakt,
-  schrijfGeconsolideerd,
-};

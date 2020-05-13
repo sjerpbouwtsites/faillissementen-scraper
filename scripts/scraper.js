@@ -23,7 +23,6 @@ async function scrapeDagen(dagenTeDoen) {
 
   return new Promise((resolve) => {
     const gescraped = [];
-    const hadMeldingen = [];
     teScrapen.forEach((dag, index) => {
       // wanneer de timeout vuurt
       const planningVanafNu = index * 800;
@@ -46,7 +45,6 @@ async function scrapeDagen(dagenTeDoen) {
                   `responses/rechtbank/${dag.route}`,
                   response.data
                 );
-                hadMeldingen.push(dag);
               }
               gescraped.push(dag);
             }
@@ -58,7 +56,6 @@ async function scrapeDagen(dagenTeDoen) {
       resolve({
         gescraped,
         reedsGescraped,
-        hadMeldingen,
       });
     }, exitTijd);
   });
