@@ -1,27 +1,9 @@
 const path = require("path");
 
-const opslagPadHard = path.resolve("opslag/");
-const scriptPadHard = path.resolve("scripts/");
-
-function forceerSubpadMetSlash(sp) {
-  const eersteTekenIsSlash = sp[0] === "/";
-  return eersteTekenIsSlash ? sp : "/" + sp;
-}
-
-function forceerPostfix(sp, postFix) {
-  return sp.includes(postFix) ? sp : `${sp}${postFix}`;
-}
-
-function scriptPad(subPad, postFix = ".js") {
-  let gp = forceerSubpadMetSlash(subPad);
-  gp = forceerPostfix(gp, postFix);
-  return `${scriptPadHard}${gp}`;
-}
-function opslagPad(subPad, postFix = ".json") {
-  let gp = forceerSubpadMetSlash(subPad);
-  gp = forceerPostfix(gp, postFix);
-  return `${opslagPadHard}${gp}`;
-}
+const opslagPad = path.resolve("opslag/");
+const scriptPad = path.resolve("scripts/");
+const nutsPad = path.resolve("nuts/");
+const tempPad = path.resolve("temp/");
 
 module.exports = {
   opties: {
@@ -56,4 +38,6 @@ module.exports = {
   },
   scriptPad,
   opslagPad,
+  nutsPad,
+  tempPad,
 };

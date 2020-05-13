@@ -1,23 +1,6 @@
 const fs = require("fs");
-const { opties, opslagPad } = require("../config.js");
-
-function getDaysArray(start, end) {
-  for (
-    var arr = [], dt = new Date(start);
-    dt <= end;
-    dt.setDate(dt.getDate() + 1)
-  ) {
-    arr.push(new Date(dt));
-  }
-  return arr;
-}
-
-function ISONaarRechtspraak(d) {
-  let ds = typeof d === "string" ? d : d.toISOString();
-  let dd = ds.split("T")[0];
-  dd = dd.split("-");
-  return dd.join("").padEnd(14, "0");
-}
+const { opties, nutsPad, tempPad } = require("../config.js");
+const { schrijfOpslag, maakOpslagPad } = require(nutsPad);
 
 function maakDagenDb() {
   return new Promise((resolve) => {
@@ -36,10 +19,7 @@ function maakDagenDb() {
         route: ISONaarRechtspraak(d),
       };
     });
-    fs.writeFileSync(
-      opslagPad("dagenDb"),
-      JSON.stringify(dagenVoorDb, null, "  ")
-    );
+    schrijfOpslag("dagenDb", dagenVoorDb);
     console.log("dagen database gemaakt");
     resolve(dagenVoorDb);
   });
@@ -48,11 +28,11 @@ function maakDagenDb() {
 function pakDagenData() {
   return new Promise(async (resolve) => {
     let dagenDb;
-    let nieuweDb = !fs.existsSync(opslagPad("dagenDb"));
+    let nieuweDb = !fs.existsSync(maakOpslagPad("dagenDb"));
     if (nieuweDb) {
       dagenDb = await maakDagenDb();
     } else {
-      dagenDb = JSON.parse(fs.readFileSync(opslagPad("dagenDb")));
+      dagenDb = JSON.parse(fs.readFileSync(maakOpslagPad("dagenDb")));
 
       //@TODO
       // // mss moet de database aangevuld worden.
@@ -106,26 +86,6 @@ function pakDagenData() {
   });
 }
 
-function printDagenFijn(dagenAr) {
-  if (!dagenAr.hasOwnProperty("length") || typeof dagenAr !== "object") {
-    console.log("kan niet printen...", dagenAr);
-    return;
-  }
-  console.log("lengte ", dagenAr.length);
-  dagenAr.forEach((d) => {
-    console.log(
-      "d: ",
-      d.datum.split("T")[0],
-      "gescraped:",
-      d.gescraped,
-      "geconsolideerd:",
-      d.geconsolideerd,
-      "hadMeldingen:",
-      d.hadMelding
-    );
-  });
-}
-
 async function zetGescraped({ gescraped, hadMeldingen }) {
   return new Promise(async (resolve) => {
     const dagenData = await pakDagenData();
@@ -144,14 +104,12 @@ async function zetGescraped({ gescraped, hadMeldingen }) {
       };
     });
 
-    fs.writeFileSync(
-      opslagPad("dagenDb"),
-      JSON.stringify(nweDagenData, null, "  ")
-    );
+    schrijfOpslag("dagenDb", nweDagenData);
     resolve();
   });
 }
 
+// waarom is de ene met een promise en de andere niet
 async function schrijfAdressenGepakt(dagenAdresTePakken) {
   const dagenData = await pakDagenData();
 
@@ -168,10 +126,7 @@ async function schrijfAdressenGepakt(dagenAdresTePakken) {
     };
   });
 
-  fs.writeFileSync(
-    opslagPad("dagenDb"),
-    JSON.stringify(nweDagenData, null, "  ")
-  );
+  schrijfOpslag("dagenDb", nweDagenData);
 }
 
 async function schrijfGeconsolideerd(geconsolideerdDagen) {
@@ -187,22 +142,43 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
     });
   });
 
-  fs.writeFileSync(
-    opslagPad("dagenDb"),
-    JSON.stringify(nweDagenData, null, "  ")
-  );
+  schrijfOpslag("dagenDb", nweDagenData);
 }
 
 function schrijfTemp(bla, achtervoeging = "") {
+  if (!fs.existsSync(tempPad)) {
+    fs.mkdirSync(tempPad);
+  }
+
   fs.writeFileSync(
-    `temp${achtervoeging}.json`,
+    `tempPad${achtervoeging}.json`,
     JSON.stringify(bla, null, "  ")
   );
 }
+
+/////
+
+function getDaysArray(start, end) {
+  for (
+    var arr = [], dt = new Date(start);
+    dt <= end;
+    dt.setDate(dt.getDate() + 1)
+  ) {
+    arr.push(new Date(dt));
+  }
+  return arr;
+}
+
+function ISONaarRechtspraak(d) {
+  let ds = typeof d === "string" ? d : d.toISOString();
+  let dd = ds.split("T")[0];
+  dd = dd.split("-");
+  return dd.join("").padEnd(14, "0");
+}
+
 module.exports = {
   schrijfTemp,
   pakDagenData,
-  printDagenFijn,
   zetGescraped,
   schrijfAdressenGepakt,
   schrijfGeconsolideerd,

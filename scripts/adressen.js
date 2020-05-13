@@ -1,7 +1,8 @@
 const fs = require("fs");
 const axios = require("axios");
-const { scriptPad, opslagPad, opties } = require("../config.js");
-const dagenDb = require(scriptPad("dagen-database"));
+const { opslagPad, opties, nutsPad } = require("../config.js");
+const { pakScript, pakOpslag, schrijfOpslag } = require(nutsPad);
+const dagenDb = pakScript("dagen-database");
 
 async function consolideerAdressen() {
   // losse json naar één json bestand
@@ -15,20 +16,19 @@ async function consolideerAdressen() {
       return;
     }
 
-    const adressenDb = fs.existsSync(opslagPad("adressen"))
-      ? JSON.parse(fs.readFileSync(opslagPad("adressen")))
-      : [];
+    let adressenDb = [];
+    try {
+      adressenDb = await pakOpslag("adressen");
+    } catch (error) {
+      // niets aan de hand, installatiecyclus
+    }
 
     const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
 
     // vinden welke adressen nog niet geconsolideerd zijn
     let teConsolideren = dagenAdresTePakken
-      .map((dag) => {
-        const b = opslagPad("adressen/" + dag.route);
-        if (!fs.existsSync(b)) {
-          reject(b + " bestaat niet");
-        }
-        return JSON.parse(fs.readFileSync(b));
+      .map(async (dag) => {
+        return await pakOpslag(`adressen/${dag}`);
       })
       .flat()
       .filter((a) => {
@@ -45,9 +45,7 @@ async function consolideerAdressen() {
     // voor alle te consolideren request doen of..
     if (!opties.overschrijfAlleRequest) {
       teConsolideren = teConsolideren.filter((adres) => {
-        const bestandsNaam = opslagPad(
-          `responses/geo/${(adres.straat + adres.postcode).replace(/\W/g, "")}`
-        );
+        const bestandsNaam = geopadUitAdres(adres);
         if (fs.existsSync(bestandsNaam)) {
           geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
           return false;
@@ -68,10 +66,7 @@ async function consolideerAdressen() {
               "&format=json"
           )
           .then((r) => {
-            const bestandsNaam = opslagPad(
-              `responses/geo/${(c.straat + c.postcode).replace(/\W/g, "")}`
-            );
-            fs.writeFile(bestandsNaam, JSON.stringify(r.data[0]), () => {});
+            schrijfOpslag(geopadUitAdres(c), r.data[0]);
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
@@ -105,17 +100,12 @@ async function consolideerAdressen() {
     console.log("Adressen klaar over", exitTijd / 60000, " minuten");
     setTimeout(function () {
       console.log("schrijf nieuw geonsolideerd");
-      fs.writeFileSync(
-        opslagPad(`adressen`),
-        JSON.stringify(nieuwGeconsolideerd, null, "  ")
-      );
-      fs.writeFileSync(
-        opslagPad(`ratelimit-adressen`),
-        JSON.stringify(geskiptWegensRateLimit, null, "  ")
-      );
+      schrijfOpslag(opslagPad(`adressen`), nieuwGeconsolideerd);
+      schrijfOpslag(opslagPad(`ratelimit-adressen`), geskiptWegensRateLimit);
       dagenDb.schrijfAdressenGepakt(dagenAdresTePakken);
-      resolve("hoera");
+      resolve("");
     }, exitTijd);
+    s;
   });
 }
 
@@ -157,9 +147,9 @@ async function zoekAdressen() {
           /////////////////////
           ///////////////!!!!!!!!!/////
           dagTeVerrijken.adresGepakt = true;
-          fs.writeFileSync(
-            opslagPad(`adressen/${dagTeVerrijken.route}`),
-            JSON.stringify(uniekeAdressen, null, "  ")
+          schrijfAdressenGepakt(
+            `adressen/${dagTeVerrijken.route}`,
+            uniekeAdressen
           );
         }, draaiTijd);
       });
@@ -238,6 +228,12 @@ function uniekeAdressenUitString(pcString) {
   return regexMatches;
 }
 
+function geopadUitAdres(adres) {
+  return opslagPad(
+    `responses/geo/${(adres.straat + adres.postcode).replace(/\W/g, "")}`
+  );
+}
+
 function pakPublicatiesEnSlaZePlat(pcClusters) {
   try {
     return pcClusters
@@ -261,11 +257,7 @@ function relevantePublicatieClusters(route) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const bnaam = opslagPad(`responses/kvk/${route}`);
-      if (!fs.existsSync(bnaam)) {
-        reject(bnaam + " bestaat niet");
-      }
-      const responseBestand = JSON.parse(fs.readFileSync(bnaam));
+      const responseBestand = await pakOpslag(`responses/kvk/${route}`);
       const publicatieClusters = responseBestand.Instanties.map((instantie) => {
         return instantie.Publicatieclusters;
       })

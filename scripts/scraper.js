@@ -1,4 +1,5 @@
-const { opslagPad, opties } = require("../config.js");
+const { opslagPad, opties, nutsPad } = require("../config.js");
+const { schrijfOpslag, pakOpslag } = require(nutsPad);
 const axios = require("axios").default;
 const fs = require("fs");
 
@@ -41,19 +42,13 @@ async function scrapeDagen(dagenTeDoen) {
             }
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {
-                fs.writeFileSync(
-                  opslagPad(`responses/kvk/${dag.route}`),
-                  JSON.stringify(response.data)
-                );
+                schrijfOpslag(`responses/kvk/${dag.route}`, response.data);
                 hadMeldingen.push(dag);
               }
               gescraped.push(dag);
             }
           })
-          .catch(function (error) {
-            // handle error
-            console.log(error);
-          });
+          .catch(nuts.legeCatch);
       }, planningVanafNu);
     });
     setTimeout(function () {

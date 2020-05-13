@@ -2,17 +2,15 @@
 // pakt niet alle dagen.
 // @TODO ook noteren welke requests nooit iets teruggegeven om uit scrape te halen
 
-const { scriptPad, opties } = require("./config.js");
-
-const dagenDatabase = require(scriptPad("dagen-database"));
-
-const scraper = require(scriptPad("scraper"));
-
-const adressen = require(scriptPad("adressen"));
-
-const consolidatie = require(scriptPad("consolidatie"));
+const { nutsPad } = require("./config.js");
+const { pakScript } = require(nutsPad);
 
 async function init() {
+  const dagenDatabase = pakScript("dagen-database");
+  const scraper = pakScript("scraper");
+  const adressen = pakScript("adressen");
+  const consolidatie = pakScript("consolidatie");
+
   try {
     const db = await dagenDatabase.pakDagenData();
     if (db.dagenTeDoen.length) {

@@ -1,6 +1,6 @@
-const fs = require("fs");
-const { opties, scriptPad, opslagPad } = require("../config.js");
-const dagenDb = require(scriptPad("dagen-database"));
+const { opties, nutsPad } = require("../config.js");
+const { pakScript, pakOpslag, schrijfOpslag } = require(nutsPad);
+const dagenDb = pakScript("dagen-database");
 
 async function consolideerResponsesEnAdressen() {
   return new Promise(async (resolve) => {
@@ -23,13 +23,13 @@ async function consolideerResponsesEnAdressen() {
       "december",
     ];
     const publicatieData = dagenTeConsolideren
-      .map((dag) => {
-        return JSON.parse(
-          fs.readFileSync(opslagPad(`responses/kvk/${dag.route}`))
-        );
+      .map(async (dag) => {
+        const bs = await pakOpslag(`responses/kvk/${dag.route}`);
+        return bs;
       })
       .flat()
-      .map((bestand) => {
+      .map(async (bestandPromise) => {
+        const bestand = await bestandPromise;
         return bestand.Instanties;
       })
       .flat()
@@ -60,14 +60,7 @@ async function consolideerResponsesEnAdressen() {
         return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
       });
 
-    const adressen = JSON.parse(fs.readFileSync(opslagPad("adressen")));
-
-    console.log(
-      "vergelijk ",
-      adressen.length + " adressen met ",
-      publicatieData.length,
-      " publicaties"
-    );
+    const adressen = await pakOpslag("adressen");
 
     const verrijkteAdressen = adressen.map((kaalAdres) => {
       const pubs = publicatieData
@@ -77,7 +70,6 @@ async function consolideerResponsesEnAdressen() {
           });
         })
         .filter((pubs) => pubs.length);
-      // console.log(pubs);
 
       const samengevoegdePublicaties = pubs.join("<hr>");
       const datumRegexCap = samengevoegdePublicaties.match(
@@ -120,14 +112,10 @@ async function consolideerResponsesEnAdressen() {
       });
     });
 
-    dagenDb.schrijfTemp(verrijkteAdressen.map((a) => a.bedrijfsNaam));
-
     dagenDb.schrijfGeconsolideerd(dagenTeConsolideren);
 
-    fs.writeFileSync(
-      opslagPad(`geconsolideerde-adressen`),
-      JSON.stringify(verrijkteAdressen, null, "  ")
-    );
+    schrijfOpslag(`geconsolideerde-adressen`, verrijkteAdressen);
+
     resolve();
   });
 }
