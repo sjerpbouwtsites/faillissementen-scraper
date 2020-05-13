@@ -131,6 +131,11 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+      .leaflet-popup-header-left * {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
     </style>
   </head>
   <body>
@@ -253,11 +258,17 @@
               const datumHTML = faillissement.datum
                 ? `<h3>${new Date().toDateString()}</h3>`
                 : "";
+              const bedrijfsNaamHTML = faillissement.bedrijfsNaam
+                ? `<h4>${faillissement.bedrijfsNaam}</h4>`
+                : "";
 
               marker.bindPopup(
                 `<div class='leaflet-popup-publicatie'>
                   <header class='leaflet-popup-header'>
-                  ${datumHTML}
+                    <span class='leaflet-popup-header-left'>
+                      ${datumHTML}
+                      ${bedrijfsNaamHTML}
+                    </span>
                     <button class='open-kvk knopje' data-osm-id='${faillissement.osm_id}'>KvK paneel</button>
                     </header>
                     ${faillissement.publicaties}

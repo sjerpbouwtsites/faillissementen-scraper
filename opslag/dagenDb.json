@@ -842,32 +842,32 @@
   {
     "route": "20200414000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-14T23:00:00.000Z"
   },
   {
     "route": "20200415000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-15T23:00:00.000Z"
   },
   {
     "route": "20200416000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-16T23:00:00.000Z"
   },
   {
     "route": "20200417000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-17T23:00:00.000Z"
   },
@@ -890,40 +890,40 @@
   {
     "route": "20200420000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-20T23:00:00.000Z"
   },
   {
     "route": "20200421000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-21T23:00:00.000Z"
   },
   {
     "route": "20200422000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-22T23:00:00.000Z"
   },
   {
     "route": "20200423000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-23T23:00:00.000Z"
   },
   {
     "route": "20200424000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-24T23:00:00.000Z"
   },
@@ -954,32 +954,32 @@
   {
     "route": "20200428000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-28T23:00:00.000Z"
   },
   {
     "route": "20200429000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-29T23:00:00.000Z"
   },
   {
     "route": "20200430000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-04-30T23:00:00.000Z"
   },
   {
     "route": "20200501000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-01T23:00:00.000Z"
   },
@@ -1002,16 +1002,16 @@
   {
     "route": "20200504000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-04T23:00:00.000Z"
   },
   {
     "route": "20200505000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-05T23:00:00.000Z"
   },
@@ -1026,16 +1026,16 @@
   {
     "route": "20200507000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-07T23:00:00.000Z"
   },
   {
     "route": "20200508000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-08T23:00:00.000Z"
   },
@@ -1058,16 +1058,16 @@
   {
     "route": "20200511000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-11T23:00:00.000Z"
   },
   {
     "route": "20200512000000",
     "gescraped": true,
-    "geconsolideerd": true,
-    "adresGepakt": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
     "hadMelding": true,
     "datum": "2020-05-12T23:00:00.000Z"
   },

@@ -2,6 +2,7 @@ module.exports = {
   negeerReedsGedaanBool: false,
   schrijfAlleRequestsWeg: true,
   overschrijfAlleRequest: false,
+  consolideerTelkensOpnieuw: true,
   startDatum: "2020-01-01",
   eindDatum: "2022-12-31",
   volleDebug: false,

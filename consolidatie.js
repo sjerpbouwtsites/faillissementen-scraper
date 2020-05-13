@@ -25,7 +25,7 @@ async function consolideerResponsesEnAdressen() {
     const publicatieData = dagenTeConsolideren
       .map((dag) => {
         return JSON.parse(
-          fs.readFileSync("opslag/responses/" + dag.route + ".json")
+          fs.readFileSync("opslag/responses/kvk/" + dag.route + ".json")
         );
       })
       .flat()
@@ -57,7 +57,7 @@ async function consolideerResponsesEnAdressen() {
       })
       .flat()
       .map((p) => {
-        return p.Publicaties.join("\n");
+        return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
       });
 
     const adressen = JSON.parse(fs.readFileSync("opslag/adressen.json"));
@@ -69,14 +69,18 @@ async function consolideerResponsesEnAdressen() {
       " publicaties"
     );
 
-    dagenDb.schrijfTemp(publicatieData, 3);
-
     const verrijkteAdressen = adressen.map((kaalAdres) => {
-      const pubs = publicatieData.filter((pd) => {
-        return pd.includes(kaalAdres.straat);
-      });
-      const pubBla = pubs.join("<hr>");
-      const datumRegexCap = pubBla.match(
+      const pubs = publicatieData
+        .map((publicatieReeks) => {
+          return publicatieReeks.filter((publicatie) => {
+            return publicatie.includes(kaalAdres.straat);
+          });
+        })
+        .filter((pubs) => pubs.length);
+      // console.log(pubs);
+
+      const samengevoegdePublicaties = pubs.join("<hr>");
+      const datumRegexCap = samengevoegdePublicaties.match(
         /(\d{2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)+\s+(\d{4})/
       );
       let datum = "";
@@ -89,18 +93,34 @@ async function consolideerResponsesEnAdressen() {
         const dag = datumRegexCap[1].toString().padStart(2, "0");
         datum = `${datumRegexCap[3]}-${maand}-${dag}`;
       }
-      let kvkRegexCap = pubBla.match(/KvK.*(\d{8})/g);
+      let kvkRegexCap = samengevoegdePublicaties.match(/KvK.*(\d{8})/g);
       let kvkNummers =
         kvkRegexCap && kvkRegexCap.length
           ? kvkRegexCap.map((k) => k.match(/\d+/)[0])
           : [];
 
+      const regexCap = samengevoegdePublicaties.match(
+        /[FSR].\d{1,4}\/.\d{1,4}\/.\d{1,4}\)[,]?([^,]*)[,]/
+      );
+      const hodnCap = samengevoegdePublicaties.match(/hodn(.*)corr/);
+
+      let bedrijfsNaam = !!regexCap
+        ? regexCap[1].split("corr.adr")[0].trim()
+        : "onbekend";
+
+      if (bedrijfsNaam === "onbekend" && !!hodnCap) {
+        bedrijfsNaam = hodnCap[1].trim().split(".V.")[0] + ".V.";
+      }
+
       return Object.assign(kaalAdres, {
-        publicaties: pubBla,
+        publicaties: samengevoegdePublicaties,
         kvk: kvkNummers,
+        bedrijfsNaam,
         datum,
       });
     });
+
+    dagenDb.schrijfTemp(verrijkteAdressen.map((a) => a.bedrijfsNaam));
 
     dagenDb.schrijfGeconsolideerd(dagenTeConsolideren);
 

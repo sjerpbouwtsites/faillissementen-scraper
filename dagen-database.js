@@ -84,7 +84,7 @@ function pakDagenData() {
     let dagenTeConsolideren = dagenDb.filter((dbDag) => {
       return (
         dbDag.gescraped &&
-        !dbDag.geconsolideerd &&
+        (!dbDag.geconsolideerd || opties.consolideerTelkensOpnieuw) &&
         dbDag.hadMelding &&
         dbDag.adresGepakt
       );

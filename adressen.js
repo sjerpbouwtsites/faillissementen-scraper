@@ -22,7 +22,7 @@ async function consolideerAdressen() {
     const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
 
     // vinden welke adressen nog niet geconsolideerd zijn
-    const teConsolideren = dagenAdresTePakken
+    let teConsolideren = dagenAdresTePakken
       .map((dag) => {
         const b = "opslag/adressen/" + dag.route + ".json";
         if (!fs.existsSync(b)) {
@@ -40,10 +40,31 @@ async function consolideerAdressen() {
       return;
     }
 
-    console.log("consolideer: ", teConsolideren.length);
+    let nieuwGeconsolideerd = [].concat(adressenDb);
+    const geoRequestsBekend = [];
+    // voor alle te consolideren request doen of..
+    if (!opties.overschrijfAlleRequest) {
+      teConsolideren = teConsolideren.filter((adres) => {
+        const bestandsNaam =
+          "opslag/responses/geo/" +
+          (adres.straat + adres.postcode).replace(/\W/g, "") +
+          ".json";
+        if (fs.existsSync(bestandsNaam)) {
+          geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
+          return false;
+        } else {
+          return true; // dus als bestand niet exist dan alsog requests doen.
+        }
+      });
+      nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
+    }
 
-    // voor alle te consolideren request doen
-    const nieuwGeconsolideerd = [].concat(adressenDb);
+    console.log(
+      "consolideer: ",
+      teConsolideren.length,
+      " , uit fs",
+      geoRequestsBekend.length
+    );
     const geskiptWegensRateLimit = [];
     teConsolideren.forEach((c, index) => {
       setTimeout(function () {
@@ -54,6 +75,13 @@ async function consolideerAdressen() {
               "&format=json"
           )
           .then((r) => {
+            const bestandsNaam = (c.straat + c.postcode).replace(/\W/g, "");
+            fs.writeFile(
+              "opslag/responses/geo/" + bestandsNaam + ".json",
+              JSON.stringify(r.data[0]),
+              () => {}
+            );
+
             const iplus = index + 1;
             if (iplus % 25 === 0) {
               console.log(iplus, " adressen geconsolideerd");
@@ -66,6 +94,11 @@ async function consolideerAdressen() {
             nieuwGeconsolideerd.push(b);
           })
           .catch((axiosErr) => {
+            if (!axiosErr.response) {
+              console.error(axiosErr);
+              return;
+            }
+
             if (axiosErr.response.status === 429) {
               geskiptWegensRateLimit.push(c);
               console.log("rate limit!");
@@ -78,7 +111,7 @@ async function consolideerAdressen() {
 
     // na alle requests resolven...
     const exitTijd = teConsolideren.length * 1111 + 2000;
-    console.log("exit over", exitTijd);
+    console.log("exit over", exitTijd / 60000, " minuten");
     setTimeout(function () {
       console.log("schrijf nieuw geonsolideerd");
       fs.writeFileSync(
@@ -237,7 +270,7 @@ function relevantePublicatieClusters(route) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const bnaam = "opslag/responses/" + route + ".json";
+      const bnaam = "opslag/responses/kvk/" + route + ".json";
       if (!fs.existsSync(bnaam)) {
         reject(bnaam + " bestaat niet");
       }

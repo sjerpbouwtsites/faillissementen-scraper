@@ -1,5 +1,6 @@
 // ISSUES
 // pakt niet alle dagen.
+// @TODO ook noteren welke requests nooit iets teruggegeven om uit scrape te halen
 
 // const fs = require("fs");
 // const axios = require("axios").default;

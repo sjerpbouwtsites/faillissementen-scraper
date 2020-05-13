@@ -4,10 +4,21 @@ const fs = require("fs");
 
 async function scrapeDagen(dagenTeDoen) {
   const reedsGescraped = dagenTeDoen.filter((d) => d.gescraped);
-  const teScrapen = dagenTeDoen.filter((d) => !d.gescraped);
+  const nietGescrapedVolgensDb = dagenTeDoen.filter((d) => !d.gescraped);
+  const teScrapen = opties.overschrijfAlleRequest
+    ? nietGescrapedVolgensDb
+    : nietGescrapedVolgensDb.filter((dbDag) => {
+        return !fs.existsSync("opslag/responses/kvk/" + dbDag.route + ".json");
+      });
+
   const exitTijd = teScrapen.length * 800 + 800;
-  const scrapeRoutes = teScrapen.map((t) => t.route).join("; ");
-  console.log("EXIT OVER ", exitTijd, "; scrape", scrapeRoutes);
+  console.log(
+    "EXIT OVER ",
+    exitTijd / 60000,
+    "minuten; scrape ",
+    teScrapen.length,
+    " dagen"
+  );
 
   return new Promise((resolve) => {
     const gescraped = [];
@@ -27,7 +38,7 @@ async function scrapeDagen(dagenTeDoen) {
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {
                 fs.writeFileSync(
-                  "opslag/responses/" + dag.route + ".json",
+                  "opslag/responses/kvk/" + dag.route + ".json",
                   JSON.stringify(response.data)
                 );
                 hadMeldingen.push(dag);

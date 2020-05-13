@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "doe": "node index.js",
-    "met-reset": "rm -rf opslag/addressen/* opslag/responses/* opslag/adressen.json opslag/dagenDb.json opslag/geconsolideerde-adressen.json opslag/ratelimit.json; node index.js"
+    "met-reset": "rm -rf opslag/addressen/* opslag/responses/geo/* opslag/responses/kvk/* opslag/adressen.json opslag/dagenDb.json opslag/geconsolideerde-adressen.json opslag/ratelimit.json; node index.js"
   },
   "repository": {
     "type": "git",
