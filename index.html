@@ -15,6 +15,7 @@
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""
     ></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -24,20 +25,120 @@
       body {
         overflow: hidden;
       }
+      * {
+        font-family: "Segoe UI", "Roboto", "Comic Sans", "Comic Sans MS" !important;
+      }
       #mapid {
         height: 100vh;
         width: 100vw;
       }
+      .leaflet-popup-header {
+        border-bottom: 2px solid #212121;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
       .leaflet-popup-publicatie {
         max-height: 250px;
-        overflow: scroll;
+        overflow: auto;
       }
+      .kvk-paneel {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        max-height: 40%;
+        z-index: 500;
+        transition: 0.2s ease-in-out 0.2s;
+        transform: translateY(150%);
+      }
+      .kvk-paneel.open {
+        transform: translateY(0);
+      }
+      .kvk-paneel-binnen {
+        position: relative;
+        padding: 20px;
+        background-color: white;
+        height: 100%;
+      }
+      .sluit-kvk-paneel {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        font-size: 50px;
+        position: absolute;
+        right: 0;
+        top: -80px;
+        transform: scale(1) translateY(0) translateX(0);
+        transition: 0.2s ease-in-out;
+      }
+      .sluit-kvk-paneel.groot {
+        transform: scale(5) translateY(-50px) translateX(-100px);
+      }
+      .kvk-resultaat {
+        max-height: calc(100% - 40px);
+        max-width: calc(100% - 110px);
+        overflow: auto;
+        transform: translateX(0);
+        transition: 0.2s ease;
+      }
+      .kvk-resultaat.ladend {
+        transform: translateX(-150%);
+      }
+      .kvk-nummers {
+        position: absolute;
+        max-height: calc(100% - 60px);
+        top: 10px;
+        right: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .kvk-nummers li + li {
+        margin-top: 10px;
+        width: 100%;
+      }
+      .knopje {
+        border: 0;
+        background-color: rgb(122, 21, 21);
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+        transition: 0.2s ease;
+      }
+      .knopje:hover {
+        background-color: rgb(122, 41, 21);
+      }
+      .kvk-resultaat ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .kvk-resultaat ul li{
+        flex-basis: 250px;
+        font-size: 12px;
+      }s
     </style>
   </head>
   <body>
     <div id="mapid"></div>
+    <div class="kvk-paneel" id="kvk-paneel">
+      <div class="kvk-paneel-binnen">
+        <ul class="kvk-nummers" id="kvk-nummers"></ul>
+        <div class="kvk-resultaat" id="kvk-resultaat"></div>
+        <button class="sluit-kvk-paneel" id="sluit-kvk-paneel">😎</button>
+      </div>
+    </div>
     <script>
       const heeftBevestigdHetTeSnappen = !!sessionStorage.getItem("snaptHet");
+      let faillissementen;
 
       if (!heeftBevestigdHetTeSnappen) {
         if (!confirm("KSU Oost mag dood neer vallen\nmet hun kuthouding")) {
@@ -49,7 +150,7 @@
       }
 
       function initMap() {
-        const mymap = L.map("mapid").setView([52.3948545, 4.9336231], 13);
+        const mymap = L.map("mapid").setView([52.3948545, 4.9336231], 11);
         L.tileLayer(
           "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2plcnAtdmFuLXdvdWRlbiIsImEiOiJjajh5NmExaTAxa29iMzJwbDV0eXF4eXh4In0.HVBgF1SbusJzMwmjHcHS2w",
           {
@@ -69,11 +170,12 @@
         const mymap = initMap();
         const vandaag = new Date().getTime();
 
-        fetch("geconsolideerde-adressen.json")
+        fetch("opslag/geconsolideerde-adressen.json")
           .then((res) => {
             return res.json();
           })
-          .then((faillissementen) => {
+          .then((faillissementenRes) => {
+            faillissementen = faillissementenRes;
             const markers = faillissementen.map((faillissement) => {
               // verder in het verleden opacity geven.
               let opacity = 1;
@@ -86,8 +188,6 @@
                 opacity = Math.max(opacity, 0.3);
               }
 
-              console.log(opacity);
-
               const marker = L.marker([
                 faillissement.lat,
                 faillissement.lon,
@@ -95,20 +195,109 @@
                   opacity: opacity,
                 },
               ]).addTo(mymap);
+
+              const datumHTML = faillissement.datum
+                ? `<h3>${new Date().toDateString()}</h3>`
+                : "";
+
               marker.bindPopup(
                 `<div class='leaflet-popup-publicatie'>
-                  ${
-                    faillissement.datum
-                      ? `<h3>${faillissement.datum}</h3><hr>`
-                      : ""
-                  }
+                  <header class='leaflet-popup-header'>
+                  ${datumHTML}
+                    <button class='open-kvk knopje' data-osm-id='${faillissement.osm_id}'>KvK paneel</button>
+                    </header>
                     ${faillissement.publicaties}
+
                   </div class='leaflet-popup-publicatie'>`
               );
             });
           })
           .catch((err) => {
             console.error(err);
+          });
+
+        document
+          .getElementsByTagName("body")[0]
+          .addEventListener("click", function (e) {
+            if (e.target.classList.contains("open-kvk")) {
+              const kvkNummers = faillissementen.find(
+                (f) => f.osm_id === e.target.getAttribute("data-osm-id")
+              ).kvk;
+
+              if (!kvkNummers || !kvkNummers.length) {
+                alert(
+                  "ik kon geen kvk nummer vinden. Of tenminste, me algoritme niet. Lag niet aan mij dus.😴"
+                );
+                return;
+              }
+
+              haalKvkInfoEnPrint(kvkNummers[0], true, kvkNummers);
+
+              //data-osm-id
+            }
+            //open - kvk;
+          });
+
+        function haalKvkInfoEnPrint(
+          kvkNummer,
+          geheelNieuw = false,
+          kvkNummers = []
+        ) {
+          if (!geheelNieuw) {
+            document.getElementById("kvk-resultaat").classList.add("ladend");
+          }
+          axios
+            .get(
+              `https://zoeken.kvk.nl/search.ashx?handelsnaam=&kvknummer=${kvkNummer}&straat=&postcode=&huisnummer=&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken&_=1589332056667`
+            )
+            .then((kvkResponse) => {
+              document.getElementById("kvk-resultaat").innerHTML =
+                kvkResponse.data;
+              if (geheelNieuw) {
+                document.getElementById("kvk-nummers").innerHTML = `
+                        <li>KVK 🕵️‍♂️</li>
+                      ${kvkNummers
+                        .map((kvkNr) => {
+                          return `<li><button class='knopje' class='wissel-kvk' data-kvk-nr='${kvkNr}'>${kvkNr}</button></li>`;
+                        })
+                        .join("")}`;
+                document.getElementById("kvk-paneel").classList.add("groot");
+                setTimeout(function () {
+                  document.getElementById("kvk-paneel").classList.add("open");
+                }, 350);
+                setTimeout(function () {
+                  document
+                    .getElementById("kvk-paneel")
+                    .classList.remove("groot");
+                }, 450);
+              } // eind geheel nieuw
+              else {
+                document
+                  .getElementById("kvk-resultaat")
+                  .classList.remove("ladend");
+              }
+            });
+        }
+
+        document.getElementsByTagName("body")[0],
+          addEventListener("click", function (e) {
+            if (e.target.hasAttribute("data-kvk-nr")) {
+              haalKvkInfoEnPrint(e.target.getAttribute("data-kvk-nr"), false);
+            }
+          });
+
+        document
+          .getElementById("sluit-kvk-paneel")
+          .addEventListener("click", function () {
+            document.getElementById("sluit-kvk-paneel").classList.add("groot");
+            setTimeout(function () {
+              document.getElementById("kvk-paneel").classList.remove("open");
+            }, 300);
+            setTimeout(function () {
+              document
+                .getElementById("sluit-kvk-paneel")
+                .classList.remove("groot");
+            }, 500);
           });
       };
 

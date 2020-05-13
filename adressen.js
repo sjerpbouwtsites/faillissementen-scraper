@@ -15,8 +15,8 @@ async function consolideerAdressen() {
       return;
     }
 
-    const adressenDb = fs.existsSync("adressen.json")
-      ? JSON.parse(fs.readFileSync("adressen.json"))
+    const adressenDb = fs.existsSync("opslag/adressen.json")
+      ? JSON.parse(fs.readFileSync("opslag/adressen.json"))
       : [];
 
     const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
@@ -73,20 +73,20 @@ async function consolideerAdressen() {
               console.log("adres 404 faal", c.adres);
             }
           });
-      }, index * 1333);
+      }, index * 1111);
     });
 
     // na alle requests resolven...
-    const exitTijd = teConsolideren.length * 1333 + 2000;
+    const exitTijd = teConsolideren.length * 1111 + 2000;
     console.log("exit over", exitTijd);
     setTimeout(function () {
       console.log("schrijf nieuw geonsolideerd");
       fs.writeFileSync(
-        "adressen.json",
+        "opslag/adressen.json",
         JSON.stringify(nieuwGeconsolideerd, null, "  ")
       );
       fs.writeFileSync(
-        "ratelimit-adressen.json",
+        "opslag/ratelimit-adressen.json",
         JSON.stringify(geskiptWegensRateLimit, null, "  ")
       );
       dagenDb.schrijfAdressenGepakt(dagenAdresTePakken);

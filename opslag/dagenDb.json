@@ -1,0 +1,18 @@
+[
+  {
+    "route": "20200505000000",
+    "gescraped": true,
+    "geconsolideerd": true,
+    "adresGepakt": true,
+    "hadMelding": true,
+    "datum": "2020-05-05T00:00:00.000Z"
+  },
+  {
+    "route": "20200506000000",
+    "gescraped": true,
+    "geconsolideerd": false,
+    "adresGepakt": false,
+    "hadMelding": false,
+    "datum": "2020-05-06T00:00:00.000Z"
+  }
+]

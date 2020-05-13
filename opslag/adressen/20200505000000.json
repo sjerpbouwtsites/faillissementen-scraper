@@ -1,0 +1,86 @@
+[
+  {
+    "adres": "Johan Huizingalaan 400 1066 JS Amsterdam",
+    "straat": "Johan Huizingalaan 400",
+    "postcode": "1066JS",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Hooge Steenweg 15 5211 JN 's-Hertogenbosch",
+    "straat": "Hooge Steenweg 15",
+    "postcode": "5211JN",
+    "plaatsnaam": "'s-Hertogenbosch"
+  },
+  {
+    "adres": "Diepenbrockstraat 265 2625XM Delft",
+    "straat": "Diepenbrockstraat 265",
+    "postcode": "2625XM",
+    "plaatsnaam": "Delft"
+  },
+  {
+    "adres": "Houtenstraat 5 2801WD Gouda",
+    "straat": "Houtenstraat 5",
+    "postcode": "2801WD",
+    "plaatsnaam": "Gouda"
+  },
+  {
+    "adres": "Zaagmolenpad 101 7008AH Doetinchem",
+    "straat": "Zaagmolenpad 101",
+    "postcode": "7008AH",
+    "plaatsnaam": "Doetinchem"
+  },
+  {
+    "adres": "Riezebosweg 13 8171MG Vaassen",
+    "straat": "Riezebosweg 13",
+    "postcode": "8171MG",
+    "plaatsnaam": "Vaassen"
+  },
+  {
+    "adres": "Constant Permekehof 9 1328AL Almere",
+    "straat": "Constant Permekehof 9",
+    "postcode": "1328AL",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Hoenderparkweg 70 7335GV Apeldoorn",
+    "straat": "Hoenderparkweg 70",
+    "postcode": "7335GV",
+    "plaatsnaam": "Apeldoorn"
+  },
+  {
+    "adres": "Ambachtsweg 41 6541DA Nijmegen",
+    "straat": "Ambachtsweg 41",
+    "postcode": "6541DA",
+    "plaatsnaam": "Nijmegen"
+  },
+  {
+    "adres": "Grote Blerickse Bergenwg 15 5927PB Venlo",
+    "straat": "Grote Blerickse Bergenwg 15",
+    "postcode": "5927PB",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Weert 78 6231 SB Meerssen",
+    "straat": "Weert 78",
+    "postcode": "6231SB",
+    "plaatsnaam": "Meerssen"
+  },
+  {
+    "adres": "IJsselmeerweg 100 1411DL Naarden",
+    "straat": "IJsselmeerweg 100",
+    "postcode": "1411DL",
+    "plaatsnaam": "Naarden"
+  },
+  {
+    "adres": "Graftermeerstraat 41 2131AA Hoofddorp",
+    "straat": "Graftermeerstraat 41",
+    "postcode": "2131AA",
+    "plaatsnaam": "Hoofddorp"
+  },
+  {
+    "adres": "Robert Scottstraat 19 1056AW Amsterdam",
+    "straat": "Robert Scottstraat 19",
+    "postcode": "1056AW",
+    "plaatsnaam": "Amsterdam"
+  }
+]
