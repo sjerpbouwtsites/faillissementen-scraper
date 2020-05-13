@@ -34,7 +34,7 @@ function pakScript(subPad) {
 }
 
 function pakOpslag(subPad) {
-  return new Promise(async (resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const p = maakOpslagPad(subPad);
     if (!fs.existsSync(p)) {
       reject("bestand bestaat niet", p);

@@ -4,7 +4,21 @@ const opslagPad = path.resolve("opslag/");
 const scriptPad = path.resolve("scripts/");
 const nutsPad = path.resolve("nuts/");
 const tempPad = path.resolve("temp/");
-
+const maanden = [
+  "",
+  "januari",
+  "februari",
+  "maart",
+  "april",
+  "mei",
+  "juni",
+  "juli",
+  "augustus",
+  "september",
+  "oktober",
+  "november",
+  "december",
+];
 module.exports = {
   opties: {
     negeerReedsGedaanBool: false,
@@ -40,4 +54,5 @@ module.exports = {
   opslagPad,
   nutsPad,
   tempPad,
+  maanden,
 };

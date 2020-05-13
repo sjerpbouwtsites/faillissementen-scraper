@@ -1,5 +1,6 @@
-const { opties, nutsPad } = require("../config.js");
-const { pakScript, pakOpslag, schrijfOpslag } = require(nutsPad);
+const { opties, nutsPad, maanden } = require("../config.js");
+const fs = require("fs");
+const { pakScript, pakOpslag, schrijfOpslag, maakOpslagPad } = require(nutsPad);
 const dagenDb = pakScript("dagen-database");
 
 async function consolideerResponsesEnAdressen() {
@@ -7,29 +8,16 @@ async function consolideerResponsesEnAdressen() {
     const { dagenTeConsolideren } = await dagenDb.pakDagenData();
     const toegestaneClusters = opties.toegestaneClusters;
     const ontoegestaneClusters = opties.ontoegestaneClusters;
-    const maanden = [
-      "",
-      "januari",
-      "februari",
-      "maart",
-      "april",
-      "mei",
-      "juni",
-      "juli",
-      "augustus",
-      "september",
-      "oktober",
-      "november",
-      "december",
-    ];
+
     const publicatieData = dagenTeConsolideren
-      .map(async (dag) => {
-        const bs = await pakOpslag(`responses/kvk/${dag.route}`);
+      .map((dag) => {
+        const bs = JSON.parse(
+          fs.readFileSync(maakOpslagPad(`responses/kvk/${dag.route}`))
+        );
         return bs;
       })
       .flat()
-      .map(async (bestandPromise) => {
-        const bestand = await bestandPromise;
+      .map((bestand) => {
         return bestand.Instanties;
       })
       .flat()
