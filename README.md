@@ -33,7 +33,7 @@ Je hebt nodig **momenteel**:
    opslag/geconsolideerde-adressen.json
    opslag/ratelimit-adressen.json
 
-voor windows volg je `git clone https://github.com/sjerpbouwtsites/faillissementen-scraper faillissementen-2; cd faillissementen-2; npm install;` en daarna gooi je die mappen / bestanden weg.
+voor windows volg je `git clone https://github.com/sjerpbouwtsites/faillissementen-scraper faillissementen-2; cd faillissementen-2; npm install;` en daarna gooi je die mappen / bestanden weg. Maar idealiter zet ik gewoon iets direct installeerbaars online 😇
 
 4. Nu moet je in een terminal in de map komen waar je hebt geinstalleerd, zoals in dit geval faillissementen-2. Als het goed is zie je dat terug in je huidige directory in je terminal.
 5. Draai het commando `node index.js` en de app gaat langzaam zichzelf vullen. Dit duurt wel even.
