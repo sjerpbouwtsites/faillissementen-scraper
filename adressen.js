@@ -24,7 +24,7 @@ async function consolideerAdressen() {
     // vinden welke adressen nog niet geconsolideerd zijn
     const teConsolideren = dagenAdresTePakken
       .map((dag) => {
-        const b = "addressen/" + dag.route + ".json";
+        const b = "adressen/" + dag.route + ".json";
         if (!fs.existsSync(b)) {
           reject(b + " bestaat niet");
         }
@@ -134,7 +134,7 @@ async function zoekAdressen() {
           ///////////////!!!!!!!!!/////
           dagTeVerrijken.adresGepakt = true;
           fs.writeFileSync(
-            "addressen/" + dagTeVerrijken.route + ".json",
+            "adressen/" + dagTeVerrijken.route + ".json",
             JSON.stringify(uniekeAdressen, null, "  ")
           );
         }, draaiTijd);
