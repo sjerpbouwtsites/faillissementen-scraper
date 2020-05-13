@@ -137,16 +137,61 @@
       </div>
     </div>
     <script>
-      const heeftBevestigdHetTeSnappen = !!sessionStorage.getItem("snaptHet");
-      let faillissementen;
+      const correcteMeningen = [
+        {
+          tekst: "Vind je Friesland ook zo belangrijk?",
+          naam: "friesland",
+          wegsturenMet: "Maar suikerbrood dan 😥",
+          wegsturenNaar: "https://www.youtube.com/watch?v=8mvHcJvdBE8",
+          correcteAntwoord: true,
+          antwoordGegeven: null,
+        },
+        {
+          tekst:
+            "Het is niet mooi.... maar Feyenoord doet wel altijd hun best.",
+          wegsturenMet: "Foutieve mening ⚽",
+          wegsturenNaar: "https://www.youtube.com/watch?v=_Z01TTEMtNA",
+          naam: "voetbal-1",
+          correcteAntwoord: false,
+          antwoordGegeven: null,
+        },
+        {
+          tekst: "Mathijs de Ligt had gewoon moeten blijven, die sukkel",
+          wegsturenNaar: "https://www.youtube.com/watch?v=jejtIxSeV_4",
+          wegsturenMet: "❌\n❌\n❌\n",
+          naam: "voetbal-2",
+          correcteAntwoord: true,
+          antwoordGegeven: null,
+        },
+      ];
 
-      if (!heeftBevestigdHetTeSnappen) {
-        if (!confirm("KSU Oost mag dood neer vallen\nmet hun kuthouding")) {
-          alert("kthxbai");
-          location.href = "https://ksuoost.squat.net/";
+      if (!sessionStorage.getItem("snaptHet")) {
+        sessionStorage.setItem("snaptHet", JSON.stringify(correcteMeningen));
+      }
+
+      let faillissementen;
+      const eerdereAntwoorden = JSON.parse(sessionStorage.getItem("snaptHet"));
+
+      const spelVragen = eerdereAntwoorden.filter(
+        (a) => !a.antwoordGegeven && a.antwoordGegeven !== a.correcteAntwoord
+      );
+      const spelVraagIndex = Math.ceil(Math.random() * (spelVragen.length - 1));
+      const spelVraag = spelVragen[spelVraagIndex];
+      if (Math.random() * 10 > 8 && typeof spelVraag !== "undefined") {
+        spelVraag.antwoordGegeven = confirm(spelVraag.tekst);
+        console.log(spelVraag.antwoordGegeven);
+        if (spelVraag.correcteAntwoord === spelVraag.antwoordGegeven) {
+          alert("🥰🥰🥰");
         } else {
-          sessionStorage.setItem("snaptHet", "true");
+          alert(spelVraag.wegsturenMet);
+          location.href = spelVraag.wegsturenNaar;
         }
+        eerdereAntwoorden.forEach((a) => {
+          if (a.naam === spelVraag.naam) {
+            a.antwoordGegeven = spelVraag.antwoordGegeven;
+          }
+        });
+        sessionStorage.setItem("snaptHet", JSON.stringify(eerdereAntwoorden));
       }
 
       function initMap() {
