@@ -7,7 +7,21 @@ async function consolideerResponsesEnAdressen() {
     const { dagenTeConsolideren } = await dagenDb.pakDagenData();
     const toegestaneClusters = opties.toegestaneClusters;
     const ontoegestaneClusters = opties.ontoegestaneClusters;
-
+    const maanden = [
+      "",
+      "januari",
+      "februari",
+      "maart",
+      "april",
+      "mei",
+      "juni",
+      "juli",
+      "augustus",
+      "september",
+      "oktober",
+      "november",
+      "december",
+    ];
     const publicatieData = dagenTeConsolideren
       .map((dag) => {
         return JSON.parse(fs.readFileSync("responses/" + dag.route + ".json"));
@@ -59,8 +73,24 @@ async function consolideerResponsesEnAdressen() {
       const pubs = publicatieData.filter((pd) => {
         return pd.includes(kaalAdres.straat);
       });
+      const pubBla = pubs.join("<hr>");
+      const datumRegexCap = pubBla.match(
+        /(\d{2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)+\s+(\d{4})/
+      );
+      let datum = "";
+      if (!!datumRegexCap) {
+        const maand = maanden
+          .indexOf(datumRegexCap[2])
+          .toString()
+          .padStart(2, "0");
+
+        const dag = datumRegexCap[1].toString().padStart(2, "0");
+        datum = `${datumRegexCap[3]}-${maand}-${dag}`;
+      }
+
       return Object.assign(kaalAdres, {
-        publicaties: pubs.join("<br>"),
+        publicaties: pubBla,
+        datum,
       });
     });
 

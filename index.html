@@ -67,6 +67,7 @@
 
       window.onload = function () {
         const mymap = initMap();
+        const vandaag = new Date().getTime();
 
         fetch("geconsolideerde-adressen.json")
           .then((res) => {
@@ -74,12 +75,35 @@
           })
           .then((faillissementen) => {
             const markers = faillissementen.map((faillissement) => {
+              // verder in het verleden opacity geven.
+              let opacity = 1;
+              if (!!faillissement.datum) {
+                const fDatum = new Date(faillissement.datum).getTime();
+                // To calculate the no. of days between two dates
+                var verschilInDagen = (fDatum - vandaag) / (1000 * 3600 * 24);
+                const verschilNietBovenNul = Math.max(0, verschilInDagen) / 10;
+                opacity = opacity - verschilNietBovenNul;
+                opacity = Math.max(opacity, 0.3);
+              }
+
+              console.log(opacity);
+
               const marker = L.marker([
                 faillissement.lat,
                 faillissement.lon,
+                {
+                  opacity: opacity,
+                },
               ]).addTo(mymap);
               marker.bindPopup(
-                `<div class='leaflet-popup-publicatie'>${faillissement.publicaties}</div class='leaflet-popup-publicatie'>`
+                `<div class='leaflet-popup-publicatie'>
+                  ${
+                    faillissement.datum
+                      ? `<h3>${faillissement.datum}</h3><hr>`
+                      : ""
+                  }
+                    ${faillissement.publicaties}
+                  </div class='leaflet-popup-publicatie'>`
               );
             });
           })
@@ -87,6 +111,12 @@
             console.error(err);
           });
       };
+
+      function datediff(first, second) {
+        // Take the difference between the dates and divide by milliseconds per day.
+        // Round to nearest whole number to deal with DST.
+        return Math.round((second - first) / (1000 * 60 * 60 * 24));
+      }
     </script>
   </body>
 </html>
