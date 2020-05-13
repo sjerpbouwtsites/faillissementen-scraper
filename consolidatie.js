@@ -89,10 +89,15 @@ async function consolideerResponsesEnAdressen() {
         const dag = datumRegexCap[1].toString().padStart(2, "0");
         datum = `${datumRegexCap[3]}-${maand}-${dag}`;
       }
-      // const kvkRegexCap = pubBla.match(KvK\s?(\d{8}))
+      let kvkRegexCap = pubBla.match(/KvK.*(\d{8})/g);
+      let kvkNummers =
+        kvkRegexCap && kvkRegexCap.length
+          ? kvkRegexCap.map((k) => k.match(/\d+/)[0])
+          : [];
 
       return Object.assign(kaalAdres, {
         publicaties: pubBla,
+        kvk: kvkNummers,
         datum,
       });
     });
