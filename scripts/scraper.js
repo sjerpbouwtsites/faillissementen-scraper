@@ -5,7 +5,7 @@ const fs = require("fs");
 
 /**
  * Plant requests naar de rechtspraak server in.
- * Slaat evt. dit op in opslag/responses/kvk @TODO kvk / rechtspraak door elkaar gehaald.
+ * Slaat evt. dit op in opslag/responses/rechtbank @TODO kvk / rechtspraak door elkaar gehaald.
  * Als laatste in planning de resolve()
  *
  */
@@ -15,7 +15,7 @@ async function scrapeDagen(dagenTeDoen) {
   const teScrapen = opties.overschrijfAlleRequest
     ? nietGescrapedVolgensDb
     : nietGescrapedVolgensDb.filter((dbDag) => {
-        return !fs.existsSync(opslagPad(`responses/kvk/${dbDag.route}`));
+        return !fs.existsSync(opslagPad(`responses/rechtbank/${dbDag.route}`));
       });
 
   const exitTijd = teScrapen.length * 800 + 800;
@@ -42,7 +42,10 @@ async function scrapeDagen(dagenTeDoen) {
             }
             if (opties.schrijfAlleRequestsWeg) {
               if (response.data.Instanties && response.data.Instanties.length) {
-                schrijfOpslag(`responses/kvk/${dag.route}`, response.data);
+                schrijfOpslag(
+                  `responses/rechtbank/${dag.route}`,
+                  response.data
+                );
                 hadMeldingen.push(dag);
               }
               gescraped.push(dag);

@@ -257,7 +257,7 @@ function relevantePublicatieClusters(route) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const responseBestand = await pakOpslag(`responses/kvk/${route}`);
+      const responseBestand = await pakOpslag(`responses/rechtbank/${route}`);
       const publicatieClusters = responseBestand.Instanties.map((instantie) => {
         return instantie.Publicatieclusters;
       })

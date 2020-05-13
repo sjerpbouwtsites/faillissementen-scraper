@@ -12,7 +12,7 @@ async function consolideerResponsesEnAdressen() {
     const publicatieData = dagenTeConsolideren
       .map((dag) => {
         const bs = JSON.parse(
-          fs.readFileSync(maakOpslagPad(`responses/kvk/${dag.route}`))
+          fs.readFileSync(maakOpslagPad(`responses/rechtbank/${dag.route}`))
         );
         return bs;
       })

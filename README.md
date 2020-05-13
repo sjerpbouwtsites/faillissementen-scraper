@@ -27,7 +27,7 @@ Je hebt nodig **momenteel**:
    En dus eigenlijk alleen in windows' Linux, niet linux linux. 😣
    Voor windows kan je de de volgende mappen legen of bestanden weggooien om ook een reset te veroorzaken:
    opslag/responses/geo
-   opslag/responses/kvk
+   opslag/responses/rechtbank
    opslag/adressen.json
    opslag/dagenDb.json
    opslag/geconsolideerde-adressen.json

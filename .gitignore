@@ -1,12 +1,6 @@
-# app specifiek
-# opslag/adressen/*
-# opslag/responses/*
-# opslag/responses/geo/*
-# opslag/verrijkt/*
-# opslag/adressen.json
-# opslag/dagenDb.json
-# opslag/geconsolideerde-adressen.json
-# opslag/ratelimit-adressen.json
+app specifiek
+opslag/**/*.json
+opslag/*.json
 
 
 # Logs
