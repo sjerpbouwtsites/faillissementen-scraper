@@ -1,0 +1,18 @@
+{
+  "place_id": "27962198",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2630206423",
+  "boundingbox": [
+    "52.7883003",
+    "52.7884003",
+    "6.8907913",
+    "6.8908913"
+  ],
+  "lat": "52.7883503",
+  "lon": "6.8908413",
+  "display_name": "54, Westeind, Emmen, Drenthe, Netherlands, 7811ME, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

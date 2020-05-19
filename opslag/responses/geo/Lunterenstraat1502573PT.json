@@ -1,0 +1,18 @@
+{
+  "place_id": "30093019",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2729489149",
+  "boundingbox": [
+    "52.0686086",
+    "52.0687086",
+    "4.2796827",
+    "4.2797827"
+  ],
+  "lat": "52.0686586",
+  "lon": "4.2797327",
+  "display_name": "150, Lunterenstraat, Oostbroek-Noord, The Hague, South Holland, Netherlands, 2573PT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.321
+}

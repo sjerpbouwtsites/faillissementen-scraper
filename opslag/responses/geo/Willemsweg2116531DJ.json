@@ -1,0 +1,18 @@
+{
+  "place_id": "36507420",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2848102891",
+  "boundingbox": [
+    "51.8326367",
+    "51.8327367",
+    "5.84834",
+    "5.84844"
+  ],
+  "lat": "51.8326867",
+  "lon": "5.84839",
+  "display_name": "211, Willemsweg, Nije Veld, Nijmegen-Midden, Nijmegen, Gelderland, Netherlands, 6531DJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

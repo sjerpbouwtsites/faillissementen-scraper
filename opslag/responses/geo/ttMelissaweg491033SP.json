@@ -1,0 +1,18 @@
+{
+  "place_id": "36447674",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2847027649",
+  "boundingbox": [
+    "52.4063432",
+    "52.4064432",
+    "4.8848636",
+    "4.8849636"
+  ],
+  "lat": "52.4063932",
+  "lon": "4.8849136",
+  "display_name": "49, tt. Melissaweg, Cornelis Douwesterrein, Amsterdam, North Holland, Netherlands, 1033SP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

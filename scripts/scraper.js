@@ -1,5 +1,10 @@
-const { opslagPad, opties, nutsPad } = require("../config.js");
-const { schrijfOpslag, pakOpslag } = require(nutsPad);
+const { opties, nutsPad } = require("../config.js");
+const {
+  schrijfOpslag,
+  schrijfTemp,
+  legeCatch,
+  maakOpslagPad,
+} = require(nutsPad);
 const axios = require("axios").default;
 const fs = require("fs");
 
@@ -11,18 +16,27 @@ const fs = require("fs");
  */
 async function scrapeDagen(dagenTeDoen) {
   const reedsGescraped = dagenTeDoen.filter((d) => d.gescraped);
-  const nietGescrapedVolgensDb = dagenTeDoen.filter((d) => !d.gescraped);
-  const teScrapen = opties.overschrijfAlleRequest
-    ? nietGescrapedVolgensDb
-    : nietGescrapedVolgensDb.filter((dbDag) => {
-        return !fs.existsSync(opslagPad(`responses/rechtbank/${dbDag.route}`));
-      });
+  const teScrapen = dagenTeDoen.filter((d) => !d.gescraped);
+  // vermoedelijk buggy
+  // const teScrapen = opties.overschrijfAlleRequest
+  //   ? nietGescrapedVolgensDb
+  //   : nietGescrapedVolgensDb.filter((dbDag) => {
+  //       return !fs.existsSync(
+  //         maakOpslagPad(`responses/rechtbank/${dbDag.route}`)
+  //       );
+  //     });
 
   const exitTijd = teScrapen.length * 800 + 800;
-  console.log(`scraper klaar over ${exitTijd / 60000} minuten`);
+  const minutenExitTijd = exitTijd / 60000;
+  if (minutenExitTijd > 2) {
+    console.log(`scraper klaar over ${exitTijd / 60000} minuten`);
+  } else {
+    console.log(`scraper klaar over ${exitTijd / 1000} seconden`);
+  }
 
   return new Promise((resolve) => {
     const gescraped = [];
+    const hadMelding = [];
     teScrapen.forEach((dag, index) => {
       // wanneer de timeout vuurt
       const planningVanafNu = index * 800;
@@ -39,23 +53,22 @@ async function scrapeDagen(dagenTeDoen) {
                 `${iplus} dagen gescraped, ${teScrapen.length - iplus} te gaan`
               );
             }
-            if (opties.schrijfAlleRequestsWeg) {
-              if (response.data.Instanties && response.data.Instanties.length) {
-                schrijfOpslag(
-                  `responses/rechtbank/${dag.route}`,
-                  response.data
-                );
-              }
-              gescraped.push(dag);
+
+            if (response.data.Instanties && response.data.Instanties.length) {
+              hadMelding.push(dag);
+              schrijfOpslag(`responses/rechtbank/${dag.route}`, response.data);
             }
+
+            gescraped.push(dag);
           })
-          .catch(nuts.legeCatch);
+          .catch(legeCatch);
       }, planningVanafNu);
     });
     setTimeout(function () {
       resolve({
         gescraped,
         reedsGescraped,
+        hadMelding,
       });
     }, exitTijd);
   });

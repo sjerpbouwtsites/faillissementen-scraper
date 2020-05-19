@@ -1,0 +1,18 @@
+{
+  "place_id": "27824653",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2610218013",
+  "boundingbox": [
+    "51.9163758",
+    "51.9164758",
+    "4.4757158",
+    "4.4758158"
+  ],
+  "lat": "51.9164258",
+  "lon": "4.4757658",
+  "display_name": "180, Westblaak, Cool, Centrum, Rotterdam, South Holland, Netherlands, 3012KN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

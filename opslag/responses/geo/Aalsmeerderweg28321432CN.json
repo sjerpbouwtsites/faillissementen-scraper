@@ -1,0 +1,18 @@
+{
+  "place_id": "32085255",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2777031523",
+  "boundingbox": [
+    "52.2814334",
+    "52.2815334",
+    "4.7970307",
+    "4.7971307"
+  ],
+  "lat": "52.2814834",
+  "lon": "4.7970807",
+  "display_name": "283-2, Aalsmeerderweg, Aalsmeer, North Holland, Netherlands, 1432CN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

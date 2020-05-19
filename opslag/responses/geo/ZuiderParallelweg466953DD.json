@@ -1,0 +1,18 @@
+{
+  "place_id": "36841364",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2854797937",
+  "boundingbox": [
+    "52.0496726",
+    "52.0497726",
+    "6.1097255",
+    "6.1098255"
+  ],
+  "lat": "52.0497226",
+  "lon": "6.1097755",
+  "display_name": "46, Zuider Parallelweg, Dieren, Rheden, Gelderland, Netherlands, 6953DD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

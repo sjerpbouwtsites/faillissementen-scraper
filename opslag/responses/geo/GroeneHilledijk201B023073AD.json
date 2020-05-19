@@ -1,0 +1,16 @@
+{
+  "place_id": "332999291067",
+  "osm_type": "way",
+  "osm_id": "138996678",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.954848",
+  "lon": "4.442958",
+  "display_name": "Rotterdam The Hague Airport, Zestienhoven, Rotterdam, Zuid-Holland, Netherlands",
+  "boundingbox": [
+    "51.9457568",
+    "51.9656389",
+    "4.4222637",
+    "4.4591764"
+  ],
+  "importance": 0.25
+}

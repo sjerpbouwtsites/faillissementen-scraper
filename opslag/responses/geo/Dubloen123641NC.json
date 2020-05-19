@@ -1,0 +1,18 @@
+{
+  "place_id": "35811252",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2876556901",
+  "boundingbox": [
+    "52.2110147",
+    "52.2111147",
+    "4.8605686",
+    "4.8606686"
+  ],
+  "lat": "52.2110647",
+  "lon": "4.8606186",
+  "display_name": "12, Dubloen, Mijdrecht, De Ronde Venen, Utrecht, Netherlands, 3641NC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

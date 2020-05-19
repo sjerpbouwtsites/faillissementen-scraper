@@ -1,0 +1,19 @@
+{
+  "place_id": "25179605",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2675591616",
+  "boundingbox": [
+    "52.2486732",
+    "52.2487732",
+    "6.2168353",
+    "6.2169353"
+  ],
+  "lat": "52.2487232",
+  "lon": "6.2168853",
+  "display_name": "MultiVlaai, 57, Holterweg, Colmschate, Deventer, Overijssel, Netherlands, 7429AE, The Netherlands",
+  "class": "shop",
+  "type": "bakery",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_bakery.p.20.png"
+}

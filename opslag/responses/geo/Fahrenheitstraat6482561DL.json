@@ -1,0 +1,18 @@
+{
+  "place_id": "29888578",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2731774549",
+  "boundingbox": [
+    "52.0801049",
+    "52.0802049",
+    "4.2676379",
+    "4.2677379"
+  ],
+  "lat": "52.0801549",
+  "lon": "4.2676879",
+  "display_name": "648, Fahrenheitstraat, Bomenbuurt, The Hague, South Holland, Netherlands, 2561DL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.321
+}

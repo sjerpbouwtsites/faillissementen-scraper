@@ -1,6 +1,11 @@
 const fs = require("fs");
-const { opties, nutsPad } = require("../config.js");
-const { schrijfOpslag, maakOpslagPad, DateNaarDatumGetal } = require(nutsPad);
+const { opties, nutsPad, opslagPad } = require("../config.js");
+const {
+  schrijfOpslag,
+  maakOpslagPad,
+  pakOpslag,
+  DateNaarDatumGetal,
+} = require(nutsPad);
 
 /**
  * CRUD voor de dagenDb.json.
@@ -24,6 +29,7 @@ function maakDagenDb() {
         gescraped: false, // van rechtbank;
         geconsolideerd: false, // adres en publicaties samengevoegd
         adresGepakt: false, // van locationIQ server latlng geplukt;
+        hadMelding: false,
       });
     });
     schrijfOpslag("dagenDb", dagenVoorDb);
@@ -33,14 +39,26 @@ function maakDagenDb() {
 }
 
 function pakDagenData() {
-  return new Promise(async (resolve) => {
+  return new Promise(async (resolve, reject) => {
     // db wordt uit JSON gehaald of hier gemaakt
     let dagenDb;
     let makenGebruikVanNieuweDb = !fs.existsSync(maakOpslagPad("dagenDb"));
     if (makenGebruikVanNieuweDb) {
+      console.log("maak nieuwe db");
       dagenDb = await maakDagenDb();
     } else {
-      dagenDb = JSON.parse(fs.readFileSync(maakOpslagPad("dagenDb")));
+      const gelezenDb = fs.readFileSync(opslagPad + "/dagenDb.json");
+      dagenDb = JSON.parse(gelezenDb);
+
+      // console.log("pak bestaande db");
+      // try {
+      //   dagenDb = await pakOpslag("dagenDb");
+      // } catch (error) {
+      //   console.log("db status:");
+      //   console.log(typeof dagenDb);
+      //   console.log(dagenDb.length);
+      //   reject(error);
+      // }
     }
 
     const vandaag = DateNaarDatumGetal(new Date());
@@ -53,14 +71,39 @@ function pakDagenData() {
 
     // Adres wordt vanaf locationIQ server gehaald na scrapen rechtbank
     let dagenAdresTePakken = dagenDb.filter((dbDag) => {
-      return dbDag.gescraped && !dbDag.adresGepakt;
+      const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
+      return (
+        dbDag.gescraped &&
+        dbDag.hadMelding &&
+        !dbDag.adresGepakt &&
+        vglMetVandaag <= vandaag
+      );
     });
 
     // samenvoegen van adressen en rechtbank responses
     // consolideerTelkensOpnieuw is eigenlijk een debugOptie
-    let dagenTeConsolideren = dagenAdresTePakken.filter((dbDag) => {
-      return !dbDag.geconsolideerd || opties.consolideerTelkensOpnieuw;
+    let dagenTeConsolideren = dagenDb.filter((dbDag) => {
+      const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
+      return (
+        (dbDag.gescraped &&
+          dbDag.hadMelding &&
+          dbDag.adresGepakt &&
+          vglMetVandaag <= vandaag &&
+          !dbDag.geconsolideerd) ||
+        opties.consolideerTelkensOpnieuw
+      );
     });
+
+    console.log(
+      "db status\n tot:",
+      dagenDb.length,
+      "te doen:",
+      dagenTeDoen.length,
+      "adres te pakken: ",
+      dagenAdresTePakken.length,
+      "te consolideren: ",
+      dagenTeConsolideren.length
+    );
 
     resolve({
       dagen: dagenDb,
@@ -72,15 +115,17 @@ function pakDagenData() {
 }
 
 // apart gehouden want is snel verwarrend
-async function zetGescraped({ gescraped }) {
+async function zetGescraped({ gescraped, hadMelding }) {
   return new Promise(async (resolve) => {
     const dagenData = await pakDagenData();
 
     const nweDagenData = dagenData.dagen.map((dbDag) => {
       const isGescraped = gescraped.some((g) => g.route === dbDag.route);
+      const dezeHadMelding = hadMelding.some((g) => g.route === dbDag.route);
 
       return Object.assign(dbDag, {
         gescraped: dbDag.gescraped || isGescraped,
+        hadMelding: dbDag.hadMelding || dezeHadMelding,
       });
     });
 
@@ -121,7 +166,6 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
 ///// ///// ///// ///// ///// /////
 
 module.exports = {
-  schrijfTemp,
   pakDagenData,
   zetGescraped,
   schrijfAdressenGepakt,

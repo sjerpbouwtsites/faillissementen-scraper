@@ -1,0 +1,18 @@
+{
+  "place_id": "28392564",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2809853770",
+  "boundingbox": [
+    "50.8491313",
+    "50.8492313",
+    "5.7047979",
+    "5.7048979"
+  ],
+  "lat": "50.8491813",
+  "lon": "5.7048479",
+  "display_name": "2, Spoorweglaan, Wyck, Maastricht, Limburg, Netherlands, 6221BS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

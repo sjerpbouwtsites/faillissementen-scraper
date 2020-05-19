@@ -1,0 +1,19 @@
+{
+  "place_id": "29095086",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2762290709",
+  "boundingbox": [
+    "52.3460952",
+    "52.3461952",
+    "4.5830029",
+    "4.5831029"
+  ],
+  "lat": "52.3461452",
+  "lon": "4.5830529",
+  "display_name": "De Oase, 9, 1e Leijweg, Vogelenzang, Bloemendaal, North Holland, Netherlands, 2114BH, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

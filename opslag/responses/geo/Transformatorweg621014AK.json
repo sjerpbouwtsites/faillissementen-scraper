@@ -1,0 +1,18 @@
+{
+  "place_id": "26799418",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2738247552",
+  "boundingbox": [
+    "52.3922539",
+    "52.3923539",
+    "4.84881",
+    "4.84891"
+  ],
+  "lat": "52.3923039",
+  "lon": "4.84886",
+  "display_name": "MMIT, 62, Transformatorweg, Sloterdijk, Amsterdam, North Holland, Netherlands, 1014AK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

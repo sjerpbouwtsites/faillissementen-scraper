@@ -33,16 +33,21 @@ function pakScript(subPad) {
   return r;
 }
 
-function pakOpslag(subPad) {
-  return new Promise((resolve, reject) => {
-    const p = maakOpslagPad(subPad);
-    if (!fs.existsSync(p)) {
-      reject("bestand bestaat niet", p);
-    } else {
-      const b = fs.readFileSync(p);
-      resolve(JSON.parse(b));
+function pakOpslag(subPad, moetBestaan = false) {
+  if (typeof subPad !== "string") {
+    throw new Error("geen string: " + JSON.stringify(subPad));
+  }
+  const p = maakOpslagPad(subPad);
+  if (!fs.existsSync(p)) {
+    if (moetBestaan) {
+      throw new Error(
+        "bestand bestaat niet" + typeof p === "string" ? p : JSON.stringify(p)
+      );
     }
-  });
+  } else {
+    const b = fs.readFileSync(p);
+    return JSON.parse(b);
+  }
 }
 
 function legeCatch(err) {
@@ -50,8 +55,11 @@ function legeCatch(err) {
 }
 
 function schrijfOpslag(pad, data) {
+  // console.log("schrijf op pad", pad);
+  // console.log("schrijflengte: ", data.length);
+  // console.log(data);
   let wpad = pad.includes("opslag") ? pad : maakOpslagPad(pad);
-  fs.writeFile(wpad, JSON.stringify(data, null, "  "), () => {});
+  fs.writeFileSync(wpad, JSON.stringify(data, null, "  "));
 }
 
 function schrijfTemp(bla, achtervoeging = "") {
@@ -68,18 +76,12 @@ function schrijfTemp(bla, achtervoeging = "") {
 function DateNaarDatumGetal(dateObjectOfISOString) {
   if (typeof dateObjectOfISOString === "string") {
     return dateObjectOfISOString.split("T")[0].split("-").join("");
-  } else if (dateObjectOfISOString.hasOwnProperty("getDate")) {
+  } else {
     return dateObjectOfISOString
       .toISOString()
       .split("T")[0]
       .split("-")
       .join("");
-  } else {
-    throw new Error([
-      "datum is niet wat verwacht wordt",
-      dateObjectOfISOString,
-      typeof dateObjectOfISOString,
-    ]);
   }
 }
 

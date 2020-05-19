@@ -11,12 +11,11 @@ const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
 
 async function init() {
-  const dagenDatabase = pakScript("dagen-database");
-  const scraper = pakScript("scraper");
-  const adressen = pakScript("adressen");
-  const consolidatie = pakScript("consolidatie");
-
   try {
+    const dagenDatabase = pakScript("dagen-database");
+    const scraper = pakScript("scraper");
+    const adressen = pakScript("adressen");
+    const consolidatie = pakScript("consolidatie");
     const db = await dagenDatabase.pakDagenData();
     if (db.dagenTeDoen.length) {
       const scraperAntwoord = await scraper.scrapeDagen(db.dagenTeDoen);
@@ -24,8 +23,8 @@ async function init() {
     }
     await adressen.zoekAdressen();
     await adressen.consolideerAdressen();
-    await consolidatie.consolideerResponsesEnAdressen();
-    console.log("einde init");
+    const consolidatieAntwoord = await consolidatie.consolideerResponsesEnAdressen();
+    console.log("einde init", consolidatieAntwoord, " adressen beschikbaar");
   } catch (error) {
     console.error(error);
   }

@@ -1,0 +1,18 @@
+{
+  "place_id": "44077248",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3165883403",
+  "boundingbox": [
+    "51.9639927",
+    "51.9640927",
+    "5.9740743",
+    "5.9741743"
+  ],
+  "lat": "51.9640427",
+  "lon": "5.9741243",
+  "display_name": "27, Hamersestraat, Westervoort, Gelderland, Netherlands, 6931EV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

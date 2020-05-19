@@ -1,0 +1,18 @@
+{
+  "place_id": "31117660",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2748028544",
+  "boundingbox": [
+    "51.824948",
+    "51.825048",
+    "4.3492442",
+    "4.3493442"
+  ],
+  "lat": "51.824998",
+  "lon": "4.3492942",
+  "display_name": "8, D. de Koninglaan, Hekelingen, Nissewaard, South Holland, Netherlands, 3209BS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

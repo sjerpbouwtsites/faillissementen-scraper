@@ -1,0 +1,18 @@
+{
+  "place_id": "32318282",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2896223298",
+  "boundingbox": [
+    "52.2125999",
+    "52.2126999",
+    "4.45646",
+    "4.45656"
+  ],
+  "lat": "52.2126499",
+  "lon": "4.45651",
+  "display_name": "56, Trappenberglaan, Landwaard, Rijnsburg, Katwijk, South Holland, Netherlands, 2231MV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

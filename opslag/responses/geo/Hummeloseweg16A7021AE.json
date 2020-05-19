@@ -1,0 +1,18 @@
+{
+  "place_id": "76073031",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6788694",
+  "boundingbox": [
+    "52.003715",
+    "52.0051004",
+    "6.2986567",
+    "6.3078486"
+  ],
+  "lat": "52.0045934",
+  "lon": "6.3033722",
+  "display_name": "Hummeloseweg, Zelhem, Bronckhorst, Gelderland, Netherlands, 7021KM, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

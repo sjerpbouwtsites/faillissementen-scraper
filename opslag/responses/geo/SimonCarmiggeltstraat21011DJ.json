@@ -1,0 +1,18 @@
+{
+  "place_id": "30888797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2743729128",
+  "boundingbox": [
+    "52.3762361",
+    "52.3763361",
+    "4.9060274",
+    "4.9061274"
+  ],
+  "lat": "52.3762861",
+  "lon": "4.9060774",
+  "display_name": "2, Simon Carmiggeltstraat, Oosterdokseiland, Amsterdam, North Holland, Netherlands, 1011DJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

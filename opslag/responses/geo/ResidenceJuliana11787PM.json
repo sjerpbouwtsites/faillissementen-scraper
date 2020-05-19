@@ -1,0 +1,18 @@
+{
+  "place_id": "35158484",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2858589133",
+  "boundingbox": [
+    "52.9080608",
+    "52.9081608",
+    "4.7197013",
+    "4.7198013"
+  ],
+  "lat": "52.9081108",
+  "lon": "4.7197513",
+  "display_name": "1, Residence Juliana, Julianadorp, Den Helder, North Holland, Netherlands, 1787PM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

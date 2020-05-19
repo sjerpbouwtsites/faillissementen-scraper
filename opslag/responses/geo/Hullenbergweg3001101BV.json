@@ -1,0 +1,18 @@
+{
+  "place_id": "37411096",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2862919509",
+  "boundingbox": [
+    "52.3050198",
+    "52.3051198",
+    "4.9517392",
+    "4.9518392"
+  ],
+  "lat": "52.3050698",
+  "lon": "4.9517892",
+  "display_name": "300, Hullenbergweg, Amstel III, Amsterdam, North Holland, Netherlands, 1101BV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

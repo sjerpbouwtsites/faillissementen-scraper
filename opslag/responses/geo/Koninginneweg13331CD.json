@@ -1,0 +1,18 @@
+{
+  "place_id": "30574739",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2741749323",
+  "boundingbox": [
+    "51.8214664",
+    "51.8215664",
+    "4.646569",
+    "4.646669"
+  ],
+  "lat": "51.8215164",
+  "lon": "4.646619",
+  "display_name": "1, Koninginneweg, Zwijndrecht, South Holland, Netherlands, 3331CD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

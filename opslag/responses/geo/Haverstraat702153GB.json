@@ -1,0 +1,18 @@
+{
+  "place_id": "30484182",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2736756089",
+  "boundingbox": [
+    "52.2704989",
+    "52.2705989",
+    "4.6445167",
+    "4.6446167"
+  ],
+  "lat": "52.2705489",
+  "lon": "4.6445667",
+  "display_name": "70, Haverstraat, Spoorzicht, Nieuw-Vennep, Haarlemmermeer, North Holland, Netherlands, 2153GB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

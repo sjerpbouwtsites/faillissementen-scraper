@@ -1,0 +1,18 @@
+{
+  "place_id": "28910157",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2686707354",
+  "boundingbox": [
+    "52.1953569",
+    "52.1954569",
+    "5.9520367",
+    "5.9521367"
+  ],
+  "lat": "52.1954069",
+  "lon": "5.9520867",
+  "display_name": "70, Hoenderparkweg, Metaalbuurt, Apeldoorn, Gelderland, Netherlands, 7335GV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "35589869",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2829904179",
+  "boundingbox": [
+    "50.9597461",
+    "50.9598461",
+    "5.8298942",
+    "5.8299942"
+  ],
+  "lat": "50.9597961",
+  "lon": "5.8299442",
+  "display_name": "13, Breitnerstraat, Kluis, Geleen, Sittard-Geleen, Limburg, Netherlands, 6165VM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -21,11 +21,10 @@ const maanden = [
 ];
 module.exports = {
   opties: {
-    schrijfAlleRequestsWeg: true,
     overschrijfAlleRequest: false,
     consolideerTelkensOpnieuw: true,
-    startDatum: "2020-01-01",
-    eindDatum: "2022-12-31",
+    startDatum: "2020-05-05",
+    eindDatum: "2022-05-10",
     volleDebug: false,
     toegestaneClusters: [
       "einde faillissementen",

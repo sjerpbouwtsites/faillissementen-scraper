@@ -1,0 +1,18 @@
+{
+  "place_id": "278144798",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "7251565970",
+  "boundingbox": [
+    "52.3082098",
+    "52.3083098",
+    "4.9452462",
+    "4.9453462"
+  ],
+  "lat": "52.3082598",
+  "lon": "4.9452962",
+  "display_name": "CompaNanny Atlas Arena, 15, Hoogoorddreef, Bullewijk, Amsterdam, North Holland, Netherlands, 1101BA, The Netherlands",
+  "class": "amenity",
+  "type": "childcare",
+  "importance": 0.331
+}

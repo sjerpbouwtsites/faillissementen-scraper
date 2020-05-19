@@ -54,13 +54,13 @@ if (Math.random() * 10 > 8 && typeof spelVraag !== "undefined") {
   sessionStorage.setItem("snaptHet", JSON.stringify(eerdereAntwoorden));
 }
 
-if (!sessionStorage.getItem("marx-citaten")) {
-  fetch("opslag/marx.json")
-    .then((r) => r.json())
-    .then((marx) => {
-      sessionStorage.setItem("marx-citaten", JSON.stringify(marx));
-    });
-}
+// if (!sessionStorage.getItem("marx-citaten")) {
+//   fetch("opslag/marx.json")
+//     .then((r) => r.json())
+//     .then((marx) => {
+//       sessionStorage.setItem("marx-citaten", JSON.stringify(marx));
+//     });
+// }
 
 function pakMarxCitaat() {
   const m = JSON.parse(sessionStorage.getItem("marx-citaten"));
@@ -86,11 +86,11 @@ function pakFaillissementen() {
 
 async function initFrontend() {
   const kaart = initMap();
-  const faillissementen = await pakFaillissementen();
-
-  zetMapInfo(faillissementen);
-  zetMarkers(faillissementen, kaart);
-  zetKvKKnopEvent(faillissementen);
+  pakFaillissementen().then((faillissementen) => {
+    zetMapInfo(faillissementen);
+    zetMarkers(kaart);
+    zetKvKKnopEvent(faillissementen);
+  });
 }
 
 function haalKvkInfoEnPrint(kvkNummer, geheelNieuw = false, kvkNummers = []) {
@@ -98,9 +98,7 @@ function haalKvkInfoEnPrint(kvkNummer, geheelNieuw = false, kvkNummers = []) {
     gbi("kvk-resultaat").classList.add("ladend");
   }
 
-  document
-    .getElementById("sluit-kvk-paneel")
-    .setAttribute("title", pakMarxCitaat());
+  gbi("sluit-kvk-paneel").setAttribute("title", pakMarxCitaat());
 
   //#region axios kvk
   axios
@@ -131,11 +129,11 @@ function haalKvkInfoEnPrint(kvkNummer, geheelNieuw = false, kvkNummers = []) {
           gbi("kvk-paneel").classList.add("open");
         }, 350);
         setTimeout(function () {
-          document.getElementById("kvk-paneel").classList.remove("groot");
+          gbi("kvk-paneel").classList.remove("groot");
         }, 450);
       } // eind geheel nieuw
       else {
-        document.getElementById("kvk-resultaat").classList.remove("ladend");
+        gbi("kvk-resultaat").classList.remove("ladend");
       }
     }); // eind then exios KVK
   // #endregion axiosvk
@@ -166,7 +164,9 @@ function zetKvKKnopEvent(faillissementen) {
     });
 }
 
-function zetMarkers(faillissementen, kaart) {
+async function zetMarkers(kaart) {
+  let faillissementen = await pakFaillissementen();
+
   const vandaag = new Date().getTime();
   const markers = faillissementen.map((faillissement) => {
     // verder in het verleden opacity geven.
@@ -187,6 +187,8 @@ function zetMarkers(faillissementen, kaart) {
         opacity: opacity,
       },
     ]).addTo(kaart);
+    console.log(kaart);
+    console.log(marker);
 
     const datumHTML = faillissement.datum
       ? `<h3>${new Date().toDateString()}</h3>`
@@ -240,32 +242,30 @@ function initMap() {
   return mymap;
 }
 function setSluitKvKPaneelEvent() {
-  document
-    .getElementById("sluit-kvk-paneel")
-    .addEventListener("click", function () {
-      gbi("sluit-kvk-paneel").classList.add("groot");
+  gbi("sluit-kvk-paneel").addEventListener("click", function () {
+    gbi("sluit-kvk-paneel").classList.add("groot");
 
-      // print marx citaat naar sluitknop
-      if (Math.random() < 1) {
-        // gbi("marquee").classList.add("beweeg");
-        // gbi("marquee").classList.remove("verborgen");
-        // console.log(gbi("marquee-binnen"));
-        // gbi(
-        //   "marquee-binnen"
-        // ).innerHTML = pakMarxCitaat();
-        // setTimeout(function () {
-        //   gbi("marquee").classList.remove("beweeg");
-        //   gbi("marquee").classList.add("verborgen");
-        // }, 3500);
-      }
+    // print marx citaat naar sluitknop
+    if (Math.random() < 1) {
+      // gbi("marquee").classList.add("beweeg");
+      // gbi("marquee").classList.remove("verborgen");
+      // console.log(gbi("marquee-binnen"));
+      // gbi(
+      //   "marquee-binnen"
+      // ).innerHTML = pakMarxCitaat();
+      // setTimeout(function () {
+      //   gbi("marquee").classList.remove("beweeg");
+      //   gbi("marquee").classList.add("verborgen");
+      // }, 3500);
+    }
 
-      setTimeout(function () {
-        gbi("kvk-paneel").classList.remove("open");
-      }, 300);
-      setTimeout(function () {
-        document.getElementById("sluit-kvk-paneel").classList.remove("groot");
-      }, 500);
-    });
+    setTimeout(function () {
+      gbi("kvk-paneel").classList.remove("open");
+    }, 300);
+    setTimeout(function () {
+      gbi("sluit-kvk-paneel").classList.remove("groot");
+    }, 500);
+  });
 }
 
 function datediff(first, second) {
@@ -274,7 +274,7 @@ function datediff(first, second) {
   return Math.round((second - first) / (1000 * 60 * 60 * 24));
 }
 
-async function zetMapInfo(faillissementen) {
+async function zetMapInfo() {
   return new Promise(async (resolve) => {
     let fail = await pakFaillissementen();
     let alleDatums = fail

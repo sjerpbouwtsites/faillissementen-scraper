@@ -1,0 +1,18 @@
+{
+  "place_id": "32033847",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2770353101",
+  "boundingbox": [
+    "50.9409216",
+    "50.9410216",
+    "5.9237992",
+    "5.9238992"
+  ],
+  "lat": "50.9409716",
+  "lon": "5.9238492",
+  "display_name": "33, Hoofdstraat, Amstenrade, Beekdaelen, Limburg, Netherlands, 6436CB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

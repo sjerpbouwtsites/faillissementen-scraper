@@ -1,0 +1,18 @@
+{
+  "place_id": "27563922",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2595412472",
+  "boundingbox": [
+    "51.9948182",
+    "51.9949182",
+    "4.3466033",
+    "4.3467033"
+  ],
+  "lat": "51.9948682",
+  "lon": "4.3466533",
+  "display_name": "265, Diepenbrockstraat, Buitenhof, Delft, South Holland, Netherlands, 2625XM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

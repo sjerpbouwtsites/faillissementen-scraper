@@ -1,0 +1,18 @@
+{
+  "place_id": "33269099",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2789512166",
+  "boundingbox": [
+    "51.552059",
+    "51.552159",
+    "4.5815849",
+    "4.5816849"
+  ],
+  "lat": "51.552109",
+  "lon": "4.5816349",
+  "display_name": "108, Rozenkransstraat, St. Willebrord, Rucphen, North Brabant, Netherlands, 4711GC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.321
+}

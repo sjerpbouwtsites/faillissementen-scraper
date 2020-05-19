@@ -1,0 +1,18 @@
+{
+  "place_id": "32482571",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2782293798",
+  "boundingbox": [
+    "52.024327",
+    "52.024427",
+    "4.6815627",
+    "4.6816627"
+  ],
+  "lat": "52.024377",
+  "lon": "4.6816127",
+  "display_name": "6, Stavorenweg, Goudse Poort, Gouda, South Holland, Netherlands, 2803PT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,52 +1,20 @@
 const { opties, nutsPad, maanden } = require("../config.js");
 const fs = require("fs");
-const { pakScript, pakOpslag, schrijfOpslag, maakOpslagPad } = require(nutsPad);
+const {
+  pakScript,
+  pakOpslag,
+  schrijfOpslag,
+  maakOpslagPad,
+  schrijfTemp,
+} = require(nutsPad);
 const dagenDb = pakScript("dagen-database");
 
 async function consolideerResponsesEnAdressen() {
   return new Promise(async (resolve) => {
     const { dagenTeConsolideren } = await dagenDb.pakDagenData();
-    const toegestaneClusters = opties.toegestaneClusters;
-    const ontoegestaneClusters = opties.ontoegestaneClusters;
 
-    const publicatieData = dagenTeConsolideren
-      .map((dag) => {
-        const bs = JSON.parse(
-          fs.readFileSync(maakOpslagPad(`responses/rechtbank/${dag.route}`))
-        );
-        return bs;
-      })
-      .flat()
-      .map((bestand) => {
-        return bestand.Instanties;
-      })
-      .flat()
-      .map((instantie) => {
-        return instantie.Publicatieclusters;
-      })
-      .flat()
-      .filter((pc) => {
-        const pco = pc.PublicatieclusterOmschrijving;
-        if (toegestaneClusters.includes(pco)) {
-          return true;
-        } else if (!ontoegestaneClusters.includes(pco)) {
-          console.log("pc cluster omschrijving onbekend: " + pco);
-          return false;
-        } else {
-          return false;
-        }
-      })
-      .map((pc) => {
-        return pc.Publicatiesoorten;
-      })
-      .flat()
-      .map((pc) => {
-        return pc.PublicatiesNaarLocatie;
-      })
-      .flat()
-      .map((p) => {
-        return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
-      });
+    // het is het continu reduceren van de objecten totdat alleen de publicaties over zijn.
+    const publicatieData = maakPublicatieData(dagenTeConsolideren);
 
     const adressen = await pakOpslag("adressen");
 
@@ -104,8 +72,54 @@ async function consolideerResponsesEnAdressen() {
 
     schrijfOpslag(`geconsolideerde-adressen`, verrijkteAdressen);
 
-    resolve();
+    resolve(verrijkteAdressen.length);
   });
 }
 
 module.exports = { consolideerResponsesEnAdressen };
+
+function maakPublicatieData(dagenTeConsolideren) {
+  const toegestaneClusters = opties.toegestaneClusters;
+  const ontoegestaneClusters = opties.ontoegestaneClusters;
+
+  return dagenTeConsolideren
+    .map((dag) => {
+      const p = maakOpslagPad(`responses/rechtbank/${dag.route}`);
+      if (!fs.existsSync(p)) {
+        return [];
+      }
+      const bs = JSON.parse(fs.readFileSync(p));
+      return bs;
+    })
+    .flat()
+    .map((bestand) => {
+      return bestand.Instanties;
+    })
+    .flat()
+    .map((instantie) => {
+      return instantie.Publicatieclusters;
+    })
+    .flat()
+    .filter((pc) => {
+      const pco = pc.PublicatieclusterOmschrijving;
+      if (toegestaneClusters.includes(pco)) {
+        return true;
+      } else if (!ontoegestaneClusters.includes(pco)) {
+        console.log("pc cluster omschrijving onbekend: " + pco);
+        return false;
+      } else {
+        return false;
+      }
+    })
+    .map((pc) => {
+      return pc.Publicatiesoorten;
+    })
+    .flat()
+    .map((pc) => {
+      return pc.PublicatiesNaarLocatie;
+    })
+    .flat()
+    .map((p) => {
+      return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
+    });
+}

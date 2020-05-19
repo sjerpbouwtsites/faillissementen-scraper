@@ -1,0 +1,18 @@
+{
+  "place_id": "39399014",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2924652467",
+  "boundingbox": [
+    "51.3894656",
+    "51.3895656",
+    "6.1844842",
+    "6.1845842"
+  ],
+  "lat": "51.3895156",
+  "lon": "6.1845342",
+  "display_name": "5, Van Coehoornstraat, Veegtes, Venlo, Limburg, Netherlands, 5916PH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

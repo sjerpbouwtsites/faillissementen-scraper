@@ -1,0 +1,18 @@
+{
+  "place_id": "207801994",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "577755366",
+  "boundingbox": [
+    "52.2128562",
+    "52.2131462",
+    "5.9999483",
+    "6.0007479"
+  ],
+  "lat": "52.2131462",
+  "lon": "5.9999483",
+  "display_name": "Het Rietveld, Matenhorst, Apeldoorn, Gelderland, Netherlands, 7321CT, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.51
+}

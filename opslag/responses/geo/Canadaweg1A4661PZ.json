@@ -1,0 +1,18 @@
+{
+  "place_id": "195508271",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "486930719",
+  "boundingbox": [
+    "51.5417441",
+    "51.5418471",
+    "4.28717",
+    "4.2882089"
+  ],
+  "lat": "51.5417975",
+  "lon": "4.2879772",
+  "display_name": "Canadaweg, Oude Molen, Halsteren, Bergen op Zoom, North Brabant, Netherlands, 4661PZ, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.52
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "187249598",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "449233939",
+  "boundingbox": [
+    "52.284694",
+    "52.2847148",
+    "6.9290583",
+    "6.9300906"
+  ],
+  "lat": "52.2847127",
+  "lon": "6.9296079",
+  "display_name": "Hanzepoort, Oldenzaal, Overijssel, Netherlands, 7574PB, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.42
+}

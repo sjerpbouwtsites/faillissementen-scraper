@@ -1,0 +1,18 @@
+{
+  "place_id": "25606710",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750247426",
+  "boundingbox": [
+    "52.2391027",
+    "52.2392027",
+    "6.8888666",
+    "6.8889666"
+  ],
+  "lat": "52.2391527",
+  "lon": "6.8889166",
+  "display_name": "57, Spaarnestraat, Mekkelholt, Enschede, Overijssel, Netherlands, 7523VK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

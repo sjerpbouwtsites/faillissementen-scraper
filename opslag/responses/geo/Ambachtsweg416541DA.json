@@ -1,0 +1,18 @@
+{
+  "place_id": "39991175",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2953576418",
+  "boundingbox": [
+    "51.8416168",
+    "51.8417168",
+    "5.8156249",
+    "5.8157249"
+  ],
+  "lat": "51.8416668",
+  "lon": "5.8156749",
+  "display_name": "41, Ambachtsweg, Oostkanaaldijk, Nijmegen-Nieuw-West, Nijmegen, Gelderland, Netherlands, 6541DA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

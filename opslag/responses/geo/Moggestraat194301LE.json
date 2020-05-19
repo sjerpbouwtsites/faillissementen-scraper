@@ -1,0 +1,18 @@
+{
+  "place_id": "33781834",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2806605123",
+  "boundingbox": [
+    "51.6494504",
+    "51.6495504",
+    "3.9291475",
+    "3.9292475"
+  ],
+  "lat": "51.6495004",
+  "lon": "3.9291975",
+  "display_name": "19, Moggestraat, Zierikzee, Schouwen-Duiveland, Zeeland, Netherlands, 4301LE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "30972837",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2747450409",
+  "boundingbox": [
+    "52.2225078",
+    "52.2226078",
+    "6.8717652",
+    "6.8718652"
+  ],
+  "lat": "52.2225578",
+  "lon": "6.8718152",
+  "display_name": "10-3, Rigtersbleek-Zandvoort, Rigtersbleek, Enschede, Overijssel, Netherlands, 7521BE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

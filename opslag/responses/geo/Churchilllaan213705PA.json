@@ -1,0 +1,18 @@
+{
+  "place_id": "31366396",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2785598299",
+  "boundingbox": [
+    "52.1020498",
+    "52.1021498",
+    "5.2426021",
+    "5.2427021"
+  ],
+  "lat": "52.1020998",
+  "lon": "5.2426521",
+  "display_name": "21, Churchill-laan, Zeist, Utrecht, Netherlands, 3705PA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

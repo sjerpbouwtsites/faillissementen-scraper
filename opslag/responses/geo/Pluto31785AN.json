@@ -1,0 +1,18 @@
+{
+  "place_id": "37186749",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2858943677",
+  "boundingbox": [
+    "52.9460794",
+    "52.9461794",
+    "4.7780222",
+    "4.7781222"
+  ],
+  "lat": "52.9461294",
+  "lon": "4.7780722",
+  "display_name": "3, Pluto, Den Helder, North Holland, Netherlands, 1785AN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

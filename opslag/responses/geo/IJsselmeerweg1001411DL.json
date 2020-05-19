@@ -1,0 +1,18 @@
+{
+  "place_id": "37015122",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2866149238",
+  "boundingbox": [
+    "52.3206959",
+    "52.3207959",
+    "5.1408043",
+    "5.1409043"
+  ],
+  "lat": "52.3207459",
+  "lon": "5.1408543",
+  "display_name": "100, IJsselmeerweg, Naarderbos, Naarden, Gooise Meren, North Holland, Netherlands, 1411DL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

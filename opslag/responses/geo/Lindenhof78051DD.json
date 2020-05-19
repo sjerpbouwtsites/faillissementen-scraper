@@ -1,0 +1,18 @@
+{
+  "place_id": "24230651",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2503185555",
+  "boundingbox": [
+    "52.4660876",
+    "52.4661876",
+    "6.0734831",
+    "6.0735831"
+  ],
+  "lat": "52.4661376",
+  "lon": "6.0735331",
+  "display_name": "7, Lindenhof, Hattem, Gelderland, Netherlands, 8051DD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

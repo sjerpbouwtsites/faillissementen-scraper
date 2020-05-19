@@ -1,0 +1,18 @@
+{
+  "place_id": "28624860",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2695306341",
+  "boundingbox": [
+    "52.0685346",
+    "52.0686346",
+    "4.6605407",
+    "4.6606407"
+  ],
+  "lat": "52.0685846",
+  "lon": "4.6605907",
+  "display_name": "37, Den Ham, Boskoop, Alphen aan den Rijn, South Holland, Netherlands, 2771WV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

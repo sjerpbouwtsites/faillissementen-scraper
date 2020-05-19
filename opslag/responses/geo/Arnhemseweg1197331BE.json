@@ -1,0 +1,18 @@
+{
+  "place_id": "28626336",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2686855728",
+  "boundingbox": [
+    "52.2021837",
+    "52.2022837",
+    "5.9594114",
+    "5.9595114"
+  ],
+  "lat": "52.2022337",
+  "lon": "5.9594614",
+  "display_name": "Lamers Voetcomfort, 119, Arnhemseweg, Metaalbuurt, Apeldoorn, Gelderland, Netherlands, 7331BE, The Netherlands",
+  "class": "shop",
+  "type": "shoes",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "81011107",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6873807",
+  "boundingbox": [
+    "51.8190924",
+    "51.8191157",
+    "5.8555229",
+    "5.8557851"
+  ],
+  "lat": "51.8191157",
+  "lon": "5.8555229",
+  "display_name": "Slotemaker de Bruïneweg, Hatertse Hei, Nijmegen-Zuid, Nijmegen, Gelderland, Netherlands, 6525ZN, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.61
+}

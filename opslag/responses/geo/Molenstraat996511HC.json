@@ -1,0 +1,19 @@
+{
+  "place_id": "5665760",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "597259999",
+  "boundingbox": [
+    "51.8434508",
+    "51.8435508",
+    "5.8614275",
+    "5.8615275"
+  ],
+  "lat": "51.8435008",
+  "lon": "5.8614775",
+  "display_name": "Pinoccio, 99, Molenstraat, Stadscentrum, Nijmegen-Centrum, Nijmegen, Gelderland, Netherlands, 6511HC, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

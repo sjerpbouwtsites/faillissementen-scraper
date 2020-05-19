@@ -1,0 +1,18 @@
+{
+  "place_id": "35272323",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2827797144",
+  "boundingbox": [
+    "52.3201304",
+    "52.3202304",
+    "6.9237476",
+    "6.9238476"
+  ],
+  "lat": "52.3201804",
+  "lon": "6.9237976",
+  "display_name": "35, Bentheimergraven, Oldenzaal, Overijssel, Netherlands, 7577DA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

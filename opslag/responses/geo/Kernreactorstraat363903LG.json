@@ -1,0 +1,18 @@
+{
+  "place_id": "32070867",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2776726491",
+  "boundingbox": [
+    "52.0090037",
+    "52.0091037",
+    "5.5645845",
+    "5.5646845"
+  ],
+  "lat": "52.0090537",
+  "lon": "5.5646345",
+  "display_name": "36, Kernreactorstraat, Nijverkamp, Veenendaal, Utrecht, Netherlands, 3903LG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

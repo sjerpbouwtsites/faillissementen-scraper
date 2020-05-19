@@ -1,0 +1,19 @@
+{
+  "place_id": "60514206",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "4901150825",
+  "boundingbox": [
+    "52.3699316",
+    "52.3700316",
+    "4.8928233",
+    "4.8929233"
+  ],
+  "lat": "52.3699816",
+  "lon": "4.8928733",
+  "display_name": "De Nissen, 95, Rokin, Burgwallen-Oude Zijde, Amsterdam, North Holland, Netherlands, 1012KM, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

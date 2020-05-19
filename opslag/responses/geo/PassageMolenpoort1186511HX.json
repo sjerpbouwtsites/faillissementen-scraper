@@ -1,0 +1,18 @@
+{
+  "place_id": "64956925",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5418879311",
+  "boundingbox": [
+    "51.8441717",
+    "51.8442717",
+    "5.8639526",
+    "5.8640526"
+  ],
+  "lat": "51.8442217",
+  "lon": "5.8640026",
+  "display_name": "118, Passage Molenpoort, Stadscentrum, Nijmegen-Centrum, Nijmegen, Gelderland, Netherlands, 6511HX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

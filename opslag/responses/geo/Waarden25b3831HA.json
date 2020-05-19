@@ -1,0 +1,18 @@
+{
+  "place_id": "130746483",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "180159391",
+  "boundingbox": [
+    "52.1339226",
+    "52.1339966",
+    "5.4422269",
+    "5.4424174"
+  ],
+  "lat": "52.133936",
+  "lon": "5.4423521",
+  "display_name": "Waarden, Alandsbeek, Leusden, Utrecht, Netherlands, 3831HD, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.42
+}

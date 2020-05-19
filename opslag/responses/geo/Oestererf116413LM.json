@@ -1,0 +1,18 @@
+{
+  "place_id": "35891945",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2840186164",
+  "boundingbox": [
+    "50.914318",
+    "50.914418",
+    "5.9527187",
+    "5.9528187"
+  ],
+  "lat": "50.914368",
+  "lon": "5.9527687",
+  "display_name": "11, Oestererf, Groot Rennemig, Heerlen, Limburg, Netherlands, 6413LM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,19 @@
+{
+  "place_id": "41181893",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3018770890",
+  "boundingbox": [
+    "51.9000539",
+    "51.9001539",
+    "5.4354558",
+    "5.4355558"
+  ],
+  "lat": "51.9001039",
+  "lon": "5.4355058",
+  "display_name": "van der Valk Tiel, 10, Laan van Westroijen, Westroijen, Tiel, Gelderland, Netherlands, 4003, The Netherlands",
+  "class": "tourism",
+  "type": "hotel",
+  "importance": 0.531,
+  "icon": "https://locationiq.org/static/images/mapicons/accommodation_hotel2.p.20.png"
+}

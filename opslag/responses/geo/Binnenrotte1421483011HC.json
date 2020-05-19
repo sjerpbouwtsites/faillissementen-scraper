@@ -1,0 +1,18 @@
+{
+  "place_id": "165538577",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "332035666",
+  "boundingbox": [
+    "51.9228518",
+    "51.9230394",
+    "4.484373",
+    "4.4846268"
+  ],
+  "lat": "51.9230394",
+  "lon": "4.484373",
+  "display_name": "Binnenrotte, Stadsdriehoek, Rotterdam, South Holland, Netherlands, 3011JD, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.31
+}

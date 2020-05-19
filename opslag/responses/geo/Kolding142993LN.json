@@ -1,0 +1,18 @@
+{
+  "place_id": "27091319",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2745279318",
+  "boundingbox": [
+    "51.8517365",
+    "51.8518365",
+    "4.5129127",
+    "4.5130127"
+  ],
+  "lat": "51.8517865",
+  "lon": "4.5129627",
+  "display_name": "14, Kolding, Vaanpark, Barendrecht, South Holland, Netherlands, 2993LN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "30109446",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2785437315",
+  "boundingbox": [
+    "51.9275135",
+    "51.9276135",
+    "4.4115449",
+    "4.4116449"
+  ],
+  "lat": "51.9275635",
+  "lon": "4.4115949",
+  "display_name": "31, Strickledeweg, Spaanse Polder, Schiedam, South Holland, Netherlands, 3125AT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

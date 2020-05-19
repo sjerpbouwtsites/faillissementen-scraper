@@ -1,0 +1,18 @@
+{
+  "place_id": "31512033",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2755778307",
+  "boundingbox": [
+    "51.7146615",
+    "51.7147615",
+    "5.3102397",
+    "5.3103397"
+  ],
+  "lat": "51.7147115",
+  "lon": "5.3102897",
+  "display_name": "807, Klokkenlaan, De Rompert, 's-Hertogenbosch, North Brabant, Netherlands, 5231AX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

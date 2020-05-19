@@ -1,0 +1,18 @@
+{
+  "place_id": "26676203",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2704841751",
+  "boundingbox": [
+    "52.0820666",
+    "52.0821666",
+    "4.3800188",
+    "4.3801188"
+  ],
+  "lat": "52.0821166",
+  "lon": "4.3800688",
+  "display_name": "26, Park de Elsberg, Essesteijn, Voorburg, Leidschendam-Voorburg, South Holland, Netherlands, 2272DA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

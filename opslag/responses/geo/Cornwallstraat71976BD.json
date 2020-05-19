@@ -1,0 +1,18 @@
+{
+  "place_id": "32250620",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2775823980",
+  "boundingbox": [
+    "52.4538281",
+    "52.4539281",
+    "4.584925",
+    "4.585025"
+  ],
+  "lat": "52.4538781",
+  "lon": "4.584975",
+  "display_name": "7, Cornwallstraat, IJmuiden, Velsen, North Holland, Netherlands, 1976BD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

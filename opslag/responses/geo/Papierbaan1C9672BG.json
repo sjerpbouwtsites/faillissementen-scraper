@@ -1,0 +1,18 @@
+{
+  "place_id": "133876435",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "195376543",
+  "boundingbox": [
+    "53.1476692",
+    "53.1503894",
+    "7.0494254",
+    "7.0571556"
+  ],
+  "lat": "53.1487108",
+  "lon": "7.0532801",
+  "display_name": "Papierbaan, Reiderland, Winschoten, Oldambt, Groningen, Netherlands, 9672BH, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.42
+}

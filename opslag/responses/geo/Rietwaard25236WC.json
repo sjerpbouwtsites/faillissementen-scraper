@@ -1,0 +1,18 @@
+{
+  "place_id": "25610546",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750456250",
+  "boundingbox": [
+    "51.7318814",
+    "51.7319814",
+    "5.3154953",
+    "5.3155953"
+  ],
+  "lat": "51.7319314",
+  "lon": "5.3155453",
+  "display_name": "2, Rietwaard, Maasakker, 's-Hertogenbosch, North Brabant, Netherlands, 5236WC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

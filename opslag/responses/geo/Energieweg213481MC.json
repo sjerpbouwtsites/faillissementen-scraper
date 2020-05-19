@@ -1,0 +1,18 @@
+{
+  "place_id": "37639436",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2878379088",
+  "boundingbox": [
+    "52.0990267",
+    "52.0991267",
+    "4.9453874",
+    "4.9454874"
+  ],
+  "lat": "52.0990767",
+  "lon": "4.9454374",
+  "display_name": "21, Energieweg, De Putkop, Harmelen, Woerden, Utrecht, Netherlands, 3481MC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

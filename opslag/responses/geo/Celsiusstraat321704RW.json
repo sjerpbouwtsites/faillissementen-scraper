@@ -1,0 +1,18 @@
+{
+  "place_id": "36849114",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2855153243",
+  "boundingbox": [
+    "52.6862732",
+    "52.6863732",
+    "4.829653",
+    "4.829753"
+  ],
+  "lat": "52.6863232",
+  "lon": "4.829703",
+  "display_name": "32, Celsiusstraat, Zandhorst, Heerhugowaard, North Holland, Netherlands, 1704RW, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

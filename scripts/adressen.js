@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 const { opslagPad, opties, nutsPad } = require("../config.js");
-const { pakScript, pakOpslag, schrijfOpslag } = require(nutsPad);
+const { pakScript, pakOpslag, maakOpslagPad, schrijfOpslag } = require(nutsPad);
 const dagenDb = pakScript("dagen-database");
 
 async function consolideerAdressen() {
@@ -16,19 +16,22 @@ async function consolideerAdressen() {
       return;
     }
 
-    let adressenDb = [];
-    try {
-      adressenDb = await pakOpslag("adressen");
-    } catch (error) {
+    let adressenDb;
+    if (fs.existsSync(maakOpslagPad("adressen"))) {
+      console.log("PAK BESTAANDE ADRRESSE");
+      adressenDb = JSON.parse(fs.readFileSync(maakOpslagPad("adressen")));
+    } else {
+      console.log("INSTALLATIECYCLE");
       // niets aan de hand, installatiecyclus
+      adressenDb = [];
     }
 
     const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
 
     // vinden welke adressen nog niet geconsolideerd zijn
-    let teConsolideren = dagenAdresTePakken
-      .map(async (dag) => {
-        return await pakOpslag(`adressen/${dag}`);
+    let teConsolideren = await dagenAdresTePakken
+      .map((dag) => {
+        return pakOpslag(`adressen/${dag.route}`);
       })
       .flat()
       .filter((a) => {
@@ -43,36 +46,41 @@ async function consolideerAdressen() {
     let nieuwGeconsolideerd = [].concat(adressenDb);
     const geoRequestsBekend = [];
     // voor alle te consolideren request doen of..
-    if (!opties.overschrijfAlleRequest) {
-      teConsolideren = teConsolideren.filter((adres) => {
-        const bestandsNaam = geopadUitAdres(adres);
-        if (fs.existsSync(bestandsNaam)) {
-          geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
-          return false;
-        } else {
-          return true; // dus als bestand niet exist dan alsog requests doen.
-        }
-      });
-      nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
-    }
+
+    teConsolideren = teConsolideren.filter((adres) => {
+      const bestandsNaam = geopadUitAdres(adres);
+      return true;
+      // @TODOdit optimalisatie sloopt m... parsed request niet meer
+      // if (fs.existsSync(bestandsNaam)) {
+      //   geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
+      //   return false;
+      // } else {
+      //   return true; // dus als bestand niet exist dan alsog requests doen.
+      // }
+    });
+    nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
 
     const geskiptWegensRateLimit = [];
-    teConsolideren.forEach((c, index) => {
+    teConsolideren.forEach((consolideer, index) => {
       setTimeout(function () {
         axios
           .get(
             "https://eu1.locationiq.com/v1/search.php?key=b7a32fa378c135&q=" +
-              encodeURIComponent(`${c.plaatsnaam} ${c.straat}`) +
+              encodeURIComponent(
+                `${consolideer.plaatsnaam} ${consolideer.straat}`
+              ) +
               "&format=json"
           )
           .then((r) => {
-            schrijfOpslag(geopadUitAdres(c), r.data[0]);
+            // console.log(c);
+            // console.log(r.data);
+            schrijfOpslag(geopadUitAdres(consolideer), r.data[0]);
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
               console.log(iplus, " adressen geconsolideerd");
             }
-            const b = Object.assign(c, {
+            const b = Object.assign(consolideer, {
               lat: r.data[0].lat,
               lon: r.data[0].lon,
               osm_id: r.data[0].osm_id,
@@ -86,50 +94,44 @@ async function consolideerAdressen() {
             }
 
             if (axiosErr.response.status === 429) {
-              geskiptWegensRateLimit.push(c);
+              geskiptWegensRateLimit.push(consolideer);
               console.log("rate limit!");
             } else if (axiosErr.response.status === 404) {
-              console.log("adres 404 faal", c.adres);
+              console.log("adres 404 faal", consolideer.adres);
             }
           });
-      }, index * 1111);
+      }, index * 1311);
     });
 
     // na alle requests resolven...
     const exitTijd = teConsolideren.length * 1111 + 2000;
     console.log("Adressen klaar over", exitTijd / 60000, " minuten");
     setTimeout(function () {
-      console.log("schrijf nieuw geonsolideerd");
-      schrijfOpslag(opslagPad(`adressen`), nieuwGeconsolideerd);
-      schrijfOpslag(opslagPad(`ratelimit-adressen`), geskiptWegensRateLimit);
+      // console.log("schrijf nieuw geonsolideerd");
+      // console.log(nieuwGeconsolideerd);
+      schrijfOpslag(`adressen`, nieuwGeconsolideerd);
+      schrijfOpslag(`ratelimit-adressen`, geskiptWegensRateLimit);
       dagenDb.schrijfAdressenGepakt(dagenAdresTePakken);
       resolve("");
     }, exitTijd);
-    s;
   });
 }
 
 async function zoekAdressen() {
   return new Promise(async (resolve, reject) => {
-    const { dagenAdresTePakken } = await dagenDb.pakDagenData();
-
-    // interval autovernietigd als alle dagen doorzocht
-    // of langer dan 50s gewacht.
-    let intervalTeller = 0;
-    let resolveInterval = setInterval(function () {
-      if (intervalTeller > 50) {
-        clearInterval(resolveInterval);
-        reject("DUURT LANG");
-      }
-      if (dagenAdresTePakken.filter((d) => !d.adresGepakt).length === 0) {
-        clearInterval(resolveInterval);
-        resolve(dagenAdresTePakken);
-      } else {
-        intervalTeller++;
-      }
-    }, 1000);
-
     try {
+      const { dagenAdresTePakken } = await dagenDb.pakDagenData();
+
+      // interval autovernietigd als alle dagen doorzocht
+      let intervalTeller = 0;
+      let resolveInterval = setInterval(function () {
+        if (dagenAdresTePakken.filter((d) => !d.adresGepakt).length === 0) {
+          clearInterval(resolveInterval);
+          resolve(dagenAdresTePakken);
+        } else {
+          intervalTeller++;
+        }
+      }, 1000);
       dagenAdresTePakken.forEach((dagTeVerrijken, index) => {
         const draaiTijd = index * 800;
         setTimeout(async function () {
@@ -147,10 +149,8 @@ async function zoekAdressen() {
           /////////////////////
           ///////////////!!!!!!!!!/////
           dagTeVerrijken.adresGepakt = true;
-          schrijfAdressenGepakt(
-            `adressen/${dagTeVerrijken.route}`,
-            uniekeAdressen
-          );
+
+          schrijfOpslag(`adressen/${dagTeVerrijken.route}`, uniekeAdressen);
         }, draaiTijd);
       });
     } catch (error) {
@@ -229,9 +229,11 @@ function uniekeAdressenUitString(pcString) {
 }
 
 function geopadUitAdres(adres) {
-  return opslagPad(
-    `responses/geo/${(adres.straat + adres.postcode).replace(/\W/g, "")}`
-  );
+  const a = `responses/geo/`;
+  const b = `${adres.straat + adres.postcode}`.replace(/\W/g, "");
+  const c = maakOpslagPad(`${a}${b}`);
+  //console.log(c);
+  return c;
 }
 
 function pakPublicatiesEnSlaZePlat(pcClusters) {

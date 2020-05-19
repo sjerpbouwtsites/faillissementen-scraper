@@ -1,0 +1,18 @@
+{
+  "place_id": "186291539",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "439960824",
+  "boundingbox": [
+    "52.3433463",
+    "52.3435677",
+    "4.8672209",
+    "4.8675462"
+  ],
+  "lat": "52.34345695",
+  "lon": "4.86738352881443",
+  "display_name": "Parnassus Tower, 1, Locatellikade, Zuidas, Amsterdam, North Holland, Netherlands, 1076 AZ, The Netherlands",
+  "class": "building",
+  "type": "office",
+  "importance": 0.331
+}
