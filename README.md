@@ -9,7 +9,7 @@ dev@sjerpbouwtsites.nl
 
 ## installeren zoals het er nu voorstaat.
 
-[Zie de installatiegids]()
+[Zie de installatiegids](install.md)
 
 ## ISSUES
 
