@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "doe": "node index.js",
-    "vanaf-begin": "clear; rm opslag/dagenDb.json; rm opslag/adressen.json; rm opslag/geconsolideerde-adressen.json; node index.js",
+    "vanaf-begin": "npm run opruimen; node index.js",
+    "opruimen": "clear; rm opslag/**/**/*.json opslag/**/*.json opslag/*.json",
     "vanaf-adressen": "clear; rm opslag/adressen.json; rm opslag/geconsolideerde-adressen.json; node index.js"
   },
   "repository": {

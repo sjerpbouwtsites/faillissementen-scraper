@@ -59,7 +59,7 @@ export function doeSpelVraag() {
 
 export function marxInStorage() {
   if (!sessionStorage.getItem("marx-citaten")) {
-    fetch("opslag/marx.json")
+    fetch("marx.json")
       .then((r) => r.json())
       .then((marx) => {
         sessionStorage.setItem("marx-citaten", JSON.stringify(marx));
