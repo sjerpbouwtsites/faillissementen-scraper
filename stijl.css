@@ -33,6 +33,9 @@ body {
 .kvk-paneel.open {
   transform: translateY(0);
 }
+.weg {
+  display: none !important;
+}
 .kvk-paneel-binnen {
   position: relative;
   padding: 20px;
@@ -55,10 +58,12 @@ body {
 }
 .kvk-resultaat {
   max-height: calc(100% - 40px);
-  max-width: calc(100% - 120px);
   overflow: auto;
   transform: translateX(0);
   transition: 0.2s ease;
+}
+.kvk-resultaat.heeft-kvk-nummers-lijst {
+  max-width: calc(100% - 120px);
 }
 .kvk-resultaat.ladend {
   transform: translateX(-150%);
@@ -132,6 +137,23 @@ body {
 [disabled]:hover {
   cursor: wait;
 }
+
+.kvk-navigatie {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  z-index: 600;
+}
+.kvk-navigatie [disabled] {
+  opacity: 1;
+  filter: hue-rotate(45deg);
+  text-decoration: underline;
+}
+
 /* .marquee.beweeg {
   transform: translateX(-100vw);
   display: flex;

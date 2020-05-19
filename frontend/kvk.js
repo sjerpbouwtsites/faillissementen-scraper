@@ -1,4 +1,5 @@
 import { gbi } from "./nuts.js";
+import { pakMarxCitaat } from "./ongein.js";
 
 export function zetKvKKnopEvent(faillissementen) {
   document
@@ -50,15 +51,31 @@ export function haalKvkInfoEnPrint(
         }
       }, 500);
 
-      gbi("kvk-resultaat").innerHTML = kvkResponse.data;
+      gbi("kvk-resultaat-nummers").innerHTML = kvkResponse.data;
+
+      if (kvkNummers.length > 1) {
+        gbi("kvk-resultaat-nummers").classList.add("heeft-kvk-nummers-lijst");
+      } else {
+        gbi("kvk-resultaat-nummers").classList.remove(
+          "heeft-kvk-nummers-lijst"
+        );
+      }
+
       if (geheelNieuw) {
-        gbi("kvk-nummers").innerHTML = `
+        if (kvkNummers.length > 1) {
+          gbi("kvk-nummers").classList.remove("weg");
+          gbi("kvk-nummers").innerHTML = `
           <li>KVK 🕵️‍♂️</li>
         ${kvkNummers
           .map((kvkNr) => {
             return `<li><button class='knopje' class='wissel-kvk' data-kvk-nr='${kvkNr}'>${kvkNr}</button></li>`;
           })
           .join("")}`;
+        } else {
+          gbi("kvk-nummers").classList.add("weg");
+          gbi("kvk-nummers").classList;
+        }
+
         gbi("kvk-paneel").classList.add("groot");
         setTimeout(function () {
           gbi("kvk-paneel").classList.add("open");
@@ -68,7 +85,7 @@ export function haalKvkInfoEnPrint(
         }, 450);
       } // eind geheel nieuw
       else {
-        gbi("kvk-resultaat").classList.remove("ladend");
+        gbi("kvk-resultaat-nummers").classList.remove("ladend");
       }
     }); // eind then exios KVK
   // #endregion axiosvk
