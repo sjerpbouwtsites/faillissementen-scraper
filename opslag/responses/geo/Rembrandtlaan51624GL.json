@@ -1,0 +1,18 @@
+{
+  "place_id": "31179407",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2781929851",
+  "boundingbox": [
+    "52.6502695",
+    "52.6503695",
+    "5.071761",
+    "5.071861"
+  ],
+  "lat": "52.6503195",
+  "lon": "5.071811",
+  "display_name": "5, Rembrandtlaan, Hoorn, North Holland, Netherlands, 1624GL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

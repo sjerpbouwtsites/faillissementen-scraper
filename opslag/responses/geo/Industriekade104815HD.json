@@ -1,0 +1,18 @@
+{
+  "place_id": "28738610",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2729348147",
+  "boundingbox": [
+    "51.5984611",
+    "51.5985611",
+    "4.7700036",
+    "4.7701036"
+  ],
+  "lat": "51.5985111",
+  "lon": "4.7700536",
+  "display_name": "10, Industriekade, Krogten, Noord, Breda, North Brabant, Netherlands, 4815HD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

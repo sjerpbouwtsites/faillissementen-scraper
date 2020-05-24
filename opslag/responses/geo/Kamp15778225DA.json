@@ -1,0 +1,18 @@
+{
+  "place_id": "39165895",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2924330057",
+  "boundingbox": [
+    "52.5043898",
+    "52.5044898",
+    "5.4813143",
+    "5.4814143"
+  ],
+  "lat": "52.5044398",
+  "lon": "5.4813643",
+  "display_name": "77, Kamp 15, Kamp, Lelystad, Flevoland, Netherlands, 8225DA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.431
+}

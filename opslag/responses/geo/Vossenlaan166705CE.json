@@ -1,0 +1,18 @@
+{
+  "place_id": "41096791",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3014037728",
+  "boundingbox": [
+    "51.9924941",
+    "51.9925941",
+    "5.6950354",
+    "5.6951354"
+  ],
+  "lat": "51.9925441",
+  "lon": "5.6950854",
+  "display_name": "16, Vossenlaan, Wageningen, Gelderland, Netherlands, 6705CE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

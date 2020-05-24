@@ -1,0 +1,19 @@
+{
+  "place_id": "61793772",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5143033973",
+  "boundingbox": [
+    "52.87576",
+    "52.87586",
+    "5.9994221",
+    "5.9995221"
+  ],
+  "lat": "52.87581",
+  "lon": "5.9994721",
+  "display_name": "Bar Suc6, 36, Van Harenstraat, Wolvega, Weststellingwerf, Friesland, Netherlands, 8471JE, The Netherlands",
+  "class": "amenity",
+  "type": "pub",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/food_pub.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "51149128",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3949037976",
+  "boundingbox": [
+    "50.8631875",
+    "50.8632875",
+    "6.0676981",
+    "6.0677981"
+  ],
+  "lat": "50.8632375",
+  "lon": "6.0677481",
+  "display_name": "6, Ambachtsstraat, Kerkrade-Oost, Kerkrade, Limburg, Netherlands, 6461EW, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

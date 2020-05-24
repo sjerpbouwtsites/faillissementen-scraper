@@ -1,0 +1,18 @@
+{
+  "place_id": "31927543",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2765263463",
+  "boundingbox": [
+    "52.2586329",
+    "52.2587329",
+    "4.7843129",
+    "4.7844129"
+  ],
+  "lat": "52.2586829",
+  "lon": "4.7843629",
+  "display_name": "313, Legmeerdijk, Aalsmeer, North Holland, Netherlands, 1431GB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

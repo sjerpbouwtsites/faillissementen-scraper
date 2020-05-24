@@ -1,0 +1,18 @@
+{
+  "place_id": "36200869",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2840285744",
+  "boundingbox": [
+    "51.896585",
+    "51.896685",
+    "4.6828655",
+    "4.6829655"
+  ],
+  "lat": "51.896635",
+  "lon": "4.6829155",
+  "display_name": "45, Raadhuisplein, Lekkerkerk, Krimpenerwaard, South Holland, Netherlands, 2941BS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

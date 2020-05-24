@@ -1,0 +1,18 @@
+{
+  "place_id": "34728793",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2913105802",
+  "boundingbox": [
+    "51.9358624",
+    "51.9359624",
+    "4.7884871",
+    "4.7885871"
+  ],
+  "lat": "51.9359124",
+  "lon": "4.7885371",
+  "display_name": "8, Doctor Albert Schweitzerstraat, Bergambacht, Krimpenerwaard, South Holland, Netherlands, 2861XX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

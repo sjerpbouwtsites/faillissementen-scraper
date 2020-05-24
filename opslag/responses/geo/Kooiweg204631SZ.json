@@ -1,0 +1,18 @@
+{
+  "place_id": "32727457",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2830114927",
+  "boundingbox": [
+    "51.4298572",
+    "51.4299572",
+    "4.3484683",
+    "4.3485683"
+  ],
+  "lat": "51.4299072",
+  "lon": "4.3485183",
+  "display_name": "Aannemersbedrijf B. de Nijs-Soffers, 20, Kooiweg, Hoogerheide, Woensdrecht, North Brabant, Netherlands, 4631SZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

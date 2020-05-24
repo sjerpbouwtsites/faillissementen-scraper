@@ -1,0 +1,18 @@
+{
+  "place_id": "29667771",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2721939702",
+  "boundingbox": [
+    "52.3720296",
+    "52.3721296",
+    "4.8852082",
+    "4.8853082"
+  ],
+  "lat": "52.3720796",
+  "lon": "4.8852582",
+  "display_name": "241, Keizersgracht, Nine Streets, Amsterdam, North Holland, Netherlands, 1016EA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

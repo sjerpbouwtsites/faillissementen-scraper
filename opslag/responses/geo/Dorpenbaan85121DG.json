@@ -1,0 +1,18 @@
+{
+  "place_id": "30948034",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2857183108",
+  "boundingbox": [
+    "51.5790609",
+    "51.5791609",
+    "4.9391631",
+    "4.9392631"
+  ],
+  "lat": "51.5791109",
+  "lon": "4.9392131",
+  "display_name": "8, Dorpenbaan, De Haansberg, Rijen, Gilze en Rijen, North Brabant, Netherlands, 5121DG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

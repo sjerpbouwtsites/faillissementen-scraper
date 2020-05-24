@@ -1,0 +1,18 @@
+{
+  "place_id": "37816287",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2875285926",
+  "boundingbox": [
+    "52.2052413",
+    "52.2053413",
+    "4.8710727",
+    "4.8711727"
+  ],
+  "lat": "52.2052913",
+  "lon": "4.8711227",
+  "display_name": "10, Nijverheidsweg, Mijdrecht, De Ronde Venen, Utrecht, Netherlands, 3641RR, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

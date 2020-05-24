@@ -1,0 +1,18 @@
+{
+  "place_id": "38239440",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2901690856",
+  "boundingbox": [
+    "52.1406215",
+    "52.1407215",
+    "4.5239331",
+    "4.5240331"
+  ],
+  "lat": "52.1406715",
+  "lon": "4.5239831",
+  "display_name": "10, Energieweg, Grote Polder, Zoeterwoude, South Holland, Netherlands, 2382NJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

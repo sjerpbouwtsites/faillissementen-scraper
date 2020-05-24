@@ -1,0 +1,18 @@
+{
+  "place_id": "76183573",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6965206",
+  "boundingbox": [
+    "52.3337826",
+    "52.3340904",
+    "5.6378958",
+    "5.6384962"
+  ],
+  "lat": "52.3337826",
+  "lon": "5.6384962",
+  "display_name": "Deventerweg, Harderwijk, Gelderland, Netherlands, 3843WX, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.42
+}

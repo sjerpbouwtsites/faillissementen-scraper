@@ -1,0 +1,19 @@
+{
+  "place_id": "279360785",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2743728707",
+  "boundingbox": [
+    "52.3757481",
+    "52.3758481",
+    "4.9085013",
+    "4.9086013"
+  ],
+  "lat": "52.3757981",
+  "lon": "4.9085513",
+  "display_name": "Vapiano, 145, Oosterdokskade, Oosterdokseiland, Amsterdam, North Holland, Netherlands, 1011DL, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "28966190",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2685483961",
+  "boundingbox": [
+    "52.1811646",
+    "52.1812646",
+    "5.9794953",
+    "5.9795953"
+  ],
+  "lat": "52.1812146",
+  "lon": "5.9795453",
+  "display_name": "18, Sint-Eustatius, Koele Holen, Apeldoorn, Gelderland, Netherlands, 7333NX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

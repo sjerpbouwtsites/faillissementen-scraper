@@ -6,7 +6,7 @@
   "scripts": {
     "doe": "node index.js",
     "vanaf-begin": "npm run opruimen; node index.js",
-    "opruimen": "clear; rm opslag/**/**/*.json opslag/**/*.json opslag/*.json",
+    "opruimen": "clear; cd opslag; PATH -maxdepth 2 -type f -delete; cd ../",
     "vanaf-adressen": "clear; rm opslag/adressen.json; rm opslag/geconsolideerde-adressen.json; node index.js"
   },
   "repository": {

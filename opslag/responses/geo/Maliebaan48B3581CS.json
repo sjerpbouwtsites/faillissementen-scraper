@@ -1,0 +1,18 @@
+{
+  "place_id": "217887722",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "650789894",
+  "boundingbox": [
+    "52.0941996",
+    "52.094305",
+    "5.1378064",
+    "5.1379019"
+  ],
+  "lat": "52.0941996",
+  "lon": "5.1378064",
+  "display_name": "Maliebaan, Oudwijk, Utrecht, Netherlands, 3581CZ, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "36037355",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2842902318",
+  "boundingbox": [
+    "52.4032779",
+    "52.4033779",
+    "5.2692396",
+    "5.2693396"
+  ],
+  "lat": "52.4033279",
+  "lon": "5.2692896",
+  "display_name": "60, Splijtbakweg, Poldervlak, Almere, Flevoland, Netherlands, 1333HJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "29173256",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2698051985",
+  "boundingbox": [
+    "52.0447068",
+    "52.0448068",
+    "4.6530033",
+    "4.6531033"
+  ],
+  "lat": "52.0447568",
+  "lon": "4.6530533",
+  "display_name": "31, Passage, Waddinxveen, South Holland, Netherlands, 2741HB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

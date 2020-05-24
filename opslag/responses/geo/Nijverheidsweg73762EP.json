@@ -1,0 +1,18 @@
+{
+  "place_id": "27202444",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2747866448",
+  "boundingbox": [
+    "52.1776473",
+    "52.1777473",
+    "5.2804269",
+    "5.2805269"
+  ],
+  "lat": "52.1776973",
+  "lon": "5.2804769",
+  "display_name": "7, Nijverheidsweg, Soestdijk, Soest, Utrecht, Netherlands, 3762EP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

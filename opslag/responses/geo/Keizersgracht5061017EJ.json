@@ -1,0 +1,18 @@
+{
+  "place_id": "24663584",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2729940440",
+  "boundingbox": [
+    "52.3658312",
+    "52.3659312",
+    "4.8859243",
+    "4.8860243"
+  ],
+  "lat": "52.3658812",
+  "lon": "4.8859743",
+  "display_name": "506, Keizersgracht, Grachtengordel, Amsterdam, North Holland, Netherlands, 1017EJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

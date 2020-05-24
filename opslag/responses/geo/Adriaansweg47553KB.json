@@ -1,0 +1,18 @@
+{
+  "place_id": "27409866",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2790528772",
+  "boundingbox": [
+    "52.2572449",
+    "52.2573449",
+    "6.7952588",
+    "6.7953588"
+  ],
+  "lat": "52.2572949",
+  "lon": "6.7953088",
+  "display_name": "4, Adriaansweg, Veldwijk Zuid, Hengelo, Overijssel, Netherlands, 7553KB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

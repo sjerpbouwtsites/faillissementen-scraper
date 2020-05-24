@@ -1,0 +1,18 @@
+{
+  "place_id": "32247292",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2821022599",
+  "boundingbox": [
+    "50.8872876",
+    "50.8873876",
+    "5.735706",
+    "5.735806"
+  ],
+  "lat": "50.8873376",
+  "lon": "5.735756",
+  "display_name": "3, Weerterveld, Meerssen, Limburg, Netherlands, 6231NC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

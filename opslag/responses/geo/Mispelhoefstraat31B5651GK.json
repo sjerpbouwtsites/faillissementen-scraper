@@ -1,0 +1,18 @@
+{
+  "place_id": "82972481",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7178605",
+  "boundingbox": [
+    "51.4675567",
+    "51.4697223",
+    "5.4064108",
+    "5.4072508"
+  ],
+  "lat": "51.46935",
+  "lon": "5.40695",
+  "display_name": "Mispelhoefstraat, Mispelhoef, Eindhoven, North Brabant, Netherlands, 5651, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.42
+}

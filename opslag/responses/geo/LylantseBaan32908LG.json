@@ -1,0 +1,18 @@
+{
+  "place_id": "33036104",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2786421885",
+  "boundingbox": [
+    "51.9545488",
+    "51.9546488",
+    "4.5660271",
+    "4.5661271"
+  ],
+  "lat": "51.9545988",
+  "lon": "4.5660771",
+  "display_name": "3, Lylantse Baan, Hoofdweg, Capelle aan den IJssel, South Holland, Netherlands, 2908LG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.711
+}

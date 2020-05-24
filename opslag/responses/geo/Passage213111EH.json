@@ -1,0 +1,19 @@
+{
+  "place_id": "235793943",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "relation",
+  "osm_id": "149237",
+  "boundingbox": [
+    "51.8966787",
+    "51.9634066",
+    "4.3506714",
+    "4.417713"
+  ],
+  "lat": "51.9300454",
+  "lon": "4.38645105261573",
+  "display_name": "Schiedam, South Holland, Netherlands, The Netherlands",
+  "class": "boundary",
+  "type": "administrative",
+  "importance": 0.62705637489994,
+  "icon": "https://locationiq.org/static/images/mapicons/poi_boundary_administrative.p.20.png"
+}

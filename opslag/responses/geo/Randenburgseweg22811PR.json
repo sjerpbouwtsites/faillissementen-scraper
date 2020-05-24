@@ -1,0 +1,18 @@
+{
+  "place_id": "29034710",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2695528248",
+  "boundingbox": [
+    "52.0575975",
+    "52.0576975",
+    "4.6703711",
+    "4.6704711"
+  ],
+  "lat": "52.0576475",
+  "lon": "4.6704211",
+  "display_name": "2, Randenburgseweg, Randenburg, Reeuwijk, Bodegraven-Reeuwijk, South Holland, Netherlands, 2811PR, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

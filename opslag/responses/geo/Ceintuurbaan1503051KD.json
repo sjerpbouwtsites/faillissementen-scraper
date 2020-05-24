@@ -1,0 +1,18 @@
+{
+  "place_id": "34675333",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2816673446",
+  "boundingbox": [
+    "51.9415394",
+    "51.9416394",
+    "4.4754887",
+    "4.4755887"
+  ],
+  "lat": "51.9415894",
+  "lon": "4.4755387",
+  "display_name": "150, Ceintuurbaan, Rotterdam, South Holland, Netherlands, 3051KD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

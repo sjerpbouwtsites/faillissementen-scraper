@@ -1,0 +1,18 @@
+{
+  "place_id": "29429400",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2772017265",
+  "boundingbox": [
+    "52.2783492",
+    "52.2784492",
+    "6.4186111",
+    "6.4187111"
+  ],
+  "lat": "52.2783992",
+  "lon": "6.4186611",
+  "display_name": "Dierenarts Holten, 54, Larenseweg, Holten, Rijssen-Holten, Overijssel, Netherlands, 7451EN, The Netherlands",
+  "class": "amenity",
+  "type": "veterinary",
+  "importance": 0.331
+}

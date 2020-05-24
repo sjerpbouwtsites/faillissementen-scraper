@@ -1,0 +1,18 @@
+{
+  "place_id": "76227549",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "6649466634",
+  "boundingbox": [
+    "51.9276816",
+    "51.9277816",
+    "5.5739471",
+    "5.5740471"
+  ],
+  "lat": "51.9277316",
+  "lon": "5.5739971",
+  "display_name": "1, Ommestraat, Casterhoven, Kesteren, Neder-Betuwe, Gelderland, Netherlands, 4041AP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "78429424",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7035796",
+  "boundingbox": [
+    "52.2736124",
+    "52.2744602",
+    "5.1646941",
+    "5.1651824"
+  ],
+  "lat": "52.2737921",
+  "lon": "5.1650789",
+  "display_name": "Kapelstraat, Bussum, Gooise Meren, North Holland, Netherlands, 1404HV, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.42
+}

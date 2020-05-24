@@ -1,0 +1,19 @@
+{
+  "place_id": "33047073",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2787984651",
+  "boundingbox": [
+    "52.0111948",
+    "52.0112948",
+    "4.7088535",
+    "4.7089535"
+  ],
+  "lat": "52.0112448",
+  "lon": "4.7089035",
+  "display_name": "Banketbakkerij en Lunchroom van den Berg en Siroopwafelbakkerij van Vliet, 32, Lange Groenendaal, Binnenstad, Gouda, South Holland, Netherlands, 2801LT, The Netherlands",
+  "class": "shop",
+  "type": "bakery",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_bakery.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "33672603",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2878247440",
+  "boundingbox": [
+    "52.5086596",
+    "52.5087596",
+    "4.9439111",
+    "4.9440111"
+  ],
+  "lat": "52.5087096",
+  "lon": "4.9439611",
+  "display_name": "8, Nieuwstraat, Weidevenne, Purmerend, North Holland, Netherlands, 1441CM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

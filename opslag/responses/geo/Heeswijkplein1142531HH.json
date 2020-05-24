@@ -1,0 +1,18 @@
+{
+  "place_id": "29326248",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2711144349",
+  "boundingbox": [
+    "52.0511528",
+    "52.0512528",
+    "4.3057773",
+    "4.3058773"
+  ],
+  "lat": "52.0512028",
+  "lon": "4.3058273",
+  "display_name": "114, Heeswijkplein, The Hague, South Holland, Netherlands, 2531HH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.321
+}

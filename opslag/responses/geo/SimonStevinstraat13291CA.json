@@ -1,0 +1,18 @@
+{
+  "place_id": "29268056",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2767212283",
+  "boundingbox": [
+    "51.7513798",
+    "51.7514798",
+    "4.5543683",
+    "4.5544683"
+  ],
+  "lat": "51.7514298",
+  "lon": "4.5544183",
+  "display_name": "Reedijk Bandenservice, 1, Simon Stevinstraat, Oud Bonaventura, Strijen, Hoeksche Waard, South Holland, Netherlands, 3291CA, The Netherlands",
+  "class": "shop",
+  "type": "tyres",
+  "importance": 0.421
+}

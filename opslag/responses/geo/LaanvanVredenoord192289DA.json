@@ -1,0 +1,18 @@
+{
+  "place_id": "28856115",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2707151601",
+  "boundingbox": [
+    "52.0515733",
+    "52.0516733",
+    "4.3460971",
+    "4.3461971"
+  ],
+  "lat": "52.0516233",
+  "lon": "4.3461471",
+  "display_name": "19, Laan van Vredenoord, Hoornwijck, Rijswijk, South Holland, Netherlands, 2289DA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

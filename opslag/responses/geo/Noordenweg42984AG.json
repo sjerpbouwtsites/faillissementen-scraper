@@ -1,0 +1,18 @@
+{
+  "place_id": "230393871",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "728192347",
+  "boundingbox": [
+    "51.8708649",
+    "51.8730331",
+    "4.603992",
+    "4.6045256"
+  ],
+  "lat": "51.8720711",
+  "lon": "4.6042014",
+  "display_name": "Noordenweg, Donkersloot, Ridderkerk, South Holland, Netherlands, 2984AG, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.42
+}

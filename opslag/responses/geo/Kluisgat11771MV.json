@@ -1,0 +1,18 @@
+{
+  "place_id": "26006640",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2757276280",
+  "boundingbox": [
+    "52.8556193",
+    "52.8557193",
+    "5.1075566",
+    "5.1076566"
+  ],
+  "lat": "52.8556693",
+  "lon": "5.1076066",
+  "display_name": "1, Kluisgat, Wieringerwerf, Hollands Kroon, North Holland, Netherlands, 1771MV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

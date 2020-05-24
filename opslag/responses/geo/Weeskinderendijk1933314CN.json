@@ -1,0 +1,18 @@
+{
+  "place_id": "32941673",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2785221894",
+  "boundingbox": [
+    "51.8062362",
+    "51.8063362",
+    "4.6537607",
+    "4.6538607"
+  ],
+  "lat": "51.8062862",
+  "lon": "4.6538107",
+  "display_name": "193, Weeskinderendijk, Oud-Krispijn, Dordrecht, South Holland, Netherlands, 3314CN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

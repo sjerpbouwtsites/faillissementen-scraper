@@ -1,0 +1,18 @@
+{
+  "place_id": "40537452",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3000315169",
+  "boundingbox": [
+    "51.333376",
+    "51.333476",
+    "6.0974242",
+    "6.0975242"
+  ],
+  "lat": "51.333426",
+  "lon": "6.0974742",
+  "display_name": "28, Veldstraat, Baarlo, Peel en Maas, Limburg, Netherlands, 5991AD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "54539044",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5003440690",
+  "boundingbox": [
+    "52.1198629",
+    "52.1199629",
+    "5.073659",
+    "5.073759"
+  ],
+  "lat": "52.1199129",
+  "lon": "5.073709",
+  "display_name": "3, Gerhardstraat, Zuilen, Utrecht, Netherlands, 3555WK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

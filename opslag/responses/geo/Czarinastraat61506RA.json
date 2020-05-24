@@ -1,0 +1,19 @@
+{
+  "place_id": "38319198",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2893595032",
+  "boundingbox": [
+    "52.438693",
+    "52.438793",
+    "4.8217596",
+    "4.8218596"
+  ],
+  "lat": "52.438743",
+  "lon": "4.8218096",
+  "display_name": "Que Pasa, 6, Czarinastraat, Zaandam, Zaanstad, North Holland, Netherlands, 1506RA, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

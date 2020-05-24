@@ -1,0 +1,19 @@
+{
+  "place_id": "67558353",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5875900857",
+  "boundingbox": [
+    "52.0979185",
+    "52.0980185",
+    "5.0655284",
+    "5.0656284"
+  ],
+  "lat": "52.0979685",
+  "lon": "5.0655784",
+  "display_name": "Vapiano, 83, Brusselplein, Leidsche Rijn Centrum, Utrecht, Netherlands, 3541CH, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

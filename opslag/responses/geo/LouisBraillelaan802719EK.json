@@ -1,0 +1,18 @@
+{
+  "place_id": "27409095",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2602917790",
+  "boundingbox": [
+    "52.0462002",
+    "52.0463002",
+    "4.4825878",
+    "4.4826878"
+  ],
+  "lat": "52.0462502",
+  "lon": "4.4826378",
+  "display_name": "Staatvandienst | Zoetermeer, 80, Louis Braillelaan, Rokkeveen, Zoetermeer, South Holland, Netherlands, 2719EK, The Netherlands",
+  "class": "office",
+  "type": "yes",
+  "importance": 0.421
+}

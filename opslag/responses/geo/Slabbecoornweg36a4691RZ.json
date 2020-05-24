@@ -1,0 +1,18 @@
+{
+  "place_id": "83421917",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7259263",
+  "boundingbox": [
+    "51.539234",
+    "51.5401335",
+    "4.2319752",
+    "4.2324564"
+  ],
+  "lat": "51.5401335",
+  "lon": "4.2324564",
+  "display_name": "Slabbecoornweg, Tholen, Zeeland, Netherlands, 4691RX, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.42
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "120914893",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "146181438",
+  "boundingbox": [
+    "52.3632124",
+    "52.3637353",
+    "4.9771111",
+    "4.9777669"
+  ],
+  "lat": "52.36348265",
+  "lon": "4.97746553825202",
+  "display_name": "Betronic, 11, Pedro de Medinalaan, IJburg, Amsterdam, North Holland, Netherlands, 1086 XK, The Netherlands",
+  "class": "building",
+  "type": "office",
+  "importance": 0.521
+}

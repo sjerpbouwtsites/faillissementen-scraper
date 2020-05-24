@@ -1,0 +1,18 @@
+{
+  "place_id": "29019848",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2733771055",
+  "boundingbox": [
+    "52.2912991",
+    "52.2913991",
+    "4.67978",
+    "4.67988"
+  ],
+  "lat": "52.2913491",
+  "lon": "4.67983",
+  "display_name": "103, Jadelaan, Graan voor Visch, Hoofddorp, Haarlemmermeer, North Holland, Netherlands, 2132XZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

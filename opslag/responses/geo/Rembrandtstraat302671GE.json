@@ -1,0 +1,18 @@
+{
+  "place_id": "31073638",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2748052967",
+  "boundingbox": [
+    "51.9944717",
+    "51.9945717",
+    "4.2074941",
+    "4.2075941"
+  ],
+  "lat": "51.9945217",
+  "lon": "4.2075441",
+  "display_name": "30, Rembrandtstraat, Hoogeland, Naaldwijk, Westland, South Holland, Netherlands, 2671GE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

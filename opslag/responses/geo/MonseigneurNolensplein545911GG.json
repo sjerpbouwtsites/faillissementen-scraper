@@ -1,0 +1,19 @@
+{
+  "place_id": "37245981",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2925017985",
+  "boundingbox": [
+    "51.3728714",
+    "51.3729714",
+    "6.1719592",
+    "6.1720592"
+  ],
+  "lat": "51.3729214",
+  "lon": "6.1720092",
+  "display_name": "Beej Benders, 54, Monseigneur Nolensplein, Genooi, Venlo, Limburg, Netherlands, 5911GG, The Netherlands",
+  "class": "shop",
+  "type": "supermarket",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_supermarket.p.20.png"
+}

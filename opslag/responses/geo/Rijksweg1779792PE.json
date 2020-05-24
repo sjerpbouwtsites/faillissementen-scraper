@@ -1,0 +1,18 @@
+{
+  "place_id": "31429198",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2753636384",
+  "boundingbox": [
+    "53.2961367",
+    "53.2962367",
+    "6.7294136",
+    "6.7295136"
+  ],
+  "lat": "53.2961867",
+  "lon": "6.7294636",
+  "display_name": "177, Rijksweg, Ten Post, Groningen, Netherlands, 9792PE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

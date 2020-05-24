@@ -1,0 +1,19 @@
+{
+  "place_id": "38897050",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2905591850",
+  "boundingbox": [
+    "52.5104676",
+    "52.5105676",
+    "4.6692711",
+    "4.6693711"
+  ],
+  "lat": "52.5105176",
+  "lon": "4.6693211",
+  "display_name": "Livera, 27, Kerkweg, Centrum, Heemskerk, North Holland, Netherlands, 1961JA, The Netherlands",
+  "class": "shop",
+  "type": "clothes",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_clothes.p.20.png"
+}

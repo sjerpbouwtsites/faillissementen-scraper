@@ -1,0 +1,18 @@
+{
+  "place_id": "30351290",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2732764890",
+  "boundingbox": [
+    "52.3129246",
+    "52.3130246",
+    "4.693692",
+    "4.693792"
+  ],
+  "lat": "52.3129746",
+  "lon": "4.693742",
+  "display_name": "41, Graftermeerstraat, Vrijschot, Hoofddorp, Haarlemmermeer, North Holland, Netherlands, 2131AA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

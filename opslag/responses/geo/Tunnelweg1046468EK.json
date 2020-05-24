@@ -1,0 +1,18 @@
+{
+  "place_id": "31468688",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2871348784",
+  "boundingbox": [
+    "50.8711514",
+    "50.8712514",
+    "6.0390538",
+    "6.0391538"
+  ],
+  "lat": "50.8712014",
+  "lon": "6.0391038",
+  "display_name": "104, Tunnelweg, Dentgenbach, Kerkrade, Limburg, Netherlands, 6468EK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

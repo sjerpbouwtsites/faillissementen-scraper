@@ -1,0 +1,18 @@
+{
+  "place_id": "32973923",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2786679823",
+  "boundingbox": [
+    "51.8979433",
+    "51.8980433",
+    "4.5439836",
+    "4.5440836"
+  ],
+  "lat": "51.8979933",
+  "lon": "4.5440336",
+  "display_name": "254, Bovenstraat, Oud-IJsselmonde, IJsselmonde, Rotterdam, South Holland, Netherlands, 3077BL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

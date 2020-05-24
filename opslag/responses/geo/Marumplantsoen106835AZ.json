@@ -1,0 +1,18 @@
+{
+  "place_id": "29927892",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2725862820",
+  "boundingbox": [
+    "51.9550832",
+    "51.9551832",
+    "5.9017386",
+    "5.9018386"
+  ],
+  "lat": "51.9551332",
+  "lon": "5.9017886",
+  "display_name": "10, Marumplantsoen, Vredenburg, Arnhem, Gelderland, Netherlands, 6835AZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

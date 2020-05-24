@@ -1,0 +1,18 @@
+{
+  "place_id": "27066797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2744822932",
+  "boundingbox": [
+    "51.7146595",
+    "51.7147595",
+    "5.3567387",
+    "5.3568387"
+  ],
+  "lat": "51.7147095",
+  "lon": "5.3567887",
+  "display_name": "15, Begoniastraat, 't Ven, Rosmalen, 's-Hertogenbosch, North Brabant, Netherlands, 5241AT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

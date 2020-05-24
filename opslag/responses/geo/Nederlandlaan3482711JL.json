@@ -1,0 +1,18 @@
+{
+  "place_id": "27977204",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2607522394",
+  "boundingbox": [
+    "52.0607643",
+    "52.0608643",
+    "4.4839405",
+    "4.4840405"
+  ],
+  "lat": "52.0608143",
+  "lon": "4.4839905",
+  "display_name": "348, Nederlandlaan, Driemanspolder, Zoetermeer, South Holland, Netherlands, 2711JL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

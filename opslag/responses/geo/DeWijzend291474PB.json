@@ -1,0 +1,18 @@
+{
+  "place_id": "36092195",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2837973875",
+  "boundingbox": [
+    "52.5725565",
+    "52.5726565",
+    "4.9988912",
+    "4.9989912"
+  ],
+  "lat": "52.5726065",
+  "lon": "4.9989412",
+  "display_name": "29, De Wijzend, Oosthuizen, Edam-Volendam, North Holland, Netherlands, 1474PB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

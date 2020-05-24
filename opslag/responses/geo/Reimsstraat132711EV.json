@@ -1,0 +1,18 @@
+{
+  "place_id": "27772509",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2607513647",
+  "boundingbox": [
+    "52.0612595",
+    "52.0613595",
+    "4.4953014",
+    "4.4954014"
+  ],
+  "lat": "52.0613095",
+  "lon": "4.4953514",
+  "display_name": "13, Reimsstraat, Stadscentrum, Zoetermeer, South Holland, Netherlands, 2711EV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

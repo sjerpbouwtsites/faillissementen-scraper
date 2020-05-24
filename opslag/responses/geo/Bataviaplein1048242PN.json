@@ -1,0 +1,18 @@
+{
+  "place_id": "67264054",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5842096541",
+  "boundingbox": [
+    "52.5232828",
+    "52.5233828",
+    "5.4385642",
+    "5.4386642"
+  ],
+  "lat": "52.5233328",
+  "lon": "5.4386142",
+  "display_name": "104, Bataviaplein, Kustwijk, Lelystad, Flevoland, Netherlands, 8242PN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

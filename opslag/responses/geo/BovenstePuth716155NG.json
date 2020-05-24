@@ -1,0 +1,18 @@
+{
+  "place_id": "31990620",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2761951541",
+  "boundingbox": [
+    "50.9579639",
+    "50.9580639",
+    "5.8622562",
+    "5.8623562"
+  ],
+  "lat": "50.9580139",
+  "lon": "5.8623062",
+  "display_name": "71, Bovenste Puth, Puth, Beekdaelen, Limburg, Netherlands, 6155NG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.431
+}

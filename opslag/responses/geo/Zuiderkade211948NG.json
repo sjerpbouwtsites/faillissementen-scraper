@@ -1,0 +1,18 @@
+{
+  "place_id": "38691182",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2907019183",
+  "boundingbox": [
+    "52.4745816",
+    "52.4746816",
+    "4.6603097",
+    "4.6604097"
+  ],
+  "lat": "52.4746316",
+  "lon": "4.6603597",
+  "display_name": "21, Zuiderkade, De Pijp, Beverwijk, North Holland, Netherlands, 1948NG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "27213217",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2787266226",
+  "boundingbox": [
+    "52.3600994",
+    "52.3601994",
+    "6.3750996",
+    "6.3751996"
+  ],
+  "lat": "52.3601494",
+  "lon": "6.3751496",
+  "display_name": "14, Bloeme-weide, Haarle, Hellendoorn, Overijssel, Netherlands, 7448PX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

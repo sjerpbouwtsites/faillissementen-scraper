@@ -1,0 +1,18 @@
+{
+  "place_id": "28094420",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2636809747",
+  "boundingbox": [
+    "52.1663874",
+    "52.1664874",
+    "5.6060909",
+    "5.6061909"
+  ],
+  "lat": "52.1664374",
+  "lon": "5.6061409",
+  "display_name": "20, Mercuriusweg, Harselaar, Barneveld, Gelderland, Netherlands, 3771NC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

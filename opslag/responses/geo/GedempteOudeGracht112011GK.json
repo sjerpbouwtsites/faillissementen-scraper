@@ -1,0 +1,18 @@
+{
+  "place_id": "29315931",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2709465626",
+  "boundingbox": [
+    "52.3819231",
+    "52.3820231",
+    "4.6320534",
+    "4.6321534"
+  ],
+  "lat": "52.3819731",
+  "lon": "4.6321034",
+  "display_name": "11, Gedempte Oude Gracht, Haarlem, North Holland, Netherlands, 2011GK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

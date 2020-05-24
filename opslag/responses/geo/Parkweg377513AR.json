@@ -1,0 +1,18 @@
+{
+  "place_id": "32411940",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2775684760",
+  "boundingbox": [
+    "52.2206431",
+    "52.2207431",
+    "6.8828843",
+    "6.8829843"
+  ],
+  "lat": "52.2206931",
+  "lon": "6.8829343",
+  "display_name": "37, Parkweg, Stadsmaten, Enschede, Overijssel, Netherlands, 7513AR, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

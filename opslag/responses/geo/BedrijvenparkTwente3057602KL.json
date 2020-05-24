@@ -1,0 +1,18 @@
+{
+  "place_id": "33982012",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2833263567",
+  "boundingbox": [
+    "52.3690938",
+    "52.3691938",
+    "6.6117013",
+    "6.6118013"
+  ],
+  "lat": "52.3691438",
+  "lon": "6.6117513",
+  "display_name": "CBR Almelo, 305, Bedrijvenpark Twente, Almelo, Overijssel, Netherlands, 7602KL, The Netherlands",
+  "class": "amenity",
+  "type": "driving_school",
+  "importance": 0.421
+}

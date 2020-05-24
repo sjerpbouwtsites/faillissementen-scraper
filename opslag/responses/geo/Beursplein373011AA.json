@@ -1,0 +1,18 @@
+{
+  "place_id": "27498084",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2610251777",
+  "boundingbox": [
+    "51.9204503",
+    "51.9205503",
+    "4.4803151",
+    "4.4804151"
+  ],
+  "lat": "51.9205003",
+  "lon": "4.4803651",
+  "display_name": "37, Beursplein, Stadsdriehoek, Rotterdam, South Holland, Netherlands, 3011AA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

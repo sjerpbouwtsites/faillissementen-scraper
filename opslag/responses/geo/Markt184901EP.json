@@ -1,0 +1,19 @@
+{
+  "place_id": "274488627",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2853276761",
+  "boundingbox": [
+    "51.6449031",
+    "51.6450031",
+    "4.8617705",
+    "4.8618705"
+  ],
+  "lat": "51.6449531",
+  "lon": "4.8618205",
+  "display_name": "De Schout, 18, Markt, Strijen, Oosterhout, North Brabant, Netherlands, 4901EP, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

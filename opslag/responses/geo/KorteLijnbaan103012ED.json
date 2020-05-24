@@ -1,0 +1,19 @@
+{
+  "place_id": "27582867",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2610199232",
+  "boundingbox": [
+    "51.9218065",
+    "51.9219065",
+    "4.4754036",
+    "4.4755036"
+  ],
+  "lat": "51.9218565",
+  "lon": "4.4754536",
+  "display_name": "Oqium, 10, Korte Lijnbaan, Cool, Centrum, Rotterdam, South Holland, Netherlands, 3012ED, The Netherlands",
+  "class": "shop",
+  "type": "clothes",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_clothes.p.20.png"
+}

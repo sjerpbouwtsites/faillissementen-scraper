@@ -1,0 +1,18 @@
+{
+  "place_id": "37215486",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2860110220",
+  "boundingbox": [
+    "52.3115435",
+    "52.3116435",
+    "5.0433061",
+    "5.0434061"
+  ],
+  "lat": "52.3115935",
+  "lon": "5.0433561",
+  "display_name": "28, Stationsplein, Weespersluis, Weesp, North Holland, Netherlands, 1382AD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "40448573",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2977193368",
+  "boundingbox": [
+    "51.8521629",
+    "51.8522629",
+    "5.7729253",
+    "5.7730253"
+  ],
+  "lat": "51.8522129",
+  "lon": "5.7729753",
+  "display_name": "111, Wolfsbossingel, Beuningen Gld, Beuningen, Gelderland, Netherlands, 6642CM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.431
+}

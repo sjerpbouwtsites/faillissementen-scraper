@@ -1,0 +1,18 @@
+{
+  "place_id": "59274799",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5089130175",
+  "boundingbox": [
+    "53.1804664",
+    "53.1805664",
+    "6.162324",
+    "6.162424"
+  ],
+  "lat": "53.1805164",
+  "lon": "6.162374",
+  "display_name": "5, Badlaan, Surhuisterveen, Achtkarspelen, Friesland, Netherlands, 9231AZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

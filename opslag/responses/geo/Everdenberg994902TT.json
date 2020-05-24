@@ -1,0 +1,19 @@
+{
+  "place_id": "277690502",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2869339341",
+  "boundingbox": [
+    "51.6284737",
+    "51.6285737",
+    "4.885701",
+    "4.885801"
+  ],
+  "lat": "51.6285237",
+  "lon": "4.885751",
+  "display_name": "Hans van Mierlo Autoschade, 99, Everdenberg, Oosterhout, North Brabant, Netherlands, 4902TT, The Netherlands",
+  "class": "shop",
+  "type": "car_repair",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_car_repair.p.20.png"
+}

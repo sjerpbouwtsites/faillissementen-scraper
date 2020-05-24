@@ -1,0 +1,18 @@
+{
+  "place_id": "33792210",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2799281363",
+  "boundingbox": [
+    "52.5389807",
+    "52.5390807",
+    "6.5751893",
+    "6.5752893"
+  ],
+  "lat": "52.5390307",
+  "lon": "6.5752393",
+  "display_name": "74, Rheezerweg, Rheeze, Hardenberg, Overijssel, Netherlands, 7794RH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "31741377",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2834460872",
+  "boundingbox": [
+    "52.351088",
+    "52.351188",
+    "5.1443654",
+    "5.1444654"
+  ],
+  "lat": "52.351138",
+  "lon": "5.1444154",
+  "display_name": "50, James Cookroute, Columbuskwartier, Almere, Flevoland, Netherlands, 1363KG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

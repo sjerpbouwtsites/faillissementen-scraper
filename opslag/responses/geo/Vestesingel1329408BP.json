@@ -1,0 +1,18 @@
+{
+  "place_id": "30528631",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2765606341",
+  "boundingbox": [
+    "53.0022125",
+    "53.0023125",
+    "6.5130265",
+    "6.5131265"
+  ],
+  "lat": "53.0022625",
+  "lon": "6.5130765",
+  "display_name": "132, Vestesingel, Kloosterveen, Assen, Drenthe, Netherlands, 9408BP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

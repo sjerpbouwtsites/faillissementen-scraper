@@ -1,0 +1,19 @@
+{
+  "place_id": "19657963",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "1820907124",
+  "boundingbox": [
+    "52.0852478",
+    "52.0853478",
+    "5.1756137",
+    "5.1757137"
+  ],
+  "lat": "52.0852978",
+  "lon": "5.1756637",
+  "display_name": "Bestuursgebouw (UU), 8, Heidelberglaan, Rijnsweerd, Utrecht, Netherlands, 3584CS, The Netherlands",
+  "class": "amenity",
+  "type": "university",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/education_university.p.20.png"
+}

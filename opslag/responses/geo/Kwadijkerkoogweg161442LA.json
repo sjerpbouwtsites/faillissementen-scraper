@@ -1,0 +1,18 @@
+{
+  "place_id": "37576552",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2877536218",
+  "boundingbox": [
+    "52.5176277",
+    "52.5177277",
+    "4.9788093",
+    "4.9789093"
+  ],
+  "lat": "52.5176777",
+  "lon": "4.9788593",
+  "display_name": "16, Kwadijkerkoogweg, De Koog, Purmerend, North Holland, Netherlands, 1442LA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

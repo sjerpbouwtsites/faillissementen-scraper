@@ -1,0 +1,18 @@
+{
+  "place_id": "29865293",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2730861158",
+  "boundingbox": [
+    "51.5921824",
+    "51.5922824",
+    "4.812963",
+    "4.813063"
+  ],
+  "lat": "51.5922324",
+  "lon": "4.813013",
+  "display_name": "17, Gastakker, Breda, North Brabant, Netherlands, 4817XA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

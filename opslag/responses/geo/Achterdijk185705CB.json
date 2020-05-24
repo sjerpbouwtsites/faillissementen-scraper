@@ -1,0 +1,18 @@
+{
+  "place_id": "38779503",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2902382653",
+  "boundingbox": [
+    "51.4625525",
+    "51.4626525",
+    "5.6844529",
+    "5.6845529"
+  ],
+  "lat": "51.4626025",
+  "lon": "5.6845029",
+  "display_name": "18, Achterdijk, Hoogeind, Helmond, North Brabant, Netherlands, 5705CB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

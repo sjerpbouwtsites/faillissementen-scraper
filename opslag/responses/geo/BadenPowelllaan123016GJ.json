@@ -1,0 +1,19 @@
+{
+  "place_id": "28022433",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2610205648",
+  "boundingbox": [
+    "51.906733",
+    "51.906833",
+    "4.4684061",
+    "4.4685061"
+  ],
+  "lat": "51.906783",
+  "lon": "4.4684561",
+  "display_name": "Dudok in Het Park, 12, Baden Powelllaan, Nieuwe Werk, Centrum, Rotterdam, South Holland, Netherlands, 3016GJ, The Netherlands",
+  "class": "amenity",
+  "type": "cafe",
+  "importance": 0.421,
+  "icon": "https://locationiq.org/static/images/mapicons/food_cafe.p.20.png"
+}

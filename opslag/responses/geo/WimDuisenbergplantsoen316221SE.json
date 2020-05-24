@@ -1,0 +1,18 @@
+{
+  "place_id": "34409752",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2809860062",
+  "boundingbox": [
+    "50.8409753",
+    "50.8410753",
+    "5.7049044",
+    "5.7050044"
+  ],
+  "lat": "50.8410253",
+  "lon": "5.7049544",
+  "display_name": "31, Wim Duisenbergplantsoen, Heugemerveld, Maastricht, Limburg, Netherlands, 6221SE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

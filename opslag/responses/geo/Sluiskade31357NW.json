@@ -1,0 +1,18 @@
+{
+  "place_id": "82661613",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7026280",
+  "boundingbox": [
+    "52.3337711",
+    "52.33397",
+    "5.22118",
+    "5.2216844"
+  ],
+  "lat": "52.33392",
+  "lon": "5.22145",
+  "display_name": "Sluiskade, Haven Centrum, Almere, Flevoland, Netherlands, 1357NZ, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "68925670",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5815649383",
+  "boundingbox": [
+    "52.217927",
+    "52.218027",
+    "6.871048",
+    "6.871148"
+  ],
+  "lat": "52.217977",
+  "lon": "6.871098",
+  "display_name": "7, Veilingstraat, Het Poolman, Enschede, Overijssel, Netherlands, 7545LZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

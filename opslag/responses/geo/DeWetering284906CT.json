@@ -1,0 +1,18 @@
+{
+  "place_id": "36982685",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2853418829",
+  "boundingbox": [
+    "51.6537737",
+    "51.6538737",
+    "4.8432806",
+    "4.8433806"
+  ],
+  "lat": "51.6538237",
+  "lon": "4.8433306",
+  "display_name": "28, De Wetering, De Wijsterd, Oosterhout, North Brabant, Netherlands, 4906CT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

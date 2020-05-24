@@ -1,0 +1,18 @@
+{
+  "place_id": "81795950",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7378939",
+  "boundingbox": [
+    "52.3964986",
+    "52.3966093",
+    "4.8473781",
+    "4.8551526"
+  ],
+  "lat": "52.3965541",
+  "lon": "4.8513196",
+  "display_name": "Zekeringstraat, Alfa-driehoek, Westpoort, Amsterdam, North Holland, Netherlands, 1014BS, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.42
+}

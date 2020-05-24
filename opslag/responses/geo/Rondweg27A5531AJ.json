@@ -1,0 +1,18 @@
+{
+  "place_id": "82290712",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7189690",
+  "boundingbox": [
+    "51.3705083",
+    "51.3715476",
+    "5.2371398",
+    "5.2418673"
+  ],
+  "lat": "51.37115",
+  "lon": "5.24018",
+  "display_name": "Rondweg, Bladel, North Brabant, Netherlands, 5527JZ, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.52
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "215999733",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "648166268",
+  "boundingbox": [
+    "51.9140475",
+    "51.9157193",
+    "4.3965019",
+    "4.4000548"
+  ],
+  "lat": "51.914385",
+  "lon": "4.3980659",
+  "display_name": "Lange Haven, Schiedam, South Holland, Netherlands, 3111CA, The Netherlands",
+  "class": "highway",
+  "type": "living_street",
+  "importance": 0.51
+}

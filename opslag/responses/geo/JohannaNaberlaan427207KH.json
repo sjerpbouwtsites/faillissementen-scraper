@@ -1,0 +1,18 @@
+{
+  "place_id": "28463797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2654570592",
+  "boundingbox": [
+    "52.1254762",
+    "52.1255762",
+    "6.2301471",
+    "6.2302471"
+  ],
+  "lat": "52.1255262",
+  "lon": "6.2301971",
+  "display_name": "42, Johanna Naberlaan, Zutphen, Gelderland, Netherlands, 7207KH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

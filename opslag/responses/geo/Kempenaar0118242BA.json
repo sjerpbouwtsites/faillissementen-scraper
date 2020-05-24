@@ -1,0 +1,18 @@
+{
+  "place_id": "5841324",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "599545651",
+  "boundingbox": [
+    "52.5193422",
+    "52.5194422",
+    "5.4582121",
+    "5.4583121"
+  ],
+  "lat": "52.5193922",
+  "lon": "5.4582621",
+  "display_name": "1, Kempenaar 01, Kogge, Lelystad, Flevoland, Netherlands, 8242BA, The Netherlands",
+  "class": "man_made",
+  "type": "tower",
+  "importance": 0.421
+}

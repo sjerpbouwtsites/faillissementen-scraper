@@ -1,0 +1,18 @@
+{
+  "place_id": "31263421",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750519466",
+  "boundingbox": [
+    "51.7058882",
+    "51.7059882",
+    "5.3318852",
+    "5.3319852"
+  ],
+  "lat": "51.7059382",
+  "lon": "5.3319352",
+  "display_name": "4, Sigarenmakerstraat, Soetelieve Zuid, 's-Hertogenbosch, North Brabant, Netherlands, 5232BK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

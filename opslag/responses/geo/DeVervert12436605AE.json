@@ -1,0 +1,18 @@
+{
+  "place_id": "82591828",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6904242",
+  "boundingbox": [
+    "51.7981267",
+    "51.7991685",
+    "5.7300971",
+    "5.7312955"
+  ],
+  "lat": "51.7987836",
+  "lon": "5.7306764",
+  "display_name": "De Ververt, Wijchen, Gelderland, Netherlands, 6605AB, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

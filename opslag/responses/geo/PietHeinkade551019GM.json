@@ -1,0 +1,18 @@
+{
+  "place_id": "34777270",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2816348371",
+  "boundingbox": [
+    "52.3775769",
+    "52.3776769",
+    "4.9162799",
+    "4.9163799"
+  ],
+  "lat": "52.3776269",
+  "lon": "4.9163299",
+  "display_name": "IJ-toren, 55, Piet Heinkade, Amsterdam, North Holland, Netherlands, 1019 GM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.46272032385618
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "76534052",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7526606",
+  "boundingbox": [
+    "51.9319764",
+    "51.9327018",
+    "4.4626586",
+    "4.4637369"
+  ],
+  "lat": "51.9319764",
+  "lon": "4.4626586",
+  "display_name": "Bergselaan, Bergpolder, Noord, Rotterdam, South Holland, Netherlands, 3038CT, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

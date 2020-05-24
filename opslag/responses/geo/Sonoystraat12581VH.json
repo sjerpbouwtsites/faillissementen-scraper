@@ -1,0 +1,18 @@
+{
+  "place_id": "25157800",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2590911039",
+  "boundingbox": [
+    "52.0904607",
+    "52.0905607",
+    "4.2707303",
+    "4.2708303"
+  ],
+  "lat": "52.0905107",
+  "lon": "4.2707803",
+  "display_name": "1, Sonoystraat, Statenkwartier, The Hague, South Holland, Netherlands, 2581VH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.321
+}

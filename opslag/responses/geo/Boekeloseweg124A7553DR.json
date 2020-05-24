@@ -1,0 +1,18 @@
+{
+  "place_id": "82435323",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6669944",
+  "boundingbox": [
+    "52.2410513",
+    "52.2420402",
+    "6.7885011",
+    "6.7885016"
+  ],
+  "lat": "52.2420402",
+  "lon": "6.7885016",
+  "display_name": "Boekeloseweg, Twentekanaal, Hengelo, Overijssel, Netherlands, 7554TT, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

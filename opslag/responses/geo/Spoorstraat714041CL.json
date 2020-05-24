@@ -1,0 +1,18 @@
+{
+  "place_id": "36656352",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3018149258",
+  "boundingbox": [
+    "51.9318737",
+    "51.9319737",
+    "5.5888068",
+    "5.5889068"
+  ],
+  "lat": "51.9319237",
+  "lon": "5.5888568",
+  "display_name": "71, Spoorstraat, 't Panhuis, Kesteren, Neder-Betuwe, Gelderland, Netherlands, 4041CL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "39728394",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2950612019",
+  "boundingbox": [
+    "53.1163689",
+    "53.1164689",
+    "6.0841173",
+    "6.0842173"
+  ],
+  "lat": "53.1164189",
+  "lon": "6.0841673",
+  "display_name": "13, De Twee Gebroeders, Drachten, Smallingerland, Friesland, Netherlands, 9207CK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.521
+}

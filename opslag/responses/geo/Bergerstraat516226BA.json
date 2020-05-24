@@ -1,0 +1,18 @@
+{
+  "place_id": "30407958",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2811252036",
+  "boundingbox": [
+    "50.8505713",
+    "50.8506713",
+    "5.7281333",
+    "5.7282333"
+  ],
+  "lat": "50.8506213",
+  "lon": "5.7281833",
+  "display_name": "51, Bergerstraat, Scharn, Maastricht, Limburg, Netherlands, 6226BA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

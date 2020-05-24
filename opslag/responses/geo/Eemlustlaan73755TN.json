@@ -1,0 +1,18 @@
+{
+  "place_id": "30154599",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2734653800",
+  "boundingbox": [
+    "52.2502203",
+    "52.2503203",
+    "5.2553255",
+    "5.2554255"
+  ],
+  "lat": "52.2502703",
+  "lon": "5.2553755",
+  "display_name": "7, Eemlustlaan, Zuidpolder, Eemnes, Utrecht, Netherlands, 3755TN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

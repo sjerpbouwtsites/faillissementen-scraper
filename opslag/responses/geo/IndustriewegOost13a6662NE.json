@@ -1,0 +1,18 @@
+{
+  "place_id": "130064771",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "195085294",
+  "boundingbox": [
+    "51.9159037",
+    "51.9165881",
+    "5.8605923",
+    "5.8608525"
+  ],
+  "lat": "51.9163374",
+  "lon": "5.8607202",
+  "display_name": "Industrieweg Oost, De Aam, Elst, Overbetuwe, Gelderland, Netherlands, 6661MB, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.51
+}

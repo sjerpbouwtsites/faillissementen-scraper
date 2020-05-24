@@ -1,0 +1,18 @@
+{
+  "place_id": "34431077",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2867523515",
+  "boundingbox": [
+    "51.5506637",
+    "51.5507637",
+    "4.9465165",
+    "4.9466165"
+  ],
+  "lat": "51.5507137",
+  "lon": "4.9465665",
+  "display_name": "27, Broekakkerweg, De Broekakkers, Gilze, Gilze en Rijen, North Brabant, Netherlands, 5126BD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

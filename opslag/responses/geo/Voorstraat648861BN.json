@@ -1,0 +1,18 @@
+{
+  "place_id": "41839016",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3063174214",
+  "boundingbox": [
+    "53.1744225",
+    "53.1745225",
+    "5.4199096",
+    "5.4200096"
+  ],
+  "lat": "53.1744725",
+  "lon": "5.4199596",
+  "display_name": "64, Voorstraat, Nooderkwartier, Harlingen, Friesland, Netherlands, 8861BN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

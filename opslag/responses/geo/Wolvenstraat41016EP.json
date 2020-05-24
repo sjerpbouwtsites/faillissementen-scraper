@@ -1,0 +1,19 @@
+{
+  "place_id": "29814474",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2721945921",
+  "boundingbox": [
+    "52.3702911",
+    "52.3703911",
+    "4.8863286",
+    "4.8864286"
+  ],
+  "lat": "52.3703411",
+  "lon": "4.8863786",
+  "display_name": "Wheels Cafe, 4-H, Wolvenstraat, Nine Streets, Amsterdam, North Holland, Netherlands, 1016EP, The Netherlands",
+  "class": "amenity",
+  "type": "pub",
+  "importance": 0.321,
+  "icon": "https://locationiq.org/static/images/mapicons/food_pub.p.20.png"
+}

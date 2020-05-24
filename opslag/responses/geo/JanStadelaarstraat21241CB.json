@@ -1,0 +1,18 @@
+{
+  "place_id": "37610630",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2865236247",
+  "boundingbox": [
+    "52.2408602",
+    "52.2409602",
+    "5.1194772",
+    "5.1195772"
+  ],
+  "lat": "52.2409102",
+  "lon": "5.1195272",
+  "display_name": "2, Jan Stadelaarstraat, Kortenhoef, Wijdemeren, North Holland, Netherlands, 1241CB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

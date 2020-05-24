@@ -1,0 +1,18 @@
+{
+  "place_id": "31199450",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2756366655",
+  "boundingbox": [
+    "52.1954331",
+    "52.1955331",
+    "6.8743375",
+    "6.8744375"
+  ],
+  "lat": "52.1954831",
+  "lon": "6.8743875",
+  "display_name": "2, Zunabrink, Wesselerbrink, Enschede, Overijssel, Netherlands, 7544DR, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

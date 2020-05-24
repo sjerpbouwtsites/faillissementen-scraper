@@ -1,0 +1,18 @@
+{
+  "place_id": "187204771",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "448979307",
+  "boundingbox": [
+    "51.4950999",
+    "51.4951589",
+    "4.2804862",
+    "4.2804929"
+  ],
+  "lat": "51.4950999",
+  "lon": "4.2804929",
+  "display_name": "Zuidzijde Haven, Havenkwartier, Bergen op Zoom, North Brabant, Netherlands, 4611HA, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.7
+}

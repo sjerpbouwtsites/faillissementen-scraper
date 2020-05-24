@@ -1,0 +1,18 @@
+{
+  "place_id": "35277878",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2892362721",
+  "boundingbox": [
+    "51.6948424",
+    "51.6949424",
+    "5.0925847",
+    "5.0926847"
+  ],
+  "lat": "51.6948924",
+  "lon": "5.0926347",
+  "display_name": "6, Torenstraat, De Hoef, Waalwijk, North Brabant, Netherlands, 5142ET, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

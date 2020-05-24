@@ -1,0 +1,18 @@
+{
+  "place_id": "36842078",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2851254324",
+  "boundingbox": [
+    "52.010543",
+    "52.010643",
+    "5.3259637",
+    "5.3260637"
+  ],
+  "lat": "52.010593",
+  "lon": "5.3260137",
+  "display_name": "10, Cotherweg, Langbroek, Wijk bij Duurstede, Utrecht, Netherlands, 3947MS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

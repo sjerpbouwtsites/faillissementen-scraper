@@ -1,0 +1,18 @@
+{
+  "place_id": "287548340",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2788569573",
+  "boundingbox": [
+    "51.8652713",
+    "51.8653713",
+    "4.4573992",
+    "4.4574992"
+  ],
+  "lat": "51.8653213",
+  "lon": "4.4574492",
+  "display_name": "Autowasbeurt, 82, Driemanssteeweg, Bedrijvenpark Rotterdam-Charlois, Rotterdam, South Holland, Netherlands, 3084CB, The Netherlands",
+  "class": "amenity",
+  "type": "car_wash",
+  "importance": 0.331
+}

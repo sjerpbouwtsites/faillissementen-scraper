@@ -1,0 +1,18 @@
+{
+  "place_id": "29476311",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2713278890",
+  "boundingbox": [
+    "51.4363811",
+    "51.4364811",
+    "5.4271635",
+    "5.4272635"
+  ],
+  "lat": "51.4364311",
+  "lon": "5.4272135",
+  "display_name": "Honorary Consulate of Mongolia, 43, Hurksestraat, De Hurk, Eindhoven, North Brabant, Netherlands, 5652AH, The Netherlands",
+  "class": "office",
+  "type": "diplomatic",
+  "importance": 0.331
+}

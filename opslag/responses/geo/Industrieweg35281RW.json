@@ -1,0 +1,18 @@
+{
+  "place_id": "33197143",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2791330620",
+  "boundingbox": [
+    "51.5806744",
+    "51.5807744",
+    "5.3118845",
+    "5.3119845"
+  ],
+  "lat": "51.5807244",
+  "lon": "5.3119345",
+  "display_name": "3, Industrieweg, Bedrijventerrein Ladonk, Boxtel, North Brabant, Netherlands, 5281RW, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

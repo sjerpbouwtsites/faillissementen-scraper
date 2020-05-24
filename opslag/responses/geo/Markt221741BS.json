@@ -1,0 +1,19 @@
+{
+  "place_id": "28861793",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2784907998",
+  "boundingbox": [
+    "52.7861353",
+    "52.7862353",
+    "4.7964992",
+    "4.7965992"
+  ],
+  "lat": "52.7861853",
+  "lon": "4.7965492",
+  "display_name": "22, Markt, Schagen, North Holland, Netherlands, 1741BS, The Netherlands",
+  "class": "tourism",
+  "type": "hotel",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/accommodation_hotel2.p.20.png"
+}

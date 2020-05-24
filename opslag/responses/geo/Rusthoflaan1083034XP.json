@@ -1,0 +1,18 @@
+{
+  "place_id": "34650909",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2813808853",
+  "boundingbox": [
+    "51.9344286",
+    "51.9345286",
+    "4.4979034",
+    "4.4980034"
+  ],
+  "lat": "51.9344786",
+  "lon": "4.4979534",
+  "display_name": "108, Rusthoflaan, Oud-Crooswijk, Rotterdam, South Holland, Netherlands, 3034XP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

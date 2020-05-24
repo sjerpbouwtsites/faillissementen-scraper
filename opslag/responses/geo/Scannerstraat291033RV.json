@@ -1,0 +1,18 @@
+{
+  "place_id": "36447389",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2847026949",
+  "boundingbox": [
+    "52.4079494",
+    "52.4080494",
+    "4.8885195",
+    "4.8886195"
+  ],
+  "lat": "52.4079994",
+  "lon": "4.8885695",
+  "display_name": "29, Scannerstraat, Cornelis Douwesterrein, Amsterdam, North Holland, Netherlands, 1033RV, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

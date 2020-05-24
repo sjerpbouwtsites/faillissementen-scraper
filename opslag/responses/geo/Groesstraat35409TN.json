@@ -1,0 +1,18 @@
+{
+  "place_id": "40961792",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3006389101",
+  "boundingbox": [
+    "51.6417554",
+    "51.6418554",
+    "5.7116823",
+    "5.7117823"
+  ],
+  "lat": "51.6418054",
+  "lon": "5.7117323",
+  "display_name": "3, Groesstraat, Odiliapeel, Uden, North Brabant, Netherlands, 5409TN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

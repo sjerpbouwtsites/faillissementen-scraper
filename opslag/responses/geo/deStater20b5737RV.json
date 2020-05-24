@@ -1,0 +1,18 @@
+{
+  "place_id": "200014935",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "539259771",
+  "boundingbox": [
+    "51.5178786",
+    "51.5179611",
+    "5.6069069",
+    "5.6076791"
+  ],
+  "lat": "51.5178786",
+  "lon": "5.6074281",
+  "display_name": "de Stater, Bavaria, Lieshout, Laarbeek, North Brabant, Netherlands, 5737RV, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.51
+}

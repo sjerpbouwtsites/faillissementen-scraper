@@ -1,0 +1,18 @@
+{
+  "place_id": "69911752",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5896971967",
+  "boundingbox": [
+    "51.2684928",
+    "51.2685928",
+    "3.9035422",
+    "3.9036422"
+  ],
+  "lat": "51.2685428",
+  "lon": "3.9035922",
+  "display_name": "44, Wilhelminastraat, Axel, Terneuzen, Zeeland, Netherlands, 4571JM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

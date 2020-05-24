@@ -1,0 +1,18 @@
+{
+  "place_id": "83768013",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7045957",
+  "boundingbox": [
+    "52.3668038",
+    "52.3671002",
+    "4.933771",
+    "4.9337798"
+  ],
+  "lat": "52.3668661",
+  "lon": "4.9337768",
+  "display_name": "Panamalaan, Bedrijventerrein Zeeburgerpad, Amsterdam, North Holland, Netherlands, 1019AS, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.42
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "37233216",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2856178737",
+  "boundingbox": [
+    "52.6766001",
+    "52.6767001",
+    "4.8406842",
+    "4.8407842"
+  ],
+  "lat": "52.6766501",
+  "lon": "4.8407342",
+  "display_name": "8, Albert Soncklaan, Bedrijventerrein, Heerhugowaard, North Holland, Netherlands, 1701BX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

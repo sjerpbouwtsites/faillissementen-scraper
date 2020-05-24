@@ -1,0 +1,18 @@
+{
+  "place_id": "36589530",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2858007481",
+  "boundingbox": [
+    "52.6494134",
+    "52.6495134",
+    "4.8033741",
+    "4.8034741"
+  ],
+  "lat": "52.6494634",
+  "lon": "4.8034241",
+  "display_name": "35, Noorderlicht, Stad van de Zon, Heerhugowaard, North Holland, Netherlands, 1704ZM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

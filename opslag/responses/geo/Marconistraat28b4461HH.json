@@ -1,0 +1,18 @@
+{
+  "place_id": "76585114",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7605342",
+  "boundingbox": [
+    "51.4993366",
+    "51.4993576",
+    "3.8835129",
+    "3.885182"
+  ],
+  "lat": "51.4993449",
+  "lon": "3.8840699",
+  "display_name": "Marconistraat, Woonboulevard Marconi, Goes, Zeeland, Netherlands, 4461HC, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.42
+}

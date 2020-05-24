@@ -1,0 +1,18 @@
+{
+  "place_id": "32012939",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2817652309",
+  "boundingbox": [
+    "51.5582388",
+    "51.5583388",
+    "4.4623298",
+    "4.4624298"
+  ],
+  "lat": "51.5582888",
+  "lon": "4.4623798",
+  "display_name": "38, Belder, Borchwerf Noord, Roosendaal, North Brabant, Netherlands, 4704RK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

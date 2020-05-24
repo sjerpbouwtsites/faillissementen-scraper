@@ -1,0 +1,18 @@
+{
+  "place_id": "31716631",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2762199684",
+  "boundingbox": [
+    "51.7363116",
+    "51.7364116",
+    "5.4736805",
+    "5.4737805"
+  ],
+  "lat": "51.7363616",
+  "lon": "5.4737305",
+  "display_name": "7, De Doelen, Bedrijventerrein Heestereweg, Geffen, Oss, North Brabant, Netherlands, 5386LM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "38323701",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2889387517",
+  "boundingbox": [
+    "52.2767914",
+    "52.2768914",
+    "5.1852223",
+    "5.1853223"
+  ],
+  "lat": "52.2768414",
+  "lon": "5.1852723",
+  "display_name": "49, Amersfoortsestraatweg, Bussum, Huizen, North Holland, Netherlands, 1402GP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

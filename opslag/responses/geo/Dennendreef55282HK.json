@@ -1,0 +1,18 @@
+{
+  "place_id": "33435408",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2792001578",
+  "boundingbox": [
+    "51.5747986",
+    "51.5748986",
+    "5.3587046",
+    "5.3588046"
+  ],
+  "lat": "51.5748486",
+  "lon": "5.3587546",
+  "display_name": "5, Dennendreef, Liempde, Boxtel, North Brabant, Netherlands, 5298WH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

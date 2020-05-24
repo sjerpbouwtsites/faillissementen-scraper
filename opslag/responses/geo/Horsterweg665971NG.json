@@ -1,0 +1,18 @@
+{
+  "place_id": "33287185",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2792607026",
+  "boundingbox": [
+    "51.4245698",
+    "51.4246698",
+    "6.1039234",
+    "6.1040234"
+  ],
+  "lat": "51.4246198",
+  "lon": "6.1039734",
+  "display_name": "Loonbedrijf Kurstjens, 66, Horsterweg, Grubbenvorst, Horst aan de Maas, Limburg, Netherlands, 5971NG, The Netherlands",
+  "class": "office",
+  "type": "company",
+  "importance": 0.331
+}

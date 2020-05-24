@@ -1,0 +1,16 @@
+{
+  "place_id": "330259866023",
+  "osm_type": "node",
+  "osm_id": "2783518575",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.956956",
+  "lon": "5.567531",
+  "display_name": "15, Van Deventerstraat, Rhenen Binnenstad, Rhenen, Utrecht, Netherlands, 3911KH",
+  "boundingbox": [
+    "51.956956",
+    "51.956956",
+    "5.567531",
+    "5.567531"
+  ],
+  "importance": 0.25
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "22964643",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2629889020",
+  "boundingbox": [
+    "52.78761",
+    "52.78771",
+    "6.8928177",
+    "6.8929177"
+  ],
+  "lat": "52.78766",
+  "lon": "6.8928677",
+  "display_name": "1, Noorderplein, Emmen, Drenthe, Netherlands, 7811MA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

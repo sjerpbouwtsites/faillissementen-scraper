@@ -1,0 +1,19 @@
+{
+  "place_id": "57902074",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "4698549973",
+  "boundingbox": [
+    "53.2183288",
+    "53.2184288",
+    "6.5697337",
+    "6.5698337"
+  ],
+  "lat": "53.2183788",
+  "lon": "6.5697837",
+  "display_name": "Vapiano, 18, Poelestraat, City centre North, Centrum, Groningen, Netherlands, 9712KA, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

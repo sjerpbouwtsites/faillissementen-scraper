@@ -1,0 +1,18 @@
+{
+  "place_id": "62212119",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5074154703",
+  "boundingbox": [
+    "52.378707",
+    "52.378807",
+    "6.2910968",
+    "6.2911968"
+  ],
+  "lat": "52.378757",
+  "lon": "6.2911468",
+  "display_name": "4, Boeierstraat, De Zegge, Raalte, Overijssel, Netherlands, 8102HS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

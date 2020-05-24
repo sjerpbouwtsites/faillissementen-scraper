@@ -1,0 +1,18 @@
+{
+  "place_id": "38461480",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2897444337",
+  "boundingbox": [
+    "51.7265277",
+    "51.7266277",
+    "5.1376841",
+    "5.1377841"
+  ],
+  "lat": "51.7265777",
+  "lon": "5.1377341",
+  "display_name": "23, Herptseweg, Oudheusden, Heusden, North Brabant, Netherlands, 5156JH, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

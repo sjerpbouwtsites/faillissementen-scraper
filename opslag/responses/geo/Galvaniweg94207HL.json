@@ -1,0 +1,18 @@
+{
+  "place_id": "28140901",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2768534144",
+  "boundingbox": [
+    "51.8409665",
+    "51.8410665",
+    "4.9938572",
+    "4.9939572"
+  ],
+  "lat": "51.8410165",
+  "lon": "4.9939072",
+  "display_name": "9, Galvaniweg, Oost I, Gorinchem, South Holland, Netherlands, 4207HL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

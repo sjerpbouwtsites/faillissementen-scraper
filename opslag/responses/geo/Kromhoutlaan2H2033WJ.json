@@ -1,0 +1,18 @@
+{
+  "place_id": "81807440",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7400961",
+  "boundingbox": [
+    "52.3792885",
+    "52.37945",
+    "4.66178",
+    "4.6625161"
+  ],
+  "lat": "52.3794",
+  "lon": "4.66216",
+  "display_name": "Kromhoutlaan, Haarlem, North Holland, Netherlands, 2033WJ, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.52
+}

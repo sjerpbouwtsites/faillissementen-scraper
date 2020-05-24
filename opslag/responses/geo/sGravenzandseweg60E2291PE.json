@@ -1,0 +1,18 @@
+{
+  "place_id": "114680094",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "117858627",
+  "boundingbox": [
+    "52.0135184",
+    "52.013624",
+    "4.2813086",
+    "4.281417"
+  ],
+  "lat": "52.0135184",
+  "lon": "4.281417",
+  "display_name": "'s-Gravenzandseweg, Zwethove, Wateringen, Westland, South Holland, Netherlands, 2291PE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.51
+}

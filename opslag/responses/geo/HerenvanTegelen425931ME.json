@@ -1,0 +1,18 @@
+{
+  "place_id": "57628729",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "4663714599",
+  "boundingbox": [
+    "51.347434",
+    "51.347534",
+    "6.1448393",
+    "6.1449393"
+  ],
+  "lat": "51.347484",
+  "lon": "6.1448893",
+  "display_name": "42, Heren van Tegelen, Tegelen, Venlo, Limburg, Netherlands, 5931ME, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.531
+}

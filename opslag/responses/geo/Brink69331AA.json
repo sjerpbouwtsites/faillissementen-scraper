@@ -1,0 +1,19 @@
+{
+  "place_id": "4502210",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "499385130",
+  "boundingbox": [
+    "53.0664409",
+    "53.0665409",
+    "6.4602504",
+    "6.4603504"
+  ],
+  "lat": "53.0664909",
+  "lon": "6.4603004",
+  "display_name": "Hotel-Restaurant Karsten, 6, Brink, Norg, Noordenveld, Drenthe, Netherlands, 9331AA, The Netherlands",
+  "class": "tourism",
+  "type": "hotel",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/accommodation_hotel2.p.20.png"
+}

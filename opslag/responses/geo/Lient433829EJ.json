@@ -1,0 +1,18 @@
+{
+  "place_id": "63469271",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5297109039",
+  "boundingbox": [
+    "52.1835707",
+    "52.1836707",
+    "5.4306415",
+    "5.4307415"
+  ],
+  "lat": "52.1836207",
+  "lon": "5.4306915",
+  "display_name": "43, Lient, Hooglanderveen, Amersfoort, Utrecht, Netherlands, 3829EJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

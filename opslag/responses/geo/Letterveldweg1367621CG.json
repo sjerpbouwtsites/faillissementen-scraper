@@ -1,0 +1,18 @@
+{
+  "place_id": "32389929",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2778027061",
+  "boundingbox": [
+    "52.2942315",
+    "52.2943315",
+    "6.7423685",
+    "6.7424685"
+  ],
+  "lat": "52.2942815",
+  "lon": "6.7424185",
+  "display_name": "136, Letterveldweg, Borne, Overijssel, Netherlands, 7621CG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

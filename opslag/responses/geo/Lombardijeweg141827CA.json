@@ -1,0 +1,18 @@
+{
+  "place_id": "32425766",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2899747238",
+  "boundingbox": [
+    "52.6653418",
+    "52.6654418",
+    "4.7596648",
+    "4.7597648"
+  ],
+  "lat": "52.6653918",
+  "lon": "4.7597148",
+  "display_name": "14, Lombardijeweg, Vroonermeer Noord, Alkmaar, North Holland, Netherlands, 1827CA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

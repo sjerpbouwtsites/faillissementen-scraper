@@ -1,0 +1,18 @@
+{
+  "place_id": "39702500",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2966762869",
+  "boundingbox": [
+    "52.8995684",
+    "52.8996684",
+    "5.4625479",
+    "5.4626479"
+  ],
+  "lat": "52.8996184",
+  "lon": "5.4625979",
+  "display_name": "4, Galamadammen, Koudum, Súdwest-Fryslân, Friesland, Netherlands, 8723CE, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

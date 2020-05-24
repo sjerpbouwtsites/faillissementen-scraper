@@ -1,0 +1,18 @@
+{
+  "place_id": "34265349",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2839649905",
+  "boundingbox": [
+    "52.3542729",
+    "52.3543729",
+    "5.1952116",
+    "5.1953116"
+  ],
+  "lat": "52.3543229",
+  "lon": "5.1952616",
+  "display_name": "12, Radioweg, Literatuurwijk, Almere, Flevoland, Netherlands, 1324KW, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "34892270",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2821033146",
+  "boundingbox": [
+    "50.8838142",
+    "50.8839142",
+    "5.7344852",
+    "5.7345852"
+  ],
+  "lat": "50.8838642",
+  "lon": "5.7345352",
+  "display_name": "78, Weert, Meerssen, Limburg, Netherlands, 6231SB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

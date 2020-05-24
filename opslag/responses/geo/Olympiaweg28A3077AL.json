@@ -1,0 +1,18 @@
+{
+  "place_id": "81767587",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7326873",
+  "boundingbox": [
+    "51.8870158",
+    "51.8872604",
+    "4.5372987",
+    "4.5415802"
+  ],
+  "lat": "51.8871222",
+  "lon": "4.5399069",
+  "display_name": "Olympiaweg, Kreekhuizen, IJsselmonde, Rotterdam, South Holland, Netherlands, 3079AC, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.42
+}

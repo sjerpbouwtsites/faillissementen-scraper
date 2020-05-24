@@ -1,0 +1,19 @@
+{
+  "place_id": "31479669",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2754641232",
+  "boundingbox": [
+    "51.6471656",
+    "51.6472656",
+    "5.9487829",
+    "5.9488829"
+  ],
+  "lat": "51.6472156",
+  "lon": "5.9488329",
+  "display_name": "Hemels voor Kinderen, 1, Hoogkoorpassage, Boxmeer, North Brabant, Netherlands, 5831DM, The Netherlands",
+  "class": "shop",
+  "type": "clothes",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_clothes.p.20.png"
+}

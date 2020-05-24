@@ -1,0 +1,18 @@
+{
+  "place_id": "31206666",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750244289",
+  "boundingbox": [
+    "52.2400423",
+    "52.2401423",
+    "6.8991494",
+    "6.8992494"
+  ],
+  "lat": "52.2400923",
+  "lon": "6.8991994",
+  "display_name": "46, Keteldiepstraat, Deppenbroek, Enschede, Overijssel, Netherlands, 7523PM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

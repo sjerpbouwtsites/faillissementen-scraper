@@ -1,0 +1,18 @@
+{
+  "place_id": "33499657",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2796109993",
+  "boundingbox": [
+    "51.8096586",
+    "51.8097586",
+    "4.658021",
+    "4.658121"
+  ],
+  "lat": "51.8097086",
+  "lon": "4.658071",
+  "display_name": "33, Rozenhof, Dordrecht, South Holland, Netherlands, 3311JT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

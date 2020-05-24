@@ -1,0 +1,18 @@
+{
+  "place_id": "30778004",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2741649542",
+  "boundingbox": [
+    "51.7093031",
+    "51.7094031",
+    "5.271206",
+    "5.271306"
+  ],
+  "lat": "51.7093531",
+  "lon": "5.271256",
+  "display_name": "680, Siloweg, De Rietvelden West, 's-Hertogenbosch, North Brabant, Netherlands, 5222BM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "279360782",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2737932834",
+  "boundingbox": [
+    "51.594311",
+    "51.594411",
+    "4.7509768",
+    "4.7510768"
+  ],
+  "lat": "51.594361",
+  "lon": "4.7510268",
+  "display_name": "Trust Verhuizingen, 11-C10, Stadionstraat, Tuinzigt, Breda, North Brabant, Netherlands, 4815NC, The Netherlands",
+  "class": "office",
+  "type": "moving_company",
+  "importance": 0.421
+}

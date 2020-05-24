@@ -1,0 +1,19 @@
+{
+  "place_id": "65540744",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "5590870968",
+  "boundingbox": [
+    "52.0902068",
+    "52.0903068",
+    "5.1103818",
+    "5.1104818"
+  ],
+  "lat": "52.0902568",
+  "lon": "5.1104318",
+  "display_name": "Vapiano, 4, Stationsplein, Dichterswijk, Utrecht, Netherlands, 3511ED, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "285356521",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "131524991",
+  "boundingbox": [
+    "51.970327",
+    "51.9705821",
+    "4.6060625",
+    "4.6064884"
+  ],
+  "lat": "51.9705676",
+  "lon": "4.6064676",
+  "display_name": "Dorpsstraat, Nieuwerkerk aan den IJssel, Zuidplas, South Holland, Netherlands, 2912CJ, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.81
+}

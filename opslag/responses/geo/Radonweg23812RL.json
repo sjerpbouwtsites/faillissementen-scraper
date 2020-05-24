@@ -1,0 +1,18 @@
+{
+  "place_id": "28724589",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2684746280",
+  "boundingbox": [
+    "52.170419",
+    "52.170519",
+    "5.3487606",
+    "5.3488606"
+  ],
+  "lat": "52.170469",
+  "lon": "5.3488106",
+  "display_name": "2, Radonweg, Isselt, Amersfoort, Utrecht, Netherlands, 3812RL, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

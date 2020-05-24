@@ -1,0 +1,18 @@
+{
+  "place_id": "83243591",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6947063",
+  "boundingbox": [
+    "51.7185358",
+    "51.7194918",
+    "5.3615561",
+    "5.3622016"
+  ],
+  "lat": "51.7190716",
+  "lon": "5.3617795",
+  "display_name": "Dorpsstraat, Rosmalen Centrum, Rosmalen, 's-Hertogenbosch, North Brabant, Netherlands, 5241EC, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.42
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "29745942",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2729759557",
+  "boundingbox": [
+    "51.443319",
+    "51.443419",
+    "5.4098899",
+    "5.4099899"
+  ],
+  "lat": "51.443369",
+  "lon": "5.4099399",
+  "display_name": "11, Meerring, Meerhoven, Eindhoven, North Brabant, Netherlands, 5658LC, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

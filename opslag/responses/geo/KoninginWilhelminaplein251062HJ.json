@@ -1,0 +1,18 @@
+{
+  "place_id": "30710255",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2795368019",
+  "boundingbox": [
+    "52.3534722",
+    "52.3535722",
+    "4.8410461",
+    "4.8411461"
+  ],
+  "lat": "52.3535222",
+  "lon": "4.8410961",
+  "display_name": "25, Koningin Wilhelminaplein, Westlandgracht, Amsterdam, North Holland, Netherlands, 1062HJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

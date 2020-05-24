@@ -1,0 +1,18 @@
+{
+  "place_id": "33327366",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2790970163",
+  "boundingbox": [
+    "51.5874128",
+    "51.5875128",
+    "5.3218008",
+    "5.3219008"
+  ],
+  "lat": "51.5874628",
+  "lon": "5.3218508",
+  "display_name": "47, Stationsstraat, Selissen, Boxtel, North Brabant, Netherlands, 5281GB, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

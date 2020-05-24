@@ -1,0 +1,18 @@
+{
+  "place_id": "34273692",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2813923833",
+  "boundingbox": [
+    "51.5865637",
+    "51.5866637",
+    "4.3171917",
+    "4.3172917"
+  ],
+  "lat": "51.5866137",
+  "lon": "4.3172417",
+  "display_name": "34, Kaaistraat, Steenbergen, North Brabant, Netherlands, 4651BP, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

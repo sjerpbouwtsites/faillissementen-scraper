@@ -1,0 +1,18 @@
+{
+  "place_id": "83740192",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6986989",
+  "boundingbox": [
+    "52.1646918",
+    "52.1647574",
+    "5.372794",
+    "5.3729402"
+  ],
+  "lat": "52.1647574",
+  "lon": "5.372794",
+  "display_name": "Nijverheidsweg-Noord, Isselt, Amersfoort, Utrecht, Netherlands, 3812PM, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.41
+}

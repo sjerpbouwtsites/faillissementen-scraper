@@ -1,0 +1,18 @@
+{
+  "place_id": "38682677",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2904354163",
+  "boundingbox": [
+    "52.8488348",
+    "52.8489348",
+    "5.7046362",
+    "5.7047362"
+  ],
+  "lat": "52.8488848",
+  "lon": "5.7046862",
+  "display_name": "70, Steile bank, West, Lemmer, De Fryske Marren, Friesland, Netherlands, 8531MD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

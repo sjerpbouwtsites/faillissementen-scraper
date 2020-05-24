@@ -1,0 +1,18 @@
+{
+  "place_id": "35792362",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2831445302",
+  "boundingbox": [
+    "53.3423215",
+    "53.3424215",
+    "6.9068907",
+    "6.9069907"
+  ],
+  "lat": "53.3423715",
+  "lon": "6.9069407",
+  "display_name": "107, Skagerrak, Kwelderland, Uitwierde, Delfzijl, Groningen, Netherlands, 9933SG, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

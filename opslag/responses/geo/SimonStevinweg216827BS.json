@@ -1,0 +1,18 @@
+{
+  "place_id": "24415949",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2722375848",
+  "boundingbox": [
+    "51.9740768",
+    "51.9741768",
+    "5.9435949",
+    "5.9436949"
+  ],
+  "lat": "51.9741268",
+  "lon": "5.9436449",
+  "display_name": "21, Simon Stevinweg, Het Broek, Arnhem, Gelderland, Netherlands, 6827BS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

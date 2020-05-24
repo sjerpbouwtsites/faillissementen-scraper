@@ -1,0 +1,19 @@
+{
+  "place_id": "34424201",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2814070344",
+  "boundingbox": [
+    "51.9284624",
+    "51.9285624",
+    "4.4739642",
+    "4.4740642"
+  ],
+  "lat": "51.9285124",
+  "lon": "4.4740142",
+  "display_name": "Days Inn, 730, Schiekade, Agniesebuurt, Noord, Rotterdam, South Holland, Netherlands, 3032AL, The Netherlands",
+  "class": "tourism",
+  "type": "hotel",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/accommodation_hotel2.p.20.png"
+}

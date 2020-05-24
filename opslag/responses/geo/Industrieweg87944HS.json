@@ -1,0 +1,18 @@
+{
+  "place_id": "30403275",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2733670486",
+  "boundingbox": [
+    "52.6929598",
+    "52.6930598",
+    "6.1793512",
+    "6.1794512"
+  ],
+  "lat": "52.6930098",
+  "lon": "6.1794012",
+  "display_name": "8, Industrieweg, Oevers A, Meppel, Drenthe, Netherlands, 7944HS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

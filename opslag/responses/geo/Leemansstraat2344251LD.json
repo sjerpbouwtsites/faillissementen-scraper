@@ -1,0 +1,18 @@
+{
+  "place_id": "74917140",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "6393444895",
+  "boundingbox": [
+    "51.7982868",
+    "51.7983868",
+    "4.8835953",
+    "4.8836953"
+  ],
+  "lat": "51.7983368",
+  "lon": "4.8836453",
+  "display_name": "23-4, Leemansstraat, Bruine Kilhaven, Werkendam, Altena, North Brabant, Netherlands, 4251LD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

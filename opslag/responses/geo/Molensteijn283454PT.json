@@ -1,0 +1,18 @@
+{
+  "place_id": "82588822",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7062524",
+  "boundingbox": [
+    "52.079744",
+    "52.0800184",
+    "5.0497834",
+    "5.0512678"
+  ],
+  "lat": "52.0800184",
+  "lon": "5.0497834",
+  "display_name": "Molensteijn, Oudenrijn, De Meern, Utrecht, Netherlands, 3454MX, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

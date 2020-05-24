@@ -1,0 +1,18 @@
+{
+  "place_id": "30708027",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2815828580",
+  "boundingbox": [
+    "52.7453545",
+    "52.7454545",
+    "5.0641889",
+    "5.0642889"
+  ],
+  "lat": "52.7454045",
+  "lon": "5.0642389",
+  "display_name": "159, Dorpsweg, Twisk, Medemblik, North Holland, Netherlands, 1676GK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

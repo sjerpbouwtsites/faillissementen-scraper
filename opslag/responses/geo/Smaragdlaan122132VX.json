@@ -1,0 +1,18 @@
+{
+  "place_id": "29020041",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2733771615",
+  "boundingbox": [
+    "52.2914156",
+    "52.2915156",
+    "4.6866087",
+    "4.6867087"
+  ],
+  "lat": "52.2914656",
+  "lon": "4.6866587",
+  "display_name": "12, Smaragdlaan, Graan voor Visch, Hoofddorp, Haarlemmermeer, North Holland, Netherlands, 2132VX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

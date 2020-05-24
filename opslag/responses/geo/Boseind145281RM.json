@@ -1,0 +1,18 @@
+{
+  "place_id": "51779635",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "4523055136",
+  "boundingbox": [
+    "51.5776291",
+    "51.5777291",
+    "5.3192395",
+    "5.3193395"
+  ],
+  "lat": "51.5776791",
+  "lon": "5.3192895",
+  "display_name": "14, Boseind, Bedrijventerrein Ladonk, Boxtel, North Brabant, Netherlands, 5281RM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

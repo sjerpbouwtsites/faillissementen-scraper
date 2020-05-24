@@ -1,0 +1,18 @@
+{
+  "place_id": "31779688",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2761919815",
+  "boundingbox": [
+    "52.0288631",
+    "52.0289631",
+    "5.6492196",
+    "5.6493196"
+  ],
+  "lat": "52.0289131",
+  "lon": "5.6492696",
+  "display_name": "18, Kamerlingh Onnesweg, Ede, Gelderland, Netherlands, 6717AK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

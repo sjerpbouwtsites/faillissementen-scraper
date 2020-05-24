@@ -1,0 +1,18 @@
+{
+  "place_id": "31356797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750749021",
+  "boundingbox": [
+    "51.9998705",
+    "51.9999705",
+    "4.1703425",
+    "4.1704425"
+  ],
+  "lat": "51.9999205",
+  "lon": "4.1703925",
+  "display_name": "40, Prins Hendrikstraat, Dijckerwaal, 's-Gravenzande, Westland, South Holland, Netherlands, 2691VM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.511
+}

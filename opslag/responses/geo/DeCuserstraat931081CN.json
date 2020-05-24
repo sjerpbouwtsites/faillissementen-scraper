@@ -1,0 +1,18 @@
+{
+  "place_id": "35082002",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2819109988",
+  "boundingbox": [
+    "52.3233242",
+    "52.3234242",
+    "4.8582118",
+    "4.8583118"
+  ],
+  "lat": "52.3233742",
+  "lon": "4.8582618",
+  "display_name": "93, De Cuserstraat, Buitenveldert, Amsterdam, North Holland, Netherlands, 1081CN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

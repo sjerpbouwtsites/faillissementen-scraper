@@ -1,0 +1,18 @@
+{
+  "place_id": "30825575",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2750431901",
+  "boundingbox": [
+    "51.7314048",
+    "51.7315048",
+    "5.3230296",
+    "5.3231296"
+  ],
+  "lat": "51.7314548",
+  "lon": "5.3230796",
+  "display_name": "7, Kasteeldreef, Kom Empel, 's-Hertogenbosch, North Brabant, Netherlands, 5236XK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

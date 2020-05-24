@@ -1,0 +1,18 @@
+{
+  "place_id": "30863340",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2854646602",
+  "boundingbox": [
+    "52.3496605",
+    "52.3497605",
+    "5.6200237",
+    "5.6201237"
+  ],
+  "lat": "52.3497105",
+  "lon": "5.6200737",
+  "display_name": "5, Luttekepoortstraat, Harderwijk, Gelderland, Netherlands, 3841AW, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

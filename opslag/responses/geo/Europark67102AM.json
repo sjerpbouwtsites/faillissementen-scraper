@@ -1,0 +1,18 @@
+{
+  "place_id": "33908746",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2802174085",
+  "boundingbox": [
+    "51.9732385",
+    "51.9733385",
+    "6.7056205",
+    "6.7057205"
+  ],
+  "lat": "51.9732885",
+  "lon": "6.7056705",
+  "display_name": "6, Europark, Winterswijk, Gelderland, Netherlands, 7102AM, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

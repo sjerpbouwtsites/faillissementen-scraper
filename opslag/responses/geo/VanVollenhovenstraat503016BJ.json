@@ -1,0 +1,18 @@
+{
+  "place_id": "27882338",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2610262466",
+  "boundingbox": [
+    "51.9095806",
+    "51.9096806",
+    "4.4785416",
+    "4.4786416"
+  ],
+  "lat": "51.9096306",
+  "lon": "4.4785916",
+  "display_name": "50, Van Vollenhovenstraat, Nieuwe Werk, Centrum, Rotterdam, South Holland, Netherlands, 3016BJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

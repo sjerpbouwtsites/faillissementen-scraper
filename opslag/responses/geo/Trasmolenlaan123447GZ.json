@@ -1,0 +1,18 @@
+{
+  "place_id": "35759045",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2830330146",
+  "boundingbox": [
+    "52.0763925",
+    "52.0764925",
+    "4.892018",
+    "4.892118"
+  ],
+  "lat": "52.0764425",
+  "lon": "4.892068",
+  "display_name": "12, Trasmolenlaan, Middelland, Woerden, Utrecht, Netherlands, 3447GZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

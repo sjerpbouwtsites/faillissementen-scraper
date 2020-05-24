@@ -1,0 +1,18 @@
+{
+  "place_id": "232876166",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "734193798",
+  "boundingbox": [
+    "52.5229043",
+    "52.5230777",
+    "6.1201143",
+    "6.1216198"
+  ],
+  "lat": "52.5230777",
+  "lon": "6.1216198",
+  "display_name": "Ossenkamp, De Vrolijkheid, Zwolle, Overijssel, Netherlands, 8024AA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.52
+}

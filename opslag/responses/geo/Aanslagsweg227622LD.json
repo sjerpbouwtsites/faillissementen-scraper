@@ -1,0 +1,18 @@
+{
+  "place_id": "32493123",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2777156412",
+  "boundingbox": [
+    "52.2982125",
+    "52.2983125",
+    "6.7588228",
+    "6.7589228"
+  ],
+  "lat": "52.2982625",
+  "lon": "6.7588728",
+  "display_name": "22, Aanslagsweg, Landgoed Wildyck, Borne, Overijssel, Netherlands, 7622LD, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

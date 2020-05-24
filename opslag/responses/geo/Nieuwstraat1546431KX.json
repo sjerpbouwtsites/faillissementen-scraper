@@ -1,0 +1,18 @@
+{
+  "place_id": "35750090",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2835113070",
+  "boundingbox": [
+    "50.9203988",
+    "50.9204988",
+    "5.930111",
+    "5.930211"
+  ],
+  "lat": "50.9204488",
+  "lon": "5.930161",
+  "display_name": "154, Nieuwstraat, Hoensbroek-De Dem, Hoensbroek, Heerlen, Limburg, Netherlands, 6431KX, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,19 @@
+{
+  "place_id": "34588746",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2816799882",
+  "boundingbox": [
+    "51.9087494",
+    "51.9088494",
+    "6.1886143",
+    "6.1887143"
+  ],
+  "lat": "51.9087994",
+  "lon": "6.1886643",
+  "display_name": "Restaurant De Bourgondiër, 11, Arnhemseweg, Beek, Montferland, Gelderland, Netherlands, 7037CX, The Netherlands",
+  "class": "amenity",
+  "type": "restaurant",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/food_restaurant.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "50316438",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "3865615942",
+  "boundingbox": [
+    "52.0954523",
+    "52.0955523",
+    "5.0624952",
+    "5.0625952"
+  ],
+  "lat": "52.0955023",
+  "lon": "5.0625452",
+  "display_name": "193, Jan Wolkerssingel, Grauwaart, Utrecht, Netherlands, 3541AA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

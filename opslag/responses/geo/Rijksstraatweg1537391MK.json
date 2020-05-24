@@ -1,0 +1,18 @@
+{
+  "place_id": "31574454",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2758779050",
+  "boundingbox": [
+    "52.2398202",
+    "52.2399202",
+    "6.0974503",
+    "6.0975503"
+  ],
+  "lat": "52.2398702",
+  "lon": "6.0975003",
+  "display_name": "153, Rijksstraatweg, Twello, Voorst, Gelderland, Netherlands, 7391MK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

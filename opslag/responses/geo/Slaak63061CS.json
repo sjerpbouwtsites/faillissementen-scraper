@@ -1,0 +1,18 @@
+{
+  "place_id": "32395380",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2805490101",
+  "boundingbox": [
+    "51.9253666",
+    "51.9254666",
+    "4.4997227",
+    "4.4998227"
+  ],
+  "lat": "51.9254166",
+  "lon": "4.4997727",
+  "display_name": "6, Slaak, Kralingen-West, Rotterdam, South Holland, Netherlands, 3061CS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "36278756",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2847524670",
+  "boundingbox": [
+    "51.5751337",
+    "51.5752337",
+    "5.0395051",
+    "5.0396051"
+  ],
+  "lat": "51.5751837",
+  "lon": "5.0395551",
+  "display_name": "15, Kobaltstraat, Wandelbos, Tilburg, North Brabant, Netherlands, 5044JK, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

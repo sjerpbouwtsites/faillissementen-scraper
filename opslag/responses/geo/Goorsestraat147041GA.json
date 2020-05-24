@@ -1,0 +1,18 @@
+{
+  "place_id": "33898102",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2805089678",
+  "boundingbox": [
+    "51.8739563",
+    "51.8740563",
+    "6.2591263",
+    "6.2592263"
+  ],
+  "lat": "51.8740063",
+  "lon": "6.2591763",
+  "display_name": "14, Goorsestraat, 't Goor, 's-Heerenberg, Montferland, Gelderland, Netherlands, 7041GA, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}

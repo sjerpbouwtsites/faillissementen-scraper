@@ -1,0 +1,18 @@
+{
+  "place_id": "31218925",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2755151102",
+  "boundingbox": [
+    "51.4315155",
+    "51.4316155",
+    "5.4839395",
+    "5.4840395"
+  ],
+  "lat": "51.4315655",
+  "lon": "5.4839895",
+  "display_name": "6, Bomanshof, Elzent-Noord, Eindhoven, North Brabant, Netherlands, 5611NJ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

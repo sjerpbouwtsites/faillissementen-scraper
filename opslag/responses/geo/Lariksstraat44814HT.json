@@ -1,0 +1,18 @@
+{
+  "place_id": "30131430",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2728726531",
+  "boundingbox": [
+    "51.5857873",
+    "51.5858873",
+    "4.7549576",
+    "4.7550576"
+  ],
+  "lat": "51.5858373",
+  "lon": "4.7550076",
+  "display_name": "4, Lariksstraat, Tuinzigt, Breda, North Brabant, Netherlands, 4814HT, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "29726673",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2717691661",
+  "boundingbox": [
+    "52.2360925",
+    "52.2361925",
+    "5.484303",
+    "5.484403"
+  ],
+  "lat": "52.2361425",
+  "lon": "5.484353",
+  "display_name": "13, Patroonstraat, Arkervaart, Nijkerk, Gelderland, Netherlands, 3861RN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

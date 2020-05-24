@@ -1,0 +1,18 @@
+{
+  "place_id": "36691835",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2850740183",
+  "boundingbox": [
+    "51.5570939",
+    "51.5571939",
+    "5.0918927",
+    "5.0919927"
+  ],
+  "lat": "51.5571439",
+  "lon": "5.0919427",
+  "display_name": "43, Heuvel, Tivoli, Tilburg, North Brabant, Netherlands, 5038CS, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

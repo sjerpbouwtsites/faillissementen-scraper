@@ -90,7 +90,7 @@ function pakDagenData() {
           dbDag.adresGepakt &&
           vglMetVandaag <= vandaag &&
           !dbDag.geconsolideerd) ||
-        opties.consolideerTelkensOpnieuw
+        (opties.consolideerTelkensOpnieuw && vglMetVandaag <= vandaag)
       );
     });
 

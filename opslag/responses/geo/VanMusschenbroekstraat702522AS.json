@@ -1,0 +1,18 @@
+{
+  "place_id": "29386561",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2707886271",
+  "boundingbox": [
+    "52.0631477",
+    "52.0632477",
+    "4.3286865",
+    "4.3287865"
+  ],
+  "lat": "52.0631977",
+  "lon": "4.3287365",
+  "display_name": "Vlies Behang, 70, Van Musschenbroekstraat, Molenwijk, The Hague, South Holland, Netherlands, 2522AS, The Netherlands",
+  "class": "shop",
+  "type": "wallpaper",
+  "importance": 0.411
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "25939943",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2717648750",
+  "boundingbox": [
+    "52.1241819",
+    "52.1242819",
+    "4.443841",
+    "4.443941"
+  ],
+  "lat": "52.1242319",
+  "lon": "4.443891",
+  "display_name": "192, Schoolstraat, Voorschoten, South Holland, Netherlands, 2252CN, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

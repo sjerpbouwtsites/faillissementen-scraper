@@ -1,0 +1,19 @@
+{
+  "place_id": "55248507",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "4403276527",
+  "boundingbox": [
+    "52.4823886",
+    "52.4824886",
+    "4.6594715",
+    "4.6595715"
+  ],
+  "lat": "52.4824386",
+  "lon": "4.6595215",
+  "display_name": "Fashion House, 9, Beverhof, Centrum, Beverwijk, North Holland, Netherlands, 1941EC, The Netherlands",
+  "class": "shop",
+  "type": "clothes",
+  "importance": 0.331,
+  "icon": "https://locationiq.org/static/images/mapicons/shopping_clothes.p.20.png"
+}

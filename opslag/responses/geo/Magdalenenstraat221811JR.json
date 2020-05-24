@@ -1,0 +1,18 @@
+{
+  "place_id": "37845827",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2876303978",
+  "boundingbox": [
+    "52.6316609",
+    "52.6317609",
+    "4.7487582",
+    "4.7488582"
+  ],
+  "lat": "52.6317109",
+  "lon": "4.7488082",
+  "display_name": "22, Magdalenenstraat, Alkmaar, North Holland, Netherlands, 1811JR, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.331
+}

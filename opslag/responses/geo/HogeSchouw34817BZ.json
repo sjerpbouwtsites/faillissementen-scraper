@@ -1,0 +1,18 @@
+{
+  "place_id": "30583655",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "2739204171",
+  "boundingbox": [
+    "51.5970525",
+    "51.5971525",
+    "4.822755",
+    "4.822855"
+  ],
+  "lat": "51.5971025",
+  "lon": "4.822805",
+  "display_name": "3, Hoge Schouw, Moleneind, Breda, North Brabant, Netherlands, 4817BZ, The Netherlands",
+  "class": "place",
+  "type": "house",
+  "importance": 0.421
+}
