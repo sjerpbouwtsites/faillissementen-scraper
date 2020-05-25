@@ -1,0 +1,16 @@
+{
+  "place_id": "333363996312",
+  "osm_type": "node",
+  "osm_id": "2604556813",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.102182",
+  "lon": "4.180683",
+  "display_name": "Weert Weert, Bornem, Mechelen, Antwerpen, Belgium",
+  "boundingbox": [
+    "51.102182",
+    "51.102182",
+    "4.180683",
+    "4.180683"
+  ],
+  "importance": 0.25
+}

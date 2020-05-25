@@ -1,0 +1,16 @@
+{
+  "place_id": "333262861694",
+  "osm_type": "relation",
+  "osm_id": "7715715",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.54018",
+  "lon": "4.45797",
+  "display_name": "Roosendaal, Stationsbuurt, Roosendaal, Noord-Brabant, Netherlands",
+  "boundingbox": [
+    "51.5384721",
+    "51.5408048",
+    "4.4554188",
+    "4.4589273"
+  ],
+  "importance": 0.25
+}

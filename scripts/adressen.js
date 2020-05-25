@@ -210,9 +210,17 @@ function uniekeAdressenUitString(pcString) {
         .trim()
         .replace(/\,/g, "");
       let postcode = m[2].replace(" ", "");
+
+      const straatEnNummer = m[1];
+      const straatNummerLos = straatEnNummer
+        .match(/(\D*)(\d+.*)/)
+        .map((a) => a.trim());
+
       return JSON.stringify({
         adres: vol,
-        straat: m[1],
+        straatEnNummer: m[1],
+        straat: straatNummerLos[1],
+        huisnummer: straatNummerLos[2],
         postcode,
         plaatsnaam: m[3],
       });

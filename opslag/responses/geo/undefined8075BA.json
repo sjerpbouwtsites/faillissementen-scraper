@@ -1,0 +1,14 @@
+{
+  "place_id": "330662332623",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "52.292363",
+  "lon": "5.785629",
+  "display_name": "Elspeet, Gelderland, Netherlands",
+  "boundingbox": [
+    "52.2671458605",
+    "52.3201672925",
+    "5.74383723019",
+    "5.85215497305"
+  ],
+  "importance": 0.25
+}

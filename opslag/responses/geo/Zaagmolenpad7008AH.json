@@ -1,0 +1,18 @@
+{
+  "place_id": "196162905",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "508447975",
+  "boundingbox": [
+    "51.9696958",
+    "51.9700956",
+    "6.2719421",
+    "6.2729009"
+  ],
+  "lat": "51.9697412",
+  "lon": "6.2727581",
+  "display_name": "Zaagmolenpad, Keppelseweg, Doetinchem, Gelderland, Netherlands, 7008AJ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

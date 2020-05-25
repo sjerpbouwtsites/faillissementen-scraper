@@ -1,0 +1,16 @@
+{
+  "place_id": "330924370984",
+  "osm_type": "way",
+  "osm_id": "6320350",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "52.763088",
+  "lon": "5.092591",
+  "display_name": "Almere, Brake, Medemblik, Noord-Holland, Netherlands",
+  "boundingbox": [
+    "52.7600212",
+    "52.7670626",
+    "5.0868009",
+    "5.0979286"
+  ],
+  "importance": 0.25
+}

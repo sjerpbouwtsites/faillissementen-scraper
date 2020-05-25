@@ -1,0 +1,18 @@
+{
+  "place_id": "83732413",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6973479",
+  "boundingbox": [
+    "52.2281566",
+    "52.2287185",
+    "5.3656875",
+    "5.3671923"
+  ],
+  "lat": "52.2281566",
+  "lon": "5.3670286",
+  "display_name": "Dieselweg, Bedrijventerrein De Kronkels, Bunschoten-Spakenburg, Bunschoten, Utrecht, Netherlands, 3752LB, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.42
+}

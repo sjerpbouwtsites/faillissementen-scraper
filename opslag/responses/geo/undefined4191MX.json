@@ -1,0 +1,14 @@
+{
+  "place_id": "333391377237",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.881633",
+  "lon": "5.30145",
+  "display_name": "Geldermalsen, Gelderland, Netherlands",
+  "boundingbox": [
+    "51.868873414",
+    "51.8966282111",
+    "5.2581669863",
+    "5.33955144792"
+  ],
+  "importance": 0.15
+}

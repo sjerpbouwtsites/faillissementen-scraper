@@ -1,0 +1,18 @@
+{
+  "place_id": "96324436",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "35937896",
+  "boundingbox": [
+    "52.3561642",
+    "52.3562439",
+    "4.8407039",
+    "4.8407067"
+  ],
+  "lat": "52.3561905",
+  "lon": "4.8407058",
+  "display_name": "Koningin Wilhelminaplein, Westlandgracht, Amsterdam, North Holland, Netherlands, 1062HG, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.41
+}

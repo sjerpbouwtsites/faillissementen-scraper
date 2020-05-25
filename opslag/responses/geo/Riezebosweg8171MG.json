@@ -1,0 +1,18 @@
+{
+  "place_id": "151487111",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "261555198",
+  "boundingbox": [
+    "52.29756",
+    "52.2981805",
+    "5.9882181",
+    "5.98893"
+  ],
+  "lat": "52.2977562",
+  "lon": "5.9885366",
+  "display_name": "Riezebosweg, Eekterveld, Vaassen, Epe, Gelderland, Netherlands, 8171MG, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

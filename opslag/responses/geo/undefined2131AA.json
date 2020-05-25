@@ -1,0 +1,14 @@
+{
+  "place_id": "330612723531",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "52.307842",
+  "lon": "4.669865",
+  "display_name": "Hoofddorp, Noord-Holland, Netherlands",
+  "boundingbox": [
+    "52.2572007033",
+    "52.344058234",
+    "4.61861952153",
+    "4.73779091249"
+  ],
+  "importance": 0.25
+}

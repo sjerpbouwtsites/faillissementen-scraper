@@ -1,0 +1,18 @@
+{
+  "place_id": "81595597",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7024193",
+  "boundingbox": [
+    "52.3774764",
+    "52.3775797",
+    "5.2565712",
+    "5.2568535"
+  ],
+  "lat": "52.3774764",
+  "lon": "5.2565712",
+  "display_name": "Constant Permekehof, Tussen de Vaarten, Almere, Flevoland, Netherlands, 1328AN, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

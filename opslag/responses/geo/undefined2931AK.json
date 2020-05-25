@@ -1,0 +1,14 @@
+{
+  "place_id": "333773928652",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.897199",
+  "lon": "4.63433",
+  "display_name": "Krimpen aan de Lek, Zuid-Holland, Netherlands",
+  "boundingbox": [
+    "51.8893545685",
+    "51.9124817223",
+    "4.57632845432",
+    "4.64653809112"
+  ],
+  "importance": 0.25
+}

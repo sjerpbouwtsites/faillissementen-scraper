@@ -1,0 +1,14 @@
+{
+  "place_id": "332397683541",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "52.295578",
+  "lon": "5.162129",
+  "display_name": "Naarden, Noord-Holland, Netherlands",
+  "boundingbox": [
+    "52.2778164174",
+    "52.3276453027",
+    "5.09577100329",
+    "5.23035666468"
+  ],
+  "importance": 0.15
+}

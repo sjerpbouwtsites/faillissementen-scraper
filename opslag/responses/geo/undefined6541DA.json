@@ -1,0 +1,14 @@
+{
+  "place_id": "331666031878",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "35.145338",
+  "lon": "-79.026719",
+  "display_name": "Nijmegen, Fayetteville, Cumberland County, North Carolina, 28307, USA",
+  "boundingbox": [
+    "35.145338",
+    "35.145338",
+    "-79.026719",
+    "-79.026719"
+  ],
+  "importance": 0.25
+}

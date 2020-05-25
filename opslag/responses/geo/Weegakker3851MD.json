@@ -1,0 +1,18 @@
+{
+  "place_id": "82471052",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6969024",
+  "boundingbox": [
+    "52.299303",
+    "52.2995799",
+    "5.6209788",
+    "5.62104"
+  ],
+  "lat": "52.2995104",
+  "lon": "5.62104",
+  "display_name": "Weegakker, De Enk, Ermelo, Gelderland, Netherlands, 3851NV, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.32
+}

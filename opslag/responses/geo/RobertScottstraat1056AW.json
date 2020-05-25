@@ -1,0 +1,18 @@
+{
+  "place_id": "83968703",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7382517",
+  "boundingbox": [
+    "52.374189",
+    "52.3749509",
+    "4.8455826",
+    "4.8457578"
+  ],
+  "lat": "52.3747015",
+  "lon": "4.8456401",
+  "display_name": "Robert Scottstraat, Erasmuspark, Amsterdam, North Holland, Netherlands, 1056AW, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

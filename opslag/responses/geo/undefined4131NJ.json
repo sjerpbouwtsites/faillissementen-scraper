@@ -1,0 +1,14 @@
+{
+  "place_id": "330756920965",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.983046",
+  "lon": "5.094526",
+  "display_name": "Vianen, Utrecht, Netherlands",
+  "boundingbox": [
+    "51.9460533491",
+    "52.0030351286",
+    "5.04040220498",
+    "5.13180166199"
+  ],
+  "importance": 0.25
+}

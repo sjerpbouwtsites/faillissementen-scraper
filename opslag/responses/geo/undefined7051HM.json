@@ -1,0 +1,14 @@
+{
+  "place_id": "330365801332",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "51.942006",
+  "lon": "6.461845",
+  "display_name": "Varsseveld, Gelderland, Netherlands",
+  "boundingbox": [
+    "51.9271208354",
+    "51.963736457",
+    "6.4277934611",
+    "6.50350094873"
+  ],
+  "importance": 0.25
+}

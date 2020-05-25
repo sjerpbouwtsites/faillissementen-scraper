@@ -1,0 +1,18 @@
+{
+  "place_id": "81043093",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6928813",
+  "boundingbox": [
+    "51.897871",
+    "51.8985566",
+    "5.4336142",
+    "5.4351006"
+  ],
+  "lat": "51.89827",
+  "lon": "5.43455",
+  "display_name": "Laan van Westroijen, Westroijen, Tiel, Gelderland, Netherlands, 4003BH, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.52
+}

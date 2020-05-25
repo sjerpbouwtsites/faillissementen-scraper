@@ -1,0 +1,18 @@
+{
+  "place_id": "82977108",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7541556",
+  "boundingbox": [
+    "51.9945861",
+    "51.9946188",
+    "4.344552",
+    "4.34512"
+  ],
+  "lat": "51.9945984",
+  "lon": "4.3447193",
+  "display_name": "Diepenbrockstraat, Buitenhof, Delft, South Holland, Netherlands, 2625, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

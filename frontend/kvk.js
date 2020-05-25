@@ -91,6 +91,38 @@ export function haalKvkInfoEnPrint(
   // #endregion axiosvk
 }
 
+export function kvkBladNavigatie(){
+  document
+    .getElementsByTagName("body")[0].addEventListener('click', function(e){
+      const knop = e.target;
+      if (!knop.classList.contains('kvk-navigatie-knop')){
+        return;
+      }
+        //disabled attr zetten
+        document.querySelector('.kvk-navigatie-knop[disabled]').removeAttribute('disabled');
+        knop.setAttribute('disabled', true);
+        document.
+      
+    });
+}
+
+
+// const wAdres = failAdressen[0];
+
+// //#region axios kvk
+// axios
+//   .get(
+//     `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(
+//       wAdres.postcode
+//     )}&huisnummer=${encodeURIComponent(
+//       wAdres.huisnummer
+//     )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`
+//   )
+//   .then((kvkResponse) => {
+//     fs.writeFileSync("shit.html", kvkResponse.data);
+//   })
+//   .catch(legeCatch);
+
 export function zetOpenKvKPaneelEvent() {
   document.getElementsByTagName("body")[0],
     addEventListener("click", function (e) {

@@ -1,0 +1,18 @@
+{
+  "place_id": "232080302",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "740391816",
+  "boundingbox": [
+    "52.0802629",
+    "52.0804352",
+    "4.3244471",
+    "4.3246764"
+  ],
+  "lat": "52.080349",
+  "lon": "4.32456177982158",
+  "display_name": "Perron S, Rivierenbuurt, The Hague, South Holland, Netherlands, The Netherlands",
+  "class": "highway",
+  "type": "platform",
+  "importance": 0.2
+}

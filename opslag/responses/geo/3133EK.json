@@ -1,0 +1,19 @@
+{
+  "place_id": "231662543",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "relation",
+  "osm_id": "272279",
+  "boundingbox": [
+    "51.8940399",
+    "51.9515065",
+    "4.2675713",
+    "4.3706228"
+  ],
+  "lat": "51.9227863",
+  "lon": "4.32956337887085",
+  "display_name": "Vlaardingen, South Holland, Netherlands, The Netherlands",
+  "class": "boundary",
+  "type": "administrative",
+  "importance": 0.61344341712907,
+  "icon": "https://locationiq.org/static/images/mapicons/poi_boundary_administrative.p.20.png"
+}

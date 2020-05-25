@@ -1,0 +1,18 @@
+{
+  "place_id": "82962573",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7161049",
+  "boundingbox": [
+    "51.4758703",
+    "51.4759528",
+    "5.4860375",
+    "5.4877994"
+  ],
+  "lat": "51.4759055",
+  "lon": "5.487144",
+  "display_name": "Bisschop Bekkerslaan, Vlokhoven, Eindhoven, North Brabant, Netherlands, 5628RB, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.41
+}

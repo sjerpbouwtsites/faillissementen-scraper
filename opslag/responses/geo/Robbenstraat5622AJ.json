@@ -1,0 +1,18 @@
+{
+  "place_id": "82965710",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7166369",
+  "boundingbox": [
+    "51.4539053",
+    "51.4546784",
+    "5.4657132",
+    "5.4707487"
+  ],
+  "lat": "51.4542908",
+  "lon": "5.468437",
+  "display_name": "Robbenstraat, Kronehoef, Eindhoven, North Brabant, Netherlands, 5622AB, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

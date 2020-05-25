@@ -1,0 +1,18 @@
+{
+  "place_id": "100962797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "51733502",
+  "boundingbox": [
+    "52.1835389",
+    "52.1838595",
+    "5.4279471",
+    "5.4328249"
+  ],
+  "lat": "52.1836545",
+  "lon": "5.4303329",
+  "display_name": "Lient, Hooglanderveen, Amersfoort, Utrecht, Netherlands, 3829EJ, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

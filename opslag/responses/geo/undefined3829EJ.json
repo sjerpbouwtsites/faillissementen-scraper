@@ -1,0 +1,14 @@
+{
+  "place_id": "333713249941",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "52.199363",
+  "lon": "5.414176",
+  "display_name": "Hooglanderveen, Utrecht, Netherlands",
+  "boundingbox": [
+    "52.1819931715",
+    "52.1929523442",
+    "5.41790476173",
+    "5.43786012314"
+  ],
+  "importance": 0.25
+}

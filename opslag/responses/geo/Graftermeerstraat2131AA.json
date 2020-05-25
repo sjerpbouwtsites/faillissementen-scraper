@@ -1,0 +1,18 @@
+{
+  "place_id": "83885312",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7394575",
+  "boundingbox": [
+    "52.311804",
+    "52.3124069",
+    "4.6943583",
+    "4.6953915"
+  ],
+  "lat": "52.3121795",
+  "lon": "4.69471",
+  "display_name": "Graftermeerstraat, Graan voor Visch, Hoofddorp, Haarlemmermeer, North Holland, Netherlands, 2131AE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

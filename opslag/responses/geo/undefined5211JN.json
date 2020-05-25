@@ -1,0 +1,14 @@
+{
+  "place_id": "330820480787",
+  "licence": "https://locationiq.com/attribution",
+  "lat": "35.852369",
+  "lon": "-81.435166",
+  "display_name": "South undefined, Hudson, Caldwell County, North Carolina, 28638, USA",
+  "boundingbox": [
+    "35.85168",
+    "35.853057",
+    "-81.435257",
+    "-81.435074"
+  ],
+  "importance": 0.25
+}
