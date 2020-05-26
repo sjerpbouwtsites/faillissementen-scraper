@@ -1,0 +1,18 @@
+{
+  "place_id": "81137595",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7114859",
+  "boundingbox": [
+    "51.66507",
+    "51.6659628",
+    "5.0367053",
+    "5.03687"
+  ],
+  "lat": "51.66507",
+  "lon": "5.03687",
+  "display_name": "Tinus van der Sijdestraat, Sprang-Capelle, Waalwijk, North Brabant, Netherlands, 5161CD, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.7
+}

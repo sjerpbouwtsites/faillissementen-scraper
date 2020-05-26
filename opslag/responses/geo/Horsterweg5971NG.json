@@ -1,0 +1,18 @@
+{
+  "place_id": "111265584",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "107213640",
+  "boundingbox": [
+    "51.4200436",
+    "51.4203538",
+    "6.1075608",
+    "6.1086611"
+  ],
+  "lat": "51.420164",
+  "lon": "6.1080096",
+  "display_name": "Horsterweg, Grubbenvorst, Horst aan de Maas, Limburg, Netherlands, 5928RG, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

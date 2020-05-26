@@ -1,0 +1,18 @@
+{
+  "place_id": "82686526",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7036730",
+  "boundingbox": [
+    "52.2402561",
+    "52.2404542",
+    "5.1188806",
+    "5.1190285"
+  ],
+  "lat": "52.2402561",
+  "lon": "5.1188806",
+  "display_name": "Jan Stadelaarstraat, Kortenhoef, Wijdemeren, North Holland, Netherlands, 1241CA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

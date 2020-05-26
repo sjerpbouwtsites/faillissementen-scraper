@@ -1,0 +1,18 @@
+{
+  "place_id": "82664841",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7309392",
+  "boundingbox": [
+    "51.9613261",
+    "51.9620786",
+    "4.5800919",
+    "4.580874"
+  ],
+  "lat": "51.9614111",
+  "lon": "4.580874",
+  "display_name": "Venkelbaan, Hoofdweg, Capelle aan den IJssel, South Holland, Netherlands, 2908LK, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.61
+}

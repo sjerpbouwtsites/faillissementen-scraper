@@ -1,0 +1,18 @@
+{
+  "place_id": "109319771",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "99023430",
+  "boundingbox": [
+    "52.0170582",
+    "52.0170606",
+    "4.6871388",
+    "4.6873146"
+  ],
+  "lat": "52.0170606",
+  "lon": "4.6873146",
+  "display_name": "Keerkring, Gouwespoor, Gouda, South Holland, Netherlands, 2801DA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "83040630",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7272363",
+  "boundingbox": [
+    "51.61391",
+    "51.61672",
+    "4.75925",
+    "4.76169"
+  ],
+  "lat": "51.61419",
+  "lon": "4.76001",
+  "display_name": "Markhek, Emer, Breda, North Brabant, Netherlands, 4824AV, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

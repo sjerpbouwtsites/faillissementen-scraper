@@ -1,0 +1,18 @@
+{
+  "place_id": "273878772",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "267423809",
+  "boundingbox": [
+    "51.7178214",
+    "51.7382591",
+    "5.3698736",
+    "5.4108873"
+  ],
+  "lat": "51.72865705",
+  "lon": "5.38438309560332",
+  "display_name": "Kruisstraat, Rosmalen, 's-Hertogenbosch, North Brabant, Netherlands, The Netherlands",
+  "class": "place",
+  "type": "neighbourhood",
+  "importance": 0.52093879814958
+}

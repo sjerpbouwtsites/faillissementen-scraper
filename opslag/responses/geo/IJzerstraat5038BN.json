@@ -1,0 +1,18 @@
+{
+  "place_id": "124209296",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "158772826",
+  "boundingbox": [
+    "51.5574438",
+    "51.5586324",
+    "5.0870975",
+    "5.0872155"
+  ],
+  "lat": "51.5576605",
+  "lon": "5.087119",
+  "display_name": "IJzerstraat, Dwaalgebied, Tilburg, North Brabant, Netherlands, 5038BN, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

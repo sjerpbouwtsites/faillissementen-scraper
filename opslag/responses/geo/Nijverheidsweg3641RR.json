@@ -1,0 +1,18 @@
+{
+  "place_id": "83085585",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7353801",
+  "boundingbox": [
+    "52.2041063",
+    "52.2041622",
+    "4.8688073",
+    "4.8689511"
+  ],
+  "lat": "52.2041565",
+  "lon": "4.8689363",
+  "display_name": "Nijverheidsweg, Mijdrecht, De Ronde Venen, Utrecht, Netherlands, 3641AD, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

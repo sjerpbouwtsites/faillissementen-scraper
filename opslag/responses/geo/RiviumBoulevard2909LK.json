@@ -1,0 +1,18 @@
+{
+  "place_id": "223234163",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "688587586",
+  "boundingbox": [
+    "51.9077225",
+    "51.9089583",
+    "4.5459471",
+    "4.5460215"
+  ],
+  "lat": "51.9081799",
+  "lon": "4.5459708",
+  "display_name": "Rivium Boulevard, Rivium, Capelle aan den IJssel, South Holland, Netherlands, 2909LJ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.71
+}

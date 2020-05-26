@@ -1,0 +1,18 @@
+{
+  "place_id": "82701287",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7378286",
+  "boundingbox": [
+    "52.3813745",
+    "52.3814188",
+    "4.889416",
+    "4.8894957"
+  ],
+  "lat": "52.3814188",
+  "lon": "4.889416",
+  "display_name": "Haarlemmerstraat, Haarlemmerbuurt, Amsterdam, North Holland, Netherlands, 1013, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "162999111",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "314949329",
+  "boundingbox": [
+    "52.5231394",
+    "52.5237255",
+    "5.4368505",
+    "5.4385049"
+  ],
+  "lat": "52.5231512",
+  "lon": "5.437828",
+  "display_name": "Bataviaplein, Bataviahaven, Lelystad, Flevoland, Netherlands, 8242PS, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.32
+}

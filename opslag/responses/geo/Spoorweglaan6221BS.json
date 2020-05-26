@@ -1,0 +1,18 @@
+{
+  "place_id": "82713281",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7126142",
+  "boundingbox": [
+    "50.847629",
+    "50.8487831",
+    "5.7052274",
+    "5.7058539"
+  ],
+  "lat": "50.8476731",
+  "lon": "5.7058057",
+  "display_name": "Spoorweglaan, Wyck, Maastricht, Limburg, Netherlands, 6221, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

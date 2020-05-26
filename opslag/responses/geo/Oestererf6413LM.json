@@ -1,0 +1,18 @@
+{
+  "place_id": "83129973",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6743945",
+  "boundingbox": [
+    "50.91469",
+    "50.91479",
+    "5.95259",
+    "5.95293"
+  ],
+  "lat": "50.91474",
+  "lon": "5.95259",
+  "display_name": "Oestererf, Groot Rennemig, Heerlen, Limburg, Netherlands, 6413LM, The Netherlands",
+  "class": "highway",
+  "type": "living_street",
+  "importance": 0.32
+}

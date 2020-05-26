@@ -1,0 +1,18 @@
+{
+  "place_id": "81901073",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6565066",
+  "boundingbox": [
+    "53.1726819",
+    "53.1730123",
+    "5.428741",
+    "5.4288655"
+  ],
+  "lat": "53.1729078",
+  "lon": "5.4287574",
+  "display_name": "Barend Visserstraat, Trebolbuurt, Harlingen, Friesland, Netherlands, 8861HB, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

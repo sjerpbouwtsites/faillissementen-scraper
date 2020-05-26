@@ -1,0 +1,18 @@
+{
+  "place_id": "163908204",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "318868573",
+  "boundingbox": [
+    "53.164849",
+    "53.1652676",
+    "6.8648346",
+    "6.8649061"
+  ],
+  "lat": "53.164849",
+  "lon": "6.8649061",
+  "display_name": "Beneluxweg, De Gouden Driehoek, Zuidbroek, Midden-Groningen, Groningen, Netherlands, 9636HE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

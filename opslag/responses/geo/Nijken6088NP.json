@@ -1,0 +1,19 @@
+{
+  "place_id": "179437",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "42291180",
+  "boundingbox": [
+    "51.25788",
+    "51.29788",
+    "5.89226",
+    "5.93226"
+  ],
+  "lat": "51.27788",
+  "lon": "5.91226",
+  "display_name": "Nijken, Leudal, Limburg, Netherlands, 6088, The Netherlands",
+  "class": "place",
+  "type": "hamlet",
+  "importance": 0.36436519468301,
+  "icon": "https://locationiq.org/static/images/mapicons/poi_place_village.p.20.png"
+}

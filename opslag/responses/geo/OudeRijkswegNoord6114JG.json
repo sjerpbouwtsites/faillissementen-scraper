@@ -1,0 +1,18 @@
+{
+  "place_id": "154897316",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "294249352",
+  "boundingbox": [
+    "51.068606",
+    "51.0693006",
+    "5.8487288",
+    "5.849815"
+  ],
+  "lat": "51.0693006",
+  "lon": "5.849815",
+  "display_name": "Oude Rijksweg Noord, Middelveld, Susteren, Echt-Susteren, Limburg, Netherlands, 6114XL, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.51
+}

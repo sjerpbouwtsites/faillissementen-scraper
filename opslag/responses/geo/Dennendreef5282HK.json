@@ -1,0 +1,18 @@
+{
+  "place_id": "200946356",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "555825674",
+  "boundingbox": [
+    "51.5748553",
+    "51.575556",
+    "5.3584112",
+    "5.3594499"
+  ],
+  "lat": "51.5750351",
+  "lon": "5.3584635",
+  "display_name": "Dennendreef, Liempde, Boxtel, North Brabant, Netherlands, 5298WH, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

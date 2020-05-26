@@ -1,0 +1,18 @@
+{
+  "place_id": "76230430",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7046854",
+  "boundingbox": [
+    "52.3354575",
+    "52.3371182",
+    "4.9338126",
+    "4.9383257"
+  ],
+  "lat": "52.33667",
+  "lon": "4.93735",
+  "display_name": "H.J.E. Wenckebachweg, Weespertrekvaart-Zuid, Amsterdam-Duivendrecht, Amsterdam, North Holland, Netherlands, 1096AS, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.71
+}

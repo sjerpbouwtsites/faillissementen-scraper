@@ -1,0 +1,18 @@
+{
+  "place_id": "216563390",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "633677715",
+  "boundingbox": [
+    "51.9255266",
+    "51.9260103",
+    "4.499607",
+    "4.4999141"
+  ],
+  "lat": "51.9257989",
+  "lon": "4.4997411",
+  "display_name": "Slaak, Kralingen-West, Rotterdam, South Holland, Netherlands, 3061CJ, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

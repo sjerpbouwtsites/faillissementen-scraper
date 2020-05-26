@@ -1,0 +1,18 @@
+{
+  "place_id": "82798585",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7589238",
+  "boundingbox": [
+    "51.6491985",
+    "51.64945",
+    "3.9283304",
+    "3.92969"
+  ],
+  "lat": "51.6491985",
+  "lon": "3.9283304",
+  "display_name": "Moggestraat, Zierikzee, Schouwen-Duiveland, Zeeland, Netherlands, 4301LG, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

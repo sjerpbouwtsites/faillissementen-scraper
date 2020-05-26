@@ -1,0 +1,18 @@
+{
+  "place_id": "80763416",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6536197",
+  "boundingbox": [
+    "53.3451648",
+    "53.3459769",
+    "5.9431685",
+    "5.9435501"
+  ],
+  "lat": "53.3455129",
+  "lon": "5.9435102",
+  "display_name": "De Terp, Foudgum, Noardeast-Fryslân, Friesland, Netherlands, 9154BC, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

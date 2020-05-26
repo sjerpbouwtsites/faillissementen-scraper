@@ -1,0 +1,18 @@
+{
+  "place_id": "195851358",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "498207430",
+  "boundingbox": [
+    "51.3518154",
+    "51.3520874",
+    "5.4640581",
+    "5.4645052"
+  ],
+  "lat": "51.3519793",
+  "lon": "5.4642641",
+  "display_name": "Frans van Beststraat, Tufberg, Valkenswaard, North Brabant, Netherlands, 5554CK, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.51
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "167076055",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "337986438",
+  "boundingbox": [
+    "52.2753012",
+    "52.2755786",
+    "6.4125851",
+    "6.4132858"
+  ],
+  "lat": "52.275434",
+  "lon": "6.412872",
+  "display_name": "Larenseweg, Holten, Rijssen-Holten, Overijssel, Netherlands, 7451EJ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

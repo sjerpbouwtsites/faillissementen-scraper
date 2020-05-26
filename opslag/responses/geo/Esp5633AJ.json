@@ -1,0 +1,18 @@
+{
+  "place_id": "78500158",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7159626",
+  "boundingbox": [
+    "51.4880534",
+    "51.4907427",
+    "5.4930154",
+    "5.4951638"
+  ],
+  "lat": "51.4881819",
+  "lon": "5.4951638",
+  "display_name": "Esp, Bedrijvenpark Esp, Eindhoven, North Brabant, Netherlands, 5633AD, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

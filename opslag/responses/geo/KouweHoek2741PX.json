@@ -1,0 +1,18 @@
+{
+  "place_id": "76478426",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7419660",
+  "boundingbox": [
+    "52.0270327",
+    "52.0271082",
+    "4.6614125",
+    "4.6614775"
+  ],
+  "lat": "52.0270327",
+  "lon": "4.6614125",
+  "display_name": "Kouwe Hoek, Waddinxveen, South Holland, Netherlands, 2741 PX, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

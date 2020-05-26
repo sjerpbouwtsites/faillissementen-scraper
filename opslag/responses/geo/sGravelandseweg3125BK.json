@@ -1,0 +1,18 @@
+{
+  "place_id": "207419635",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "574466248",
+  "boundingbox": [
+    "51.9251639",
+    "51.9253428",
+    "4.4041472",
+    "4.4041857"
+  ],
+  "lat": "51.9252632",
+  "lon": "4.4041717",
+  "display_name": "'s-Gravelandseweg, Nieuwland, Schiedam, South Holland, Netherlands, 3119, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.41
+}

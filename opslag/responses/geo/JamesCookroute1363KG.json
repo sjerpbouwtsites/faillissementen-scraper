@@ -1,0 +1,18 @@
+{
+  "place_id": "184262657",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "425246215",
+  "boundingbox": [
+    "52.3507062",
+    "52.3509303",
+    "5.145178",
+    "5.1459721"
+  ],
+  "lat": "52.3509303",
+  "lon": "5.145178",
+  "display_name": "James Cookroute, Columbuskwartier, Almere, Flevoland, Netherlands, 1363KC, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.41
+}

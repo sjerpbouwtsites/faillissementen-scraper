@@ -1,0 +1,18 @@
+{
+  "place_id": "203201736",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "551316483",
+  "boundingbox": [
+    "51.6471798",
+    "51.6472955",
+    "5.9490427",
+    "5.9492858"
+  ],
+  "lat": "51.6472955",
+  "lon": "5.9490427",
+  "display_name": "Hoogkoorpassage, Boxmeer, North Brabant, Netherlands, 5831DN, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.32
+}

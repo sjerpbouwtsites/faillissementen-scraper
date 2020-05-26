@@ -1,0 +1,18 @@
+{
+  "place_id": "78037005",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6477756",
+  "boundingbox": [
+    "53.0989831",
+    "53.0995702",
+    "6.0614853",
+    "6.0631627"
+  ],
+  "lat": "53.0995702",
+  "lon": "6.0620483",
+  "display_name": "Sydwende, Drachten, Smallingerland, Friesland, Netherlands, 9204KD, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "205330946",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "581655963",
+  "boundingbox": [
+    "52.1941027",
+    "52.1941768",
+    "6.8745116",
+    "6.8753916"
+  ],
+  "lat": "52.1941768",
+  "lon": "6.8745116",
+  "display_name": "Zunabrink, Wesselerbrink, Enschede, Overijssel, Netherlands, 7544DB, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

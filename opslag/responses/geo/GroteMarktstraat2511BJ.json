@@ -1,0 +1,18 @@
+{
+  "place_id": "99297338",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "44800616",
+  "boundingbox": [
+    "52.0754646",
+    "52.0776715",
+    "4.3094013",
+    "4.3150989"
+  ],
+  "lat": "52.07658415",
+  "lon": "4.3120486514765",
+  "display_name": "Grote Marktstraat, Museumkwartier, The Hague, South Holland, Netherlands, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.4
+}

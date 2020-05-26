@@ -1,0 +1,18 @@
+{
+  "place_id": "82394206",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7355198",
+  "boundingbox": [
+    "52.1611892",
+    "52.1613182",
+    "4.7806925",
+    "4.7812332"
+  ],
+  "lat": "52.1613182",
+  "lon": "4.7812332",
+  "display_name": "Teddingtonweg, Nieuwkoop, South Holland, Netherlands, 2421LM, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

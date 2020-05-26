@@ -1,0 +1,18 @@
+{
+  "place_id": "81021994",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6892329",
+  "boundingbox": [
+    "51.6959442",
+    "51.6964372",
+    "5.8634361",
+    "5.8678852"
+  ],
+  "lat": "51.6964184",
+  "lon": "5.8656368",
+  "display_name": "Haringsestraat, Haps, Cuijk, North Brabant, Netherlands, 5443PA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

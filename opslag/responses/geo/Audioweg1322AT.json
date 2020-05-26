@@ -1,0 +1,18 @@
+{
+  "place_id": "211184884",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "603759986",
+  "boundingbox": [
+    "52.3497669",
+    "52.3497897",
+    "5.1748065",
+    "5.1754934"
+  ],
+  "lat": "52.3497669",
+  "lon": "5.1754934",
+  "display_name": "Audioweg, De Uitgeverij, Almere, Flevoland, Netherlands, 1322AV, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

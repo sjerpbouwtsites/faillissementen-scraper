@@ -1,0 +1,18 @@
+{
+  "place_id": "81094797",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7023481",
+  "boundingbox": [
+    "52.3861278",
+    "52.3863371",
+    "5.2225208",
+    "5.2226941"
+  ],
+  "lat": "52.3861278",
+  "lon": "5.2226941",
+  "display_name": "Plakke Venstraat, Waterwijk, Almere, Flevoland, Netherlands, 1317, The Netherlands",
+  "class": "highway",
+  "type": "service",
+  "importance": 0.385
+}

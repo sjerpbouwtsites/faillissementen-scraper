@@ -1,0 +1,18 @@
+{
+  "place_id": "194393612",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "494220951",
+  "boundingbox": [
+    "52.3130081",
+    "52.3136633",
+    "4.949686",
+    "4.951349"
+  ],
+  "lat": "52.3133028",
+  "lon": "4.950269",
+  "display_name": "Bijlmerplein, D buurt, Amsterdam, North Holland, Netherlands, 1102ML, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.32
+}

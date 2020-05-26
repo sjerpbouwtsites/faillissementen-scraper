@@ -1,0 +1,18 @@
+{
+  "place_id": "137255427",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "209023155",
+  "boundingbox": [
+    "51.9237294",
+    "51.9242379",
+    "4.419018",
+    "4.4205622"
+  ],
+  "lat": "51.9240439",
+  "lon": "4.4199999",
+  "display_name": "Giessenweg, Spaanse Polder, Rotterdam, South Holland, Netherlands, 3044AD, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

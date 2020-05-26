@@ -1,0 +1,18 @@
+{
+  "place_id": "137965884",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "216246089",
+  "boundingbox": [
+    "51.8135789",
+    "51.8136417",
+    "5.2478181",
+    "5.2478788"
+  ],
+  "lat": "51.8136417",
+  "lon": "5.2478181",
+  "display_name": "Boschstraat, Binnenstad, Zaltbommel, Gelderland, Netherlands, 5301AJ, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

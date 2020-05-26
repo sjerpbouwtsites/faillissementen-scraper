@@ -1,0 +1,18 @@
+{
+  "place_id": "83483035",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6730849",
+  "boundingbox": [
+    "51.2209719",
+    "51.2220878",
+    "5.8824972",
+    "5.8846317"
+  ],
+  "lat": "51.2216918",
+  "lon": "5.8831206",
+  "display_name": "Geenraderweg, Baexem, Leudal, Limburg, Netherlands, 6095AR, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

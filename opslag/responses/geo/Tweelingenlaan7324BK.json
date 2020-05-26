@@ -1,0 +1,18 @@
+{
+  "place_id": "83566294",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6844781",
+  "boundingbox": [
+    "52.2407148",
+    "52.2419347",
+    "5.9849639",
+    "5.9865742"
+  ],
+  "lat": "52.241321",
+  "lon": "5.9857258",
+  "display_name": "Tweelingenlaan, Bedrijvenpark Apeldoorn-Noord, Apeldoorn, Gelderland, Netherlands, 7324AJ, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

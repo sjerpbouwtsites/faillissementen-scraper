@@ -1,0 +1,18 @@
+{
+  "place_id": "225601951",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "732144969",
+  "boundingbox": [
+    "52.1773596",
+    "52.1780346",
+    "5.9619877",
+    "5.9620494"
+  ],
+  "lat": "52.1777566",
+  "lon": "5.9620474",
+  "display_name": "Arnhemseweg, Componistenkwartier, Apeldoorn, Gelderland, Netherlands, 7334DS, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.32
+}

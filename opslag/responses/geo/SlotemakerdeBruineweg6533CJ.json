@@ -1,0 +1,18 @@
+{
+  "place_id": "83221187",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6874635",
+  "boundingbox": [
+    "51.8300258",
+    "51.830091",
+    "5.8342345",
+    "5.8343493"
+  ],
+  "lat": "51.8300258",
+  "lon": "5.8343493",
+  "display_name": "Slotemaker de Bruïneweg, Nije Veld, Nijmegen, Gelderland, Netherlands, 6532TN, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.41
+}

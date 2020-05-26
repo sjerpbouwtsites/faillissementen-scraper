@@ -1,0 +1,18 @@
+{
+  "place_id": "82573677",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6833828",
+  "boundingbox": [
+    "52.217662",
+    "52.2177125",
+    "5.9560286",
+    "5.9562329"
+  ],
+  "lat": "52.2176948",
+  "lon": "5.95614",
+  "display_name": "Hoofdstraat, Apeldoorn, Gelderland, Netherlands, 7311BG, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

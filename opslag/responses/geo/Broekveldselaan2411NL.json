@@ -1,0 +1,18 @@
+{
+  "place_id": "151584367",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "265146907",
+  "boundingbox": [
+    "52.0787022",
+    "52.0794526",
+    "4.7607759",
+    "4.7609763"
+  ],
+  "lat": "52.0787022",
+  "lon": "4.7607759",
+  "display_name": "Broekveldselaan, Weideveld, Bodegraven, Bodegraven-Reeuwijk, South Holland, Netherlands, 2411RS, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

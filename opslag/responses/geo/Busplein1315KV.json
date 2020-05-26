@@ -1,0 +1,18 @@
+{
+  "place_id": "151577597",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "263805884",
+  "boundingbox": [
+    "52.3746486",
+    "52.3756749",
+    "5.217948",
+    "5.218493"
+  ],
+  "lat": "52.375141",
+  "lon": "5.21826300869617",
+  "display_name": "Busplein, Centrum, Almere, Flevoland, Netherlands, 1325, The Netherlands",
+  "class": "highway",
+  "type": "platform",
+  "importance": 0.32
+}

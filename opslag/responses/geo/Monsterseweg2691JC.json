@@ -1,0 +1,18 @@
+{
+  "place_id": "158938254",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "311996240",
+  "boundingbox": [
+    "52.0140976",
+    "52.0145678",
+    "4.153406",
+    "4.1535605"
+  ],
+  "lat": "52.0143434",
+  "lon": "4.1534904",
+  "display_name": "Monsterseweg, 's-Gravenzande, Westland, South Holland, Netherlands, 2691JJ, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.41
+}

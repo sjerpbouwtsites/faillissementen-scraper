@@ -1,0 +1,18 @@
+{
+  "place_id": "99382962",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "53264417",
+  "boundingbox": [
+    "52.7878084",
+    "52.7886627",
+    "6.8923994",
+    "6.8930886"
+  ],
+  "lat": "52.7884545",
+  "lon": "6.8925865",
+  "display_name": "Noorderplein, Emmen, Drenthe, Netherlands, 7811MG, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.32
+}

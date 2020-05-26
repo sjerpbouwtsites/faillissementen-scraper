@@ -1,0 +1,18 @@
+{
+  "place_id": "235724207",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "760408016",
+  "boundingbox": [
+    "51.9938919",
+    "51.994017",
+    "4.4752855",
+    "4.4754318"
+  ],
+  "lat": "51.9939389",
+  "lon": "4.4753316",
+  "display_name": "Westerwater, Berkel en Rodenrijs, Lansingerland, South Holland, Netherlands, 2651 JN, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.51
+}

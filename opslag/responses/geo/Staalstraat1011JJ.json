@@ -1,0 +1,18 @@
+{
+  "place_id": "96956651",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "38316258",
+  "boundingbox": [
+    "52.3682379",
+    "52.3682424",
+    "4.89752",
+    "4.897592"
+  ],
+  "lat": "52.3682424",
+  "lon": "4.89752",
+  "display_name": "Staalstraat, Nieuwmarktbuurt, Amsterdam, North Holland, Netherlands, 1011HT, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

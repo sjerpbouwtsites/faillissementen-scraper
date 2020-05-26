@@ -1,0 +1,18 @@
+{
+  "place_id": "93254570",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "27195378",
+  "boundingbox": [
+    "50.8852163",
+    "50.8890909",
+    "5.7341193",
+    "5.7383818"
+  ],
+  "lat": "50.8870106",
+  "lon": "5.73626181110806",
+  "display_name": "Weerterveld, Meerssen, Limburg, Netherlands, The Netherlands",
+  "class": "landuse",
+  "type": "industrial",
+  "importance": 0.42
+}

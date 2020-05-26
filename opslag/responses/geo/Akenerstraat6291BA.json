@@ -1,0 +1,18 @@
+{
+  "place_id": "141096283",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "218128143",
+  "boundingbox": [
+    "50.7689119",
+    "50.7692653",
+    "6.0217684",
+    "6.0232508"
+  ],
+  "lat": "50.7691396",
+  "lon": "6.0223145",
+  "display_name": "Akenerstraat, Vaals, Limburg, Netherlands, 6291BA, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

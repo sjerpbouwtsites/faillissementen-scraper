@@ -1,0 +1,18 @@
+{
+  "place_id": "82428378",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6788306",
+  "boundingbox": [
+    "51.9758963",
+    "51.9782675",
+    "6.3263751",
+    "6.3289455"
+  ],
+  "lat": "51.9767349",
+  "lon": "6.3272855",
+  "display_name": "Doetinchemseweg, Doetinchem, Gelderland, Netherlands, 7002ZA, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.32
+}

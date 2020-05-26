@@ -1,0 +1,18 @@
+{
+  "place_id": "82282326",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6685370",
+  "boundingbox": [
+    "52.2407818",
+    "52.2421717",
+    "6.5858149",
+    "6.5860476"
+  ],
+  "lat": "52.2410049",
+  "lon": "6.5860476",
+  "display_name": "Spechthorstweg, De Spechthorst, Goor, Hof van Twente, Overijssel, Netherlands, 7471GH, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "213751616",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "633050300",
+  "boundingbox": [
+    "52.220871",
+    "52.220936",
+    "6.8774962",
+    "6.878061"
+  ],
+  "lat": "52.220871",
+  "lon": "6.8774962",
+  "display_name": "Parkweg, Schuttersveld, Enschede, Overijssel, Netherlands, 7521CA, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.32
+}

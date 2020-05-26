@@ -1,0 +1,18 @@
+{
+  "place_id": "127762838",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "172064410",
+  "boundingbox": [
+    "52.2907724",
+    "52.2909639",
+    "4.7899802",
+    "4.7901758"
+  ],
+  "lat": "52.2907724",
+  "lon": "4.7899802",
+  "display_name": "Schipholdijk, Oude Meer, Haarlemmermeer, North Holland, Netherlands, 1438AE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

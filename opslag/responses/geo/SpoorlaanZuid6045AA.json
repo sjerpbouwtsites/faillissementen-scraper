@@ -1,0 +1,18 @@
+{
+  "place_id": "83589337",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6753315",
+  "boundingbox": [
+    "51.1861345",
+    "51.1878385",
+    "5.9914493",
+    "5.9924368"
+  ],
+  "lat": "51.18707",
+  "lon": "5.99186",
+  "display_name": "Spoorlaan Zuid, Roermondse Veld, Roermond, Limburg, Netherlands, 6045AA, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

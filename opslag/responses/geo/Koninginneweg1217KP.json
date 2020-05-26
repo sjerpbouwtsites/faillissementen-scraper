@@ -1,0 +1,18 @@
+{
+  "place_id": "162032748",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "325405790",
+  "boundingbox": [
+    "52.2284051",
+    "52.2289577",
+    "5.1789408",
+    "5.1791463"
+  ],
+  "lat": "52.2287013",
+  "lon": "5.1790021",
+  "display_name": "Koninginneweg, Johannes Geradtswegbuurt, Hilversum, North Holland, Netherlands, 1211AP, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

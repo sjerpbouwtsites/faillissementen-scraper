@@ -1,0 +1,18 @@
+{
+  "place_id": "82900305",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7377630",
+  "boundingbox": [
+    "52.4172541",
+    "52.4173641",
+    "4.870397",
+    "4.8705257"
+  ],
+  "lat": "52.4173641",
+  "lon": "4.8705257",
+  "display_name": "Meteorenweg, Amsterdam, North Holland, Netherlands, 1033 NZ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

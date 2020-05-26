@@ -1,0 +1,18 @@
+{
+  "place_id": "83748164",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7179227",
+  "boundingbox": [
+    "51.4879565",
+    "51.4892053",
+    "5.3945326",
+    "5.3957018"
+  ],
+  "lat": "51.4892053",
+  "lon": "5.3945326",
+  "display_name": "de Maas, Bedrijvenpark Breeven, Best, North Brabant, Netherlands, 5684ZN, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.41
+}

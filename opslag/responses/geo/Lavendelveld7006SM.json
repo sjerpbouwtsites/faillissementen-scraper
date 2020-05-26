@@ -1,0 +1,18 @@
+{
+  "place_id": "180979816",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "414695939",
+  "boundingbox": [
+    "51.9642948",
+    "51.9644688",
+    "6.2492284",
+    "6.2493133"
+  ],
+  "lat": "51.9642948",
+  "lon": "6.2493133",
+  "display_name": "Lavendelveld, Doetinchem, Gelderland, Netherlands, 7006SM, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

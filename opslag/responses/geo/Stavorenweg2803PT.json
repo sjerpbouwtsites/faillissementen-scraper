@@ -1,0 +1,18 @@
+{
+  "place_id": "82799817",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7419496",
+  "boundingbox": [
+    "52.0237973",
+    "52.024868",
+    "4.6790073",
+    "4.6809866"
+  ],
+  "lat": "52.0244195",
+  "lon": "4.680279",
+  "display_name": "Stavorenweg, Goudse Poort, Gouda, South Holland, Netherlands, 2803PT, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "122605554",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "155039469",
+  "boundingbox": [
+    "51.9444355",
+    "51.9459516",
+    "5.9015191",
+    "5.9029278"
+  ],
+  "lat": "51.9452883",
+  "lon": "5.9023084",
+  "display_name": "Frida Heilstraat, Rijkerswoerd, Arnhem, Gelderland, Netherlands, 6836WG, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

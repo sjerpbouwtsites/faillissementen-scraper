@@ -1,0 +1,18 @@
+{
+  "place_id": "81755025",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7301043",
+  "boundingbox": [
+    "52.0101465",
+    "52.0112353",
+    "4.7069487",
+    "4.7090862"
+  ],
+  "lat": "52.0108732",
+  "lon": "4.7082879",
+  "display_name": "Lange Groenendaal, Binnenstad, Gouda, South Holland, Netherlands, 2801LR, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.41
+}

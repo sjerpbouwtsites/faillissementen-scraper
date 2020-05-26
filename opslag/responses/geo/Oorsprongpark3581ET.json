@@ -1,0 +1,18 @@
+{
+  "place_id": "234404776",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "756945136",
+  "boundingbox": [
+    "52.0945918",
+    "52.0946389",
+    "5.1380077",
+    "5.1382163"
+  ],
+  "lat": "52.0946123",
+  "lon": "5.1381182",
+  "display_name": "Oorsprongpark, Oudwijk, Utrecht, Netherlands, 3581ET, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

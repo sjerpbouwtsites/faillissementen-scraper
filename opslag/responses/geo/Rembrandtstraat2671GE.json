@@ -1,0 +1,18 @@
+{
+  "place_id": "83602643",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7567467",
+  "boundingbox": [
+    "51.994422",
+    "51.994739",
+    "4.2070553",
+    "4.2073854"
+  ],
+  "lat": "51.994422",
+  "lon": "4.2073854",
+  "display_name": "Rembrandtstraat, Hoogeland, Naaldwijk, Westland, South Holland, Netherlands, 2671GE, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

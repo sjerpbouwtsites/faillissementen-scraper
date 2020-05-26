@@ -1,0 +1,18 @@
+{
+  "place_id": "225995032",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "702923229",
+  "boundingbox": [
+    "51.4719923",
+    "51.4721078",
+    "5.4109605",
+    "5.4111773"
+  ],
+  "lat": "51.4720524",
+  "lon": "5.4110882",
+  "display_name": "Mispelhoefstraat, Distributiecentrum Eindhoven-Acht, Eindhoven, North Brabant, Netherlands, 5651GK, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

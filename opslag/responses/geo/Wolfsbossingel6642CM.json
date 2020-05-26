@@ -1,0 +1,18 @@
+{
+  "place_id": "81521654",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6890675",
+  "boundingbox": [
+    "51.8510304",
+    "51.8528623",
+    "5.7636615",
+    "5.77252"
+  ],
+  "lat": "51.8515928",
+  "lon": "5.7680002",
+  "display_name": "Wolfsbossingel, Beuningen Gld, Beuningen, Gelderland, Netherlands, 6642CM, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.42
+}

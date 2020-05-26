@@ -1,0 +1,18 @@
+{
+  "place_id": "77976930",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6391978",
+  "boundingbox": [
+    "53.221582",
+    "53.2224086",
+    "6.6071136",
+    "6.6102101"
+  ],
+  "lat": "53.2218253",
+  "lon": "6.6080249",
+  "display_name": "Moermanskweg, Driebond, South, Groningen, Netherlands, 9723HM, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

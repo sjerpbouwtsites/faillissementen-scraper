@@ -1,0 +1,19 @@
+{
+  "place_id": "231967244",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "relation",
+  "osm_id": "2078298",
+  "boundingbox": [
+    "51.4220144",
+    "51.5497985",
+    "4.5298965",
+    "4.7440597"
+  ],
+  "lat": "51.4702197",
+  "lon": "4.6610472",
+  "display_name": "Zundert, North Brabant, Netherlands, The Netherlands",
+  "class": "boundary",
+  "type": "administrative",
+  "importance": 0.57435256916841,
+  "icon": "https://locationiq.org/static/images/mapicons/poi_boundary_administrative.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "131642691",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "183984415",
+  "boundingbox": [
+    "51.366052",
+    "51.367393",
+    "6.1727308",
+    "6.1746771"
+  ],
+  "lat": "51.3664261",
+  "lon": "6.1733368",
+  "display_name": "Burgemeester van Rijnsingel, Hagerhof, Venlo, Limburg, Netherlands, 5913AM, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.51
+}

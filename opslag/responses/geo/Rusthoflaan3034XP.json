@@ -1,0 +1,18 @@
+{
+  "place_id": "233514463",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "742013906",
+  "boundingbox": [
+    "51.9343702",
+    "51.9343833",
+    "4.4980092",
+    "4.4981196"
+  ],
+  "lat": "51.9343702",
+  "lon": "4.4981196",
+  "display_name": "Rusthoflaan, Oud-Crooswijk, Rotterdam, South Holland, Netherlands, 3034PH, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

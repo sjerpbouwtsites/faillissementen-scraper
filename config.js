@@ -4,8 +4,8 @@ const path = require("path");
 // als je snel wilt testen neem een kleine tijdsspanne.Voorbeeld: 5 mei 2020 tot en met 7 mei 2020.
 // als je de app uitgebreid wilt gebruiken zet dan een eindDatum ver in de toekomst. De app is intelligent genoeg om te weten welke datums nog niet geweest zijn
 // rechtbankgegevens worden gepubliceerd sinds januari 2020.
-const startDatum = "2020-05-01";
-const eindDatum = "2020-05-05";
+const startDatum = "2020-01-01";
+const eindDatum = "2020-12-31";
 
 const opslagPad = path.resolve("opslag/");
 const scriptPad = path.resolve("scripts/");

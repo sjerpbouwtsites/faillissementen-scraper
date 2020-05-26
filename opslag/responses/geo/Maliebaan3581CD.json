@@ -1,0 +1,19 @@
+{
+  "place_id": "18084588",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "node",
+  "osm_id": "1673444987",
+  "boundingbox": [
+    "52.0829425",
+    "52.0929425",
+    "5.1261656",
+    "5.1361656"
+  ],
+  "lat": "52.0879425",
+  "lon": "5.1311656",
+  "display_name": "Utrecht Maliebaan, Maliebaanstation, Buiten Wittevrouwen, Utrecht, Netherlands, 3581XZ, The Netherlands",
+  "class": "railway",
+  "type": "station",
+  "importance": 0.50807165796715,
+  "icon": "https://locationiq.org/static/images/mapicons/transport_train_station2.p.20.png"
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "83313838",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6474971",
+  "boundingbox": [
+    "53.103932",
+    "53.1060602",
+    "6.1061815",
+    "6.1063653"
+  ],
+  "lat": "53.1048684",
+  "lon": "6.1063532",
+  "display_name": "De Singel, Drachten, Smallingerland, Friesland, Netherlands, 9203XX, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

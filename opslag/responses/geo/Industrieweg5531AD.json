@@ -1,0 +1,18 @@
+{
+  "place_id": "81181280",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7189031",
+  "boundingbox": [
+    "51.3706093",
+    "51.3712382",
+    "5.2666263",
+    "5.2696915"
+  ],
+  "lat": "51.37084",
+  "lon": "5.26836",
+  "display_name": "Industrieweg, Hapert, Bladel, North Brabant, Netherlands, 5527AJ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

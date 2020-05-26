@@ -1,0 +1,18 @@
+{
+  "place_id": "78614480",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7323636",
+  "boundingbox": [
+    "51.9006078",
+    "51.9022691",
+    "4.5950292",
+    "4.5958061"
+  ],
+  "lat": "51.9013154",
+  "lon": "4.5954641",
+  "display_name": "Noord, Krimpen aan de Lek, Krimpenerwaard, South Holland, Netherlands, 2931LD, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.61
+}

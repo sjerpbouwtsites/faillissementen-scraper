@@ -1,0 +1,18 @@
+{
+  "place_id": "76416880",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7327148",
+  "boundingbox": [
+    "51.8704666",
+    "51.8705193",
+    "4.5322426",
+    "4.5322908"
+  ],
+  "lat": "51.8704666",
+  "lon": "4.5322426",
+  "display_name": "Berkenwoudestraat, Lombardijen, IJsselmonde, Rotterdam, South Holland, Netherlands, 3076JN, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

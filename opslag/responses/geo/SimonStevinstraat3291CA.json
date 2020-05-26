@@ -1,0 +1,18 @@
+{
+  "place_id": "123830482",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "158597018",
+  "boundingbox": [
+    "51.750654",
+    "51.7530709",
+    "4.5528419",
+    "4.5551729"
+  ],
+  "lat": "51.7522156",
+  "lon": "4.5530931",
+  "display_name": "Simon Stevinstraat, Oud Bonaventura, Strijen, Hoeksche Waard, South Holland, Netherlands, 3291CA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

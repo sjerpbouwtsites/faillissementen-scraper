@@ -1,0 +1,18 @@
+{
+  "place_id": "189130870",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "457673571",
+  "boundingbox": [
+    "51.7552153",
+    "51.7554321",
+    "5.2674354",
+    "5.2684916"
+  ],
+  "lat": "51.7553799",
+  "lon": "5.2677168",
+  "display_name": "Baronieweg, Hedel, Maasdriel, Gelderland, Netherlands, 5321NA, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

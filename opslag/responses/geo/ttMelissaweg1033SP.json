@@ -1,0 +1,18 @@
+{
+  "place_id": "82774501",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7377524",
+  "boundingbox": [
+    "52.4061619",
+    "52.4071233",
+    "4.8857724",
+    "4.8873293"
+  ],
+  "lat": "52.4061619",
+  "lon": "4.8861243",
+  "display_name": "tt. Melissaweg, Cornelis Douwesterrein, Amsterdam, North Holland, Netherlands, 1033RV, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

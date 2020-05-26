@@ -1,17 +1,17 @@
 {
-  "place_id": "83969999",
+  "place_id": "83494815",
   "licence": "https://locationiq.com/attribution",
   "osm_type": "way",
-  "osm_id": "7385121",
+  "osm_id": "7385109",
   "boundingbox": [
-    "52.3390206",
-    "52.3407116",
-    "4.8276171",
-    "4.827652"
+    "52.3468354",
+    "52.346904",
+    "4.8276642",
+    "4.8276715"
   ],
-  "lat": "52.3400807",
-  "lon": "4.8276339",
-  "display_name": "Johan Huizingalaan, Park Haagseweg, Amsterdam, North Holland, Netherlands, 1066 JS, The Netherlands",
+  "lat": "52.3468354",
+  "lon": "4.8276642",
+  "display_name": "Johan Huizingalaan, Park Haagseweg, Amsterdam, North Holland, Netherlands, 1066VE, The Netherlands",
   "class": "highway",
   "type": "secondary",
   "importance": 0.41

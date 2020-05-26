@@ -1,0 +1,18 @@
+{
+  "place_id": "183680343",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "436054109",
+  "boundingbox": [
+    "51.8416825",
+    "51.8420473",
+    "5.8597876",
+    "5.8602259"
+  ],
+  "lat": "51.8417998",
+  "lon": "5.8600242",
+  "display_name": "Keizer Karelplein, Stadscentrum, Nijmegen-Centrum, Nijmegen, Gelderland, Netherlands, 6511NC, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.41
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "82359905",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6576446",
+  "boundingbox": [
+    "52.6400762",
+    "52.6436911",
+    "5.092361",
+    "5.09432"
+  ],
+  "lat": "52.6411",
+  "lon": "5.0937",
+  "display_name": "Atoomweg, Hoorn 80, Hoorn, North Holland, Netherlands, 1627LE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

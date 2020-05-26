@@ -1,0 +1,18 @@
+{
+  "place_id": "83023443",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6590561",
+  "boundingbox": [
+    "52.5085235",
+    "52.5096432",
+    "4.9681522",
+    "4.9699436"
+  ],
+  "lat": "52.5088295",
+  "lon": "4.9693275",
+  "display_name": "John F. Kennedyplein, Purmerend, North Holland, Netherlands, 1443EC, The Netherlands",
+  "class": "highway",
+  "type": "service",
+  "importance": 0.485
+}

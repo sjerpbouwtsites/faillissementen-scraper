@@ -1,0 +1,18 @@
+{
+  "place_id": "205050488",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "558597988",
+  "boundingbox": [
+    "52.3760999",
+    "52.3763065",
+    "4.9217793",
+    "4.9231454"
+  ],
+  "lat": "52.3762575",
+  "lon": "4.9221073",
+  "display_name": "Piet Heinkade, Amsterdam, North Holland, Netherlands, 1019HC, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.41
+}

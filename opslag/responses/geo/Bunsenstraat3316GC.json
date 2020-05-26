@@ -1,0 +1,18 @@
+{
+  "place_id": "82387251",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7343858",
+  "boundingbox": [
+    "51.7745135",
+    "51.7800125",
+    "4.6319366",
+    "4.6322828"
+  ],
+  "lat": "51.7772591",
+  "lon": "4.6321168",
+  "display_name": "Bunsenstraat, Dordtse Kil II, Dordrecht, South Holland, Netherlands, 3316GC, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

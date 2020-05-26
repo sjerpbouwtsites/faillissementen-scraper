@@ -1,0 +1,18 @@
+{
+  "place_id": "82067017",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6787008",
+  "boundingbox": [
+    "51.8722212",
+    "51.8730907",
+    "6.2599647",
+    "6.2600774"
+  ],
+  "lat": "51.8726947",
+  "lon": "6.2600774",
+  "display_name": "Goorsestraat, 't Goor, 's-Heerenberg, Montferland, Gelderland, Netherlands, 7041GA, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

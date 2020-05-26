@@ -1,0 +1,18 @@
+{
+  "place_id": "99425533",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "62248198",
+  "boundingbox": [
+    "51.9270054",
+    "51.9293027",
+    "4.4104844",
+    "4.4122112"
+  ],
+  "lat": "51.9293027",
+  "lon": "4.4104844",
+  "display_name": "Strickledeweg, Spaanse Polder, Schiedam, South Holland, Netherlands, 3125AT, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

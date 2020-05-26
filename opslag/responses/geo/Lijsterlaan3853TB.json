@@ -1,0 +1,18 @@
+{
+  "place_id": "83635566",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6970361",
+  "boundingbox": [
+    "52.2941458",
+    "52.2946116",
+    "5.6016512",
+    "5.6048631"
+  ],
+  "lat": "52.2943505",
+  "lon": "5.6030817",
+  "display_name": "Lijsterlaan, Ermelo, Gelderland, Netherlands, 3853TC, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

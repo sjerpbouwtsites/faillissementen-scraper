@@ -1,0 +1,18 @@
+{
+  "place_id": "83132277",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6768465",
+  "boundingbox": [
+    "50.9426103",
+    "50.94373",
+    "5.91988",
+    "5.9225327"
+  ],
+  "lat": "50.94298",
+  "lon": "5.92162",
+  "display_name": "Hoofdstraat, Amstenrade, Beekdaelen, Limburg, Netherlands, 6436CD, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

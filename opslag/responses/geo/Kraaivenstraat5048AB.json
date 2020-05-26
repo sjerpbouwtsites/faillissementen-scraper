@@ -1,0 +1,18 @@
+{
+  "place_id": "82766182",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7208392",
+  "boundingbox": [
+    "51.58411",
+    "51.5894262",
+    "5.06555",
+    "5.0670596"
+  ],
+  "lat": "51.58643",
+  "lon": "5.06621",
+  "display_name": "Kraaivenstraat, Kraaiven, Tilburg, North Brabant, Netherlands, 5048AT, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

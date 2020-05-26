@@ -1,0 +1,18 @@
+{
+  "place_id": "83170309",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6793127",
+  "boundingbox": [
+    "52.0093947",
+    "52.0130252",
+    "6.1770575",
+    "6.1849506"
+  ],
+  "lat": "52.011151",
+  "lon": "6.1814946",
+  "display_name": "Kerkstraat, Drempt, Bronckhorst, Gelderland, Netherlands, 6996AT, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

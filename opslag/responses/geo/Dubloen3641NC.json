@@ -1,0 +1,18 @@
+{
+  "place_id": "81782938",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7354243",
+  "boundingbox": [
+    "52.211637",
+    "52.2123781",
+    "4.8605011",
+    "4.8607761"
+  ],
+  "lat": "52.211637",
+  "lon": "4.8605011",
+  "display_name": "Dubloen, Mijdrecht, De Ronde Venen, Utrecht, Netherlands, 3641ND, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

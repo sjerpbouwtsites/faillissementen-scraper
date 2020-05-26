@@ -1,0 +1,18 @@
+{
+  "place_id": "81961762",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6658544",
+  "boundingbox": [
+    "52.3201518",
+    "52.3215685",
+    "6.9227205",
+    "6.9260743"
+  ],
+  "lat": "52.3207934",
+  "lon": "6.9242394",
+  "display_name": "Bentheimergraven, Oldenzaal, Overijssel, Netherlands, 7577DJ, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

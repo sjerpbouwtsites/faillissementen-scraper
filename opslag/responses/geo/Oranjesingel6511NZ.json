@@ -1,0 +1,18 @@
+{
+  "place_id": "82418166",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6872774",
+  "boundingbox": [
+    "51.8429564",
+    "51.8432317",
+    "5.8674509",
+    "5.8685718"
+  ],
+  "lat": "51.8430561",
+  "lon": "5.867861",
+  "display_name": "Oranjesingel, Stadscentrum, Nijmegen-Centrum, Nijmegen, Gelderland, Netherlands, 6511NR, The Netherlands",
+  "class": "highway",
+  "type": "primary",
+  "importance": 0.32
+}

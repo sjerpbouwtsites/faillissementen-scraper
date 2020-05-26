@@ -1,0 +1,18 @@
+{
+  "place_id": "195478295",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "505637420",
+  "boundingbox": [
+    "52.2505891",
+    "52.2508181",
+    "5.2555816",
+    "5.2557242"
+  ],
+  "lat": "52.2505891",
+  "lon": "5.2555816",
+  "display_name": "Eemlustlaan, Zuidpolder, Eemnes, Utrecht, Netherlands, 3755TJ, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

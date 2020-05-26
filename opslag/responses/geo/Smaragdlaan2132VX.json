@@ -1,0 +1,18 @@
+{
+  "place_id": "82709603",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7394330",
+  "boundingbox": [
+    "52.29079",
+    "52.29224",
+    "4.68602",
+    "4.68861"
+  ],
+  "lat": "52.2915444",
+  "lon": "4.6872625",
+  "display_name": "Smaragdlaan, Graan voor Visch, Hoofddorp, Haarlemmermeer, North Holland, Netherlands, 2132VX, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

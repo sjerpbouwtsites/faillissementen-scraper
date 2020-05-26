@@ -1,17 +1,17 @@
 {
-  "place_id": "82503647",
+  "place_id": "83763533",
   "licence": "https://locationiq.com/attribution",
   "osm_type": "way",
-  "osm_id": "7035118",
+  "osm_id": "7035093",
   "boundingbox": [
-    "52.3226478",
-    "52.3232749",
-    "5.1296825",
-    "5.1304692"
+    "52.3196639",
+    "52.3203598",
+    "5.1330235",
+    "5.1339129"
   ],
-  "lat": "52.3226478",
-  "lon": "5.1304692",
-  "display_name": "IJsselmeerweg, Naarden, Gooise Meren, North Holland, Netherlands, 1399KN, The Netherlands",
+  "lat": "52.3200066",
+  "lon": "5.1334493",
+  "display_name": "IJsselmeerweg, Naarden, Gooise Meren, North Holland, Netherlands, 1411 DL, The Netherlands",
   "class": "highway",
   "type": "secondary",
   "importance": 0.32

@@ -1,0 +1,18 @@
+{
+  "place_id": "230474352",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "732013780",
+  "boundingbox": [
+    "51.3679781",
+    "51.368094",
+    "5.2209561",
+    "5.2218036"
+  ],
+  "lat": "51.3680505",
+  "lon": "5.2214321",
+  "display_name": "Sniederslaan, Bladel, North Brabant, Netherlands, 5531 EH, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

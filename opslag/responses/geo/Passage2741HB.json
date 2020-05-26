@@ -1,0 +1,18 @@
+{
+  "place_id": "100859104",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "47894643",
+  "boundingbox": [
+    "52.0452016",
+    "52.0452944",
+    "4.6503901",
+    "4.6509385"
+  ],
+  "lat": "52.0452455",
+  "lon": "4.6506769",
+  "display_name": "Passage, Waddinxveen, South Holland, Netherlands, 2741GN, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

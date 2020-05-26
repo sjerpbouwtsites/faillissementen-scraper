@@ -1,0 +1,18 @@
+{
+  "place_id": "132729807",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "191810236",
+  "boundingbox": [
+    "51.7779574",
+    "51.777963",
+    "4.644691",
+    "4.6448977"
+  ],
+  "lat": "51.777963",
+  "lon": "4.644691",
+  "display_name": "Vierlinghstraat, Dordtse Kil II, Dordrecht, South Holland, Netherlands, 3316EC, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "164771372",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "328445726",
+  "boundingbox": [
+    "51.9089606",
+    "51.9091646",
+    "4.3645506",
+    "4.3656509"
+  ],
+  "lat": "51.9090223",
+  "lon": "4.3653465",
+  "display_name": "Schiedamsedijk, Vlaardingerambacht, Vlaardingen, South Holland, Netherlands, 3135, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

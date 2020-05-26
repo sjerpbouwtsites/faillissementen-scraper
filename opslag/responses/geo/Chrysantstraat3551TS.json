@@ -1,0 +1,18 @@
+{
+  "place_id": "82587916",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7059822",
+  "boundingbox": [
+    "52.1011739",
+    "52.1015269",
+    "5.0940888",
+    "5.0951766"
+  ],
+  "lat": "52.1014176",
+  "lon": "5.0948187",
+  "display_name": "Chrysantstraat, Lombok, Utrecht, Netherlands, 3531, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "194769539",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "495194739",
+  "boundingbox": [
+    "51.9204728",
+    "51.9209309",
+    "4.4904598",
+    "4.4909183"
+  ],
+  "lat": "51.9206334",
+  "lon": "4.4907226",
+  "display_name": "Mariniersweg, Stadsdriehoek, Rotterdam, South Holland, Netherlands, 3011MH, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

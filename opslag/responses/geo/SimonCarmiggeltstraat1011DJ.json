@@ -1,0 +1,18 @@
+{
+  "place_id": "119917477",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "143073711",
+  "boundingbox": [
+    "52.3761699",
+    "52.3767783",
+    "4.9057444",
+    "4.9060558"
+  ],
+  "lat": "52.3767783",
+  "lon": "4.9057444",
+  "display_name": "Simon Carmiggeltstraat, Oosterdokseiland, Amsterdam, North Holland, Netherlands, 1011DJ, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

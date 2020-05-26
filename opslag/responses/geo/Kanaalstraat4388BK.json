@@ -1,0 +1,18 @@
+{
+  "place_id": "81915194",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7622455",
+  "boundingbox": [
+    "51.4644635",
+    "51.4646109",
+    "3.5955289",
+    "3.5965481"
+  ],
+  "lat": "51.4644635",
+  "lon": "3.5965481",
+  "display_name": "Kanaalstraat, Oost-Souburg, Vlissingen, Zeeland, Netherlands, 4388BL, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

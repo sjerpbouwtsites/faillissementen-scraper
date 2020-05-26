@@ -1,0 +1,18 @@
+{
+  "place_id": "224215795",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "688603549",
+  "boundingbox": [
+    "52.2509813",
+    "52.2509927",
+    "6.1591498",
+    "6.1591901"
+  ],
+  "lat": "52.2509813",
+  "lon": "6.1591498",
+  "display_name": "Brink, Deventer, Overijssel, Netherlands, 7411DA, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

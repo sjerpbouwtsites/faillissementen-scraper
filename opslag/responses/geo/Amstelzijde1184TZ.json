@@ -1,0 +1,18 @@
+{
+  "place_id": "277889976",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "343146801",
+  "boundingbox": [
+    "52.2976527",
+    "52.2981029",
+    "4.8978259",
+    "4.8988062"
+  ],
+  "lat": "52.297929",
+  "lon": "4.8984345",
+  "display_name": "Amstelzijde, Amstelveen, North Holland, Netherlands, 1184TZ, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

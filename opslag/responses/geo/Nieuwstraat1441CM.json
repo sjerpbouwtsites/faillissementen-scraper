@@ -1,0 +1,18 @@
+{
+  "place_id": "83387602",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6593537",
+  "boundingbox": [
+    "52.5085467",
+    "52.5089945",
+    "4.9435651",
+    "4.944734"
+  ],
+  "lat": "52.5087589",
+  "lon": "4.944168",
+  "display_name": "Nieuwstraat, Weidevenne, Purmerend, North Holland, Netherlands, 1441CK, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

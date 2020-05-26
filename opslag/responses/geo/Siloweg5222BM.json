@@ -1,0 +1,18 @@
+{
+  "place_id": "124662073",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "163268820",
+  "boundingbox": [
+    "51.7091677",
+    "51.7102839",
+    "5.2683799",
+    "5.2700029"
+  ],
+  "lat": "51.7091677",
+  "lon": "5.2700029",
+  "display_name": "Siloweg, De Rietvelden West, 's-Hertogenbosch, North Brabant, Netherlands, 5222BK, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

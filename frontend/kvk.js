@@ -4,7 +4,7 @@ import { pakMarxCitaat } from "./ongein.js";
 export function zetKvKKnopEvent(faillissementen) {
   document
     .getElementsByTagName("body")[0]
-    .addEventListener("click", function (e) {
+    .addEventListener("click", function(e) {
       if (e.target.classList.contains("open-kvk")) {
         e.target.setAttribute("disabled", true);
         const kvkNummers = faillissementen.find(
@@ -77,10 +77,10 @@ export function haalKvkInfoEnPrint(
         }
 
         gbi("kvk-paneel").classList.add("groot");
-        setTimeout(function () {
+        setTimeout(function() {
           gbi("kvk-paneel").classList.add("open");
         }, 350);
-        setTimeout(function () {
+        setTimeout(function() {
           gbi("kvk-paneel").classList.remove("groot");
         }, 450);
       } // eind geheel nieuw
@@ -91,21 +91,20 @@ export function haalKvkInfoEnPrint(
   // #endregion axiosvk
 }
 
-export function kvkBladNavigatie(){
-  document
-    .getElementsByTagName("body")[0].addEventListener('click', function(e){
-      const knop = e.target;
-      if (!knop.classList.contains('kvk-navigatie-knop')){
-        return;
-      }
-        //disabled attr zetten
-        document.querySelector('.kvk-navigatie-knop[disabled]').removeAttribute('disabled');
-        knop.setAttribute('disabled', true);
-        document.
-      
-    });
-}
+// export function kvkBladNavigatie(){
+//   document
+//     .getElementsByTagName("body")[0].addEventListener('click', function(e){
+//       const knop = e.target;
+//       if (!knop.classList.contains('kvk-navigatie-knop')){
+//         return;
+//       }
+//         //disabled attr zetten
+//         document.querySelector('.kvk-navigatie-knop[disabled]').removeAttribute('disabled');
+//         knop.setAttribute('disabled', true);
+//         document.
 
+//     });
+// }
 
 // const wAdres = failAdressen[0];
 
@@ -125,7 +124,7 @@ export function kvkBladNavigatie(){
 
 export function zetOpenKvKPaneelEvent() {
   document.getElementsByTagName("body")[0],
-    addEventListener("click", function (e) {
+    addEventListener("click", function(e) {
       if (e.target.hasAttribute("data-kvk-nr")) {
         haalKvkInfoEnPrint(e.target.getAttribute("data-kvk-nr"), false);
       }
@@ -133,7 +132,7 @@ export function zetOpenKvKPaneelEvent() {
 }
 
 export function setSluitKvKPaneelEvent() {
-  gbi("sluit-kvk-paneel").addEventListener("click", function () {
+  gbi("sluit-kvk-paneel").addEventListener("click", function() {
     gbi("sluit-kvk-paneel").classList.add("groot");
 
     // print marx citaat naar sluitknop
@@ -150,10 +149,10 @@ export function setSluitKvKPaneelEvent() {
       // }, 3500);
     }
 
-    setTimeout(function () {
+    setTimeout(function() {
       gbi("kvk-paneel").classList.remove("open");
     }, 300);
-    setTimeout(function () {
+    setTimeout(function() {
       gbi("sluit-kvk-paneel").classList.remove("groot");
     }, 500);
   });

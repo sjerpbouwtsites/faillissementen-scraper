@@ -1,0 +1,18 @@
+{
+  "place_id": "81893380",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6551794",
+  "boundingbox": [
+    "52.53495",
+    "52.5399898",
+    "5.51554",
+    "5.5165053"
+  ],
+  "lat": "52.5352606",
+  "lon": "5.5155719",
+  "display_name": "Chroomstraat, Oostervaart, Lelystad, Flevoland, Netherlands, 8211AS, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

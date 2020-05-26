@@ -1,0 +1,18 @@
+{
+  "place_id": "82614456",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7112504",
+  "boundingbox": [
+    "51.6937866",
+    "51.6941873",
+    "5.0866015",
+    "5.093892"
+  ],
+  "lat": "51.6941682",
+  "lon": "5.0899784",
+  "display_name": "Loeffstraat, Baardwijk, Waalwijk, North Brabant, Netherlands, 5142 EN, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.32
+}

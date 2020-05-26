@@ -1,0 +1,18 @@
+{
+  "place_id": "82096016",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6830198",
+  "boundingbox": [
+    "52.2117935",
+    "52.2119582",
+    "5.9982968",
+    "5.9996724"
+  ],
+  "lat": "52.2119265",
+  "lon": "5.998787",
+  "display_name": "Het Rietveld, Woonboulevard, Apeldoorn, Gelderland, Netherlands, 7321CT, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.41
+}

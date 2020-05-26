@@ -1,0 +1,18 @@
+{
+  "place_id": "91571273",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "31551112",
+  "boundingbox": [
+    "52.436425",
+    "52.4365563",
+    "4.8217781",
+    "4.8218173"
+  ],
+  "lat": "52.436425",
+  "lon": "4.8217781",
+  "display_name": "Czarinastraat, Zaandam, Zaanstad, North Holland, Netherlands, 1506AD, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}
