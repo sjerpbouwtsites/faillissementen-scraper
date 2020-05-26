@@ -1,0 +1,18 @@
+{
+  "place_id": "82946174",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7466180",
+  "boundingbox": [
+    "52.0418729",
+    "52.0425585",
+    "4.3959105",
+    "4.3969943"
+  ],
+  "lat": "52.0421532",
+  "lon": "4.3964204",
+  "display_name": "Waterlelie, Vrouwtjesland, Nootdorp, Pijnacker-Nootdorp, South Holland, Netherlands, 2631DE, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

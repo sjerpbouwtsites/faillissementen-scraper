@@ -1,0 +1,18 @@
+{
+  "place_id": "94447930",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "29404935",
+  "boundingbox": [
+    "52.3657805",
+    "52.3699351",
+    "4.9012072",
+    "4.9110637"
+  ],
+  "lat": "52.3672015",
+  "lon": "4.9069004",
+  "display_name": "Nieuwe Herengracht, Amsterdam, North Holland, Netherlands, 1011RN, The Netherlands",
+  "class": "waterway",
+  "type": "canal",
+  "importance": 0.65728560320245
+}

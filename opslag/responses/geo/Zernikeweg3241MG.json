@@ -1,0 +1,18 @@
+{
+  "place_id": "120197252",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "141607907",
+  "boundingbox": [
+    "51.7602072",
+    "51.7613123",
+    "4.189969",
+    "4.1916382"
+  ],
+  "lat": "51.7609465",
+  "lon": "4.1905216",
+  "display_name": "Zernikeweg, Oostplaat, Middelharnis, Goeree-Overflakkee, South Holland, Netherlands, 3241MG, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

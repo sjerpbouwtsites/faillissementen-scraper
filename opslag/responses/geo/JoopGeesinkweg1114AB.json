@@ -1,0 +1,18 @@
+{
+  "place_id": "82671316",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7046860",
+  "boundingbox": [
+    "52.3343082",
+    "52.3354575",
+    "4.9294082",
+    "4.9338126"
+  ],
+  "lat": "52.3346722",
+  "lon": "4.9315746",
+  "display_name": "Joop Geesinkweg, Weespertrekvaart-Zuid, Amsterdam-Duivendrecht, Ouder-Amstel, North Holland, Netherlands, 1114AB, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.5
+}

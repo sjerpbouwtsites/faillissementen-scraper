@@ -1,0 +1,18 @@
+{
+  "place_id": "82938593",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7494426",
+  "boundingbox": [
+    "52.0718764",
+    "52.0728748",
+    "4.2798077",
+    "4.2823154"
+  ],
+  "lat": "52.072868",
+  "lon": "4.2822917",
+  "display_name": "Vinkensteynstraat, Vooruit II, The Hague, South Holland, Netherlands, 2562TM, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.31
+}
