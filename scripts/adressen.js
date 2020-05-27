@@ -62,20 +62,20 @@ async function consolideerAdressen() {
 
     const geskiptWegensRateLimit = [];
     teConsolideren.forEach((consolideer, index) => {
-      setTimeout(function () {
+      setTimeout(function() {
         axios
           .get(
             "https://eu1.locationiq.com/v1/search.php?key=b7a32fa378c135&q=" +
-            encodeURIComponent(
-              `${consolideer.plaatsnaam} ${consolideer.straat}`
-            ) +
-            "&format=json"
+              encodeURIComponent(
+                `${consolideer.plaatsnaam} ${consolideer.straat}`
+              ) +
+              "&format=json"
           )
           .then((r) => {
             // console.log(c);
             // console.log(r.data);
-            const p = geopadUitAdres(consolideer);
-            schrijfOpslag(p, r.data[0]);
+            const p = geopadUitAdres(consolideer) + ".json";
+            fs.writeFileSync(p, r.data[0]);
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
@@ -107,7 +107,7 @@ async function consolideerAdressen() {
     // na alle requests resolven...
     const exitTijd = teConsolideren.length * 1111 + 2000;
     console.log("Adressen klaar over", exitTijd / 60000, " minuten");
-    setTimeout(function () {
+    setTimeout(function() {
       // console.log("schrijf nieuw geonsolideerd");
       // console.log(nieuwGeconsolideerd);
       schrijfOpslag(`adressen`, nieuwGeconsolideerd);
@@ -125,7 +125,7 @@ async function zoekAdressen() {
 
       // interval autovernietigd als alle dagen doorzocht
       let intervalTeller = 0;
-      let resolveInterval = setInterval(function () {
+      let resolveInterval = setInterval(function() {
         if (dagenAdresTePakken.filter((d) => !d.adresGepakt).length === 0) {
           clearInterval(resolveInterval);
           resolve(dagenAdresTePakken);
@@ -135,7 +135,7 @@ async function zoekAdressen() {
       }, 1000);
       dagenAdresTePakken.forEach((dagTeVerrijken, index) => {
         const draaiTijd = index * 800;
-        setTimeout(async function () {
+        setTimeout(async function() {
           ///////////////////////////
           //////////////////////////
           const pcClusters = await relevantePublicatieClusters(
@@ -226,7 +226,7 @@ function uniekeAdressenUitString(pcString) {
         plaatsnaam: m[3],
       });
     })
-    .filter(function (value, index, self) {
+    .filter(function(value, index, self) {
       return self.indexOf(value) === index;
     })
     .map((json) => {
