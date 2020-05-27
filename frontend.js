@@ -52,6 +52,14 @@ function zetSluitAlles() {
   });
 }
 
+function sluitPaneelAlsPopupOpen() {
+  gbody().addEventListener("click", function(e) {
+    if (e.target.classList.contains("leaflet-marker-icon")) {
+      sluitKvKPaneel();
+    }
+  });
+}
+
 async function initFrontend() {
   const kaart = initMap();
   pakFaillissementen().then((faillissementen) => {
@@ -62,6 +70,7 @@ async function initFrontend() {
     setSluitKvKPaneelEvent();
     zetKvkBladNavigatie();
     zetSluitAlles();
+    sluitPaneelAlsPopupOpen();
   });
 }
 
