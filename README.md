@@ -14,3 +14,4 @@ dev@sjerpbouwtsites.nl
 ## ISSUES
 
 - indien de start en einddata veranderen nadat dagenDb is aangemaakt, wordt dagenDb niet bijgewerkt met bv. een nieuwe reeks.
+- koppelen met omgevingsvergunnings & bestemmingsplannen

@@ -32,3 +32,40 @@ export function nodeVerzameling(selector) {
   const e = document.querySelectorAll(selector);
   return Array.from(e);
 }
+
+/**
+ * zet verborgen class op element of elementen
+ * @param {boolean} toon
+ * @param {HTMLElement | NodeList | HTMLElement[]} elementOfElementen
+ */
+export function toonVerbergElementen(toon, elementOfElementen) {
+  if (typeof toon === "undefined") {
+    throw new Error("toon verberg elementen vereist toon param");
+  }
+  if (!elementOfElementen) {
+    return;
+  }
+  let lijst = [];
+  if (elementOfElementen instanceof HTMLElement) {
+    lijst = [elementOfElementen];
+  } else if (elementOfElementen instanceof NodeList) {
+    lijst = nodeVerzameling(elementOfElementen);
+  } else {
+    lijst = elementOfElementen;
+  }
+
+  if (toon) {
+    lijst.forEach((el) => {
+      if (el.classList.contains("verborgen")) {
+        el.classList.remove("verborgen");
+      }
+    });
+  } else {
+    // verberg
+    lijst.forEach((el) => {
+      if (!el.classList.contains("verborgen")) {
+        el.classList.add("verborgen");
+      }
+    });
+  }
+}

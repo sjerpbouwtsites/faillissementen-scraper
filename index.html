@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" type="text/css" href="stijl/stijl.css" />
     <link rel="stylesheet" type="text/css" href="stijl/kvk-paneel.css" />
+    <link rel="stylesheet" type="text/css" href="stijl/kvk-response.css" />
   </head>
   <body>
     <!-- <div id="marquee" class="marquee verborgen">
@@ -32,8 +33,8 @@
     </div> -->
     <div id="mapid"></div>
     <div class="kvk-paneel" id="kvk-paneel">
-      <section class='kvk-navigatie'>
-        <header class='kvk-navigatie-header'>
+      <section class='kvk-navigatie-en-resultaat'>
+        <header id='kvk-navigatie-header' class='kvk-navigatie-header'>
           <h3 class='kvk-navigatie-titel'>Relevante bedrijven</h3>
         </header>
         <ul class="kvk-navigatie-lijst">
@@ -55,6 +56,16 @@
               Op dit adres
             </button>
           </li>
+          <footer id='kvk-resultaat-teller' class='kvk-resultaat-teller verborgen'>
+            <p id='kvk-resultaat-teller-print-nummers-p' class='verborgen' >
+              <span id='kvk-resultaat-teller-print-nummers'></span>
+              <span id='kvk-resultaat-teller-print'>op KvK gevonden</span>
+            </p>
+            <p id='kvk-resultaat-teller-print-adres-p' class='verborgen' >
+              <span id='kvk-resultaat-teller-print-adres'></span>
+              <span id='kvk-resultaat-teller-print'>op adres gevonden</span>
+            </p>            
+          </footer>
       </section>
       
       </ul>

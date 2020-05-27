@@ -1,0 +1,178 @@
+/* stijlt HTML die uit KVK terugkomt */
+.kvk-resultaat ul.results {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+}
+.inschrijving {
+  font-size: 12px;
+  flex-grow: 1;
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 3px rgba(50, 0, 0, 0.5);
+  padding: 10px;
+  position: relative;
+}
+
+.ingeschreven-lint {
+  position: absolute;
+  transform: rotate(-45deg);
+  display: flex;
+  font-size: 15px;
+  color: white;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ingeschreven-lint.succes {
+  bottom: 18px;
+  right: -29px;
+}
+.ingeschreven-lint.succes .lint-tekst {
+  background-color: #1ac11a;
+}
+.ingeschreven-lint.succes .lint-hoek-links {
+  background: linear-gradient(
+    225deg,
+    #1ac11a 0%,
+    #1ac11a 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+.ingeschreven-lint.succes .lint-hoek-rechts {
+  background: linear-gradient(
+    135deg,
+    #1ac11a 0%,
+    #1ac11a 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+
+.ingeschreven-lint.kutbourgeois {
+  bottom: 35px;
+  right: -36px;
+}
+.ingeschreven-lint.kutbourgeois .lint-tekst {
+  background-color: #d9286a;
+}
+.ingeschreven-lint.kutbourgeois .lint-hoek-links {
+  background: linear-gradient(
+    225deg,
+    #d9286a 0%,
+    #d9286a 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+.ingeschreven-lint.kutbourgeois .lint-hoek-rechts {
+  background: linear-gradient(
+    135deg,
+    #d9286a 0%,
+    #d9286a 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+
+.ingeschreven-lint.geen-status {
+  bottom: 30px;
+  right: -34px;
+}
+.ingeschreven-lint.geen-status .lint-tekst {
+  background-color: #111011;
+}
+.ingeschreven-lint.geen-status .lint-hoek-links {
+  background: linear-gradient(
+    225deg,
+    #111011 0%,
+    #111011 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+.ingeschreven-lint.geen-status .lint-hoek-rechts {
+  background: linear-gradient(
+    135deg,
+    #111011 0%,
+    #111011 50%,
+    rgba(50, 0, 0, 0.5) 50%,
+    #f2f2f2 calc(50% + 3px),
+    #f2f2f2 100%
+  );
+}
+
+.ingeschreven-lint span {
+  height: 30px;
+  line-height: 30px;
+}
+.lint-tekst {
+  padding: 0 1px;
+  margin: 0 -1px;
+}
+.lint-hoek-rechts,
+.lint-hoek-links {
+  width: 30px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+}
+
+.kvk-resultaat ul.results a,
+.kvk-resultaat ul.results p,
+.kvk-resultaat ul.results h3,
+.kvk-resultaat ul.results h4 {
+  color: #353535;
+}
+
+/* bovenaan bedrijf res li */
+.handelsnaamHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.handelsnaamHeaderWrapper > * {
+  line-height: 25px;
+  font-size: 14px;
+}
+.handelsnaamHeader {
+  margin: 0;
+  display: flex;
+}
+.handelsnaamHeaderWrapper a {
+  text-decoration: none;
+}
+.handelsnaamHeader a {
+  display: flex;
+}
+.hoofdvestigingTag {
+  font-size: 0.8em;
+}
+.handelsnaamHeader a::before {
+  display: block;
+  content: "";
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  background-image: url("../iconen/link.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kvk-meta {
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  padding-left: 5px;
+  border-left: 5px solid rgb(122, 21, 21);
+}

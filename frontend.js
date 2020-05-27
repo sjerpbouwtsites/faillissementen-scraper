@@ -4,10 +4,11 @@ import {
   pakMarxCitaat,
 } from "./frontend/ongein.js";
 import { initMap, zetMarkers, zetMapInfo } from "./frontend/kaart.js";
-import { gbi } from "./frontend/nuts.js";
+import { gbody } from "./frontend/nuts.js";
 import {
   zetOpenKvKPaneelEvent,
   setSluitKvKPaneelEvent,
+  sluitKvKPaneel,
   zetKvKKnopEvent,
   zetKvkBladNavigatie,
 } from "./frontend/kvk.js";
@@ -38,6 +39,19 @@ function pakFaillissementen() {
   });
 }
 
+function zetSluitAlles() {
+  gbody().addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      sluitKvKPaneel();
+
+      const sluitPopup = document.querySelector(".leaflet-popup-close-button");
+      if (sluitPopup) {
+        sluitPopup.click();
+      }
+    }
+  });
+}
+
 async function initFrontend() {
   const kaart = initMap();
   pakFaillissementen().then((faillissementen) => {
@@ -47,6 +61,7 @@ async function initFrontend() {
     zetOpenKvKPaneelEvent(faillissementen);
     setSluitKvKPaneelEvent();
     zetKvkBladNavigatie();
+    zetSluitAlles();
   });
 }
 

@@ -75,3 +75,16 @@ export function pakMarxCitaat() {
   const rIndex = Math.floor(Math.random() * m.length);
   return m[rIndex];
 }
+// // print marx citaat naar sluitknop
+// if (Math.random() < 1) {
+//   // gbi("marquee").classList.add("beweeg");
+//   // gbi("marquee").classList.remove("verborgen");
+//   // console.log(gbi("marquee-binnen"));
+//   // gbi(
+//   //   "marquee-binnen"
+//   // ).innerHTML = pakMarxCitaat();
+//   // setTimeout(function () {
+//   //   gbi("marquee").classList.remove("beweeg");
+//   //   gbi("marquee").classList.add("verborgen");
+//   // }, 3500);
+// }

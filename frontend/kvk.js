@@ -1,4 +1,10 @@
-import { gbi, gbody, vertragingsPromise, nodeVerzameling } from "./nuts.js";
+import {
+  gbi,
+  gbody,
+  vertragingsPromise,
+  nodeVerzameling,
+  toonVerbergElementen,
+} from "./nuts.js";
 import { pakMarxCitaat } from "./ongein.js";
 import { huidigeFaillissementen } from "../frontend.js";
 
@@ -49,60 +55,59 @@ export function haalKvkInfoEnPrint(
   gbi("sluit-kvk-paneel").setAttribute("title", pakMarxCitaat());
 
   //#region axios kvk
-  axios
-    .get(
-      `https://zoeken.kvk.nl/search.ashx?handelsnaam=&kvknummer=${kvkNummer}&straat=&postcode=&huisnummer=&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken&_=1589332056667`
-    )
-    .then((kvkResponse) => {
-      setTimeout(() => {
-        //disabled van knop afhalen
+  const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&kvknummer=${kvkNummer}&straat=&postcode=&huisnummer=&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken&_=1589332056667`;
+  axios.get(url).then((kvkResponse) => {
+    setTimeout(() => {
+      //disabled van knop afhalen
 
-        const dis = document.querySelector(".open-kvk[disabled]");
-        if (dis) {
-          dis.removeAttribute("disabled");
-        }
-      }, 500);
-
-      gbi("kvk-resultaat-nummers").innerHTML = kvkResponse.data;
-
-      if (kvkNummers.length > 1) {
-        gbi("kvk-resultaat-nummers").classList.add("heeft-kvk-nummers-lijst");
-      } else {
-        gbi("kvk-resultaat-nummers").classList.remove(
-          "heeft-kvk-nummers-lijst"
-        );
+      const dis = document.querySelector(".open-kvk[disabled]");
+      if (dis) {
+        dis.removeAttribute("disabled");
       }
+    }, 500);
 
-      if (geheelNieuw) {
-        if (kvkNummers.length > 1) {
-          gbi("kvk-nummers").classList.remove("weg");
-          gbi("kvk-nummers").innerHTML = `
+    verwerkKvKHTML(kvkResponse.data, "nummers", url);
+
+    if (kvkNummers.length > 1) {
+      gbi("kvk-resultaat-nummers").classList.add("heeft-kvk-nummers-lijst");
+    } else {
+      gbi("kvk-resultaat-nummers").classList.remove("heeft-kvk-nummers-lijst");
+    }
+
+    if (geheelNieuw) {
+      if (kvkNummers.length > 1) {
+        gbi("kvk-nummers").classList.remove("weg");
+        gbi("kvk-nummers").innerHTML = `
           <li>KVK 🕵️‍♂️</li>
         ${kvkNummers
           .map((kvkNr) => {
             return `<li><button class='knopje' class='wissel-kvk' data-kvk-nr='${kvkNr}'>${kvkNr}</button></li>`;
           })
           .join("")}`;
-        } else {
-          gbi("kvk-nummers").classList.add("weg");
-          gbi("kvk-nummers").classList;
-        }
-
-        gbi("kvk-paneel").classList.add("groot");
-        setTimeout(function() {
-          gbi("kvk-paneel").classList.add("open");
-        }, 350);
-        setTimeout(function() {
-          gbi("kvk-paneel").classList.remove("groot");
-        }, 450);
-      } // eind geheel nieuw
-      else {
-        gbi("kvk-resultaat-nummers").classList.remove("ladend");
+      } else {
+        gbi("kvk-nummers").classList.add("weg");
+        gbi("kvk-nummers").classList;
       }
-    }); // eind then exios KVK
+
+      gbi("kvk-paneel").classList.add("groot");
+      setTimeout(function() {
+        gbi("kvk-paneel").classList.add("open");
+      }, 350);
+      setTimeout(function() {
+        gbi("kvk-paneel").classList.remove("groot");
+      }, 450);
+    } // eind geheel nieuw
+    else {
+      gbi("kvk-resultaat-nummers").classList.remove("ladend");
+    }
+  }); // eind then exios KVK
   // #endregion axiosvk
 }
 
+/**
+ * navigatie aan de linkerkant van kvk paneel
+ * roept mogelijk callback aan
+ */
 export function zetKvkBladNavigatie() {
   gbody().addEventListener("click", function(e) {
     const knop = e.target;
@@ -141,6 +146,9 @@ export function zetKvkBladNavigatie() {
   });
 }
 
+/**
+ * draait na tonen blad
+ */
 const kvkPaneelNavigatieCallbacks = {
   kvkPrintAdresVergelijking() {
     const ditFaillissement = huidigeFaillissementen.pakHuidigeFaillissementen();
@@ -154,20 +162,16 @@ const kvkPaneelNavigatieCallbacks = {
 
     gbi("kvk-resultaat-adres").innerHTML = laadSvg;
 
-    Promise.all([
-      vertragingsPromise(),
-      axios.get(
-        `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(
-          ditFaillissement.postcode
-        )}&huisnummer=${encodeURIComponent(
-          ditFaillissement.huisnummer
-        )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`
-      ),
-    ])
+    const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(
+      ditFaillissement.postcode
+    )}&huisnummer=${encodeURIComponent(
+      ditFaillissement.huisnummer
+    )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
+    Promise.all([vertragingsPromise(), axios.get(url)])
       .then((kvkResponse) => {
         // response komt van promise all dus is array met null, response of response, null
         const wr = kvkResponse.find((r) => r);
-        gbi("kvk-resultaat-adres").innerHTML = wr.data;
+        verwerkKvKHTML(wr.data, "adres", url);
       })
       .catch((err) => {
         console.error(err);
@@ -186,40 +190,132 @@ export function zetOpenKvKPaneelEvent() {
 }
 
 export function setSluitKvKPaneelEvent() {
-  gbi("sluit-kvk-paneel").addEventListener("click", function() {
-    gbi("sluit-kvk-paneel").classList.add("groot");
+  gbi("sluit-kvk-paneel").addEventListener("click", sluitKvKPaneel);
+}
 
-    // print marx citaat naar sluitknop
-    if (Math.random() < 1) {
-      // gbi("marquee").classList.add("beweeg");
-      // gbi("marquee").classList.remove("verborgen");
-      // console.log(gbi("marquee-binnen"));
-      // gbi(
-      //   "marquee-binnen"
-      // ).innerHTML = pakMarxCitaat();
-      // setTimeout(function () {
-      //   gbi("marquee").classList.remove("beweeg");
-      //   gbi("marquee").classList.add("verborgen");
-      // }, 3500);
+export function sluitKvKPaneel() {
+  gbi("sluit-kvk-paneel").classList.add("groot");
+
+  setTimeout(function() {
+    gbi("kvk-paneel").classList.remove("open");
+    // paneel legen en css classes resetten
+    nodeVerzameling(".kvk-resultaat-blad").forEach((blad, i) => {
+      // alle behalve eerste verbergen
+      if (i === 0 && blad.classList.contains("verborgen")) {
+        blad.classList.remove("verborgen");
+      } else if (i > 0 && !blad.classList.contains("verborgen")) {
+        blad.classList.add("verborgen");
+      }
+      // blad legen
+      blad.innerHTML = "";
+    });
+    nodeVerzameling(".kvk-navigatie-knop").forEach((knop, i) => {
+      if (i === 0) {
+        knop.setAttribute("disabled", true);
+      } else {
+        knop.removeAttribute("disabled");
+      }
+    });
+  }, 300);
+  setTimeout(function() {
+    gbi("sluit-kvk-paneel").classList.remove("groot");
+  }, 500);
+}
+
+/**
+ * parsed html, schrijft naar correcte blad, zoekt mogelijk naar meer pagina's bij > 10 resultaten
+ * @param {*} htmlBlob
+ * @param {*} doel
+ * @param {*} url
+ */
+function verwerkKvKHTML(htmlBlob, doel, url) {
+  const doelEl = gbi(`kvk-resultaat-${doel}`);
+  if (!doelEl) {
+    throw new Error("doel is null");
+  }
+  const fragment = document.createRange().createContextualFragment(htmlBlob);
+
+  // schrijf response lengte naar linkerkant
+  const feedback = fragment.querySelector(".feedback");
+  const aantalGevonden = feedback.textContent.match(/\d+/)[0];
+  toonVerbergElementen(true, [
+    gbi("kvk-resultaat-teller"),
+    gbi(`kvk-resultaat-teller-print-${doel}-p`),
+  ]);
+  gbi(`kvk-resultaat-teller-print-${doel}`).innerHTML = aantalGevonden;
+
+  Array.from(fragment.querySelectorAll(".results > li")).forEach(
+    bewerkInschrijvingLi
+  );
+
+  doelEl.innerHTML = "";
+  doelEl.appendChild(fragment.querySelector(".results"));
+
+  // vervolgpagina's er ook bij laden
+
+  if (aantalGevonden > 10) {
+    const resLijst = doelEl.querySelector(".results");
+    const laderLi = document.createElement("li");
+    laderLi.id = "tijdelijke-laad-li-" + doel;
+    laderLi.innerHTML = `<p>Meer dan 10 resultaten gevonden.... Aanvullende pagina's worden geladen</p>${laadSvg}`;
+    resLijst.insertBefore(laderLi, resLijst.firstChild);
+    for (let i = 10; i < aantalGevonden; i = i + 10) {
+      const urlNieuw = url.replace("&start=0", `&start=${i}`);
+      setTimeout(function() {
+        axios
+          .get(urlNieuw)
+          .then((response) => {
+            const lokaleFragment = document
+              .createRange()
+              .createContextualFragment(response.data);
+            Array.from(
+              lokaleFragment.querySelectorAll(".results > li")
+            ).forEach(bewerkInschrijvingLi);
+            Array.from(
+              lokaleFragment.querySelectorAll(".results > li")
+            ).forEach((bewerkteInschrijvingLi) => {
+              resLijst.appendChild(bewerkteInschrijvingLi);
+            });
+          })
+          .catch((err) => console.log(err));
+      }, i * 166);
+
+      const maxTijd = Math.floor(aantalGevonden / 10) * 1666 + 500;
+      console.log(maxTijd);
+      setTimeout(function() {
+        gbi("tijdelijke-laad-li-" + doel).parentNode.removeChild(
+          gbi("tijdelijke-laad-li-" + doel)
+        );
+      }, maxTijd);
     }
+  }
+}
 
-    setTimeout(function() {
-      gbi("kvk-paneel").classList.remove("open");
-      // paneel legen en css classes resetten
-      nodeVerzameling(".kvk-resultaat-blad").forEach((blad, i) => {
-        // alle behalve eerste verbergen
-        if (i === 0 && blad.classList.contains("verborgen")) {
-          blad.classList.remove("verborgen");
-        } else if (i > 0 && !blad.classList.contains("verborgen")) {
-          blad.classList.add("verborgen");
-        }
-        // blad legen
-        blad.innerHTML = "";
-      });
-    }, 300);
-    setTimeout(function() {
-      gbi("sluit-kvk-paneel").classList.remove("groot");
-    }, 500);
+function bewerkInschrijvingLi(inschrijvingLi) {
+  inschrijvingLi.classList.add("inschrijving");
+  const statusRij = inschrijvingLi.querySelector(".status");
+  const s = document.createElement("span");
+  s.classList.add("ingeschreven-lint");
+  let tekst = "";
+  if (statusRij && statusRij.textContent.includes("uitgeschreven")) {
+    s.classList.add("succes");
+    tekst = "gestopt";
+  } else if (!statusRij) {
+    s.classList.add("geen-status");
+    tekst = "onduidelijk";
+  } else {
+    s.classList.add("kutbourgeois");
+    tekst = "ingeschreven";
+  }
+
+  s.innerHTML = `<span class='lint-hoek-links'></span><span class='lint-tekst'>${tekst}</span><span class='lint-hoek-rechts'></span>`;
+  inschrijvingLi.appendChild(s);
+
+  //alle links target blank en corrigeren
+  Array.from(inschrijvingLi).forEach((a) => {
+    a.setAttribute("href", `https://www.kvk.nl${a.getAttribute("href")}`);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("referrer", "https://google.com");
   });
 }
 
