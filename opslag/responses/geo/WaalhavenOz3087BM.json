@@ -1,0 +1,18 @@
+{
+  "place_id": "83292421",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6287857",
+  "boundingbox": [
+    "51.8785102",
+    "51.9003949",
+    "4.4227433",
+    "4.4606791"
+  ],
+  "lat": "51.88942995",
+  "lon": "4.44192428370698",
+  "display_name": "Waalhaven, Waalhavenweg, Heijplaat, Rotterdam, South Holland, Netherlands, 3089PH, The Netherlands",
+  "class": "natural",
+  "type": "water",
+  "importance": 0.64866825440768
+}

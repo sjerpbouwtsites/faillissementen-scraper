@@ -1,0 +1,18 @@
+{
+  "place_id": "78725180",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7532726",
+  "boundingbox": [
+    "51.9301799",
+    "51.9303123",
+    "4.411769",
+    "4.4124926"
+  ],
+  "lat": "51.9302444",
+  "lon": "4.4121519",
+  "display_name": "Vlaardingweg, Spaanse Polder, Rotterdam, South Holland, Netherlands, 3044EV, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

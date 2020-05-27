@@ -1,0 +1,18 @@
+{
+  "place_id": "210893803",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "636432606",
+  "boundingbox": [
+    "51.5609068",
+    "51.5610335",
+    "5.0841877",
+    "5.0842998"
+  ],
+  "lat": "51.5609719",
+  "lon": "5.08424859691664",
+  "display_name": "Burgemeester Stekelenburgplein, Tilburg, North Brabant, Netherlands, The Netherlands",
+  "class": "highway",
+  "type": "pedestrian",
+  "importance": 0.41
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "82488830",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7538598",
+  "boundingbox": [
+    "52.0157474",
+    "52.0163548",
+    "4.357907",
+    "4.3584147"
+  ],
+  "lat": "52.0159969",
+  "lon": "4.3581331",
+  "display_name": "Paardenmarkt, City Centre, Delft, South Holland, Netherlands, 2611, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

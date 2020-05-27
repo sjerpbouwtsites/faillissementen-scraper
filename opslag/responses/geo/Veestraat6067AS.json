@@ -1,0 +1,18 @@
+{
+  "place_id": "197502311",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "513245093",
+  "boundingbox": [
+    "51.1578026",
+    "51.1579145",
+    "5.9502084",
+    "5.9507514"
+  ],
+  "lat": "51.157897",
+  "lon": "5.9504673",
+  "display_name": "Veestraat, Linne, Maasgouw, Limburg, Netherlands, 6067AA, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

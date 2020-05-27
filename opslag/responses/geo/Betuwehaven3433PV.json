@@ -1,0 +1,18 @@
+{
+  "place_id": "101603667",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "54747231",
+  "boundingbox": [
+    "52.0196903",
+    "52.0196921",
+    "5.0992223",
+    "5.1017099"
+  ],
+  "lat": "52.0196912",
+  "lon": "5.1003972",
+  "display_name": "Betuwehaven, Fokkesteeg, Nieuwegein, Utrecht, Netherlands, 3433PV, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

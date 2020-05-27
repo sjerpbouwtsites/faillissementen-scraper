@@ -1,0 +1,18 @@
+{
+  "place_id": "82259749",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6396468",
+  "boundingbox": [
+    "53.2140511",
+    "53.2143495",
+    "6.568993",
+    "6.5690862"
+  ],
+  "lat": "53.214194",
+  "lon": "6.5690272",
+  "display_name": "Herestraat, City centre South, Centrum, Groningen, Netherlands, 9711 LG, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

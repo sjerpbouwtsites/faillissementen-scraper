@@ -1,0 +1,18 @@
+{
+  "place_id": "182064547",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "429035106",
+  "boundingbox": [
+    "51.5633601",
+    "51.5635043",
+    "3.555986",
+    "3.5566285"
+  ],
+  "lat": "51.5633631",
+  "lon": "3.5562522",
+  "display_name": "Brouwerijstraat, Duno, Oostkapelle, Veere, Zeeland, Netherlands, 4356AN, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

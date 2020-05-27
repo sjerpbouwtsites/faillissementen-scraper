@@ -1,0 +1,18 @@
+{
+  "place_id": "192452320",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "475444638",
+  "boundingbox": [
+    "50.8667256",
+    "50.8667395",
+    "6.0766817",
+    "6.076773"
+  ],
+  "lat": "50.8667256",
+  "lon": "6.0766817",
+  "display_name": "Rolduckerstraat, Rolduckerveld, Kerkrade, Limburg, Netherlands, 6461RE, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

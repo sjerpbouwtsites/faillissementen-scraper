@@ -1,0 +1,18 @@
+{
+  "place_id": "188346808",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "463662853",
+  "boundingbox": [
+    "50.9460632",
+    "50.9468582",
+    "5.8126019",
+    "5.8137291"
+  ],
+  "lat": "50.9464779",
+  "lon": "5.8132234",
+  "display_name": "Spaubeekerstraat, Beek, Limburg, Netherlands, 6191EK, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "104213649",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "68883449",
+  "boundingbox": [
+    "51.4176873",
+    "51.4233311",
+    "5.4293129",
+    "5.4341933"
+  ],
+  "lat": "51.42045755",
+  "lon": "5.43128041880874",
+  "display_name": "Croy, Eindhoven, North Brabant, Netherlands, The Netherlands",
+  "class": "landuse",
+  "type": "industrial",
+  "importance": 0.42
+}

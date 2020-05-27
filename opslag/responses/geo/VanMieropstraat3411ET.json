@@ -1,0 +1,18 @@
+{
+  "place_id": "158641695",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "296928967",
+  "boundingbox": [
+    "51.9650532",
+    "51.9666659",
+    "4.9007323",
+    "4.9018226"
+  ],
+  "lat": "51.9655817",
+  "lon": "4.9014669",
+  "display_name": "Van Mieropstraat, Lopik, Utrecht, Netherlands, 3411ET, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.41
+}

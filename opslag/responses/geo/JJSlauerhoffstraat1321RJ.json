@@ -1,0 +1,18 @@
+{
+  "place_id": "83760262",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7029171",
+  "boundingbox": [
+    "52.35515",
+    "52.3552246",
+    "5.17663",
+    "5.1768464"
+  ],
+  "lat": "52.35515",
+  "lon": "5.17663",
+  "display_name": "J.J. Slauerhoffstraat, Literatuurwijk, Almere, Flevoland, Netherlands, 1321RX, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.51
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "153230617",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "286180548",
+  "boundingbox": [
+    "51.8209757",
+    "51.8212073",
+    "5.0942585",
+    "5.0964241"
+  ],
+  "lat": "51.8210973",
+  "lon": "5.0954158",
+  "display_name": "Waaldijk, Brakel, Zaltbommel, Gelderland, Netherlands, 5306AA, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.32
+}

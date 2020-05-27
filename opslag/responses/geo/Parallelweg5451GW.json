@@ -1,0 +1,18 @@
+{
+  "place_id": "203973349",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "548813827",
+  "boundingbox": [
+    "51.6824097",
+    "51.6831264",
+    "5.7834081",
+    "5.7865809"
+  ],
+  "lat": "51.6828938",
+  "lon": "5.7852036",
+  "display_name": "Parallelweg, Het Spoor, Mill, Mill en Sint Hubert, North Brabant, Netherlands, 5451HX, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.32
+}

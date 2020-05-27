@@ -1,0 +1,18 @@
+{
+  "place_id": "81097149",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "7029305",
+  "boundingbox": [
+    "52.35042",
+    "52.3519687",
+    "5.1759733",
+    "5.17746"
+  ],
+  "lat": "52.3504386",
+  "lon": "5.1773766",
+  "display_name": "Katernstraat, De Uitgeverij, Almere, Flevoland, Netherlands, 1321NE, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "162184572",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "311484273",
+  "boundingbox": [
+    "52.0907181",
+    "52.0907929",
+    "4.3045809",
+    "4.3046727"
+  ],
+  "lat": "52.0907929",
+  "lon": "4.3046727",
+  "display_name": "Burgemeester Patijnlaan, Archipelbuurt, The Hague, South Holland, Netherlands, 2585 BJ, The Netherlands",
+  "class": "highway",
+  "type": "secondary",
+  "importance": 0.4
+}

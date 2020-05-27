@@ -1,0 +1,18 @@
+{
+  "place_id": "82191456",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6318832",
+  "boundingbox": [
+    "51.67377",
+    "51.6831424",
+    "5.9684146",
+    "5.976179"
+  ],
+  "lat": "51.6784924",
+  "lon": "5.97355640107911",
+  "display_name": "Hoogveld, Heijen, Gennep, Limburg, Netherlands, The Netherlands",
+  "class": "landuse",
+  "type": "industrial",
+  "importance": 0.42
+}

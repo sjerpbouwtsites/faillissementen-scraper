@@ -1,0 +1,18 @@
+{
+  "place_id": "227598544",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "711726171",
+  "boundingbox": [
+    "52.950271",
+    "52.9505012",
+    "4.7710519",
+    "4.7724803"
+  ],
+  "lat": "52.950377",
+  "lon": "4.7715811",
+  "display_name": "Het Arsenaal, Den Helder, North Holland, Netherlands, 1781XH, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.5
+}

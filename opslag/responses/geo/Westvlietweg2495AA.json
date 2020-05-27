@@ -1,0 +1,18 @@
+{
+  "place_id": "113575321",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "129510104",
+  "boundingbox": [
+    "52.0608397",
+    "52.0618319",
+    "4.3547231",
+    "4.3573417"
+  ],
+  "lat": "52.061443",
+  "lon": "4.3561435",
+  "display_name": "Westvlietweg, The Hague, South Holland, Netherlands, 2275AX, The Netherlands",
+  "class": "highway",
+  "type": "tertiary",
+  "importance": 0.31
+}

@@ -1,0 +1,18 @@
+{
+  "place_id": "101733599",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "51874633",
+  "boundingbox": [
+    "52.0167073",
+    "52.0193382",
+    "5.1553682",
+    "5.161657"
+  ],
+  "lat": "52.0172387",
+  "lon": "5.1592628",
+  "display_name": "Zeilschip, De Meerpaal, Houten, Utrecht, Netherlands, 3991CT, The Netherlands",
+  "class": "highway",
+  "type": "unclassified",
+  "importance": 0.32
+}

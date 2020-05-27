@@ -1,0 +1,18 @@
+{
+  "place_id": "77959999",
+  "licence": "https://locationiq.com/attribution",
+  "osm_type": "way",
+  "osm_id": "6367576",
+  "boundingbox": [
+    "53.10651",
+    "53.1116832",
+    "7.0251794",
+    "7.02936"
+  ],
+  "lat": "53.10805",
+  "lon": "7.0279",
+  "display_name": "Bronsveenlaan, Oude Pekela, Pekela, Groningen, Netherlands, 9665AA, The Netherlands",
+  "class": "highway",
+  "type": "residential",
+  "importance": 0.42
+}

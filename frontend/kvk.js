@@ -194,7 +194,13 @@ export function setSluitKvKPaneelEvent() {
 }
 
 export function sluitKvKPaneel() {
-  gbi("sluit-kvk-paneel").classList.add("groot");
+  // verberg resultaten tellers
+  toonVerbergElementen(
+    false,
+    nodeVerzameling(
+      "#kvk-resultaat-teller, #kvk-resultaat-teller-print-nummers-p, #kvk-resultaat-teller-print-adres-p"
+    )
+  );
 
   setTimeout(function() {
     gbi("kvk-paneel").classList.remove("open");
@@ -217,9 +223,6 @@ export function sluitKvKPaneel() {
       }
     });
   }, 300);
-  setTimeout(function() {
-    gbi("sluit-kvk-paneel").classList.remove("groot");
-  }, 500);
 }
 
 /**
