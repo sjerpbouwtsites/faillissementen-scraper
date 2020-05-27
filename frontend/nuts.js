@@ -23,3 +23,12 @@ export function vertragingsPromise(tijd = 500) {
     setTimeout(resolve(null), tijd);
   });
 }
+
+/**
+ * return Array.from(document.querySelectorAll(selector))
+ * @param {cssSelector string} selector
+ */
+export function nodeVerzameling(selector) {
+  const e = document.querySelectorAll(selector);
+  return Array.from(e);
+}

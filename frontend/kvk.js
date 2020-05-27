@@ -1,4 +1,4 @@
-import { gbi, gbody, vertragingsPromise } from "./nuts.js";
+import { gbi, gbody, vertragingsPromise, nodeVerzameling } from "./nuts.js";
 import { pakMarxCitaat } from "./ongein.js";
 import { huidigeFaillissementen } from "../frontend.js";
 
@@ -116,15 +116,13 @@ export function zetKvkBladNavigatie() {
     knop.setAttribute("disabled", true);
     const doel = knop.getAttribute("data-doel");
     // bladen tonen en verbergen
-    Array.from(document.querySelectorAll(".kvk-resultaat-blad")).forEach(
-      (resBlad) => {
-        if (resBlad.id === doel && resBlad.classList.contains("verborgen")) {
-          resBlad.classList.remove("verborgen");
-        } else if (!resBlad.classList.contains("verborgen")) {
-          resBlad.classList.add("verborgen");
-        }
+    nodeVerzameling(".kvk-resultaat-blad").forEach((resBlad) => {
+      if (resBlad.id === doel && resBlad.classList.contains("verborgen")) {
+        resBlad.classList.remove("verborgen");
+      } else if (!resBlad.classList.contains("verborgen")) {
+        resBlad.classList.add("verborgen");
       }
-    );
+    });
     // draai callback indien nodig
     if (knop.hasAttribute("data-callback")) {
       // naar camelCase
@@ -208,9 +206,7 @@ export function setSluitKvKPaneelEvent() {
     setTimeout(function() {
       gbi("kvk-paneel").classList.remove("open");
       // paneel legen en css classes resetten
-      Array.from(
-        document.getElementsByClassName(".kvk-resultaat-blad")
-      ).forEach((blad, i) => {
+      nodeVerzameling(".kvk-resultaat-blad").forEach((blad, i) => {
         // alle behalve eerste verbergen
         if (i === 0 && blad.classList.contains("verborgen")) {
           blad.classList.remove("verborgen");
