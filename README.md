@@ -13,7 +13,20 @@ dev@sjerpbouwtsites.nl
 
 [Zie de installatiegids](INSTALL.md)
 
+## Feature requests
+
+- koppelen met omgevingsvergunnings
+- bestemmingsplannen
+- ná init, aparte functie, huidig gevestigde bedrijven ophalen per adres. Hoe invalideer je deze informatie?
+
 ## ISSUES
 
 - indien de start en einddata veranderen nadat dagenDb is aangemaakt, wordt dagenDb niet bijgewerkt met bv. een nieuwe reeks.
-- koppelen met omgevingsvergunnings & bestemmingsplannen
+- echte database gebruiken in memory ipv in via filesystem
+- opslag / database qua files rommelig
+  1. overstap opslag -> database
+  2. logica / instellingen verdeeld over config, nuts, etc.
+- mogelijk gaat doet node een timeout. 'te doen' vanuit dagenDatabase opknippen in delen?
+- benaming 'consolidatie' en 'adressen' is onduidelijk en door elkaar
+- die timeout logica om door lijsten met te verwerken requests & hun ratelimiters heen te gaan is ruk
+- rare discrepantie tussen hoeveelheid adressen in geo en 'adressen beschikbaar' vanuit fs?

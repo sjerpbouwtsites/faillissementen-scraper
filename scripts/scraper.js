@@ -41,16 +41,20 @@ async function scrapeDagen(dagenTeDoen) {
       // wanneer de timeout vuurt
       const planningVanafNu = index * 800;
 
-      setTimeout(function () {
+      setTimeout(function() {
         axios
           .get(
             `https://insolventies.rechtspraak.nl/Services/BekendmakingenService/haalOp/${dag.route}`
           )
-          .then(function (response) {
+          .then(function(response) {
             const iplus = index + 1;
             if (iplus % 10 === 0) {
+              console.clear();
+              const teDoen = teScrapen.length - iplus;
+              const teDoenTijd = Math.floor((teDoen * 800) / 6000);
               console.log(
-                `${iplus} dagen gescraped, ${teScrapen.length - iplus} te gaan`
+                `${iplus} dagen gescraped, ${teScrapen.length -
+                  iplus} te gaan. Duurt wss ${teDoenTijd} minuten.`
               );
             }
 
@@ -64,7 +68,7 @@ async function scrapeDagen(dagenTeDoen) {
           .catch(legeCatch);
       }, planningVanafNu);
     });
-    setTimeout(function () {
+    setTimeout(function() {
       resolve({
         gescraped,
         reedsGescraped,

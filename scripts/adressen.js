@@ -61,6 +61,7 @@ async function consolideerAdressen() {
     nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
 
     const geskiptWegensRateLimit = [];
+    const exitTijd = teConsolideren.length * 1111 + 2000;
     teConsolideren.forEach((consolideer, index) => {
       setTimeout(function() {
         axios
@@ -79,11 +80,11 @@ async function consolideerAdressen() {
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
+              const aantalTeDoen = teConsolideren.length - iplus;
+              const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
+              console.clear();
               console.log(
-                iplus,
-                " adressen geconsolideerd en ",
-                teConsolideren.length - iplus,
-                " te gaan. "
+                `${iplus} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`
               );
             }
             const b = Object.assign(consolideer, {
@@ -101,7 +102,7 @@ async function consolideerAdressen() {
 
             if (axiosErr.response.status === 429) {
               geskiptWegensRateLimit.push(consolideer);
-              console.log("rate limit!");
+              console.log("rate limit !", new Date().getSeconds());
             } else if (axiosErr.response.status === 404) {
               console.log("adres 404 faal", consolideer.adres);
             }
@@ -110,7 +111,6 @@ async function consolideerAdressen() {
     });
 
     // na alle requests resolven...
-    const exitTijd = teConsolideren.length * 1111 + 2000;
     console.log("Adressen klaar over", exitTijd / 60000, " minuten");
     setTimeout(function() {
       // console.log("schrijf nieuw geonsolideerd");

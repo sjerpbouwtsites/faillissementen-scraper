@@ -1,13 +1,12 @@
-const fs = require('fs');
-const { opslagPad } = require('../config.js');
+const fs = require("fs");
+const { opslagPad } = require("../config.js");
 
 /**
  * locale helper om opslagpad te maken
- * @param {string} s 
+ * @param {string} s
  */
-function pfo(s = '') {
+function pfo(s = "") {
   const ddd = `${opslagPad}/${s}`;
-  console.log(ddd);
   return ddd;
 }
 
@@ -18,27 +17,26 @@ function controleerInstallatie() {
   return new Promise((resolve, reject) => {
     const controleerOfMaak = [
       pfo(),
-      pfo('responses'),
-      pfo('responses/geo'),
-      pfo('responses/rechtbank'),
-      pfo('adressen')
+      pfo("responses"),
+      pfo("responses/geo"),
+      pfo("responses/rechtbank"),
+      pfo("adressen"),
     ];
 
     try {
-      controleerOfMaak.forEach(opslagPad => {
+      controleerOfMaak.forEach((opslagPad) => {
         if (fs.existsSync(opslagPad)) {
-          return
+          return;
         }
         fs.mkdirSync(opslagPad);
       });
     } catch (error) {
-      reject(error)
+      reject(error);
     }
-    const giPad = pfo('.gitignore');
-    const giTekst = '*.json';
-    if (!fs.existsSync(pfo('.gitignore'))) {
-      fs.writeFileSync(giPad, giTekst)
-      console.log('maak', opslagPad)
+    const giPad = pfo(".gitignore");
+    const giTekst = "*.json";
+    if (!fs.existsSync(pfo(".gitignore"))) {
+      fs.writeFileSync(giPad, giTekst);
     }
     resolve(true);
   });
@@ -46,4 +44,4 @@ function controleerInstallatie() {
 
 module.exports = {
   controleerInstallatie,
-}
+};

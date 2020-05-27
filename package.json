@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "doe": "node index.js",
-    "vanaf-begin": "npm run opruimen; node index.js",
-    "opruimen": "clear; cd opslag; PATH -maxdepth 2 -type f -delete; cd ../",
-    "vanaf-adressen": "clear; rm opslag/adressen.json; rm opslag/geconsolideerde-adressen.json; node index.js"
+    "vanaf-beginNEENIET": "npm run opruimen; node index.js",
+    "opruimenNEENIET": "clear; sudo rm -rf database;",
+    "vanaf-adressenNEENIET": "clear; rm database/adressen.json; rm database/geconsolideerde-adressen.json; node index.js"
   },
   "repository": {
     "type": "git",
