@@ -27,6 +27,7 @@
     "eslint": "^7.1.0"
   },
   "devDependencies": {
+    "cli-color": "^2.0.0",
     "lodash": "^4.17.15"
   }
 }

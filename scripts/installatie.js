@@ -34,7 +34,7 @@ function controleerInstallatie() {
       reject(error);
     }
     const giPad = pfo(".gitignore");
-    const giTekst = "*.json";
+    const giTekst = "*.json\n!marx.json";
     if (!fs.existsSync(pfo(".gitignore"))) {
       fs.writeFileSync(giPad, giTekst);
     }

@@ -9,6 +9,7 @@
 
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
+var clc = require("cli-color");
 
 async function init() {
   try {
@@ -17,6 +18,7 @@ async function init() {
     const scraper = pakScript("scraper");
     const adressen = pakScript("adressen");
     const consolidatie = pakScript("consolidatie");
+    const printMarx = pakScript("printMarx");
     // controleert bestaan van mappen
     await installatie.controleerInstallatie();
     const db = await dagenDatabase.pakDagenData();
@@ -27,7 +29,13 @@ async function init() {
     await adressen.zoekAdressen();
     await adressen.consolideerAdressen();
     const consolidatieAntwoord = await consolidatie.consolideerResponsesEnAdressen();
-    console.log("einde init", consolidatieAntwoord, " adressen beschikbaar");
+    console.clear();
+    console.log(
+      clc.bgWhite.black(
+        `\n\t\tKLAAR!\t\n\t${consolidatieAntwoord} adressen beschikbaar\t`
+      )
+    );
+    printMarx.print();
   } catch (error) {
     console.error(error);
   }
