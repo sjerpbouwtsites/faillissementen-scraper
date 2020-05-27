@@ -1,12 +1,3 @@
-app specifiek
-opslag/adressen/*.json
-opslag/responses/geo*.json
-opslag/responses/rechtbank*.json
-adressen.json
-dagenDb.json
-geconsolideerde-adressen.json
-ratelimit-adressen.json
-
 
 
 # Logs

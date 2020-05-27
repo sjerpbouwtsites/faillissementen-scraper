@@ -29,7 +29,7 @@ export const huidigeFaillissementen = {
 function pakFaillissementen() {
   return new Promise(async (resolve) => {
     if (!window["faillissementen"]) {
-      const fail2 = await fetch("opslag/geconsolideerde-adressen.json");
+      const fail2 = await fetch("database/geconsolideerde-adressen.json");
       const fail3 = await fail2.json();
       window["faillissementen"] = fail3;
       resolve(fail3);
@@ -40,7 +40,7 @@ function pakFaillissementen() {
 }
 
 function zetSluitAlles() {
-  gbody().addEventListener("keydown", function(e) {
+  gbody().addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
       sluitKvKPaneel();
 
@@ -53,7 +53,7 @@ function zetSluitAlles() {
 }
 
 function sluitPaneelAlsPopupOpen() {
-  gbody().addEventListener("click", function(e) {
+  gbody().addEventListener("click", function (e) {
     if (e.target.classList.contains("leaflet-marker-icon")) {
       sluitKvKPaneel();
     }

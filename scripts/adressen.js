@@ -66,15 +66,16 @@ async function consolideerAdressen() {
         axios
           .get(
             "https://eu1.locationiq.com/v1/search.php?key=b7a32fa378c135&q=" +
-              encodeURIComponent(
-                `${consolideer.plaatsnaam} ${consolideer.straat}`
-              ) +
-              "&format=json"
+            encodeURIComponent(
+              `${consolideer.plaatsnaam} ${consolideer.straat}`
+            ) +
+            "&format=json"
           )
           .then((r) => {
             // console.log(c);
             // console.log(r.data);
-            schrijfOpslag(geopadUitAdres(consolideer), r.data[0]);
+            const p = geopadUitAdres(consolideer);
+            schrijfOpslag(p, r.data[0]);
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
@@ -237,9 +238,9 @@ function uniekeAdressenUitString(pcString) {
 }
 
 function geopadUitAdres(adres) {
-  const a = `responses/geo/`;
+  const a = `${opslagPad}/responses/geo/`;
   const b = `${adres.straat + adres.postcode}`.replace(/\W/g, "");
-  const c = maakOpslagPad(`${a}${b}`);
+  const c = `${a}${b}`;
   //console.log(c);
   return c;
 }

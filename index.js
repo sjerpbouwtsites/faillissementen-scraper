@@ -12,10 +12,13 @@ const { pakScript } = require(nutsPad);
 
 async function init() {
   try {
+    const installatie = pakScript("installatie");
     const dagenDatabase = pakScript("dagen-database");
     const scraper = pakScript("scraper");
     const adressen = pakScript("adressen");
     const consolidatie = pakScript("consolidatie");
+    // controleert bestaan van mappen
+    await installatie.controleerInstallatie();
     const db = await dagenDatabase.pakDagenData();
     if (db.dagenTeDoen.length) {
       const scraperAntwoord = await scraper.scrapeDagen(db.dagenTeDoen);

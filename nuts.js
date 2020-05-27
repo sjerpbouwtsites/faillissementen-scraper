@@ -55,10 +55,8 @@ function legeCatch(err) {
 }
 
 function schrijfOpslag(pad, data) {
-  // console.log("schrijf op pad", pad);
-  // console.log("schrijflengte: ", data.length);
-  // console.log(data);
-  let wpad = pad.includes("opslag") ? pad : maakOpslagPad(pad);
+
+  let wpad = pad.includes("database") ? pad : maakOpslagPad(pad);
   fs.writeFileSync(wpad, JSON.stringify(data, null, "  "));
 }
 

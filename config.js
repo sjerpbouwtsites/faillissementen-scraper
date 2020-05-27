@@ -5,9 +5,9 @@ const path = require("path");
 // als je de app uitgebreid wilt gebruiken zet dan een eindDatum ver in de toekomst. De app is intelligent genoeg om te weten welke datums nog niet geweest zijn
 // rechtbankgegevens worden gepubliceerd sinds januari 2020.
 const startDatum = "2020-01-01";
-const eindDatum = "2020-12-31";
+const eindDatum = "2022-12-31";
 
-const opslagPad = path.resolve("opslag/");
+const opslagPad = path.resolve("database/");
 const scriptPad = path.resolve("scripts/");
 const nutsPad = path.resolve("nuts/");
 const tempPad = path.resolve("temp/");
