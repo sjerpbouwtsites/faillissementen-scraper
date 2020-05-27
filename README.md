@@ -1,7 +1,9 @@
 # faillissementen-scraper
 
 maakt een kaart met faillissementen
-Louter voor educatieve doel einden - sla geen persoonsgegevens op.
+Louter voor educatieve doeleinden - sla nooit gegevens op die een persoon kunnen identificeren.
+
+Gebruik de escape knop als je een popup of paneel open hebt om die weer snel te sluiten.
 
 ## uitleg?
 
