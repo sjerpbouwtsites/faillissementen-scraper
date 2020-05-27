@@ -1,9 +1,8 @@
-import { gbi } from "./nuts.js";
+import { gbi, gbody } from "./nuts.js";
 import { pakMarxCitaat } from "./ongein.js";
 
 export function zetKvKKnopEvent(faillissementen) {
-  document
-    .getElementsByTagName("body")[0]
+  
     .addEventListener("click", function(e) {
       if (e.target.classList.contains("open-kvk")) {
         e.target.setAttribute("disabled", true);
@@ -92,8 +91,7 @@ export function haalKvkInfoEnPrint(
 }
 
 // export function kvkBladNavigatie(){
-//   document
-//     .getElementsByTagName("body")[0].addEventListener('click', function(e){
+//   gbody().addEventListener('click', function(e){
 //       const knop = e.target;
 //       if (!knop.classList.contains('kvk-navigatie-knop')){
 //         return;
@@ -123,7 +121,7 @@ export function haalKvkInfoEnPrint(
 //   .catch(legeCatch);
 
 export function zetOpenKvKPaneelEvent() {
-  document.getElementsByTagName("body")[0],
+  gbody().
     addEventListener("click", function(e) {
       if (e.target.hasAttribute("data-kvk-nr")) {
         haalKvkInfoEnPrint(e.target.getAttribute("data-kvk-nr"), false);
