@@ -2,27 +2,26 @@ import { gbi, gbody } from "./nuts.js";
 import { pakMarxCitaat } from "./ongein.js";
 
 export function zetKvKKnopEvent(faillissementen) {
-  
-    .addEventListener("click", function(e) {
-      if (e.target.classList.contains("open-kvk")) {
-        e.target.setAttribute("disabled", true);
-        const kvkNummers = faillissementen.find(
-          (f) => f.osm_id === e.target.getAttribute("data-osm-id")
-        ).kvk;
+  gbody().addEventListener("click", function(e) {
+    if (e.target.classList.contains("open-kvk")) {
+      e.target.setAttribute("disabled", true);
+      const kvkNummers = faillissementen.find(
+        (f) => f.osm_id === e.target.getAttribute("data-osm-id")
+      ).kvk;
 
-        if (!kvkNummers || !kvkNummers.length) {
-          alert(
-            "ik kon geen kvk nummer vinden. Of tenminste, me algoritme niet. Lag niet aan mij dus.😴"
-          );
-          return;
-        }
-
-        haalKvkInfoEnPrint(kvkNummers[0], true, kvkNummers);
-
-        //data-osm-id
+      if (!kvkNummers || !kvkNummers.length) {
+        alert(
+          "ik kon geen kvk nummer vinden. Of tenminste, me algoritme niet. Lag niet aan mij dus.😴"
+        );
+        return;
       }
-      //open - kvk;
-    });
+
+      haalKvkInfoEnPrint(kvkNummers[0], true, kvkNummers);
+
+      //data-osm-id
+    }
+    //open - kvk;
+  });
 }
 export function haalKvkInfoEnPrint(
   kvkNummer,
@@ -121,12 +120,11 @@ export function haalKvkInfoEnPrint(
 //   .catch(legeCatch);
 
 export function zetOpenKvKPaneelEvent() {
-  gbody().
-    addEventListener("click", function(e) {
-      if (e.target.hasAttribute("data-kvk-nr")) {
-        haalKvkInfoEnPrint(e.target.getAttribute("data-kvk-nr"), false);
-      }
-    });
+  gbody().addEventListener("click", function(e) {
+    if (e.target.hasAttribute("data-kvk-nr")) {
+      haalKvkInfoEnPrint(e.target.getAttribute("data-kvk-nr"), false);
+    }
+  });
 }
 
 export function setSluitKvKPaneelEvent() {
