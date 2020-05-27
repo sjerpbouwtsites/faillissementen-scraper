@@ -1,0 +1,137 @@
+/* #region paneel zelf en binnen */
+
+.kvk-paneel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  max-height: 40%;
+  z-index: 500;
+  transition: 0.2s ease-in-out 0.2s;
+  transform: translateY(150%);
+  display: flex;
+}
+.kvk-paneel.open {
+  transform: translateY(0);
+}
+.kvk-paneel-binnen {
+  position: relative;
+  padding: 20px;
+  background-color: #f2f2f2;
+  height: 100%;
+  flex-grow: 1;
+}
+.kvk-resultaat {
+  max-height: calc(100% - 40px);
+  overflow: auto;
+  transform: translateX(0);
+  transition: 0.2s ease;
+}
+.kvk-resultaat.heeft-kvk-nummers-lijst {
+  max-width: calc(100% - 120px);
+}
+.kvk-resultaat.ladend {
+  transform: translateX(-150%);
+}
+.kvk-resultaat ul.results {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kvk-resultaat ul.results li {
+  flex-basis: 250px;
+  font-size: 12px;
+}
+/* #endregion */
+
+/* #region paneel blad navigatie */
+.kvk-navigatie {
+  background-color: #f3f3f3;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 140px;
+  max-width: 140px;
+}
+
+.kvk-navigatie-titel {
+  color: #353535;
+  display: inline-block;
+  line-height: 1.1em;
+  margin-top: -0.1em;
+  margin-bottom: -0.1em;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.kvk-navigatie-lijst {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 10px;
+  font-size: 0.8em;
+  flex-direction: column;
+}
+.kvk-navigatie-lijst li + li {
+  margin-top: 2px;
+}
+.kvk-navigatie-lijst .knopje {
+  padding: 0.5em 1em;
+  font-size: 12px;
+  line-height: 0.9em;
+  width: 100%;
+}
+.kvk-navigatie-lijst .knopje[disabled] {
+  opacity: 1;
+  filter: hue-rotate(0deg);
+  padding-left: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0px,
+    rgba(79, 27, 14, 1) 10px,
+    rgba(122, 41, 21, 1) 12px,
+    rgba(122, 41, 21, 1) 100%
+  );
+}
+
+/* #endregion paneel blad navigatie */
+
+/* #region knoppen rechts */
+.sluit-kvk-paneel {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: -80px;
+  transform: scale(1) translateY(0) translateX(0);
+  transition: 0.2s ease-in-out;
+}
+.sluit-kvk-paneel.groot {
+  transform: scale(5) translateY(-50px) translateX(-100px);
+}
+
+/* knoppen rechts van paneel navigatie via kvk nummer */
+.kvk-nummers {
+  position: absolute;
+  max-height: calc(100% - 70px);
+  overflow: auto;
+  top: 10px;
+  right: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 129px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.kvk-nummers li + li {
+  margin-top: 10px;
+  width: 100%;
+}
+/* #endregion paneel knoppen rechts */

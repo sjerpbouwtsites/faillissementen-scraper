@@ -9,9 +9,21 @@ import {
   zetOpenKvKPaneelEvent,
   setSluitKvKPaneelEvent,
   zetKvKKnopEvent,
+  zetKvkBladNavigatie,
 } from "./frontend/kvk.js";
 
 let faillissementen;
+
+export const huidigeFaillissementen = {
+  faillisement: [],
+  async zetHuidigeFaillissement(faillissementAdresObj) {
+    this.faillisement = faillissementAdresObj;
+  },
+
+  pakHuidigeFaillissementen() {
+    return this.faillisement;
+  },
+};
 
 function pakFaillissementen() {
   return new Promise(async (resolve) => {
@@ -34,6 +46,7 @@ async function initFrontend() {
     zetKvKKnopEvent(faillissementen);
     zetOpenKvKPaneelEvent(faillissementen);
     setSluitKvKPaneelEvent();
+    zetKvkBladNavigatie();
   });
 }
 

@@ -22,6 +22,7 @@
       href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
     />
     <link rel="stylesheet" type="text/css" href="stijl.css" />
+    <link rel="stylesheet" type="text/css" href="kvk-paneel.css" />
   </head>
   <body>
     <!-- <div id="marquee" class="marquee verborgen">
@@ -31,24 +32,31 @@
     </div> -->
     <div id="mapid"></div>
     <div class="kvk-paneel" id="kvk-paneel">
-      <ul class="kvk-navigatie">
-        <li>
-          <button
-            class="kvk-navigatie-knop knopje"
-            data-doel="kvk-resultaat-nummers"
-            disabled="true"
-          >
-            KVK-nummers
-          </button>
-        </li>
-        <li>
-          <button
-            class="kvk-navigatie-knop knopje"
-            data-doel="kvk-resultaat-adres"
-          >
-            Adres
-          </button>
-        </li>
+      <section class='kvk-navigatie'>
+        <header class='kvk-navigatie-header'>
+          <h3 class='kvk-navigatie-titel'>Relevante bedrijven</h3>
+        </header>
+        <ul class="kvk-navigatie-lijst">
+          <li>
+            <button
+              class="kvk-navigatie-knop knopje"
+              data-doel="kvk-resultaat-nummers"
+              disabled="true"
+            >
+              Deze / dit kvk-nummer
+            </button>
+          </li>
+          <li>
+            <button
+              class="kvk-navigatie-knop knopje"
+              data-doel="kvk-resultaat-adres"
+              data-callback="kvk-print-adres-vergelijking"
+            >
+              Op dit adres
+            </button>
+          </li>
+      </section>
+      
       </ul>
       <div class="kvk-paneel-binnen">
         <ul class="kvk-nummers" id="kvk-nummers"></ul>
