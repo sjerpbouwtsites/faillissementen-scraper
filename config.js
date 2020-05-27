@@ -9,7 +9,7 @@ const eindDatum = "2022-12-31";
 
 const opslagPad = path.resolve("database/");
 const scriptPad = path.resolve("scripts/");
-const nutsPad = path.resolve("nuts/");
+const nutsPad = path.resolve("scripts/nuts/");
 const tempPad = path.resolve("temp/");
 const maanden = [
   "",

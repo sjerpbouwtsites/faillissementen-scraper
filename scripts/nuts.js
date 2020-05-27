@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { scriptPad, tempPad, opslagPad } = require("./config.js");
+const { scriptPad, tempPad, opslagPad } = require("../config.js");
 
 function forceerSubpadMetSlash(sp) {
   const eersteTekenIsSlash = sp[0] === "/";
@@ -55,7 +55,6 @@ function legeCatch(err) {
 }
 
 function schrijfOpslag(pad, data) {
-
   let wpad = pad.includes("database") ? pad : maakOpslagPad(pad);
   fs.writeFileSync(wpad, JSON.stringify(data, null, "  "));
 }
@@ -73,7 +72,10 @@ function schrijfTemp(bla, achtervoeging = "") {
 
 function DateNaarDatumGetal(dateObjectOfISOString) {
   if (typeof dateObjectOfISOString === "string") {
-    return dateObjectOfISOString.split("T")[0].split("-").join("");
+    return dateObjectOfISOString
+      .split("T")[0]
+      .split("-")
+      .join("");
   } else {
     return dateObjectOfISOString
       .toISOString()
