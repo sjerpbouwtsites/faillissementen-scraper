@@ -75,11 +75,16 @@ async function consolideerAdressen() {
             // console.log(c);
             // console.log(r.data);
             const p = geopadUitAdres(consolideer) + ".json";
-            fs.writeFileSync(p, r.data[0]);
+            fs.writeFileSync(p, JSON.stringify(r.data[0]));
 
             const iplus = index + 1;
             if (iplus % 25 === 0) {
-              console.log(iplus, " adressen geconsolideerd");
+              console.log(
+                iplus,
+                " adressen geconsolideerd en ",
+                teConsolideren.length - iplus,
+                " te gaan. "
+              );
             }
             const b = Object.assign(consolideer, {
               lat: r.data[0].lat,
