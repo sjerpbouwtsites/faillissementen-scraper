@@ -24,14 +24,16 @@
     <link rel="stylesheet" type="text/css" href="stijl/stijl.css" />
     <link rel="stylesheet" type="text/css" href="stijl/kvk-paneel.css" />
     <link rel="stylesheet" type="text/css" href="stijl/kvk-response.css" />
+    <link rel="stylesheet" type="text/css" href="stijl/uitleg-paneel.css" />
   </head>
-  <body>
+  <body class="heeft-open-sluit-knop">
     <!-- <div id="marquee" class="marquee verborgen">
       <div class="marquee-binnen-buiten">
         <span class="marquee-binnen" id="marquee-binnen"></span>
       </div>
     </div> -->
     <div id="mapid"></div>
+    <!-- START kvk paneel -->
     <div class="kvk-paneel" id="kvk-paneel">
       <section class="kvk-navigatie-en-resultaat">
         <header id="kvk-navigatie-header" class="kvk-navigatie-header">
@@ -92,6 +94,69 @@
         </button>
       </div>
     </div>
+    <!-- EIND kvk paneel -->
+    <!-- START uitleg paneel -->
+    <button
+      id="toon-uitleg-paneel"
+      class="open-sluit-knop uitleg-paneel__open open-sluit-knop--met-tekst"
+      data-toon="#uitleg-paneel"
+      data-sluit="#toon-uitleg-paneel"
+    >
+      <span class="open-sluit-knop__tekst">Uitleg</span>
+    </button>
+    <aside
+      id="uitleg-paneel"
+      class="uitleg-paneel heeft-open-sluit-knop verborgen"
+    >
+      <button
+        class="open-sluit-knop"
+        data-sluit="#uitleg-paneel"
+        data-toon="#toon-uitleg-paneel"
+      >
+        <img src="iconen/sluit.svg" alt="sluit paneel" width="30" height="30" />
+      </button>
+      <header class="uitleg-paneel__header uitleg-paneel__header--top">
+        <h2 class="uitleg-paneel__kop uitleg-paneel__kop--top">
+          Faillissementen scraper uitleg
+        </h2>
+      </header>
+      <div class="uitleg-paneel__brood">
+        <p class="uitleg-paneel__tekst">
+          <a href="mailto:dev@sjerpbouwtsites.nl">Mail Sjerp</a> als je iets
+          niet vat of bel <a href="tel:0616541143">0616541143</a>.
+          <br />
+          Klik op de verschillende markers voor informatie over de locatie. Hoe
+          minder doorzichtig de marker, hoe verder in het verleden (en
+          relevanter) het faillissement.
+        </p>
+        <section class="uitleg-paneel__sectie">
+          <header class="uitleg-paneel__header">
+            <h3 class="uitleg-paneel__kop">
+              Toetskoppelingen
+            </h3>
+          </header>
+          <ul class="uitleg-paneel__lijst">
+            <li class="uitleg-paneel__lijst-stuk">
+              <span class="uitleg-paneel__lijst-titel">
+                <kbd class="kbd">Escape</kbd>
+              </span>
+              <span class="uitleg-paneel__lijst-tekst">
+                Sluit popup marker en / of KvK paneel.
+              </span>
+            </li>
+            <li class="uitleg-paneel__lijst-stuk">
+              <span class="uitleg-paneel__lijst-titel">
+                <kbd class="kbd">Tab</kbd>
+              </span>
+              <span class="uitleg-paneel__lijst-tekst">
+                Spring van faillissement naar faillissement
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+    <!-- EIND uitleg paneel-->
     <script type="module" src="./frontend/index.js"></script>
   </body>
 </html>

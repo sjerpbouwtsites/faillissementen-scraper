@@ -1,0 +1,56 @@
+.uitleg-paneel {
+  padding: 20px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 80ch;
+  box-sizing: border-box;
+}
+
+.uitleg-paneel__kop:first-child {
+  margin-top: 0;
+}
+
+.uitleg-paneel__lijst {
+  padding: 0;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.uitleg-paneel__lijst-stuk {
+  display: flex;
+  justify-content: space-between;
+}
+.sluit-kvk-paneel {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  transform: scale(1) translateY(0) translateX(0);
+  transition: 0.2s ease-in-out;
+  background-color: #c12626dd;
+  width: 80px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+.sluit-kvk-paneel:hover {
+  background-color: #c12626ff;
+}
+
+.open-sluit-knop.uitleg-paneel__open {
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  right: auto;
+  left: 0;
+  z-index: 1000;
+}

@@ -1,6 +1,7 @@
 import { doeSpelVraag, marxInStorage, pakMarxCitaat } from "./ongein.js";
 import { initMap, zetMarkers, zetMapInfo } from "./kaart.js";
-import { gbody } from "./nuts.js";
+import { gbody, toonVerbergElementen, nodeVerzameling } from "./nuts.js";
+import { zetSluitOpenKnopEvenement } from "./sluit-open.js";
 import {
   zetOpenKvKPaneelEvent,
   setSluitKvKPaneelEvent,
@@ -67,6 +68,7 @@ async function initFrontend() {
     zetKvkBladNavigatie();
     zetSluitAlles();
     sluitPaneelAlsPopupOpen();
+    zetSluitOpenKnopEvenement();
   });
 }
 

@@ -97,26 +97,6 @@
 /* #endregion paneel blad navigatie */
 
 /* #region knoppen rechts */
-.sluit-kvk-paneel {
-  background-color: transparent;
-  padding: 0;
-  border: 0;
-  font-size: 50px;
-  position: absolute;
-  right: 0;
-  top: 0px;
-  transform: scale(1) translateY(0) translateX(0);
-  transition: 0.2s ease-in-out;
-  background-color: #c12626dd;
-  width: 80px;
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: space-around;
-}
-.sluit-kvk-paneel:hover {
-  background-color: #c12626ff;
-}
 
 /* knoppen rechts van paneel navigatie via kvk nummer */
 .kvk-nummers {
