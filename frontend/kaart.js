@@ -25,7 +25,7 @@ export function initMap() {
  */
 function maakOpacity(datum, dagenLeegOptimaal, vandaag) {
   if (!datum) {
-    return 1;
+    return 0.5; // marker krijgt ook via alt attr oranje kleur
   }
 
   // faillissementsdatum
@@ -62,12 +62,10 @@ export async function zetMarkers(kaart, faillissementen) {
       options
     ).addTo(kaart);
 
-    const datumHTML = faillissement.datum
-      ? `<h3>${new Date().toDateString()}</h3>`
-      : "";
     const bedrijfsNaamHTML = faillissement.bedrijfsNaam
       ? `<h4>${faillissement.bedrijfsNaam}</h4>`
       : "";
+    const datumHTML = maakDatumHTML(faillissement.datum);
 
     marker.bindPopup(
       `<div class='leaflet-popup-publicatie'>
@@ -83,6 +81,19 @@ export async function zetMarkers(kaart, faillissementen) {
         </div class='leaflet-popup-publicatie'>`
     );
   });
+}
+/**
+ * helper van zetMarkers. Als datum bekend, return NL datum.
+ * @param {datumstring} datum
+ */
+function maakDatumHTML(datum = false) {
+  return datum
+    ? `<h3>${new Date(datum).toLocaleDateString("nl-NL", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })}</h3>`
+    : "Datum faillissement onbekend";
 }
 
 export async function zetMapInfo(faillissementen) {
