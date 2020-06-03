@@ -6,7 +6,7 @@ import {
   toonVerbergElementen,
 } from "./nuts.js";
 import { pakMarxCitaat } from "./ongein.js";
-import { huidigeFaillissementen } from "../frontend.js";
+import { huidigeFaillissementen } from "./index.js";
 
 /**
  * Event voor 'KvK Paneel' in marker

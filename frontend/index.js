@@ -1,17 +1,13 @@
-import {
-  doeSpelVraag,
-  marxInStorage,
-  pakMarxCitaat,
-} from "./frontend/ongein.js";
-import { initMap, zetMarkers, zetMapInfo } from "./frontend/kaart.js";
-import { gbody } from "./frontend/nuts.js";
+import { doeSpelVraag, marxInStorage, pakMarxCitaat } from "./ongein.js";
+import { initMap, zetMarkers, zetMapInfo } from "./kaart.js";
+import { gbody } from "./nuts.js";
 import {
   zetOpenKvKPaneelEvent,
   setSluitKvKPaneelEvent,
   sluitKvKPaneel,
   zetKvKKnopEvent,
   zetKvkBladNavigatie,
-} from "./frontend/kvk.js";
+} from "./kvk.js";
 
 let faillissementen;
 
@@ -40,7 +36,7 @@ function pakFaillissementen() {
 }
 
 function zetSluitAlles() {
-  gbody().addEventListener("keydown", function (e) {
+  gbody().addEventListener("keydown", function(e) {
     if (e.key === "Escape") {
       sluitKvKPaneel();
 
@@ -53,7 +49,7 @@ function zetSluitAlles() {
 }
 
 function sluitPaneelAlsPopupOpen() {
-  gbody().addEventListener("click", function (e) {
+  gbody().addEventListener("click", function(e) {
     if (e.target.classList.contains("leaflet-marker-icon")) {
       sluitKvKPaneel();
     }
