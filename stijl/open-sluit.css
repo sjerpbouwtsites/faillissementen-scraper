@@ -1,0 +1,47 @@
+.heeft-open-sluit-knop {
+  position: relative;
+}
+.open-sluit-knop {
+  padding: 0;
+  border: 0;
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  transform: scale(1) translateY(0) translateX(0);
+  transition: 0.2s ease-in-out;
+  background-color: #c12626dd;
+  width: 80px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+.open-sluit-knop:hover {
+  background-color: #c12626ff;
+}
+.open-sluit-knop--met-tekst {
+  width: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.open-sluit-knop__tekst {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.open-sluit-knop__tekst::after {
+  display: inline-block;
+  margin-left: 0.5em;
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url("../iconen/volgende.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}

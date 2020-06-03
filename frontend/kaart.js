@@ -42,7 +42,7 @@ export async function zetMarkers(kaart, faillissementen) {
    * Indien iets zo veel dagen leeg staat, krijgt de
    * marker opacity 1.
    */
-  const dagenLeegOptimaal = 60;
+  const dagenLeegOptimaal = 180;
 
   /**
    * vandaag in milliseconden
