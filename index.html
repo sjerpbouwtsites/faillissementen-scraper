@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fuck de system</title>
+  </head>
+  <style>
+    body {
+      opacity: 0;
+      transition: ease-in opacity;
+    }
+    body.geladen {
+      opacity: 1;
+    }
+  </style>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -26,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="stijl/kvk-response.css" />
     <link rel="stylesheet" type="text/css" href="stijl/uitleg-paneel.css" />
     <link rel="stylesheet" type="text/css" href="stijl/open-sluit.css" />
-    <link rel="stylesheet" type="text/css" href="stijl/leaflet.css" />
-  </head>
+    <link rel="stylesheet" type="text/css" href="stijl/leaflet.css" />  
+</style>
   <body class="heeft-open-sluit-knop">
     <!-- <div id="marquee" class="marquee verborgen">
       <div class="marquee-binnen-buiten">

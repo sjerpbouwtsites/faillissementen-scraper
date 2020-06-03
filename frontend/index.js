@@ -2,6 +2,7 @@ import { doeSpelVraag, marxInStorage, pakMarxCitaat } from "./ongein.js";
 import { initMap, zetMarkers, zetMapInfo } from "./kaart.js";
 import { gbody, toonVerbergElementen, nodeVerzameling } from "./nuts.js";
 import { zetSluitOpenKnopEvenement } from "./sluit-open.js";
+import { zetStijlen } from "./stijlen.js";
 import {
   zetOpenKvKPaneelEvent,
   setSluitKvKPaneelEvent,
@@ -59,6 +60,7 @@ function sluitPaneelAlsPopupOpen() {
 
 async function initFrontend() {
   const kaart = initMap();
+  //zetStijlen();
   pakFaillissementen().then((faillissementen) => {
     zetMapInfo(faillissementen);
     zetMarkers(kaart, faillissementen);
@@ -69,6 +71,7 @@ async function initFrontend() {
     zetSluitAlles();
     sluitPaneelAlsPopupOpen();
     zetSluitOpenKnopEvenement();
+    gbody().classList.add("geladen");
   });
 }
 
