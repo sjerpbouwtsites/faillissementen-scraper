@@ -23,3 +23,7 @@
 .leaflet-marker-icon[alt*="geen-datum"] {
   filter: hue-rotate(180deg);
 }
+/* toekomstige faillissementen als roze markeren */
+.leaflet-marker-icon[alt*="in-toekomst"] {
+  filter: hue-rotate(110deg);
+}

@@ -53,7 +53,6 @@ export function toonVerbergElementen(toon, elementOfElementen) {
   } else {
     lijst = elementOfElementen;
   }
-  console.log(toon, lijst);
 
   if (toon) {
     lijst.forEach((el) => {

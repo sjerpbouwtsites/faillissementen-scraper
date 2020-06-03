@@ -28,10 +28,8 @@ function maakOpacity(datum, dagenLeegOptimaal, vandaag) {
     return 0.5; // marker krijgt ook via alt attr oranje kleur
   }
 
-  // faillissementsdatum
-  const fDatum = new Date(datum).getTime();
   // dagen sinds faillissement
-  const verschilInDagen = (vandaag - fDatum) / vandaag;
+  const verschilInDagen = (vandaag - datum) / vandaag;
   // minimale opacity is 0.3
   return Math.max(verschilInDagen / dagenLeegOptimaal, 0.3);
 }
@@ -47,14 +45,14 @@ export async function zetMarkers(kaart, faillissementen) {
   /**
    * vandaag in milliseconden
    */
-  const vandaag = new Date().getTime() * 1000 * 3600 * 24;
+  const vandaag = new Date().getTime();
 
   faillissementen.forEach((faillissement) => {
+    const fDatum = new Date(faillissement.datum).getTime();
     // verder in het verleden opacity geven.
-
     const options = {
-      opacity: maakOpacity(faillissement.datum, dagenLeegOptimaal, vandaag),
-      alt: !faillissement.datum ? "geen-datum" : "",
+      opacity: maakOpacity(fDatum, dagenLeegOptimaal, vandaag),
+      alt: maakAlt(fDatum, vandaag),
     };
 
     const marker = L.marker(
@@ -82,6 +80,15 @@ export async function zetMarkers(kaart, faillissementen) {
     );
   });
 }
+function maakAlt(datum, vandaag) {
+  if (!datum) {
+    return "geen-datum";
+  }
+  if (datum > vandaag) {
+    return "in-toekomst";
+  }
+}
+
 /**
  * helper van zetMarkers. Als datum bekend, return NL datum.
  * @param {datumstring} datum
