@@ -86,3 +86,8 @@ body {
 .verborgen {
   display: none;
 }
+
+/* datum loze faillissementen als oranje markeren */
+.leaflet-marker-icon[alt*="geen-datum"] {
+  filter: hue-rotate(180deg);
+}

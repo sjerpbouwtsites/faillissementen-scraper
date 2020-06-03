@@ -17,27 +17,50 @@ export function initMap() {
   return mymap;
 }
 
-export async function zetMarkers(kaart, faillissementen) {
-  const vandaag = new Date().getTime();
-  const markers = faillissementen.map((faillissement) => {
-    // verder in het verleden opacity geven.
-    let opacity = 1;
-    if (!!faillissement.datum) {
-      const fDatum = new Date(faillissement.datum).getTime();
-      // To calculate the no. of days between two dates
-      var verschilInDagen = (fDatum - vandaag) / (1000 * 3600 * 24);
-      const verschilNietBovenNul = Math.max(0, verschilInDagen) / 10;
-      opacity = opacity - verschilNietBovenNul;
-      opacity = Math.max(opacity, 0.3);
-    }
+/**
+ *
+ * @param {ISOstring} datum
+ * @param {aantal dagen sinds faillissement waarop opacity 1} dagenLeegOptimaal
+ * @param {milliseconden vandaag} vandaag
+ */
+function maakOpacity(datum, dagenLeegOptimaal, vandaag) {
+  if (!datum) {
+    return 1;
+  }
 
-    const marker = L.marker([
-      faillissement.lat,
-      faillissement.lon,
-      {
-        opacity: opacity,
-      },
-    ]).addTo(kaart);
+  // faillissementsdatum
+  const fDatum = new Date(datum).getTime();
+  // dagen sinds faillissement
+  const verschilInDagen = (vandaag - fDatum) / vandaag;
+  // minimale opacity is 0.3
+  return Math.max(verschilInDagen / dagenLeegOptimaal, 0.3);
+}
+
+export async function zetMarkers(kaart, faillissementen) {
+  /**
+   * Gebruikt in maak opacity.
+   * Indien iets zo veel dagen leeg staat, krijgt de
+   * marker opacity 1.
+   */
+  const dagenLeegOptimaal = 60;
+
+  /**
+   * vandaag in milliseconden
+   */
+  const vandaag = new Date().getTime() * 1000 * 3600 * 24;
+
+  faillissementen.forEach((faillissement) => {
+    // verder in het verleden opacity geven.
+
+    const options = {
+      opacity: maakOpacity(faillissement.datum, dagenLeegOptimaal, vandaag),
+      alt: !faillissement.datum ? "geen-datum" : "",
+    };
+
+    const marker = L.marker(
+      [faillissement.lat, faillissement.lon],
+      options
+    ).addTo(kaart);
 
     const datumHTML = faillissement.datum
       ? `<h3>${new Date().toDateString()}</h3>`
