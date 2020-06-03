@@ -13,11 +13,13 @@ dev@sjerpbouwtsites.nl
 
 [Zie de installatiegids](INSTALL.md)
 
-## Feature requests
+## Feature ( requests )
 
 - koppelen met omgevingsvergunnings
 - bestemmingsplannen
 - ná init, aparte functie, huidig gevestigde bedrijven ophalen per adres. Hoe invalideer je deze informatie?
+- herschrijven in typescript
+- publiceren naar microsoft azure
 
 ## ISSUES
 
