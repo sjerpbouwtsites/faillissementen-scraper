@@ -1,0 +1,25 @@
+.leaflet-popup-header {
+  border-bottom: 2px solid #212121;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.leaflet-popup-publicatie {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.leaflet-control-attribution > strong {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.leaflet-popup-header-left * {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+/* datum loze faillissementen als oranje markeren */
+.leaflet-marker-icon[alt*="geen-datum"] {
+  filter: hue-rotate(180deg);
+}
