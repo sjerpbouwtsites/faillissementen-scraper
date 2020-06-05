@@ -30,6 +30,7 @@ async function init() {
       await dagenDatabase.zetGescraped(scraperAntwoord);
     }
     await adressen.zoekAdressen();
+    await adressen.zoekInKvKAndereVestingenPerAdres();
     await adressen.consolideerAdressen();
     const consolidatieAntwoord = await consolidatie.consolideerResponsesEnAdressen();
     console.clear();
