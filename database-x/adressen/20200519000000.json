@@ -1,0 +1,162 @@
+[
+  {
+    "adres": "Raadhuisplein 45 2941BS Lekkerkerk",
+    "straatEnNummer": "Raadhuisplein 45",
+    "straat": "Raadhuisplein",
+    "huisnummer": "45",
+    "postcode": "2941BS",
+    "plaatsnaam": "Lekkerkerk"
+  },
+  {
+    "adres": "Frida Heilstraat 1 6836WG Arnhem",
+    "straatEnNummer": "Frida Heilstraat 1",
+    "straat": "Frida Heilstraat",
+    "huisnummer": "1",
+    "postcode": "6836WG",
+    "plaatsnaam": "Arnhem"
+  },
+  {
+    "adres": "Fregatweg 52 6222NZ Maastricht",
+    "straatEnNummer": "Fregatweg 52",
+    "straat": "Fregatweg",
+    "huisnummer": "52",
+    "postcode": "6222NZ",
+    "plaatsnaam": "Maastricht"
+  },
+  {
+    "adres": "Oude Rijksweg Noord 64 F 6114JG Susteren",
+    "straatEnNummer": "Oude Rijksweg Noord 64 F",
+    "straat": "Oude Rijksweg Noord",
+    "huisnummer": "64 F",
+    "postcode": "6114JG",
+    "plaatsnaam": "Susteren"
+  },
+  {
+    "adres": "Bosstraat 43 A 6101NW Echt",
+    "straatEnNummer": "Bosstraat 43 A",
+    "straat": "Bosstraat",
+    "huisnummer": "43 A",
+    "postcode": "6101NW",
+    "plaatsnaam": "Echt"
+  },
+  {
+    "adres": "Heren van Tegelen 42 5931ME Tegelen",
+    "straatEnNummer": "Heren van Tegelen 42",
+    "straat": "Heren van Tegelen",
+    "huisnummer": "42",
+    "postcode": "5931ME",
+    "plaatsnaam": "Tegelen"
+  },
+  {
+    "adres": "Veldstraat 28 5991AD Baarlo",
+    "straatEnNummer": "Veldstraat 28",
+    "straat": "Veldstraat",
+    "huisnummer": "28",
+    "postcode": "5991AD",
+    "plaatsnaam": "Baarlo"
+  },
+  {
+    "adres": "Monseigneur Nolensplein 54 5911GG Venlo",
+    "straatEnNummer": "Monseigneur Nolensplein 54",
+    "straat": "Monseigneur Nolensplein",
+    "huisnummer": "54",
+    "postcode": "5911GG",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Bloemendalsestraat 24 3811ES Amersfoort",
+    "straatEnNummer": "Bloemendalsestraat 24",
+    "straat": "Bloemendalsestraat",
+    "huisnummer": "24",
+    "postcode": "3811ES",
+    "plaatsnaam": "Amersfoort"
+  },
+  {
+    "adres": "Moermanskweg 2 9723HM Groningen",
+    "straatEnNummer": "Moermanskweg 2",
+    "straat": "Moermanskweg",
+    "huisnummer": "2",
+    "postcode": "9723HM",
+    "plaatsnaam": "Groningen"
+  },
+  {
+    "adres": "Steile bank 70 8531MD Lemmer",
+    "straatEnNummer": "Steile bank 70",
+    "straat": "Steile bank",
+    "huisnummer": "70",
+    "postcode": "8531MD",
+    "plaatsnaam": "Lemmer"
+  },
+  {
+    "adres": "Sydwende 91 a 9204KD Drachten",
+    "straatEnNummer": "Sydwende 91 a",
+    "straat": "Sydwende",
+    "huisnummer": "91 a",
+    "postcode": "9204KD",
+    "plaatsnaam": "Drachten"
+  },
+  {
+    "adres": "Industrieweg 8 5531 AD Bladel",
+    "straatEnNummer": "Industrieweg 8",
+    "straat": "Industrieweg",
+    "huisnummer": "8",
+    "postcode": "5531AD",
+    "plaatsnaam": "Bladel"
+  },
+  {
+    "adres": "Hurksestraat 43 5652AH Eindhoven",
+    "straatEnNummer": "Hurksestraat 43",
+    "straat": "Hurksestraat",
+    "huisnummer": "43",
+    "postcode": "5652AH",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Mandenmaker 26 5253RC Nieuwkuijk",
+    "straatEnNummer": "Mandenmaker 26",
+    "straat": "Mandenmaker",
+    "huisnummer": "26",
+    "postcode": "5253RC",
+    "plaatsnaam": "Nieuwkuijk"
+  },
+  {
+    "adres": "Aanslagsweg 22 7622LD Borne",
+    "straatEnNummer": "Aanslagsweg 22",
+    "straat": "Aanslagsweg",
+    "huisnummer": "22",
+    "postcode": "7622LD",
+    "plaatsnaam": "Borne"
+  },
+  {
+    "adres": "Bedrijvenpark Twente 305 7602KL Almelo",
+    "straatEnNummer": "Bedrijvenpark Twente 305",
+    "straat": "Bedrijvenpark Twente",
+    "huisnummer": "305",
+    "postcode": "7602KL",
+    "plaatsnaam": "Almelo"
+  },
+  {
+    "adres": "Hoogstraat 107 A 3011 PK Rotterdam",
+    "straatEnNummer": "Hoogstraat 107 A",
+    "straat": "Hoogstraat",
+    "huisnummer": "107 A",
+    "postcode": "3011PK",
+    "plaatsnaam": "Rotterdam"
+  },
+  {
+    "adres": "Noordenweg 4 2984AG Ridderkerk",
+    "straatEnNummer": "Noordenweg 4",
+    "straat": "Noordenweg",
+    "huisnummer": "4",
+    "postcode": "2984AG",
+    "plaatsnaam": "Ridderkerk"
+  },
+  {
+    "adres": "Stalpaertstraat 7 3067XS Rotterdam",
+    "straatEnNummer": "Stalpaertstraat 7",
+    "straat": "Stalpaertstraat",
+    "huisnummer": "7",
+    "postcode": "3067XS",
+    "plaatsnaam": "Rotterdam"
+  }
+]

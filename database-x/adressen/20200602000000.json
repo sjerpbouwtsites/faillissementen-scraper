@@ -1,0 +1,242 @@
+[
+  {
+    "adres": "Leusderweg 261 3818 AG Amersfoort",
+    "straatEnNummer": "Leusderweg 261",
+    "straat": "Leusderweg",
+    "huisnummer": "261",
+    "postcode": "3818AG",
+    "plaatsnaam": "Amersfoort"
+  },
+  {
+    "adres": "Jufferenstraat 21 8081CP Elburg",
+    "straatEnNummer": "Jufferenstraat 21",
+    "straat": "Jufferenstraat",
+    "huisnummer": "21",
+    "postcode": "8081CP",
+    "plaatsnaam": "Elburg"
+  },
+  {
+    "adres": "Dr. Willem Dreeslaan 2 3771RW Barneveld",
+    "straatEnNummer": "Dr. Willem Dreeslaan 2",
+    "straat": "Dr. Willem Dreeslaan",
+    "huisnummer": "2",
+    "postcode": "3771RW",
+    "plaatsnaam": "Barneveld"
+  },
+  {
+    "adres": "Stroetweg 7 3781PR Voorthuizen",
+    "straatEnNummer": "Stroetweg 7",
+    "straat": "Stroetweg",
+    "huisnummer": "7",
+    "postcode": "3781PR",
+    "plaatsnaam": "Voorthuizen"
+  },
+  {
+    "adres": "Kerkeland 9 C 6651 KN Druten",
+    "straatEnNummer": "Kerkeland 9 C",
+    "straat": "Kerkeland",
+    "huisnummer": "9 C",
+    "postcode": "6651KN",
+    "plaatsnaam": "Druten"
+  },
+  {
+    "adres": "Pittelderstraat 10 6942 GJ Didam",
+    "straatEnNummer": "Pittelderstraat 10",
+    "straat": "Pittelderstraat",
+    "huisnummer": "10",
+    "postcode": "6942GJ",
+    "plaatsnaam": "Didam"
+  },
+  {
+    "adres": "De Lindehove 7 8161 EA Epe",
+    "straatEnNummer": "De Lindehove 7",
+    "straat": "De Lindehove",
+    "huisnummer": "7",
+    "postcode": "8161EA",
+    "plaatsnaam": "Epe"
+  },
+  {
+    "adres": "Spinfondsweg 21 8171 NT Vaassen",
+    "straatEnNummer": "Spinfondsweg 21",
+    "straat": "Spinfondsweg",
+    "huisnummer": "21",
+    "postcode": "8171NT",
+    "plaatsnaam": "Vaassen"
+  },
+  {
+    "adres": "Lichttorenweg 10 8162 NL Epe",
+    "straatEnNummer": "Lichttorenweg 10",
+    "straat": "Lichttorenweg",
+    "huisnummer": "10",
+    "postcode": "8162NL",
+    "plaatsnaam": "Epe"
+  },
+  {
+    "adres": "Kruithuis 2 A 3844 DH Harderwijk",
+    "straatEnNummer": "Kruithuis 2 A",
+    "straat": "Kruithuis",
+    "huisnummer": "2 A",
+    "postcode": "3844DH",
+    "plaatsnaam": "Harderwijk"
+  },
+  {
+    "adres": "Kruithuis 2 a 3844 DH Harderwijk",
+    "straatEnNummer": "Kruithuis 2 a",
+    "straat": "Kruithuis",
+    "huisnummer": "2 a",
+    "postcode": "3844DH",
+    "plaatsnaam": "Harderwijk"
+  },
+  {
+    "adres": "J v Oldenbarneveltstr 6 6882KH Velp",
+    "straatEnNummer": "J v Oldenbarneveltstr 6",
+    "straat": "J v Oldenbarneveltstr",
+    "huisnummer": "6",
+    "postcode": "6882KH",
+    "plaatsnaam": "Velp"
+  },
+  {
+    "adres": "Mortel 5 6121JT Born",
+    "straatEnNummer": "Mortel 5",
+    "straat": "Mortel",
+    "huisnummer": "5",
+    "postcode": "6121JT",
+    "plaatsnaam": "Born"
+  },
+  {
+    "adres": "Straelseweg 27 A 5911CL Venlo",
+    "straatEnNummer": "Straelseweg 27 A",
+    "straat": "Straelseweg",
+    "huisnummer": "27 A",
+    "postcode": "5911CL",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Wilhelminasingel 41 6001GP Weert",
+    "straatEnNummer": "Wilhelminasingel 41",
+    "straat": "Wilhelminasingel",
+    "huisnummer": "41",
+    "postcode": "6001GP",
+    "plaatsnaam": "Weert"
+  },
+  {
+    "adres": "Parlevinkerweg 1 5928NV Venlo",
+    "straatEnNummer": "Parlevinkerweg 1",
+    "straat": "Parlevinkerweg",
+    "huisnummer": "1",
+    "postcode": "5928NV",
+    "plaatsnaam": "Venlo"
+  },
+  {
+    "adres": "Lijsterstraat 41 6591WE Gennep",
+    "straatEnNummer": "Lijsterstraat 41",
+    "straat": "Lijsterstraat",
+    "huisnummer": "41",
+    "postcode": "6591WE",
+    "plaatsnaam": "Gennep"
+  },
+  {
+    "adres": "Frans Halslaan 57 1213BK Hilversum",
+    "straatEnNummer": "Frans Halslaan 57",
+    "straat": "Frans Halslaan",
+    "huisnummer": "57",
+    "postcode": "1213BK",
+    "plaatsnaam": "Hilversum"
+  },
+  {
+    "adres": "Albert Einsteinweg 4 8218NH Lelystad",
+    "straatEnNummer": "Albert Einsteinweg 4",
+    "straat": "Albert Einsteinweg",
+    "huisnummer": "4",
+    "postcode": "8218NH",
+    "plaatsnaam": "Lelystad"
+  },
+  {
+    "adres": "Gyroscoopweg 140 1042AZ Amsterdam",
+    "straatEnNummer": "Gyroscoopweg 140",
+    "straat": "Gyroscoopweg",
+    "huisnummer": "140",
+    "postcode": "1042AZ",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Diederichslaan 25 3971PA Driebergen-Rijsenburg",
+    "straatEnNummer": "Diederichslaan 25",
+    "straat": "Diederichslaan",
+    "huisnummer": "25",
+    "postcode": "3971PA",
+    "plaatsnaam": "Driebergen-Rijsenburg"
+  },
+  {
+    "adres": "Kempenaar 01 1 8242BA Lelystad",
+    "straatEnNummer": "Kempenaar 01 1",
+    "straat": "Kempenaar",
+    "huisnummer": "01 1",
+    "postcode": "8242BA",
+    "plaatsnaam": "Lelystad"
+  },
+  {
+    "adres": "IJsselmeerweg 100 1411DL Naarden",
+    "straatEnNummer": "IJsselmeerweg 100",
+    "straat": "IJsselmeerweg",
+    "huisnummer": "100",
+    "postcode": "1411DL",
+    "plaatsnaam": "Naarden"
+  },
+  {
+    "adres": "Plakke Venstraat 12 1316HX Almere",
+    "straatEnNummer": "Plakke Venstraat 12",
+    "straat": "Plakke Venstraat",
+    "huisnummer": "12",
+    "postcode": "1316HX",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Bentheimerstraat 15 7741JH Coevorden",
+    "straatEnNummer": "Bentheimerstraat 15",
+    "straat": "Bentheimerstraat",
+    "huisnummer": "15",
+    "postcode": "7741JH",
+    "plaatsnaam": "Coevorden"
+  },
+  {
+    "adres": "Dotterbloemstraat 7 3053 JV Rotterdam",
+    "straatEnNummer": "Dotterbloemstraat 7",
+    "straat": "Dotterbloemstraat",
+    "huisnummer": "7",
+    "postcode": "3053JV",
+    "plaatsnaam": "Rotterdam"
+  },
+  {
+    "adres": "Rivium 4e Straat 3 2909LJ Capelle aan den IJssel",
+    "straatEnNummer": "Rivium 4e Straat 3",
+    "straat": "Rivium",
+    "huisnummer": "4e Straat 3",
+    "postcode": "2909LJ",
+    "plaatsnaam": "Capelle aan den IJssel"
+  },
+  {
+    "adres": "Haven 21 A 4811WL Breda",
+    "straatEnNummer": "Haven 21 A",
+    "straat": "Haven",
+    "huisnummer": "21 A",
+    "postcode": "4811WL",
+    "plaatsnaam": "Breda"
+  },
+  {
+    "adres": "Konijnenberg 68 4825BD Breda",
+    "straatEnNummer": "Konijnenberg 68",
+    "straat": "Konijnenberg",
+    "huisnummer": "68",
+    "postcode": "4825BD",
+    "plaatsnaam": "Breda"
+  },
+  {
+    "adres": "Konijnenberg 68 4823BD Breda",
+    "straatEnNummer": "Konijnenberg 68",
+    "straat": "Konijnenberg",
+    "huisnummer": "68",
+    "postcode": "4823BD",
+    "plaatsnaam": "Breda"
+  }
+]

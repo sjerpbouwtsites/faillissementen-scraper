@@ -1,0 +1,202 @@
+[
+  {
+    "adres": "Deventerweg 12 A 3843GD Harderwijk",
+    "straatEnNummer": "Deventerweg 12 A",
+    "straat": "Deventerweg",
+    "huisnummer": "12 A",
+    "postcode": "3843GD",
+    "plaatsnaam": "Harderwijk"
+  },
+  {
+    "adres": "Luttekepoortstraat 5 3841AW Harderwijk",
+    "straatEnNummer": "Luttekepoortstraat 5",
+    "straat": "Luttekepoortstraat",
+    "huisnummer": "5",
+    "postcode": "3841AW",
+    "plaatsnaam": "Harderwijk"
+  },
+  {
+    "adres": "Gerdina's Hof 61 4191MX Geldermalsen",
+    "straatEnNummer": "Gerdina's Hof 61",
+    "straat": "Gerdina's Hof",
+    "huisnummer": "61",
+    "postcode": "4191MX",
+    "plaatsnaam": "Geldermalsen"
+  },
+  {
+    "adres": "Zandweg 116 B 3454JZ De Meern",
+    "straatEnNummer": "Zandweg 116 B",
+    "straat": "Zandweg",
+    "huisnummer": "116 B",
+    "postcode": "3454JZ",
+    "plaatsnaam": "De Meern"
+  },
+  {
+    "adres": "Schapendrift 41 8075BA Elspeet",
+    "straatEnNummer": "Schapendrift 41",
+    "straat": "Schapendrift",
+    "huisnummer": "41",
+    "postcode": "8075BA",
+    "plaatsnaam": "Elspeet"
+  },
+  {
+    "adres": "Rostockstraat 8 7418EL Deventer",
+    "straatEnNummer": "Rostockstraat 8",
+    "straat": "Rostockstraat",
+    "huisnummer": "8",
+    "postcode": "7418EL",
+    "plaatsnaam": "Deventer"
+  },
+  {
+    "adres": "Weegakker 72 3851MD Ermelo",
+    "straatEnNummer": "Weegakker 72",
+    "straat": "Weegakker",
+    "huisnummer": "72",
+    "postcode": "3851MD",
+    "plaatsnaam": "Ermelo"
+  },
+  {
+    "adres": "Staat 40 6031 EM Nederweert",
+    "straatEnNummer": "Staat 40",
+    "straat": "Staat",
+    "huisnummer": "40",
+    "postcode": "6031EM",
+    "plaatsnaam": "Nederweert"
+  },
+  {
+    "adres": "Graafschap Hornelaan 116 A 6004HT Weert",
+    "straatEnNummer": "Graafschap Hornelaan 116 A",
+    "straat": "Graafschap Hornelaan",
+    "huisnummer": "116 A",
+    "postcode": "6004HT",
+    "plaatsnaam": "Weert"
+  },
+  {
+    "adres": "Bergveste 4 3992DE Houten",
+    "straatEnNummer": "Bergveste 4",
+    "straat": "Bergveste",
+    "huisnummer": "4",
+    "postcode": "3992DE",
+    "plaatsnaam": "Houten"
+  },
+  {
+    "adres": "Koningin Wilhelminaplein 25 1062HJ Amsterdam",
+    "straatEnNummer": "Koningin Wilhelminaplein 25",
+    "straat": "Koningin Wilhelminaplein",
+    "huisnummer": "25",
+    "postcode": "1062HJ",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Dieselweg 26 3752LB Bunschoten-Spakenburg",
+    "straatEnNummer": "Dieselweg 26",
+    "straat": "Dieselweg",
+    "huisnummer": "26",
+    "postcode": "3752LB",
+    "plaatsnaam": "Bunschoten-Spakenburg"
+  },
+  {
+    "adres": "Lient 43 3829EJ Hooglanderveen",
+    "straatEnNummer": "Lient 43",
+    "straat": "Lient",
+    "huisnummer": "43",
+    "postcode": "3829EJ",
+    "plaatsnaam": "Hooglanderveen"
+  },
+  {
+    "adres": "Passage 52 3431LR Nieuwegein",
+    "straatEnNummer": "Passage 52",
+    "straat": "Passage",
+    "huisnummer": "52",
+    "postcode": "3431LR",
+    "plaatsnaam": "Nieuwegein"
+  },
+  {
+    "adres": "Rijshoutweg 25 1505HL Zaandam",
+    "straatEnNummer": "Rijshoutweg 25",
+    "straat": "Rijshoutweg",
+    "huisnummer": "25",
+    "postcode": "1505HL",
+    "plaatsnaam": "Zaandam"
+  },
+  {
+    "adres": "Papierbaan 50 F 9672 BH Winschoten",
+    "straatEnNummer": "Papierbaan 50 F",
+    "straat": "Papierbaan",
+    "huisnummer": "50 F",
+    "postcode": "9672BH",
+    "plaatsnaam": "Winschoten"
+  },
+  {
+    "adres": "Voorstraat 51 A 8801LA Franeker",
+    "straatEnNummer": "Voorstraat 51 A",
+    "straat": "Voorstraat",
+    "huisnummer": "51 A",
+    "postcode": "8801LA",
+    "plaatsnaam": "Franeker"
+  },
+  {
+    "adres": "Papierbaan 50 F 9672BH Winschoten",
+    "straatEnNummer": "Papierbaan 50 F",
+    "straat": "Papierbaan",
+    "huisnummer": "50 F",
+    "postcode": "9672BH",
+    "plaatsnaam": "Winschoten"
+  },
+  {
+    "adres": "Merwedeweg 10 haven 5629 3198 LH Europoort Rotterdam",
+    "straatEnNummer": "Merwedeweg 10 haven 5629",
+    "straat": "Merwedeweg",
+    "huisnummer": "10 haven 5629",
+    "postcode": "3198LH",
+    "plaatsnaam": "Europoort Rotterdam"
+  },
+  {
+    "adres": "Laanweg 4 3208LC Spijkenisse",
+    "straatEnNummer": "Laanweg 4",
+    "straat": "Laanweg",
+    "huisnummer": "4",
+    "postcode": "3208LC",
+    "plaatsnaam": "Spijkenisse"
+  },
+  {
+    "adres": "Middelland 27 c 2931AK Krimpen aan de Lek",
+    "straatEnNummer": "Middelland 27 c",
+    "straat": "Middelland",
+    "huisnummer": "27 c",
+    "postcode": "2931AK",
+    "plaatsnaam": "Krimpen aan de Lek"
+  },
+  {
+    "adres": "4e Industriestraat 9 C 3133EK Vlaardingen",
+    "straatEnNummer": "4e Industriestraat 9 C",
+    "straat": "",
+    "huisnummer": "4e Industriestraat 9 C",
+    "postcode": "3133EK",
+    "plaatsnaam": "Vlaardingen"
+  },
+  {
+    "adres": "Torenstraat 6 5142ET Waalwijk",
+    "straatEnNummer": "Torenstraat 6",
+    "straat": "Torenstraat",
+    "huisnummer": "6",
+    "postcode": "5142ET",
+    "plaatsnaam": "Waalwijk"
+  },
+  {
+    "adres": "Spuiboulevard 334 3311GR Dordrecht",
+    "straatEnNummer": "Spuiboulevard 334",
+    "straat": "Spuiboulevard",
+    "huisnummer": "334",
+    "postcode": "3311GR",
+    "plaatsnaam": "Dordrecht"
+  },
+  {
+    "adres": "Bredaseweg 185 4872LA Etten-Leur",
+    "straatEnNummer": "Bredaseweg 185",
+    "straat": "Bredaseweg",
+    "huisnummer": "185",
+    "postcode": "4872LA",
+    "plaatsnaam": "Etten-Leur"
+  }
+]

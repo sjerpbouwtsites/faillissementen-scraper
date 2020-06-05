@@ -1,0 +1,210 @@
+[
+  {
+    "adres": "Lunterenstraat 150 2573PT 's-Gravenhage",
+    "straatEnNummer": "Lunterenstraat 150",
+    "straat": "Lunterenstraat",
+    "huisnummer": "150",
+    "postcode": "2573PT",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Platinastraat 39 2718SZ Zoetermeer",
+    "straatEnNummer": "Platinastraat 39",
+    "straat": "Platinastraat",
+    "huisnummer": "39",
+    "postcode": "2718SZ",
+    "plaatsnaam": "Zoetermeer"
+  },
+  {
+    "adres": "Centaurusweg 148 b 5015TA Tilburg",
+    "straatEnNummer": "Centaurusweg 148 b",
+    "straat": "Centaurusweg",
+    "huisnummer": "148 b",
+    "postcode": "5015TA",
+    "plaatsnaam": "Tilburg"
+  },
+  {
+    "adres": "Patroonstraat 13 3861RN Nijkerk",
+    "straatEnNummer": "Patroonstraat 13",
+    "straat": "Patroonstraat",
+    "huisnummer": "13",
+    "postcode": "3861RN",
+    "plaatsnaam": "Nijkerk"
+  },
+  {
+    "adres": "Havenstraat 7 8081GN Elburg",
+    "straatEnNummer": "Havenstraat 7",
+    "straat": "Havenstraat",
+    "huisnummer": "7",
+    "postcode": "8081GN",
+    "plaatsnaam": "Elburg"
+  },
+  {
+    "adres": "Horsterweg 213 3853JC Ermelo",
+    "straatEnNummer": "Horsterweg 213",
+    "straat": "Horsterweg",
+    "huisnummer": "213",
+    "postcode": "3853JC",
+    "plaatsnaam": "Ermelo"
+  },
+  {
+    "adres": "Nijverheidsweg-Noord 60 80 3812PM Amersfoort",
+    "straatEnNummer": "Nijverheidsweg-Noord 60 80",
+    "straat": "Nijverheidsweg-Noord",
+    "huisnummer": "60 80",
+    "postcode": "3812PM",
+    "plaatsnaam": "Amersfoort"
+  },
+  {
+    "adres": "Schiedamsedijk 128 3134KK Vlaardingen",
+    "straatEnNummer": "Schiedamsedijk 128",
+    "straat": "Schiedamsedijk",
+    "huisnummer": "128",
+    "postcode": "3134KK",
+    "plaatsnaam": "Vlaardingen"
+  },
+  {
+    "adres": "Waarden 25 b 3831HA Leusden",
+    "straatEnNummer": "Waarden 25 b",
+    "straat": "Waarden",
+    "huisnummer": "25 b",
+    "postcode": "3831HA",
+    "plaatsnaam": "Leusden"
+  },
+  {
+    "adres": "Pluto 3 1785AN Den Helder",
+    "straatEnNummer": "Pluto 3",
+    "straat": "Pluto",
+    "huisnummer": "3",
+    "postcode": "1785AN",
+    "plaatsnaam": "Den Helder"
+  },
+  {
+    "adres": "Residence Juliana 1 1787PM Julianadorp",
+    "straatEnNummer": "Residence Juliana 1",
+    "straat": "Residence Juliana",
+    "huisnummer": "1",
+    "postcode": "1787PM",
+    "plaatsnaam": "Julianadorp"
+  },
+  {
+    "adres": "Orionweg 55 8938AG Leeuwarden",
+    "straatEnNummer": "Orionweg 55",
+    "straat": "Orionweg",
+    "huisnummer": "55",
+    "postcode": "8938AG",
+    "plaatsnaam": "Leeuwarden"
+  },
+  {
+    "adres": "Meer en Duin 38 2163 HC Lisse",
+    "straatEnNummer": "Meer en Duin 38",
+    "straat": "Meer en Duin",
+    "huisnummer": "38",
+    "postcode": "2163HC",
+    "plaatsnaam": "Lisse"
+  },
+  {
+    "adres": "Haringsestraat 10 a 5443PD Haps",
+    "straatEnNummer": "Haringsestraat 10 a",
+    "straat": "Haringsestraat",
+    "huisnummer": "10 a",
+    "postcode": "5443PD",
+    "plaatsnaam": "Haps"
+  },
+  {
+    "adres": "Rondweg 27 A 5531AJ Bladel",
+    "straatEnNummer": "Rondweg 27 A",
+    "straat": "Rondweg",
+    "huisnummer": "27 A",
+    "postcode": "5531AJ",
+    "plaatsnaam": "Bladel"
+  },
+  {
+    "adres": "Mispelhoefstraat 31 B 5651GK Eindhoven",
+    "straatEnNummer": "Mispelhoefstraat 31 B",
+    "straat": "Mispelhoefstraat",
+    "huisnummer": "31 B",
+    "postcode": "5651GK",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Molenstraat 8 d 5581JV Waalre",
+    "straatEnNummer": "Molenstraat 8 d",
+    "straat": "Molenstraat",
+    "huisnummer": "8 d",
+    "postcode": "5581JV",
+    "plaatsnaam": "Waalre"
+  },
+  {
+    "adres": "de Stater 20 b 5737RV Lieshout",
+    "straatEnNummer": "de Stater 20 b",
+    "straat": "de Stater",
+    "huisnummer": "20 b",
+    "postcode": "5737RV",
+    "plaatsnaam": "Lieshout"
+  },
+  {
+    "adres": "Klokkenlaan 807 5231AX 's-Hertogenbosch",
+    "straatEnNummer": "Klokkenlaan 807",
+    "straat": "Klokkenlaan",
+    "huisnummer": "807",
+    "postcode": "5231AX",
+    "plaatsnaam": "'s-Hertogenbosch"
+  },
+  {
+    "adres": "Esp 248 A 5633AC Eindhoven",
+    "straatEnNummer": "Esp 248 A",
+    "straat": "Esp",
+    "huisnummer": "248 A",
+    "postcode": "5633AC",
+    "plaatsnaam": "Eindhoven"
+  },
+  {
+    "adres": "Bedrijvenpark Twente 305 7602KL Almelo",
+    "straatEnNummer": "Bedrijvenpark Twente 305",
+    "straat": "Bedrijvenpark Twente",
+    "huisnummer": "305",
+    "postcode": "7602KL",
+    "plaatsnaam": "Almelo"
+  },
+  {
+    "adres": "Berkenwoudestraat 40 3076JA Rotterdam",
+    "straatEnNummer": "Berkenwoudestraat 40",
+    "straat": "Berkenwoudestraat",
+    "huisnummer": "40",
+    "postcode": "3076JA",
+    "plaatsnaam": "Rotterdam"
+  },
+  {
+    "adres": "De Wetering 30 4906CT Oosterhout",
+    "straatEnNummer": "De Wetering 30",
+    "straat": "De Wetering",
+    "huisnummer": "30",
+    "postcode": "4906CT",
+    "plaatsnaam": "Oosterhout"
+  },
+  {
+    "adres": "De Wetering 28 4906CT Oosterhout",
+    "straatEnNummer": "De Wetering 28",
+    "straat": "De Wetering",
+    "huisnummer": "28",
+    "postcode": "4906CT",
+    "plaatsnaam": "Oosterhout"
+  },
+  {
+    "adres": "Laan van Hildernisse-N 2 C 4617AE Bergen op Zoom",
+    "straatEnNummer": "Laan van Hildernisse-N 2 C",
+    "straat": "Laan van Hildernisse-N",
+    "huisnummer": "2 C",
+    "postcode": "4617AE",
+    "plaatsnaam": "Bergen op Zoom"
+  },
+  {
+    "adres": "Rozenkransstraat 108 4711GC St",
+    "straatEnNummer": "Rozenkransstraat 108",
+    "straat": "Rozenkransstraat",
+    "huisnummer": "108",
+    "postcode": "4711GC",
+    "plaatsnaam": "St"
+  }
+]

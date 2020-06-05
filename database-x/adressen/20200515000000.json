@@ -1,0 +1,178 @@
+[
+  {
+    "adres": "Keizersgracht 506 1017 EJ Amsterdam",
+    "straatEnNummer": "Keizersgracht 506",
+    "straat": "Keizersgracht",
+    "huisnummer": "506",
+    "postcode": "1017EJ",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Chrysantstraat 15 3551 TS Utrecht",
+    "straatEnNummer": "Chrysantstraat 15",
+    "straat": "Chrysantstraat",
+    "huisnummer": "15",
+    "postcode": "3551TS",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Oosterdreef 30 2153 CA Nieuw-Vennep",
+    "straatEnNummer": "Oosterdreef 30",
+    "straat": "Oosterdreef",
+    "huisnummer": "30",
+    "postcode": "2153CA",
+    "plaatsnaam": "Nieuw-Vennep"
+  },
+  {
+    "adres": "Zandsteen 4 2132MR Hoofddorp",
+    "straatEnNummer": "Zandsteen 4",
+    "straat": "Zandsteen",
+    "huisnummer": "4",
+    "postcode": "2132MR",
+    "plaatsnaam": "Hoofddorp"
+  },
+  {
+    "adres": "Scannerstraat 29 1033RV Amsterdam",
+    "straatEnNummer": "Scannerstraat 29",
+    "straat": "Scannerstraat",
+    "huisnummer": "29",
+    "postcode": "1033RV",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Amstelzijde 49 1184 TZ Amstelveen",
+    "straatEnNummer": "Amstelzijde 49",
+    "straat": "Amstelzijde",
+    "huisnummer": "49",
+    "postcode": "1184TZ",
+    "plaatsnaam": "Amstelveen"
+  },
+  {
+    "adres": "Vlotlaan 634 2681TX Monster",
+    "straatEnNummer": "Vlotlaan 634",
+    "straat": "Vlotlaan",
+    "huisnummer": "634",
+    "postcode": "2681TX",
+    "plaatsnaam": "Monster"
+  },
+  {
+    "adres": "Marconistraat 68 x 2809PE Gouda",
+    "straatEnNummer": "Marconistraat 68 x",
+    "straat": "Marconistraat",
+    "huisnummer": "68 x",
+    "postcode": "2809PE",
+    "plaatsnaam": "Gouda"
+  },
+  {
+    "adres": "Brassersplein 1 2612CT Delft",
+    "straatEnNummer": "Brassersplein 1",
+    "straat": "Brassersplein",
+    "huisnummer": "1",
+    "postcode": "2612CT",
+    "plaatsnaam": "Delft"
+  },
+  {
+    "adres": "van der Hagenstraat 3 2722NT Zoetermeer",
+    "straatEnNummer": "van der Hagenstraat 3",
+    "straat": "van der Hagenstraat",
+    "huisnummer": "3",
+    "postcode": "2722NT",
+    "plaatsnaam": "Zoetermeer"
+  },
+  {
+    "adres": "Sonoystraat 1 2581VH 's-Gravenhage",
+    "straatEnNummer": "Sonoystraat 1",
+    "straat": "Sonoystraat",
+    "huisnummer": "1",
+    "postcode": "2581VH",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Rembrandtstraat 30 2671GE Naaldwijk",
+    "straatEnNummer": "Rembrandtstraat 30",
+    "straat": "Rembrandtstraat",
+    "huisnummer": "30",
+    "postcode": "2671GE",
+    "plaatsnaam": "Naaldwijk"
+  },
+  {
+    "adres": "Hovenierstraat 120 2671DB Naaldwijk",
+    "straatEnNummer": "Hovenierstraat 120",
+    "straat": "Hovenierstraat",
+    "huisnummer": "120",
+    "postcode": "2671DB",
+    "plaatsnaam": "Naaldwijk"
+  },
+  {
+    "adres": "Stenograaf 1 6921EX Duiven",
+    "straatEnNummer": "Stenograaf 1",
+    "straat": "Stenograaf",
+    "huisnummer": "1",
+    "postcode": "6921EX",
+    "plaatsnaam": "Duiven"
+  },
+  {
+    "adres": "Kamerlingh Onnesweg 18 6717AK Ede",
+    "straatEnNummer": "Kamerlingh Onnesweg 18",
+    "straat": "Kamerlingh Onnesweg",
+    "huisnummer": "18",
+    "postcode": "6717AK",
+    "plaatsnaam": "Ede"
+  },
+  {
+    "adres": "Ommestraat 1 4041AP Kesteren",
+    "straatEnNummer": "Ommestraat 1",
+    "straat": "Ommestraat",
+    "huisnummer": "1",
+    "postcode": "4041AP",
+    "plaatsnaam": "Kesteren"
+  },
+  {
+    "adres": "Slotemaker de Bruineweg 52 s 6533CJ Nijmegen",
+    "straatEnNummer": "Slotemaker de Bruineweg 52 s",
+    "straat": "Slotemaker de Bruineweg",
+    "huisnummer": "52 s",
+    "postcode": "6533CJ",
+    "plaatsnaam": "Nijmegen"
+  },
+  {
+    "adres": "Chrysantstraat 15 3551TS Utrecht",
+    "straatEnNummer": "Chrysantstraat 15",
+    "straat": "Chrysantstraat",
+    "huisnummer": "15",
+    "postcode": "3551TS",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Fahrenheitstraat 648 2561DL 's-Gravenhage",
+    "straatEnNummer": "Fahrenheitstraat 648",
+    "straat": "Fahrenheitstraat",
+    "huisnummer": "648",
+    "postcode": "2561DL",
+    "plaatsnaam": "'s-Gravenhage"
+  },
+  {
+    "adres": "Keizersgracht 506 1017EJ Amsterdam",
+    "straatEnNummer": "Keizersgracht 506",
+    "straat": "Keizersgracht",
+    "huisnummer": "506",
+    "postcode": "1017EJ",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Antwerpsestraat 267 4645BH Putte",
+    "straatEnNummer": "Antwerpsestraat 267",
+    "straat": "Antwerpsestraat",
+    "huisnummer": "267",
+    "postcode": "4645BH",
+    "plaatsnaam": "Putte"
+  },
+  {
+    "adres": "Wilhelminastraat 44 4571JM Axel",
+    "straatEnNummer": "Wilhelminastraat 44",
+    "straat": "Wilhelminastraat",
+    "huisnummer": "44",
+    "postcode": "4571JM",
+    "plaatsnaam": "Axel"
+  }
+]

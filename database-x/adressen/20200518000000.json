@@ -1,0 +1,202 @@
+[
+  {
+    "adres": "Burgemeester Stramanweg 105 E 1101AA Amsterdam",
+    "straatEnNummer": "Burgemeester Stramanweg 105 E",
+    "straat": "Burgemeester Stramanweg",
+    "huisnummer": "105 E",
+    "postcode": "1101AA",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "tt. Melissaweg 61 1033SP Amsterdam",
+    "straatEnNummer": "tt. Melissaweg 61",
+    "straat": "tt. Melissaweg",
+    "huisnummer": "61",
+    "postcode": "1033SP",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "tt. Melissaweg 49 1033SP Amsterdam",
+    "straatEnNummer": "tt. Melissaweg 49",
+    "straat": "tt. Melissaweg",
+    "huisnummer": "49",
+    "postcode": "1033SP",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Industrieweg 3 5281 RW Boxtel",
+    "straatEnNummer": "Industrieweg 3",
+    "straat": "Industrieweg",
+    "huisnummer": "3",
+    "postcode": "5281RW",
+    "plaatsnaam": "Boxtel"
+  },
+  {
+    "adres": "Archimedeslaan 61 3584 BA Utrecht",
+    "straatEnNummer": "Archimedeslaan 61",
+    "straat": "Archimedeslaan",
+    "huisnummer": "61",
+    "postcode": "3584BA",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Hoge Naarderweg 3 1217 AB Hilversum",
+    "straatEnNummer": "Hoge Naarderweg 3",
+    "straat": "Hoge Naarderweg",
+    "huisnummer": "3",
+    "postcode": "1217AB",
+    "plaatsnaam": "Hilversum"
+  },
+  {
+    "adres": "Soestdijkerstraatweg 66 a 1213 XE Hilversum",
+    "straatEnNummer": "Soestdijkerstraatweg 66 a",
+    "straat": "Soestdijkerstraatweg",
+    "huisnummer": "66 a",
+    "postcode": "1213XE",
+    "plaatsnaam": "Hilversum"
+  },
+  {
+    "adres": "Passage Molenpoort 118 6511HX Nijmegen",
+    "straatEnNummer": "Passage Molenpoort 118",
+    "straat": "Passage Molenpoort",
+    "huisnummer": "118",
+    "postcode": "6511HX",
+    "plaatsnaam": "Nijmegen"
+  },
+  {
+    "adres": "Beukenlaan 39 7151XL Eibergen",
+    "straatEnNummer": "Beukenlaan 39",
+    "straat": "Beukenlaan",
+    "huisnummer": "39",
+    "postcode": "7151XL",
+    "plaatsnaam": "Eibergen"
+  },
+  {
+    "adres": "Locatellikade 1 1076AZ Amsterdam",
+    "straatEnNummer": "Locatellikade 1",
+    "straat": "Locatellikade",
+    "huisnummer": "1",
+    "postcode": "1076AZ",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Plakke Venstraat 12 1316HX Almere",
+    "straatEnNummer": "Plakke Venstraat 12",
+    "straat": "Plakke Venstraat",
+    "huisnummer": "12",
+    "postcode": "1316HX",
+    "plaatsnaam": "Almere"
+  },
+  {
+    "adres": "Heidelberglaan 8 3584CS Utrecht",
+    "straatEnNummer": "Heidelberglaan 8",
+    "straat": "Heidelberglaan",
+    "huisnummer": "8",
+    "postcode": "3584CS",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Lange Schaft 5 3991AP Houten",
+    "straatEnNummer": "Lange Schaft 5",
+    "straat": "Lange Schaft",
+    "huisnummer": "5",
+    "postcode": "3991AP",
+    "plaatsnaam": "Houten"
+  },
+  {
+    "adres": "Kuipersweg 2 T 3449JA Woerden",
+    "straatEnNummer": "Kuipersweg 2 T",
+    "straat": "Kuipersweg",
+    "huisnummer": "2 T",
+    "postcode": "3449JA",
+    "plaatsnaam": "Woerden"
+  },
+  {
+    "adres": "Dorpsstr vo Steenstr 128 3732HL De Bilt",
+    "straatEnNummer": "Dorpsstr vo Steenstr 128",
+    "straat": "Dorpsstr vo Steenstr",
+    "huisnummer": "128",
+    "postcode": "3732HL",
+    "plaatsnaam": "De Bilt"
+  },
+  {
+    "adres": "Mariahoek 7 3511LE Utrecht",
+    "straatEnNummer": "Mariahoek 7",
+    "straat": "Mariahoek",
+    "huisnummer": "7",
+    "postcode": "3511LE",
+    "plaatsnaam": "Utrecht"
+  },
+  {
+    "adres": "Energieweg 21 3481MC Harmelen",
+    "straatEnNummer": "Energieweg 21",
+    "straat": "Energieweg",
+    "huisnummer": "21",
+    "postcode": "3481MC",
+    "plaatsnaam": "Harmelen"
+  },
+  {
+    "adres": "Stenograaf 1 6921 EX Duiven",
+    "straatEnNummer": "Stenograaf 1",
+    "straat": "Stenograaf",
+    "huisnummer": "1",
+    "postcode": "6921EX",
+    "plaatsnaam": "Duiven"
+  },
+  {
+    "adres": "Oosterdreef 30 2153CA Nieuw-Vennep",
+    "straatEnNummer": "Oosterdreef 30",
+    "straat": "Oosterdreef",
+    "huisnummer": "30",
+    "postcode": "2153CA",
+    "plaatsnaam": "Nieuw-Vennep"
+  },
+  {
+    "adres": "Industrielaan 1 5405AA Uden",
+    "straatEnNummer": "Industrielaan 1",
+    "straat": "Industrielaan",
+    "huisnummer": "1",
+    "postcode": "5405AA",
+    "plaatsnaam": "Uden"
+  },
+  {
+    "adres": "Bloeme-weide 14 7448 PX Haarle",
+    "straatEnNummer": "Bloeme-weide 14",
+    "straat": "Bloeme-weide",
+    "huisnummer": "14",
+    "postcode": "7448PX",
+    "plaatsnaam": "Haarle"
+  },
+  {
+    "adres": "Bloeme-weide 14 7448PX Haarle",
+    "straatEnNummer": "Bloeme-weide 14",
+    "straat": "Bloeme-weide",
+    "huisnummer": "14",
+    "postcode": "7448PX",
+    "plaatsnaam": "Haarle"
+  },
+  {
+    "adres": "Kolding 14 2993LN Barendrecht",
+    "straatEnNummer": "Kolding 14",
+    "straat": "Kolding",
+    "huisnummer": "14",
+    "postcode": "2993LN",
+    "plaatsnaam": "Barendrecht"
+  },
+  {
+    "adres": "Burgemeester Stramanweg 105 e 1101 AA Amsterdam",
+    "straatEnNummer": "Burgemeester Stramanweg 105 e",
+    "straat": "Burgemeester Stramanweg",
+    "huisnummer": "105 e",
+    "postcode": "1101AA",
+    "plaatsnaam": "Amsterdam"
+  },
+  {
+    "adres": "Kraaivenstraat 12 5048AB Tilburg",
+    "straatEnNummer": "Kraaivenstraat 12",
+    "straat": "Kraaivenstraat",
+    "huisnummer": "12",
+    "postcode": "5048AB",
+    "plaatsnaam": "Tilburg"
+  }
+]
