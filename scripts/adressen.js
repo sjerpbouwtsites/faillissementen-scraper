@@ -1,166 +1,128 @@
 const fs = require("fs");
 const axios = require("axios");
 const { opslagPad, opties, nutsPad } = require("../config.js");
-const { pakScript, pakOpslag, maakOpslagPad, schrijfOpslag } = require(nutsPad);
-const dagenDb = pakScript("dagen-database");
+const nuts = require(nutsPad);
+const dagenDb = nuts.pakScript("dagen-database");
 
 async function consolideerAdressen() {
   // losse json naar één json bestand
   // schrijf naar db dat adressen geconsolideerd
 
-  return new Promise(async (resolve, reject) => {
-    const { dagenAdresTePakken } = await dagenDb.pakDagenData();
+  
+  return new Promise((resolve) => {
+    dagenDb.pakDagenData().then((dagenData) => {
+      const dagenAdresTePakken = dagenData.dagenAdresTePakken
+      if (!dagenAdresTePakken.length) {
+        resolve("klaar");
+        return;
+      }
+    
+      const adressenDb = pakAdressenDb();
 
-    if (!dagenAdresTePakken.length) {
-      resolve("klaar");
-      return;
-    }
+      // teConsolideren is wat verwerkt gaat worden
+      // nieuwGeconsolideerdeAdressen komt van & wordt adressen.json
+      return bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb);      
 
-    let adressenDb;
-    if (fs.existsSync(maakOpslagPad("adressen"))) {
-      console.log("PAK BESTAANDE ADRRESSE");
-      adressenDb = JSON.parse(fs.readFileSync(maakOpslagPad("adressen")));
-    } else {
-      console.log("INSTALLATIECYCLE");
-      // niets aan de hand, installatiecyclus
-      adressenDb = [];
-    }
+    }).then(({ teConsolideren }) =>{
+      const aantalTeConsolideren = teConsolideren.length;
+      if (!aantalTeConsolideren) {
+        resolve("klaar");
+      }
 
-    const alleGeconsolideerdeAdressenVol = adressenDb.map((a) => a.adres);
+      const exitTijd = aantalTeConsolideren * 1111 + 2000;
+      console.log("Adressen klaar over", exitTijd / 60000, " minuten");
 
-    // vinden welke adressen nog niet geconsolideerd zijn
-    let teConsolideren = await dagenAdresTePakken
-      .map((dag) => {
-        return pakOpslag(`adressen/${dag.route}`);
-      })
-      .flat()
-      .filter((a) => {
-        return !alleGeconsolideerdeAdressenVol.includes(a.adres);
+      const lijstMetGeoPromises = teConsolideren.map((dagObject, index) => {
+        return new Promise((resolveGeoLos, rejectGeoLos) => {
+          setTimeout(() => {
+            geoRequestFunc(dagObject, index, aantalTeConsolideren)
+            .then(([statusCode, antwoordObject]) => {
+              antwoordObject.statusCode = statusCode;
+              if (['429', '404'].includes(statusCode)) {
+                rejectGeoLos(antwoordObject)
+              } else {
+                resolveGeoLos(antwoordObject)
+              }
+            }).catch(err => rejectGeoLos(err)); // @TODO onduidelijke staat
+          }, index * 1311);
+        });
+
       });
 
-    if (!teConsolideren.length) {
-      resolve("klaar");
-      return;
-    }
+      
 
-    let nieuwGeconsolideerd = [].concat(adressenDb);
-    const geoRequestsBekend = [];
-    // voor alle te consolideren request doen of..
+      Promise.allSettled(lijstMetGeoPromises).then((geoPromiseRes) => {
+        // gebruik nieuwGeconsolideerdeAdressen
+        const succesvolleAdressen = geoPromiseRes
+        .filter(gpr => gpr.status === 'fulfilled')
+        .map(gpr => gpr.value)
+        
+        const gerateLimitteAdressen = geoPromiseRes
+        .filter(gpr => gpr.status !== 'fulfilled' && gpr?.value?.statusCode === '429')
+        .map(gpr => gpr.value)
 
-    teConsolideren = teConsolideren.filter((adres) => {
-      const bestandsNaam = geopadUitAdres(adres);
-      return true;
-      // @TODOdit optimalisatie sloopt m... parsed request niet meer
-      // if (fs.existsSync(bestandsNaam)) {
-      //   geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
-      //   return false;
-      // } else {
-      //   return true; // dus als bestand niet exist dan alsog requests doen.
-      // }
-    });
-    nieuwGeconsolideerd = nieuwGeconsolideerd.concat(geoRequestsBekend);
+        const ongevondenAdressen = geoPromiseRes
+        .filter(gpr => gpr.status !== 'fulfilled' && gpr?.value?.statusCode === '404')
+        .map(gpr => gpr.value)        
 
-    const geskiptWegensRateLimit = [];
-    const exitTijd = teConsolideren.length * 1111 + 2000;
-    teConsolideren.forEach((consolideer, index) => {
-      setTimeout(function() {
-        axios
-          .get(
-            "https://eu1.locationiq.com/v1/search.php?key=b7a32fa378c135&q=" +
-              encodeURIComponent(
-                `${consolideer.plaatsnaam} ${consolideer.straat}`
-              ) +
-              "&format=json"
-          )
-          .then((r) => {
-            // console.log(c);
-            // console.log(r.data);
-            const p = geopadUitAdres(consolideer) + ".json";
-            fs.writeFileSync(p, JSON.stringify(r.data[0]));
+        const nweAdresDb = pakAdressenDb().concat(succesvolleAdressen)
+        console.log(nweAdresDb)
 
-            const iplus = index + 1;
-            if (iplus % 25 === 0) {
-              const aantalTeDoen = teConsolideren.length - iplus;
-              const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
-              console.clear();
-              console.log(
-                `${iplus} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`
-              );
-            }
-            const b = Object.assign(consolideer, {
-              lat: r.data[0].lat,
-              lon: r.data[0].lon,
-              osm_id: r.data[0].osm_id,
-            });
-            nieuwGeconsolideerd.push(b);
-          })
-          .catch((axiosErr) => {
-            if (!axiosErr.response) {
-              console.error(axiosErr);
-              return;
-            }
-
-            if (axiosErr.response.status === 429) {
-              geskiptWegensRateLimit.push(consolideer);
-              console.log("rate limit !", new Date().getSeconds());
-            } else if (axiosErr.response.status === 404) {
-              console.log("adres 404 faal", consolideer.adres);
-            }
-          });
-      }, index * 1311);
-    });
-
-    // na alle requests resolven...
-    console.log("Adressen klaar over", exitTijd / 60000, " minuten");
-    setTimeout(function() {
-      // console.log("schrijf nieuw geonsolideerd");
-      // console.log(nieuwGeconsolideerd);
-      schrijfOpslag(`adressen`, nieuwGeconsolideerd);
-      schrijfOpslag(`ratelimit-adressen`, geskiptWegensRateLimit);
-      dagenDb.schrijfAdressenGepakt(dagenAdresTePakken);
-      resolve("");
-    }, exitTijd);
+        nuts.schrijfOpslag(`adressen`, nweAdresDb);
+        nuts.schrijfOpslag(`ratelimit-adressen`, gerateLimitteAdressen);
+        // @TODO schrijf opslag ongevonden adressen
+        console.log(dagenDb)
+        dagenDb.schrijfAdressenGepakt(succesvolleAdressen);
+        resolve("");
+      });      
+    }) 
   });
 }
 
 async function zoekAdressen() {
-  return new Promise(async (resolve, reject) => {
+  return new Promise((resolveZoekAdressen, rejectZoekAdressen) => {
     try {
-      const { dagenAdresTePakken } = await dagenDb.pakDagenData();
-
-      // interval autovernietigd als alle dagen doorzocht
-      let intervalTeller = 0;
-      let resolveInterval = setInterval(function() {
-        if (dagenAdresTePakken.filter((d) => !d.adresGepakt).length === 0) {
-          clearInterval(resolveInterval);
-          resolve(dagenAdresTePakken);
-        } else {
-          intervalTeller++;
-        }
-      }, 1000);
-      dagenAdresTePakken.forEach((dagTeVerrijken, index) => {
-        const draaiTijd = index * 800;
-        setTimeout(async function() {
-          ///////////////////////////
-          //////////////////////////
-          const pcClusters = await relevantePublicatieClusters(
-            dagTeVerrijken.route
-          );
-          const allePublicatiesAlsString = pakPublicatiesEnSlaZePlat(
-            pcClusters
-          );
-          const uniekeAdressen = uniekeAdressenUitString(
-            allePublicatiesAlsString
-          );
-          /////////////////////
-          ///////////////!!!!!!!!!/////
-          dagTeVerrijken.adresGepakt = true;
-
-          schrijfOpslag(`adressen/${dagTeVerrijken.route}`, uniekeAdressen);
-        }, draaiTijd);
-      });
+      // @TODO alle dagen? klopt dat wel??
+      dagenDb.pakDagenData().then((dagenDbStaat) => {
+        const dagObjectenVerzameling = dagenDbStaat.dagenAdresTePakken;
+        const zoekAdresPromises = dagObjectenVerzameling.map((dagObject, index) => {
+          return new Promise((resolveZoekAdres, rejectZoekAdres) => {
+            const draaiTijd = index * 800;
+            setTimeout(function() {
+              ///////////////////////////
+              //////////////////////////
+              relevantePublicatieClusters(dagObject.route)
+                .then((pcClusters) => {
+                  const allePublicatiesAlsString = pakPublicatiesEnSlaZePlat(pcClusters);
+                  const uniekeAdressen = uniekeAdressenUitString(allePublicatiesAlsString);
+                  /////////////////////
+                  ///////////////!!!!!!!!!/////
+                  dagObject.adresGepakt = true;
+                  nuts.schrijfOpslag(`adressen/${dagObject.route}`, uniekeAdressen);
+                  resolveZoekAdres(dagObject);
+                })
+                .catch((err) => {
+                  console.error("fout in zoekAdressen interne promise");
+                  rejectZoekAdres(err);
+                });
+            }, draaiTijd);
+          });
+        
+        });
+        
+        Promise.allSettled(zoekAdresPromises)
+          .then((zoekAdresPromisesRes) => {
+            const succesvolleAdressen = zoekAdresPromisesRes
+              .filter(zap => zap.status === 'fulfilled')
+              .map(zap => zap.value)
+            resolveZoekAdressen(succesvolleAdressen);
+          })
+          .catch((err) => {
+            //@TODO
+            rejectZoekAdressen(err);
+          });
+      }); // dagenDb promise
     } catch (error) {
-      clearInterval(resolveInterval);
       reject(error);
     }
   });
@@ -198,9 +160,7 @@ function uniekeAdressenUitString(pcString) {
     });
   const regexMatches = w
     .map((s) => {
-      const m = s.match(
-        /(.+\d+\s?\w?)[,]?\s(\d{4}\s*[a-zA-Z]{2})[,]?\s([a-zA-z\-\'\s]*)[,.]+/
-      );
+      const m = s.match(/(.+\d+\s?\w?)[,]?\s(\d{4}\s*[a-zA-Z]{2})[,]?\s([a-zA-z\-'\s]*)[,.]+/);
 
       if (!m && !s.toLowerCase().includes("geheim adres")) {
         if (opties.volleDebug) {
@@ -212,15 +172,11 @@ function uniekeAdressenUitString(pcString) {
       // laatste meuk eraf... geen komma's enzo
       let mvol = m[0].trim();
       let l = mvol[mvol.length - 1];
-      let vol = (l === "." ? mvol.substring(0, mvol.length - 1) : mvol)
-        .trim()
-        .replace(/\,/g, "");
+      let vol = (l === "." ? mvol.substring(0, mvol.length - 1) : mvol).trim().replace(/,/g, "");
       let postcode = m[2].replace(" ", "");
 
       const straatEnNummer = m[1];
-      const straatNummerLos = straatEnNummer
-        .match(/(\D*)(\d+.*)/)
-        .map((a) => a.trim());
+      const straatNummerLos = straatEnNummer.match(/(\D*)(\d+.*)/).map((a) => a.trim());
 
       return JSON.stringify({
         adres: vol,
@@ -271,9 +227,9 @@ function relevantePublicatieClusters(route) {
   const toegestaneClusters = opties.toegestaneClusters;
   const ontoegestaneClusters = opties.ontoegestaneClusters;
 
-  return new Promise(async (resolve, reject) => {
+  return new Promise((resolve, reject) => {
     try {
-      const responseBestand = await pakOpslag(`responses/rechtbank/${route}`);
+      const responseBestand = nuts.pakOpslag(`responses/rechtbank/${route}`);
       const publicatieClusters = responseBestand.Instanties.map((instantie) => {
         return instantie.Publicatieclusters;
       })
@@ -294,6 +250,114 @@ function relevantePublicatieClusters(route) {
       reject(error);
     }
   });
+}
+
+function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(locationIQUrl(adresObject))
+      .then((r) => {
+        // sla geo request op in db
+        const p = geopadUitAdres(adresObject) + ".json";
+        fs.writeFileSync(p, JSON.stringify(r.data[0]));
+
+        // voortgang printen naar console.
+        if ((requestIndex + 1) % 25 === 0) {
+          const aantalTeDoen = totaleAantalRequests - (requestIndex + 1);
+          const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
+          console.clear();
+          console.log(`${requestIndex + 1} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`);
+        }
+        const b = Object.assign(adresObject, {
+          lat: r.data[0].lat,
+          lon: r.data[0].lon,
+          osm_id: r.data[0].osm_id,
+        });
+        resolve(["200", b]);
+      })
+      .catch((axiosErr) => {
+        if (!axiosErr.response) {
+          console.error(axiosErr);
+          return;
+        }
+
+        if (axiosErr.response.status === 429) {
+          resolve(["429", adresObject]);
+        } else if (axiosErr.response.status === 404) {
+          resolve(["404", adresObject]);
+        } else {
+          reject(axiosErr);
+        }
+      });
+  });
+}
+
+/**
+ * Helper. URL veilige location IQ url.
+ * @param {} adresObject
+ */
+function locationIQUrl(adresObject) {
+  const adresGeencodeerd = encodeURIComponent(`${adresObject.plaatsnaam} ${adresObject.straat}`);
+  return `https://eu1.locationiq.com/v1/search.php?key=b7a32fa378c135&q=${adresGeencodeerd}&format=json`;
+}
+
+/**
+ * Helper.
+ * Bereid nieuw te schrijven object nieuwGeconsolideerdeAdressen voor
+ * Bereid lijst met teConsolideren adressen voor.
+ * @param {dagObjecten[]} dagenAdresTePakken
+ * @param {adresObjecten[]} adressenDb
+ */
+function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
+  return new Promise((resolve) => {
+    // lijst met uitgeschreven volledige adres-adressen
+    const uniekeBestaandeAdressen = new Set(adressenDb.map((a) => a.adres));
+
+    // vinden welke adressen nog niet geconsolideerd zijn
+    let teConsolideren = dagenAdresTePakken
+      .map((dag) => {
+        return nuts.pakOpslag(`adressen/${dag.route}`);
+      })
+      .flat()
+      .filter((a) => {
+        return !uniekeBestaandeAdressen.has(a.adres);
+      });
+
+    resolve({
+      teConsolideren,
+    });
+    // @TODO
+    // const geoRequestsBekend = [];
+
+    // teConsolideren = teConsolideren.filter((adres) => {
+    //   const bestandsNaam = geopadUitAdres(adres);
+    //   return true;
+    //   // @TODOdit optimalisatie sloopt m... parsed request niet meer
+    //   // if (fs.existsSync(bestandsNaam)) {
+    //   //   geoRequestsBekend.push(JSON.parse(fs.readFileSync(bestandsNaam)));
+    //   //   return false;
+    //   // } else {
+    //   //   return true; // dus als bestand niet exist dan alsog requests doen.
+    //   // }
+    // });
+    // nieuwGeconsolideerdeAdressen = nieuwGeconsolideerdeAdressen.concat(geoRequestsBekend);
+  });
+}
+
+/**
+ * helper die adressen db geeft, indien die bestaat, zo niet lege []
+ */
+function pakAdressenDb() {
+  let adressenDb;
+  if (fs.existsSync(nuts.maakOpslagPad("adressen"))) {
+    console.log("PAK BESTAANDE ADRRESSE");
+    adressenDb = JSON.parse(fs.readFileSync(nuts.maakOpslagPad("adressen")));
+  } else {
+    console.log("INSTALLATIECYCLE");
+    // niets aan de hand, installatiecyclus
+    adressenDb = [];
+  }
+  return adressenDb;
 }
 
 module.exports = {

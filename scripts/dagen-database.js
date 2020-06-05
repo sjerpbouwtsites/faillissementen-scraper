@@ -1,11 +1,10 @@
 const fs = require("fs");
-const { opties, nutsPad, opslagPad } = require("../config.js");
+const config = require("../config.js");
 const {
   schrijfOpslag,
   maakOpslagPad,
-  pakOpslag,
   DateNaarDatumGetal,
-} = require(nutsPad);
+} = require(config.nutsPad);
 
 /**
  * CRUD voor de dagenDb.json.
@@ -19,8 +18,8 @@ const {
 function maakDagenDb() {
   return new Promise((resolve) => {
     var dagenLijst = pakDagenVerzameling(
-      new Date(opties.startDatum),
-      new Date(opties.eindDatum)
+      new Date(config.opties.startDatum),
+      new Date(config.opties.eindDatum)
     );
     const dagenVoorDb = dagenLijst.map((d) => {
       return (ret = {
@@ -44,10 +43,10 @@ function pakDagenData() {
     let dagenDb;
     let makenGebruikVanNieuweDb = !fs.existsSync(maakOpslagPad("dagenDb"));
     if (makenGebruikVanNieuweDb) {
-      console.log("maak nieuwe db");
+      //console.log("maak nieuwe db");
       dagenDb = await maakDagenDb();
     } else {
-      const gelezenDb = fs.readFileSync(opslagPad + "/dagenDb.json");
+      const gelezenDb = fs.readFileSync(config.opslagPad + "/dagenDb.json");
       dagenDb = JSON.parse(gelezenDb);
 
       // console.log("pak bestaande db");
@@ -84,17 +83,18 @@ function pakDagenData() {
     // consolideerTelkensOpnieuw is eigenlijk een debugOptie
     let dagenTeConsolideren = dagenDb.filter((dbDag) => {
       const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
+      const consolidatieBool = !dbDag.geconsolideerd || config.opties.consolideerTelkensOpnieuw;
       return (
-        (dbDag.gescraped &&
-          dbDag.hadMelding &&
-          dbDag.adresGepakt &&
-          vglMetVandaag <= vandaag &&
-          !dbDag.geconsolideerd) ||
-        (opties.consolideerTelkensOpnieuw && vglMetVandaag <= vandaag)
+        dbDag.gescraped &&
+        dbDag.hadMelding &&
+        dbDag.adresGepakt &&
+        vglMetVandaag <= vandaag &&
+        consolidatieBool
       );
     });
 
-    console.log(
+    if(config.opties.debugDb) {
+       console.log(
       "db status\n tot:",
       dagenDb.length,
       "te doen:",
@@ -104,6 +104,9 @@ function pakDagenData() {
       "te consolideren: ",
       dagenTeConsolideren.length
     );
+       } else {
+         console.log()
+       }
 
     resolve({
       dagen: dagenDb,

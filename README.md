@@ -35,3 +35,5 @@ dev@sjerpbouwtsites.nl
 - benaming 'consolidatie' en 'adressen' is onduidelijk en door elkaar
 - die timeout logica om door lijsten met te verwerken requests & hun ratelimiters heen te gaan is ruk
 - rare discrepantie tussen hoeveelheid adressen in geo en 'adressen beschikbaar' vanuit fs?
+- 'adres' voor locatieobjecten is kut want adres.adres. 'dag' voor een dagobject is ook kut.
+- dagenDb moet niet een promise teruggeven. zorgt voor ellende.

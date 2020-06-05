@@ -1,7 +1,8 @@
-const { nutsPad, opslagPad } = require("../config");
+const { nutsPad, goedPad } = require("../config");
 const nuts = require(nutsPad);
 var clc = require("cli-color");
 const fs = require("fs");
+
 
 async function print() {
   console.log(
@@ -32,7 +33,8 @@ async function print() {
 `
     )
   );
-  const marxCitaten = JSON.parse(fs.readFileSync(`${opslagPad}/marx.json`));
+
+    const marxCitaten = JSON.parse(fs.readFileSync(`${goedPad}/marx.json`));
   const randIndex = Math.floor(Math.random() * marxCitaten.length);
 
   const citaat = marxCitaten[randIndex];
@@ -41,10 +43,7 @@ async function print() {
   citaat.split(" ").forEach((c, index) => {
     citaatTnt += c;
     opknipIndex = Math.floor(citaatTnt.length / 45);
-    const eerder =
-      typeof citaatOpgeknipt[opknipIndex] !== "undefined"
-        ? citaatOpgeknipt[opknipIndex]
-        : "";
+    const eerder = typeof citaatOpgeknipt[opknipIndex] !== "undefined" ? citaatOpgeknipt[opknipIndex] : "";
     citaatOpgeknipt[opknipIndex] = eerder + " " + c;
   });
 

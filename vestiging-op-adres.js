@@ -1,13 +1,14 @@
 const { nutsPad } = require("./config.js");
-const { pakScript, pakOpslag, legeCatch } = require(nutsPad);
+const { pakScript, legeCatch } = require(nutsPad);
 const axios = require("axios");
 const fs = require("fs");
+const logat = require('logat');
 
 // bij ophalen adres: draaien per adres;
 // bij handmatig aanroepen
 
 async function init() {
-  const failAdressen = await pakOpslag("adressen");
+  const failAdressen = pakOpslag("adressen");
 
   const wAdres = failAdressen[0];
 
@@ -26,4 +27,4 @@ async function init() {
     .catch(legeCatch);
 }
 
-init();
+// init();

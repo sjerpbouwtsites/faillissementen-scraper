@@ -40,9 +40,7 @@ function pakOpslag(subPad, moetBestaan = false) {
   const p = maakOpslagPad(subPad);
   if (!fs.existsSync(p)) {
     if (moetBestaan) {
-      throw new Error(
-        "bestand bestaat niet" + typeof p === "string" ? p : JSON.stringify(p)
-      );
+      throw new Error("bestand bestaat niet" + typeof p === "string" ? p : JSON.stringify(p));
     }
   } else {
     const b = fs.readFileSync(p);
@@ -64,10 +62,7 @@ function schrijfTemp(bla, achtervoeging = "") {
     fs.mkdirSync(tempPad);
   }
 
-  fs.writeFileSync(
-    `tempPad${achtervoeging}.json`,
-    JSON.stringify(bla, null, "  ")
-  );
+  fs.writeFileSync(`tempPad${achtervoeging}.json`, JSON.stringify(bla, null, "  "));
 }
 
 function DateNaarDatumGetal(dateObjectOfISOString) {
@@ -93,5 +88,5 @@ module.exports = {
   maakOpslagPad,
   pakScript,
   pakOpslag,
-  schrijfOpslag,
+  schrijfOpslag
 };

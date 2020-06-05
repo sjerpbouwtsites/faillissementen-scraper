@@ -16,7 +16,8 @@ async function consolideerResponsesEnAdressen() {
     // het is het continu reduceren van de objecten totdat alleen de publicaties over zijn.
     const publicatieData = maakPublicatieData(dagenTeConsolideren);
 
-    const adressen = await pakOpslag("adressen");
+    const adressen = pakOpslag("adressen");
+    console.log(adressen, typeof adressen, adressen instanceof Promise)
 
     const verrijkteAdressen = adressen.map((kaalAdres) => {
       const pubs = publicatieData
