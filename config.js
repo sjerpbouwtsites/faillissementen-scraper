@@ -4,11 +4,12 @@ const path = require("path");
 // als je snel wilt testen neem een kleine tijdsspanne.Voorbeeld: 5 mei 2020 tot en met 7 mei 2020.
 // als je de app uitgebreid wilt gebruiken zet dan een eindDatum ver in de toekomst. De app is intelligent genoeg om te weten welke datums nog niet geweest zijn
 // rechtbankgegevens worden gepubliceerd sinds januari 2020.
-const startDatum = "2020-01-01";
-const eindDatum = "2022-12-31";
+const startDatum = "2020-05-05";
+const eindDatum = "2020-05-07";
 
 const opslagPad = path.resolve("database/");
 const scriptPad = path.resolve("scripts/");
+const goedPad = path.resolve("goed/");
 const nutsPad = path.resolve("scripts/nuts/");
 const tempPad = path.resolve("temp/");
 const maanden = [
@@ -33,6 +34,7 @@ module.exports = {
     startDatum,
     eindDatum,
     volleDebug: false,
+    debugDb: false,
     toegestaneClusters: [
       "einde faillissementen",
       "uitspraken faillissement",
@@ -59,5 +61,6 @@ module.exports = {
   opslagPad,
   nutsPad,
   tempPad,
+  goedPad,
   maanden,
 };

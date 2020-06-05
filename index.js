@@ -10,8 +10,11 @@
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
 var clc = require("cli-color");
+const log = pakScript('logger');
 
 async function init() {
+
+
   try {
     const installatie = pakScript("installatie");
     const dagenDatabase = pakScript("dagen-database");
