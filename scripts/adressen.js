@@ -13,7 +13,7 @@ async function consolideerAdressen() {
     dagenDb.pakDagenData().then((dagenData) => {
       const dagenAdresTePakken = dagenData.dagenAdresTePakken
       if (!dagenAdresTePakken.length) {
-        resolve("klaar");
+        resolve({teConsolideren: []});
         return;
       }
     

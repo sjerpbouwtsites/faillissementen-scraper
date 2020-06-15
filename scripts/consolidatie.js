@@ -25,7 +25,7 @@ async function consolideerResponsesEnAdressen () {
         }
       }
 
-      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData)
+      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData, kaaladres.straat)
       const datumRegexCap = samengevoegdePublicaties.match(/(\d{2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)+\s+(\d{4})/);
       let datum = '';
       if (!!datumRegexCap) {
@@ -132,12 +132,15 @@ async function zoekInKvKAndereVestingenPerAdres () {
 
 module.exports = { consolideerResponsesEnAdressen, zoekInKvKAndereVestingenPerAdres };
 
-
-function maakSamenGevoegdePublicaties(publicatieData){
+/**
+ * 
+ * @param {*} publicatieData 
+ */
+function maakSamenGevoegdePublicaties(publicatieData, straat){
   const pubs = publicatieData
   .map((publicatieReeks) => {
     return publicatieReeks.filter((publicatie) => {
-      return publicatie.includes(kaalAdres.straat);
+      return publicatie.includes(straat);
     });
   })
   .filter((pubs) => pubs.length);

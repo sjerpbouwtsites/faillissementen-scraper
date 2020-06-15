@@ -5,7 +5,7 @@ const path = require("path");
 // als je de app uitgebreid wilt gebruiken zet dan een eindDatum ver in de toekomst. De app is intelligent genoeg om te weten welke datums nog niet geweest zijn
 // rechtbankgegevens worden gepubliceerd sinds januari 2020.
 const startDatum = "2020-05-05";
-const eindDatum = "2022-12-31";
+const eindDatum = "2020-05-07";
 
 const opslagPad = path.resolve("database/");
 const scriptPad = path.resolve("scripts/");
@@ -30,13 +30,13 @@ const maanden = [
 module.exports = {
   opties: {
     overschrijfAlleRequest: false,
-    consolideerTelkensOpnieuw: false,
+    consolideerTelkensOpnieuw: true,
     startDatum,
     eindDatum,
     volleDebug: false,
     maxKvKRequests: 20,
     maxAantalVestingen: 60,
-    debugDb: false,
+    debugDb: true,
     toegestaneClusters: [
       "einde faillissementen",
       "uitspraken faillissement",

@@ -22,13 +22,16 @@ function maakDagenDb() {
       new Date(config.opties.eindDatum)
     );
     const dagenVoorDb = dagenLijst.map((d) => {
+      const route  =ISONaarRechtspraak(d); 
+      const pad = maakOpslagPad('responses/rechtbank/'+route);
+      const meldingBestandBestaat = fs.existsSync(pad);
       return (ret = {
         datum: d,
-        route: ISONaarRechtspraak(d), // API endpoint rechtbank
-        gescraped: false, // van rechtbank;
+        route, // API endpoint rechtbank
+        gescraped: meldingBestandBestaat, // valt terug op false; van rechtbank;
         geconsolideerd: false, // adres en publicaties samengevoegd
         adresGepakt: false, // van locationIQ server latlng geplukt;
-        hadMelding: false
+        hadMelding: meldingBestandBestaat // indien melding niet bestaat, valt terug op false, init.
       });
     });
     schrijfOpslag("dagenDb", dagenVoorDb);
