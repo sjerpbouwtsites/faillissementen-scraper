@@ -66,12 +66,10 @@ async function consolideerAdressen() {
         .map(gpr => gpr.value)        
 
         const nweAdresDb = pakAdressenDb().concat(succesvolleAdressen)
-        console.log(nweAdresDb)
 
         nuts.schrijfOpslag(`adressen`, nweAdresDb);
         nuts.schrijfOpslag(`ratelimit-adressen`, gerateLimitteAdressen);
         // @TODO schrijf opslag ongevonden adressen
-        console.log(dagenDb)
         dagenDb.schrijfAdressenGepakt(succesvolleAdressen);
         resolve("");
       });      
@@ -127,6 +125,8 @@ async function zoekAdressen() {
     }
   });
 }
+
+
 
 function uniekeAdressenUitString(pcString) {
   const w = pcString
@@ -362,5 +362,5 @@ function pakAdressenDb() {
 
 module.exports = {
   zoekAdressen,
-  consolideerAdressen,
+  consolideerAdressen
 };

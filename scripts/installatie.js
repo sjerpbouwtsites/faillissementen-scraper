@@ -20,6 +20,7 @@ function controleerInstallatie() {
       pfo("responses"),
       pfo("responses/geo"),
       pfo("responses/rechtbank"),
+      pfo("responses/kvk"),
       pfo("adressen"),
     ];
 

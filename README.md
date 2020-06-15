@@ -26,6 +26,7 @@ dev@sjerpbouwtsites.nl
 
 ## ISSUES
 
+- KvK nummers zijn uit de adressen gevallen!
 - indien de start en einddata veranderen nadat dagenDb is aangemaakt, wordt dagenDb niet bijgewerkt met bv. een nieuwe reeks.
 - echte database gebruiken in memory ipv in via filesystem
 - opslag / database qua files rommelig

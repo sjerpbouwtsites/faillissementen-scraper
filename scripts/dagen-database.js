@@ -28,7 +28,7 @@ function maakDagenDb() {
         gescraped: false, // van rechtbank;
         geconsolideerd: false, // adres en publicaties samengevoegd
         adresGepakt: false, // van locationIQ server latlng geplukt;
-        hadMelding: false,
+        hadMelding: false
       });
     });
     schrijfOpslag("dagenDb", dagenVoorDb);

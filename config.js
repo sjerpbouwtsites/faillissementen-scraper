@@ -30,10 +30,12 @@ const maanden = [
 module.exports = {
   opties: {
     overschrijfAlleRequest: false,
-    consolideerTelkensOpnieuw: true,
+    consolideerTelkensOpnieuw: false,
     startDatum,
     eindDatum,
     volleDebug: false,
+    maxKvKRequests: 20,
+    maxAantalVestingen: 60,
     debugDb: false,
     toegestaneClusters: [
       "einde faillissementen",
