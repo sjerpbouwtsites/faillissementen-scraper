@@ -25,7 +25,8 @@ async function consolideerResponsesEnAdressen () {
         }
       }
 
-      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData, kaaladres.straat)
+      //@TODO SLECHTE CHECK
+      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData, kaalAdres.straat)
       const datumRegexCap = samengevoegdePublicaties.match(/(\d{2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)+\s+(\d{4})/);
       let datum = '';
       if (!!datumRegexCap) {
@@ -50,7 +51,6 @@ async function consolideerResponsesEnAdressen () {
       }
 
       return Object.assign(kaalAdres, {
-        kaas: true,
         vestigingen: kaalAdres.vestigingen | false,
         vestigingenDatum: kaalAdres.vestigingenDatum | null,
         publicaties: samengevoegdePublicaties,
@@ -261,7 +261,7 @@ function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, rejec
 function maakPublicatieData (dagenTeConsolideren) {
   const toegestaneClusters = opties.toegestaneClusters;
   const ontoegestaneClusters = opties.ontoegestaneClusters;
-
+  schrijfTemp(dagenTeConsolideren)
   return dagenTeConsolideren
     .map((dag) => {
       const p = maakOpslagPad(`responses/rechtbank/${dag.route}`);

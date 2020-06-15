@@ -21,21 +21,21 @@ function maakDagenDb() {
       new Date(config.opties.startDatum),
       new Date(config.opties.eindDatum)
     );
+    console.log(dagenLijst)
     const dagenVoorDb = dagenLijst.map((d) => {
       const route  =ISONaarRechtspraak(d); 
       const pad = maakOpslagPad('responses/rechtbank/'+route);
       const meldingBestandBestaat = fs.existsSync(pad);
-      return (ret = {
+      return {
         datum: d,
         route, // API endpoint rechtbank
         gescraped: meldingBestandBestaat, // valt terug op false; van rechtbank;
         geconsolideerd: false, // adres en publicaties samengevoegd
         adresGepakt: false, // van locationIQ server latlng geplukt;
         hadMelding: meldingBestandBestaat // indien melding niet bestaat, valt terug op false, init.
-      });
+      };
     });
     schrijfOpslag("dagenDb", dagenVoorDb);
-    console.log("dagen database gemaakt");
     resolve(dagenVoorDb);
   });
 }
@@ -90,7 +90,6 @@ function pakDagenData() {
       return (
         dbDag.gescraped &&
         dbDag.hadMelding &&
-        dbDag.adresGepakt &&
         vglMetVandaag <= vandaag &&
         consolidatieBool
       );

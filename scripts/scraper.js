@@ -47,7 +47,6 @@ async function scrapeDagen(dagenTeDoen) {
             `https://insolventies.rechtspraak.nl/Services/BekendmakingenService/haalOp/${dag.route}`
           )
           .then(function(response) {
-            console.log(response.data)
             const iplus = index + 1;
             if (iplus % 10 === 0) {
               console.clear();
