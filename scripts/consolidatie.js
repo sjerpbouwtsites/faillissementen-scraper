@@ -4,6 +4,8 @@ const { pakScript, pakOpslag, schrijfOpslag, maakOpslagPad, DateNaarDatumGetal, 
 const dagenDb = pakScript('dagen-database');
 const axios = require('axios');
 const { parse } = require('node-html-parser');
+const nuts = require(nutsPad);
+
 async function consolideerResponsesEnAdressen () {
   return new Promise(async (resolve) => {
     const { dagenTeConsolideren } = await dagenDb.pakDagenData();
@@ -331,3 +333,4 @@ function pakNieuwTeHalenEnVerouderdeKvKLocaties (adressen) {
     vestigingenVerouderd,
   };
 }
+

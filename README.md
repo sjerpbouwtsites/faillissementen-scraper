@@ -27,6 +27,7 @@ dev@sjerpbouwtsites.nl
 ## ISSUES
 
 - KvK nummers zijn uit de adressen gevallen!
+- gebruik gaan maken van readdir ipv lezen uit json welke bestanden bestaan. Omzetten naar dagenDb.
 - indien de start en einddata veranderen nadat dagenDb is aangemaakt, wordt dagenDb niet bijgewerkt met bv. een nieuwe reeks.
 - echte database gebruiken in memory ipv in via filesystem
 - opslag / database qua files rommelig

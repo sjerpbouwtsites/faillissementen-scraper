@@ -313,6 +313,7 @@ function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
     // lijst met uitgeschreven volledige adres-adressen
     const uniekeBestaandeAdressen = new Set(adressenDb.map((a) => a.adres));
 
+    console.log(dagenAdresTePakken, ' rewrerwe')
     // vinden welke adressen nog niet geconsolideerd zijn
     let teConsolideren = dagenAdresTePakken
       .map((dag) => {
@@ -323,6 +324,9 @@ function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
         return !uniekeBestaandeAdressen.has(a.adres);
       });
 
+      console.log(teConsolideren)
+
+        // HIER
     resolve({
       teConsolideren,
     });
@@ -358,6 +362,14 @@ function pakAdressenDb() {
     adressenDb = [];
   }
   return adressenDb;
+}
+
+function lijstAlleHuidigeGeos(){
+  const geoPath = nuts.maakOpslagPad('responses/geo', '');
+
+  return fs.readdirSync(geoPath).map(fileName => {
+    return path.join(fileName)
+  });
 }
 
 module.exports = {
