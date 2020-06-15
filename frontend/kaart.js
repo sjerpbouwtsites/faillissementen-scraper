@@ -24,12 +24,14 @@ export function initMap() {
  * @param {milliseconden vandaag} vandaag
  */
 function maakOpacity(datum, dagenLeegOptimaal, vandaag) {
+  // @TODO
   if (!datum) {
     return 0.5; // marker krijgt ook via alt attr oranje kleur
   }
 
   // dagen sinds faillissement
-  const verschilInDagen = (vandaag - datum) / vandaag;
+  const verschilInDagen = (vandaag - datum) / (60*60*1000*24);
+  console.log(verschilInDagen)
   // minimale opacity is 0.3
   return Math.max(verschilInDagen / dagenLeegOptimaal, 0.3);
 }
@@ -40,7 +42,7 @@ export async function zetMarkers(kaart, faillissementen) {
    * Indien iets zo veel dagen leeg staat, krijgt de
    * marker opacity 1.
    */
-  const dagenLeegOptimaal = 180;
+  const dagenLeegOptimaal = 120;
 
   /**
    * vandaag in milliseconden

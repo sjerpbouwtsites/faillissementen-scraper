@@ -30,7 +30,7 @@ const maanden = [
 module.exports = {
   opties: {
     overschrijfAlleRequest: false,
-    consolideerTelkensOpnieuw: true,
+    consolideerTelkensOpnieuw: false,
     startDatum,
     eindDatum,
     volleDebug: false,

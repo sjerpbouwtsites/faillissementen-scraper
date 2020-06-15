@@ -149,8 +149,6 @@ return pubs.join('<hr>');
 }
 function verwerkKvKHTML (htmlVerzameling, osm_id) {
   
-    console.log(osm_id);
-  
   if (htmlVerzameling.includes(undefined)) {
     console.log(' deel HTML undefined?', htmlVerzameling)
   }
