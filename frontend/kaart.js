@@ -31,7 +31,6 @@ function maakOpacity(datum, dagenLeegOptimaal, vandaag) {
 
   // dagen sinds faillissement
   const verschilInDagen = (vandaag - datum) / (60*60*1000*24);
-  console.log(verschilInDagen)
   // minimale opacity is 0.3
   return Math.max(verschilInDagen / dagenLeegOptimaal, 0.3);
 }

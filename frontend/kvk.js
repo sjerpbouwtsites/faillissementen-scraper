@@ -32,7 +32,7 @@ export function zetKvKKnopEvent (faillissementen) {
   });
 }
 
-export function haalKvkInfoEnPrintOud (kvkNummer, geheelNieuw = false, kvkNummers = []) {
+export function haalKvkInfoEnPrint (kvkNummer, geheelNieuw = false, kvkNummers = []) {
   if (!geheelNieuw) {
     gbi('kvk-resultaat').classList.add('ladend');
   }
@@ -131,35 +131,45 @@ export function zetKvkBladNavigatie () {
   });
 }
 
+function kvkAdresPaneelLaadStand(){
+  if (gbi('kvk-resultaat-adres').innerHTML !== '') {
+    //@TODO buggevoelig
+    return;
+  }
+
+  gbi('kvk-resultaat-adres').innerHTML = laadSvg;
+
+}
+
 /**
  * draait na tonen blad
  */
 const kvkPaneelNavigatieCallbacks = {
   kvkPrintAdresVergelijking () {
     const ditFaillissement = huidigeFaillissementen.pakHuidigeFaillissementen();
-    if (!ditFaillissement) {
-      alert('huidig faillissement onbekend?');
-    }
-    if (gbi('kvk-resultaat-adres').innerHTML !== '') {
-      //@TODO buggevoelig
-      return;
-    }
+    kvkAdresPaneelLaadStand();
+    console.log(ditFaillissement)
 
-    gbi('kvk-resultaat-adres').innerHTML = laadSvg;
-
-    const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(ditFaillissement.postcode)}&huisnummer=${encodeURIComponent(
-      ditFaillissement.huisnummer
-    )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
-    Promise.all([vertragingsPromise(), axios.get(url)])
-      .then((kvkResponse) => {
-        // response komt van promise all dus is array met null, response of response, null
-        const wr = kvkResponse.find((r) => r);
-        verwerkKvKHTML(wr.data, 'adres', url);
+    const kvkAdresInfo = axios.get(`database/responses/kvk/${ditFaillissement.osm_id}.json`)
+      .then(blob => {
+        console.log(blob)
+      }).catch(err => {
+        alert(err.message + '\n' + " Sjerp moet de backend een slinger geven")
       })
-      .catch((err) => {
-        console.error(err);
-        alert('foutje schreeuw naar dev.\n' + err.message);
-      });
+
+    // const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(ditFaillissement.postcode)}&huisnummer=${encodeURIComponent(
+    //   ditFaillissement.huisnummer
+    // )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
+    // Promise.all([vertragingsPromise(), axios.get(url)])
+    //   .then((kvkResponse) => {
+    //     // response komt van promise all dus is array met null, response of response, null
+    //     const wr = kvkResponse.find((r) => r);
+    //     verwerkKvKHTML(wr.data, 'adres', url);
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //     alert('foutje schreeuw naar dev.\n' + err.message);
+    //   });
   },
 };
 
