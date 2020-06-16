@@ -154,9 +154,14 @@ const kvkPaneelNavigatieCallbacks = {
       .then(blob => {
         console.log(blob)
       }).catch(err => {
-        alert(err.message + '\n' + " Sjerp moet de backend een slinger geven")
+        oudeLogicaAlsFallback(ditFaillissement)
       })
 
+
+  },
+};
+
+function oudeLogicaAlsFallback(ditFaillissement){
     // const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(ditFaillissement.postcode)}&huisnummer=${encodeURIComponent(
     //   ditFaillissement.huisnummer
     // )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
@@ -169,9 +174,8 @@ const kvkPaneelNavigatieCallbacks = {
     //   .catch((err) => {
     //     console.error(err);
     //     alert('foutje schreeuw naar dev.\n' + err.message);
-    //   });
-  },
-};
+    //   });  
+}
 
 export function zetOpenKvKPaneelEvent () {
   gbody().addEventListener('click', function (e) {
