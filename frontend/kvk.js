@@ -148,33 +148,84 @@ const kvkPaneelNavigatieCallbacks = {
   kvkPrintAdresVergelijking () {
     const ditFaillissement = huidigeFaillissementen.pakHuidigeFaillissementen();
     kvkAdresPaneelLaadStand();
-    console.log(ditFaillissement)
 
-    const kvkAdresInfo = axios.get(`database/responses/kvk/${ditFaillissement.osm_id}.json`)
+    axios.get(`database/responses/kvk/${ditFaillissement.osm_id}.json`)
       .then(blob => {
-        console.log(blob)
+
+        //
+        toonVerbergElementen(true, nodeVerzameling('#kvk-resultaat-teller-print-adres-p', '#kvk-resultaat-teller-print-adres', '#kvk-resultaat-teller-print'));
+        gbi('kvk-resultaat-teller-print-adres').innerHTML = blob.data.length
+        
+        gbi('kvk-resultaat-adres').innerHTML = `
+        <ul class='results'>
+          ${blob.data.map(inschrijving => {     
+            return `
+              <li class='inschrijving'>
+
+                <div class="handelsnaamHeaderWrapper">
+                  <h3 class="handelsnaamHeader">
+                    <a href="${inschrijving.kvkLink}"
+                      >${inschrijving.handelsNaam ? inschrijving.handelsNaam : 'onbekende handelsnaam'}</a
+                    >
+                  </h3>
+                  ${inschrijving.isHoofdVestiging ? `
+                    <a
+                    href="${inschrijving.kvkLink}"
+                    class="hoofdvestigingTag"
+                    >Hoofdvestiging</a
+                  >
+                  ` : ``}
+                
+                </div>          
+
+                <div class="content">
+                  <ul class="kvk-meta">
+                    ${inschrijving.kvkMeta.map(kvkMetaLos =>{
+                      return `<li>${kvkMetaLos}</li>`
+                    }).join('')}
+                  </ul>
+                </div>     
+                
+                <p class="snippet-result">
+                  ${inschrijving.werkzaamheden}
+                </p>                
+
+                <span class="ingeschreven-lint ${inschrijving.uitgeschreven ? 'succes' : 'geen-status'}">
+                  <span class="lint-hoek-links"></span>
+                  <span class="lint-tekst">${inschrijving.uitgeschreven ? 'gestopt' : 'onduidelijk'}</span>
+                  <span class="lint-hoek-rechts"></span>
+                </span>                
+
+              </li>
+            `;    
+          }).join('')}
+        </ul>
+        `;
+
       }).catch(err => {
         oudeLogicaAlsFallback(ditFaillissement)
       })
-
 
   },
 };
 
 function oudeLogicaAlsFallback(ditFaillissement){
-    // const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(ditFaillissement.postcode)}&huisnummer=${encodeURIComponent(
-    //   ditFaillissement.huisnummer
-    // )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
-    // Promise.all([vertragingsPromise(), axios.get(url)])
-    //   .then((kvkResponse) => {
-    //     // response komt van promise all dus is array met null, response of response, null
-    //     const wr = kvkResponse.find((r) => r);
-    //     verwerkKvKHTML(wr.data, 'adres', url);
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-    //     alert('foutje schreeuw naar dev.\n' + err.message);
-    //   });  
+
+    alert(' er gaat iets fout. Oude code wordt gebruikt als backup. Graag schreeuwen naar Sjerp')
+
+    const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(ditFaillissement.postcode)}&huisnummer=${encodeURIComponent(
+      ditFaillissement.huisnummer
+    )}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
+    Promise.all([vertragingsPromise(), axios.get(url)])
+      .then((kvkResponse) => {
+        // response komt van promise all dus is array met null, response of response, null
+        const wr = kvkResponse.find((r) => r);
+        verwerkKvKHTML(wr.data, 'adres', url);
+      })
+      .catch((err) => {
+        console.error(err);
+        alert('foutje schreeuw naar dev.\n' + err.message);
+      });  
 }
 
 export function zetOpenKvKPaneelEvent () {
