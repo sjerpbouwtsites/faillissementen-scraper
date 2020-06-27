@@ -1,6 +1,5 @@
-# dev branch
+# popup fikses faillissements teksten en is leeg indicatie
 
-ontwikkeltak
-niet direct op devven
-branch van maken en erin mergen ajb
-
+tekst van de popup is kut. Staat allemaal ongerelateerde shit tussen.
+mogelijk is het ontleende adres dan ook onterecht?
+verder in de popup aangeven of het leegstaat of niet
