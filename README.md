@@ -39,3 +39,7 @@ dev@sjerpbouwtsites.nl
 - rare discrepantie tussen hoeveelheid adressen in geo en 'adressen beschikbaar' vanuit fs?
 - 'adres' voor locatieobjecten is kut want adres.adres. 'dag' voor een dagobject is ook kut.
 - dagenDb moet niet een promise teruggeven. zorgt voor ellende.
+
+## Deze branch
+
+[Zie de branch beschrijving](BRANCH.md)
