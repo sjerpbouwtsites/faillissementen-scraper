@@ -23,12 +23,13 @@ export function zetKvKKnopEvent (faillissementen) {
       return;
     }
 
+    // blad met vergelijking op kvk-nummer
     haalKvkInfoEnPrint(faillissementAdresObj.kvk[0], true, faillissementAdresObj.kvk);
     huidigeFaillissementen.zetHuidigeFaillissement(faillissementAdresObj);
 
-    //data-osm-id
-
-    ;
+    // blad met vergelijking op adres.
+    kvkVulAdresVergelijkingBlad();
+   
   });
 }
 
@@ -142,72 +143,70 @@ function kvkAdresPaneelLaadStand(){
 }
 
 /**
- * draait na tonen blad
+ * op openen kvk paneel, vult blad met vergelijking kvk
+ * gegevens op dit adres. Doet dit aan de hand van responses/kbk/[osm_id].json
  */
-const kvkPaneelNavigatieCallbacks = {
-  kvkPrintAdresVergelijking () {
-    const ditFaillissement = huidigeFaillissementen.pakHuidigeFaillissementen();
-    kvkAdresPaneelLaadStand();
+function kvkVulAdresVergelijkingBlad() {
+  const ditFaillissement = huidigeFaillissementen.pakHuidigeFaillissementen();
+  kvkAdresPaneelLaadStand();
 
-    axios.get(`database/responses/kvk/${ditFaillissement.osm_id}.json`)
-      .then(blob => {
+  axios.get(`database/responses/kvk/${ditFaillissement.osm_id}.json`)
+    .then(blob => {
 
-        //
-        toonVerbergElementen(true, nodeVerzameling('#kvk-resultaat-teller-print-adres-p', '#kvk-resultaat-teller-print-adres', '#kvk-resultaat-teller-print'));
-        gbi('kvk-resultaat-teller-print-adres').innerHTML = blob.data.length
-        
-        gbi('kvk-resultaat-adres').innerHTML = `
-        <ul class='results'>
-          ${blob.data.map(inschrijving => {     
-            return `
-              <li class='inschrijving'>
+      // zet tellers
+      toonVerbergElementen(true, nodeVerzameling('#kvk-resultaat-teller-print-adres-p', '#kvk-resultaat-teller-print-adres', '#kvk-resultaat-teller-print'));
+      gbi('kvk-resultaat-teller-print-adres').innerHTML = blob.data.length
+      
+      gbi('kvk-resultaat-adres').innerHTML = `
+      <ul class='results'>
+        ${blob.data.map(inschrijving => {     
+          return `
+            <li class='inschrijving'>
 
-                <div class="handelsnaamHeaderWrapper">
-                  <h3 class="handelsnaamHeader">
-                    <a href="${inschrijving.kvkLink}"
-                      >${inschrijving.handelsNaam ? inschrijving.handelsNaam : 'onbekende handelsnaam'}</a
-                    >
-                  </h3>
-                  ${inschrijving.isHoofdVestiging ? `
-                    <a
-                    href="${inschrijving.kvkLink}"
-                    class="hoofdvestigingTag"
-                    >Hoofdvestiging</a
+              <div class="handelsnaamHeaderWrapper">
+                <h3 class="handelsnaamHeader">
+                  <a href="${inschrijving.kvkLink}"
+                    >${inschrijving.handelsNaam ? inschrijving.handelsNaam : 'onbekende handelsnaam'}</a
                   >
-                  ` : ``}
-                
-                </div>          
+                </h3>
+                ${inschrijving.isHoofdVestiging ? `
+                  <a
+                  href="${inschrijving.kvkLink}"
+                  class="hoofdvestigingTag"
+                  >Hoofdvestiging</a
+                >
+                ` : ``}
+              
+              </div>          
 
-                <div class="content">
-                  <ul class="kvk-meta">
-                    ${inschrijving.kvkMeta.map(kvkMetaLos =>{
-                      return `<li>${kvkMetaLos}</li>`
-                    }).join('')}
-                  </ul>
-                </div>     
-                
-                <p class="snippet-result">
-                  ${inschrijving.werkzaamheden}
-                </p>                
+              <div class="content">
+                <ul class="kvk-meta">
+                  ${inschrijving.kvkMeta.map(kvkMetaLos =>{
+                    return `<li>${kvkMetaLos}</li>`
+                  }).join('')}
+                </ul>
+              </div>     
+              
+              <p class="snippet-result">
+                ${inschrijving.werkzaamheden}
+              </p>                
 
-                <span class="ingeschreven-lint ${inschrijving.uitgeschreven ? 'succes' : 'geen-status'}">
-                  <span class="lint-hoek-links"></span>
-                  <span class="lint-tekst">${inschrijving.uitgeschreven ? 'gestopt' : 'onduidelijk'}</span>
-                  <span class="lint-hoek-rechts"></span>
-                </span>                
+              <span class="ingeschreven-lint ${inschrijving.uitgeschreven ? 'succes' : 'geen-status'}">
+                <span class="lint-hoek-links"></span>
+                <span class="lint-tekst">${inschrijving.uitgeschreven ? 'gestopt' : 'onduidelijk'}</span>
+                <span class="lint-hoek-rechts"></span>
+              </span>                
 
-              </li>
-            `;    
-          }).join('')}
-        </ul>
-        `;
+            </li>
+          `;    
+        }).join('')}
+      </ul>
+      `;
 
-      }).catch(err => {
-        oudeLogicaAlsFallback(ditFaillissement)
-      })
-
-  },
-};
+    }).catch(err => {
+      oudeLogicaAlsFallback(ditFaillissement)
+    })
+}
 
 function oudeLogicaAlsFallback(ditFaillissement){
 
@@ -269,6 +268,7 @@ export function sluitKvKPaneel () {
 }
 
 /**
+ * FUCKING BAGGGER CODE. 
  * parsed html, schrijft naar correcte blad, zoekt mogelijk naar meer pagina's bij > 10 resultaten
  * @param {*} htmlBlob
  * @param {*} doel
