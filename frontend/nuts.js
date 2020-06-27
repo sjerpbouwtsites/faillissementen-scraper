@@ -69,3 +69,57 @@ export function toonVerbergElementen(toon, elementOfElementen) {
     });
   }
 }
+
+export function zetVerwerkSchakelKnopEvent(){
+  gbody().addEventListener('click', verwerkSchakelKnopje);
+}
+
+/**
+ * Een schakelknopje heeft de css-klas schakel-knopje. 
+ * Het moet het attribute data-doel hebben. Alles in deze CSS selector wordt getoond 
+ * indien schakel niet eerder gebruikt.
+ * Alle in data-anti wordt verborgen indien schakel niet eerder gebruikt.
+ * 
+ * @param {} klikEvent 
+ */
+function verwerkSchakelKnopje(klikEvent){
+
+    // je weet hoe het gaat met kliks, die vliegen soms raar.
+    const isSchakelKnopje = klikEvent.target.classList.contains('schakel-knopje');
+    const kindIsSchakelKnopje = klikEvent.target.children && klikEvent.target.children.length > 0 && klikEvent.target.children[0].classList.contains('schakel-knopje');
+    const ouderIsSchakelKnopje = klikEvent.target.parentNode && klikEvent.target.parentNode.classList.contains('schakel-knopje');
+    if (!isSchakelKnopje && !kindIsSchakelKnopje && !ouderIsSchakelKnopje) {
+      return false;
+    }
+
+    const knopElement = isSchakelKnopje ? klikEvent.target 
+      : kindIsSchakelKnopje ? klikEvent.target.children[0]
+        : ouderIsSchakelKnopje ? klikEvent.target.parentNode
+          : null
+    
+
+    
+    if (!knopElement.hasAttribute('data-doel')){
+      console.warn('schakel knop zonder data-doel', knopElement);
+    }
+
+    // als de schakel eerder gebruikt is heeft het het attribuut data-gebruikt
+    // indien reeds gebruikt, draai toon / verberg logica om
+    const reedsGebruikt = knopElement.hasAttribute('data-gebruikt');
+
+    const doelElement = nodeVerzameling(knopElement.getAttribute('data-doel'));
+    toonVerbergElementen(!reedsGebruikt, doelElement);
+
+    if (knopElement.hasAttribute('data-anti')) {
+      const verbergElementen = nodeVerzameling(knopElement.getAttribute('data-anti'));
+      toonVerbergElementen(reedsGebruikt, verbergElementen);    
+    }
+
+    if (!reedsGebruikt) {
+      knopElement.setAttribute('data-gebruikt', 'true');
+    } else {
+      knopElement.removeAttribute('data-gebruikt', 'true');
+    }
+    
+
+}
