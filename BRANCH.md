@@ -1,5 +1,6 @@
-# adres-kvk-primair-automatisch bijwerken branch
+# dev branch
 
-- in kvk paneel adres overzicht primair ipv kvk nummers
-- automatisch bijde tabbladen laden bij openen kvk paneel
+ontwikkeltak
+niet direct op devven
+branch van maken en erin mergen ajb
 
