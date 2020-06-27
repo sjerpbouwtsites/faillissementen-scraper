@@ -55,19 +55,18 @@
           <li>
             <button
               class="kvk-navigatie-knop knopje"
-              data-doel="kvk-resultaat-nummers"
+              data-doel="kvk-resultaat-adres"
               disabled="true"
             >
-              Deze / dit kvk-nummer
+              Op dit adres
             </button>
           </li>
           <li>
             <button
               class="kvk-navigatie-knop knopje"
-              data-doel="kvk-resultaat-adres"
-              data-callback="kvk-print-adres-vergelijking"
+              data-doel="kvk-resultaat-nummers"
             >
-              Op dit adres
+              Deze / dit kvk-nummer
             </button>
           </li>
           <footer
@@ -90,11 +89,12 @@
         <ul class="kvk-nummers" id="kvk-nummers"></ul>
 
         <div class="kvk-resultaat" id="kvk-resultaat">
-          <div class="kvk-resultaat-blad" id="kvk-resultaat-nummers"></div>
-          <div
-            class="kvk-resultaat-blad verborgen"
-            id="kvk-resultaat-adres"
-          ></div>
+          
+          <!-- vergelijking op kvk adres-->
+          <div class="kvk-resultaat-blad" id="kvk-resultaat-adres"></div>
+          <!-- vergelijking op kvk nummer-->
+          <div class="kvk-resultaat-blad verborgen" id="kvk-resultaat-nummers"></div>
+
         </div>
         <button class="sluit-kvk-paneel" id="sluit-kvk-paneel">
           <img

@@ -284,7 +284,9 @@ function verwerkKvKHTML (htmlBlob, doel, url) {
   // schrijf response lengte naar linkerkant
   const feedback = fragment.querySelector('.feedback');
   const aantalGevonden = feedback.textContent.match(/\d+/)[0];
-  toonVerbergElementen(true, [gbi('kvk-resultaat-teller'), gbi(`kvk-resultaat-teller-print-${doel}-p`)]);
+  // oude toon toonVerbergElementen(true, [gbi('kvk-resultaat-teller'), gbi(`kvk-resultaat-teller-print-${doel}-p`)]);
+  toonVerbergElementen(true, [gbi(`kvk-resultaat-teller-print-${doel}-p`)]);
+
   gbi(`kvk-resultaat-teller-print-${doel}`).innerHTML = aantalGevonden;
 
   Array.from(fragment.querySelectorAll('.results > li')).forEach(bewerkInschrijvingLi);
