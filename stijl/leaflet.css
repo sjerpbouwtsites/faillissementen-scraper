@@ -1,7 +1,7 @@
 .leaflet-popup-header {
-  border-bottom: 2px solid #212121;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  border: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -18,7 +18,20 @@
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2;
+  margin-right: 20px;
 }
+
+/* met knoppen */
+.leaflet-popup-header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ik schrijf louter deze selector omdat ik gezichtjes leuk vind */
+.leaflet-popup-header-right > * ~ * {
+  margin-top: 10px;
+}
+
 /* datum loze faillissementen als oranje markeren */
 .leaflet-marker-icon[alt*="geen-datum"] {
   filter: hue-rotate(180deg);
@@ -26,4 +39,10 @@
 /* toekomstige faillissementen als roze markeren */
 .leaflet-marker-icon[alt*="in-toekomst"] {
   filter: hue-rotate(110deg);
+}
+
+.leaflet-popup-text {
+  border-top: 2px solid #212121;
+  padding-top: 10px;
+  margin-top: 10px;  
 }

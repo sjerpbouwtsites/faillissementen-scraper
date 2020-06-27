@@ -79,6 +79,7 @@ export function zetVerwerkSchakelKnopEvent(){
  * Het moet het attribute data-doel hebben. Alles in deze CSS selector wordt getoond 
  * indien schakel niet eerder gebruikt.
  * Alle in data-anti wordt verborgen indien schakel niet eerder gebruikt.
+ * @TODO stijling indien gebruikt
  * 
  * @param {} klikEvent 
  */

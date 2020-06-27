@@ -66,16 +66,36 @@ export async function zetMarkers(kaart, faillissementen) {
       : "";
     const datumHTML = maakDatumHTML(faillissement.datum);
 
+    /**
+     * BAGGERCODE. De publicaties zijn een zooitje. Die worden ergens op een hoop gegooid. Dit 'klopte' wel met de faillissementen
+     * in mei maar later blijkt dit onzinnig. kom binnen als een door <hr> geschreden brei. 
+     * kan niet fiksen voor lanceerdatum - verstop het achter knopje
+     * @TODO
+     */
+
     marker.bindPopup(
       `<div class='leaflet-popup-publicatie'>
         <header class='leaflet-popup-header'>
           <span class='leaflet-popup-header-left'>
-            ${datumHTML}
+            <abbr title='wanneer het faillissement ingaat'>
+              ${datumHTML}
+            </abbr>
             ${bedrijfsNaamHTML}
           </span>
-          <button class='open-kvk knopje' data-osm-id='${faillissement.osm_id}'>KvK paneel</button>
+          <div class='leaflet-popup-header-right'>
+            <button class='open-kvk knopje' data-osm-id='${faillissement.osm_id}'>KvK paneel</button>
+            <button
+            class="knopje schakel-knopje"
+            data-doel="#publicaties-van-osm-${faillissement.osm_id}"
+          >
+            Rechtbank<br>publicaties
+            <br>(beta)
+          </button>
+          </div>
           </header>
-          ${faillissement.publicaties}
+          <div class='leaflet-popup-text verborgen' id='publicaties-van-osm-${faillissement.osm_id}'>
+            ${faillissement.publicaties}
+          </div>
 
         </div class='leaflet-popup-publicatie'>`
     );
