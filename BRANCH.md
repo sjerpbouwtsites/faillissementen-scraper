@@ -1,4 +1,5 @@
-# dev branch
+# adres-kvk-primair-automatisch bijwerken branch
 
-De branch waarin wijzigingen samenkomen voordat ze naar master gaan.
-Wijzingingen dienen gedaan te worden op branches van dev af.
+- in kvk paneel adres overzicht primair ipv kvk nummers
+- automatisch bijde tabbladen laden bij openen kvk paneel
+
