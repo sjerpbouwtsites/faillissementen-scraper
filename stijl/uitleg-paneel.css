@@ -10,6 +10,7 @@
   max-width: 80ch;
   box-sizing: border-box;
   max-height: 80vh;
+  overflow-y:scroll;
 }
 
 .uitleg-paneel__kop:first-child {
