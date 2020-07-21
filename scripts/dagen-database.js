@@ -140,11 +140,12 @@ async function zetGescraped({ gescraped, hadMelding }) {
 }
 
 // waarom is de ene met een promise en de andere niet
-async function schrijfAdressenGepakt(dagenAdresTePakken) {
+async function schrijfAdressenGepakt(dagenAdresGepakt) {
+
   const dagenData = await pakDagenData();
 
   const nweDagenData = dagenData.dagen.map((dbDag) => {
-    const adresGepakt = dagenAdresTePakken.some((h) => h.route === dbDag.route);
+    const adresGepakt = dagenAdresGepakt.some((h) => h.route === dbDag.route);
     return Object.assign(dbDag, {
       adresGepakt: dbDag.adresGepakt || adresGepakt,
     });
@@ -162,6 +163,7 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
     );
     return Object.assign(dbDag, {
       geconsolideerd: dbDag.geconsolideerd || isNieuwGeconsolideerd,
+      adresGepakt: dbDag.geconsolideerd || isNieuwGeconsolideerd, // HACK om achter te fiksen dat adresGepakt niet meer meegenomen wordt...
     });
   });
 
