@@ -23,7 +23,12 @@ async function consolideerAdressen() {
       // nieuwGeconsolideerdeAdressen komt van & wordt adressen.json
       return bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb);      
 
-    }).then(({ teConsolideren }) =>{
+    }).then((vanVoorbereiding) =>{
+      const teConsolideren = !!vanVoorbereiding 
+        ? !!vanVoorbereiding.teConsolideren 
+          ? vanVoorbereiding.teConsolideren 
+          : []
+        : [];
       const aantalTeConsolideren = teConsolideren.length;
       if (!aantalTeConsolideren) {
         resolve("klaar");
