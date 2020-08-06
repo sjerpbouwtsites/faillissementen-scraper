@@ -86,6 +86,13 @@ export function haalKvkInfoEnPrint (kvkNummer, geheelNieuw = false, kvkNummers =
     else {
       gbi('kvk-resultaat-nummers').classList.remove('ladend');
     }
+
+    Array.from(NodeList('#kvk-resultaat-nummers a')).forEach(a => {
+      a.setAttribute('href', `https://www.kvk.nl${a.getAttribute('href')}`);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('referrer', 'https://google.com');
+    });
+
   }); // eind then exios KVK
   // #endregion axiosvk
 }
