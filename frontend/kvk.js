@@ -87,7 +87,7 @@ export function haalKvkInfoEnPrint (kvkNummer, geheelNieuw = false, kvkNummers =
       gbi('kvk-resultaat-nummers').classList.remove('ladend');
     }
 
-    Array.from(NodeList('#kvk-resultaat-nummers a')).forEach(a => {
+    nodeVerzameling('#kvk-resultaat-nummers a').forEach(a => {
       a.setAttribute('href', `https://www.kvk.nl${a.getAttribute('href')}`);
       a.setAttribute('target', '_blank');
       a.setAttribute('referrer', 'https://google.com');
@@ -200,7 +200,7 @@ function kvkVulAdresVergelijkingBlad() {
 
               <span class="ingeschreven-lint ${inschrijving.uitgeschreven ? 'succes' : 'geen-status'}">
                 <span class="lint-hoek-links"></span>
-                <span class="lint-tekst">${inschrijving.uitgeschreven ? 'gestopt' : 'onduidelijk'}</span>
+                <span class="lint-tekst">${inschrijving.uitgeschreven ? 'gestopt' : 'zie kvk-link'}</span>
                 <span class="lint-hoek-rechts"></span>
               </span>                
 
@@ -344,7 +344,7 @@ function bewerkInschrijvingLi (inschrijvingLi) {
     tekst = 'gestopt';
   } else if (!statusRij) {
     s.classList.add('geen-status');
-    tekst = 'onduidelijk';
+    tekst = 'zie kvk-link';
   } else {
     s.classList.add('kutbourgeois');
     tekst = 'ingeschreven';
