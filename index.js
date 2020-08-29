@@ -37,7 +37,6 @@ async function init() {
     // indien vestigingen bekend maar verouderd > 7 dagen
     // async op achtergrond vernieuwen
     const vestigingenOpgezocht = await consolidatie.zoekInKvKAndereVestingenPerAdres();
-    console.clear();
     console.log(
       clc.bgWhite.black(
         `\n\t\tKLAAR!\t\n\t${consolidatieAntwoord} adressen beschikbaar\t\n\t${vestigingenOpgezocht.length} vestigingen opgezocht`
