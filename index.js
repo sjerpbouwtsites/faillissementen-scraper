@@ -7,6 +7,19 @@
  * maar daarbuiten in JSON. De volgende functie kan evengoed weer dezelfde database aanroepen.
  */
 
+ /**
+  * Als lager dan versie 14, niet draaien.
+  */
+try {
+  const nodeversie = process.versions.node.split('.')[0];
+  if (Number(nodeversie) < 14) {
+    throw new Error('node versie te laag. is: ', nodeversie);
+  }
+} catch (error) {
+  console.error(error);
+  process.exit();
+}
+
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
 var clc = require("cli-color");

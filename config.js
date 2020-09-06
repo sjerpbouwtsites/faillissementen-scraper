@@ -40,7 +40,7 @@ module.exports = {
     startDatum,
     eindDatum,
     volleDebug: false,
-    maxKvKRequests: 600,
+    maxKvKRequests: 100,
     maxAantalVestingen: 60,
     debugDb: true,
     toegestaneClusters: [
