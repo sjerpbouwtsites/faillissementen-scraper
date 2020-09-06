@@ -10,22 +10,22 @@
  /**
   * Als lager dan versie 14, niet draaien.
   */
-try {
-  const nodeversie = Number(process.versions.node.split('.')[0]);
-console.log('node versie: ', nodeversie)
-  if (typeof nodeversie !== 'number') {
-    throw new Error({
-      message: 'process object anders dan verwacht',
-      process: process,
-    })
-  }
-  if (nodeversie < 14) {
-    throw new Error('node versie te laag. is22: ', nodeversie);
-  }
-} catch (error) {
-  console.error(error);
-  process.exit();
-}
+// try {
+//   const nodeversie = Number(process.versions.node.split('.')[0]);
+// console.log('node versie: ', nodeversie)
+//   if (typeof nodeversie !== 'number') {
+//     throw new Error({
+//       message: 'process object anders dan verwacht',
+//       process: process,
+//     })
+//   }
+//   if (nodeversie < 14) {
+//     throw new Error('node versie te laag. is22: ', nodeversie);
+//   }
+// } catch (error) {
+//   console.error(error);
+//   process.exit();
+// }
 
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
