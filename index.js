@@ -11,15 +11,15 @@
   * Als lager dan versie 14, niet draaien.
   */
 try {
-  const nodeversie = process.versions.node.split('.')[0];
+  const nodeversie = Number(process.versions.node.split('.')[0]);
 
-  if (typeof Number(nodeversie) !== 'number') {
+  if (typeof nodeversie !== 'number') {
     throw new Error({
       message: 'process object anders dan verwacht',
       process: process,
     })
   }
-  if (Number(nodeversie) < 14) {
+  if (nodeversie < 14) {
     throw new Error('node versie te laag. is: ', nodeversie);
   }
 } catch (error) {
