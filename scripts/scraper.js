@@ -49,7 +49,6 @@ async function scrapeDagen(dagenTeDoen) {
           .then(function(response) {
             const iplus = index + 1;
             if (iplus % 10 === 0) {
-              console.clear();
               const teDoen = teScrapen.length - iplus;
               const teDoenTijd = Math.floor((teDoen * 800) / 6000);
               console.log(

@@ -270,7 +270,6 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
         if ((requestIndex + 1) % 25 === 0) {
           const aantalTeDoen = totaleAantalRequests - (requestIndex + 1);
           const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
-          console.clear();
           console.log(`${requestIndex + 1} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`);
         }
         const b = Object.assign(adresObject, {
@@ -327,8 +326,6 @@ function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
       .filter((a) => {
         return !uniekeBestaandeAdressen.has(a.adres);
       });
-
-      console.log(teConsolideren)
 
         // HIER
     resolve({
