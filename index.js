@@ -20,7 +20,7 @@ try {
     })
   }
   if (nodeversie < 14) {
-    throw new Error('node versie te laag. is: ', nodeversie);
+    throw new Error('node versie te laag. is22: ', nodeversie);
   }
 } catch (error) {
   console.error(error);
