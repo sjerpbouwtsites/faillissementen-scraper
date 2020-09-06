@@ -165,11 +165,16 @@ function verwerkKvKHTML (htmlVerzameling, osm_id) {
       const vestigingHTML = parse(resLi.innerHTML);
 
       // kvk, vestigingsnr, straat en nr, postcode, stad
-      const kvkMeta = vestigingHTML
-        .querySelector('.kvk-meta')
-        ?.innerHTML.split('</li>')
+      const kvkMetaEl = vestigingHTML.querySelector('.kvk-meta');
+      let kvkMeta;
+      if (kvkMetaEl !== 'undefined' && !!kvkMetaEl) {
+        kvkMeta= kvkMetaEl 
+        .innerHTML.split('</li>')
         .map((blob) => blob.replace('<li>', '').trim())
         .splice(0, 5);
+      } else {
+        kvkMeta= '';
+      }
 
       return {
         kvkMeta,
