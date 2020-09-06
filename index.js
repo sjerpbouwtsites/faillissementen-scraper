@@ -12,7 +12,7 @@
   */
 try {
   const nodeversie = Number(process.versions.node.split('.')[0]);
-
+console.log('node versie: ', nodeversie)
   if (typeof nodeversie !== 'number') {
     throw new Error({
       message: 'process object anders dan verwacht',
