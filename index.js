@@ -13,10 +13,10 @@
 try {
   const nodeversie = process.versions.node.split('.')[0];
 
-  if (isNaN(Number(nodeversie))) {
+  if (typeof Number(nodeversie) !== 'number') {
     throw new Error({
       message: 'process object anders dan verwacht',
-      process,
+      process: process,
     })
   }
   if (Number(nodeversie) < 14) {
