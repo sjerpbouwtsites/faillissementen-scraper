@@ -63,11 +63,11 @@ async function consolideerAdressen() {
         .map(gpr => gpr.value)
         
         const gerateLimitteAdressen = geoPromiseRes
-        .filter(gpr => gpr.status !== 'fulfilled' && gpr?.value?.statusCode === '429')
+        .filter(gpr => gpr.status !== 'fulfilled' && gpr.value.statusCode === '429')
         .map(gpr => gpr.value)
 
         const ongevondenAdressen = geoPromiseRes
-        .filter(gpr => gpr.status !== 'fulfilled' && gpr?.value?.statusCode === '404')
+        .filter(gpr => gpr.status !== 'fulfilled' && gpr.value.statusCode === '404')
         .map(gpr => gpr.value)        
 
         const nweAdresDb = pakAdressenDb().concat(succesvolleAdressen)
@@ -270,7 +270,6 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
         if ((requestIndex + 1) % 25 === 0) {
           const aantalTeDoen = totaleAantalRequests - (requestIndex + 1);
           const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
-          console.clear();
           console.log(`${requestIndex + 1} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`);
         }
         const b = Object.assign(adresObject, {
@@ -327,8 +326,6 @@ function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
       .filter((a) => {
         return !uniekeBestaandeAdressen.has(a.adres);
       });
-
-      console.log(teConsolideren)
 
         // HIER
     resolve({

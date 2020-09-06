@@ -7,11 +7,11 @@ const path = require("path");
 const startDatum = "2020-01-01";
 const eindDatum = "2022-12-31";
 
-const opslagPad = path.resolve("database/");
-const scriptPad = path.resolve("scripts/");
-const goedPad = path.resolve("goed/");
-const nutsPad = path.resolve("scripts/nuts/");
-const tempPad = path.resolve("temp/");
+const opslagPad = path.resolve(wd`database/`);
+const scriptPad = path.resolve(wd`scripts/`);
+const goedPad = path.resolve(wd`goed/`);
+const nutsPad = path.resolve(wd`scripts/nuts/`);
+const tempPad = path.resolve(wd`temp/`);
 const maanden = [
   "",
   "januari",
@@ -27,6 +27,12 @@ const maanden = [
   "november",
   "december",
 ];
+/**
+ * with dirname
+ */
+function wd (path) {
+  return `${__dirname}/${path}`;
+}
 module.exports = {
   opties: {
     overschrijfAlleRequest: false,
@@ -34,7 +40,7 @@ module.exports = {
     startDatum,
     eindDatum,
     volleDebug: false,
-    maxKvKRequests: 200,
+    maxKvKRequests: 100,
     maxAantalVestingen: 60,
     debugDb: true,
     toegestaneClusters: [

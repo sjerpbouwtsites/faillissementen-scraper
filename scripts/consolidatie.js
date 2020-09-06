@@ -165,19 +165,26 @@ function verwerkKvKHTML (htmlVerzameling, osm_id) {
       const vestigingHTML = parse(resLi.innerHTML);
 
       // kvk, vestigingsnr, straat en nr, postcode, stad
-      const kvkMeta = vestigingHTML
-        .querySelector('.kvk-meta')
-        ?.innerHTML.split('</li>')
+      const kvkMetaEl = vestigingHTML.querySelector('.kvk-meta');
+      let kvkMeta;
+      if (kvkMetaEl !== 'undefined' && !!kvkMetaEl) {
+        kvkMeta= kvkMetaEl 
+        .innerHTML.split('</li>')
         .map((blob) => blob.replace('<li>', '').trim())
         .splice(0, 5);
+      } else {
+        kvkMeta= '';
+      }
 
+      const statusEl = vestigingHTML.querySelector('.status');
+      const snippetResEl = vestigingHTML.querySelector('.snippet-result');
       return {
         kvkMeta,
         kvkLink: `https://www.kvk.nl${vestigingHTML.querySelector('.handelsnaamHeader a').getAttribute('href')}`,
         isHoofdVestiging: resLi.innerHTML.includes('hoofdvestigingTag'),
         handelsNaam: vestigingHTML.querySelector('.handelsnaamHeader').rawText,
-        uitgeschreven: vestigingHTML.querySelector('.status')?.rawText.includes('uitgeschreven'),
-        werkzaamheden: vestigingHTML.querySelector('.snippet-result')?.rawText,
+        uitgeschreven: statusEl !== 'undefined' ? statusEl.rawText.includes('uitgeschreven') : false,
+        werkzaamheden: snippetResEl !== 'undefined' ? vestigingHTML.querySelector('.snippet-result').rawText : false,
       };
     });
 
