@@ -176,12 +176,14 @@ function verwerkKvKHTML (htmlVerzameling, osm_id) {
         kvkMeta= '';
       }
 
+      const statusEl = vestigingHTML.querySelector('.status');
+
       return {
         kvkMeta,
         kvkLink: `https://www.kvk.nl${vestigingHTML.querySelector('.handelsnaamHeader a').getAttribute('href')}`,
         isHoofdVestiging: resLi.innerHTML.includes('hoofdvestigingTag'),
         handelsNaam: vestigingHTML.querySelector('.handelsnaamHeader').rawText,
-        uitgeschreven: vestigingHTML.querySelector('.status')?.rawText.includes('uitgeschreven'),
+        uitgeschreven: statusEl !== 'undefined' ? statusEl.rawText.includes('uitgeschreven') : false,
         werkzaamheden: vestigingHTML.querySelector('.snippet-result')?.rawText,
       };
     });
