@@ -7,9 +7,9 @@
  * maar daarbuiten in JSON. De volgende functie kan evengoed weer dezelfde database aanroepen.
  */
 
- /**
-  * Als lager dan versie 14, niet draaien.
-  */
+/**
+ * Als lager dan versie 14, niet draaien.
+ */
 // try {
 //   const nodeversie = Number(process.versions.node.split('.')[0]);
 // console.log('node versie: ', nodeversie)
@@ -27,15 +27,24 @@
 //   process.exit();
 // }
 
+function pakDagenVerzameling(start, end) {
+  for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
+    arr.push(new Date(dt).toISOString().split("T")[0].replace(/-/g, ""));
+  }
+  return arr;
+}
+
+const dagenLijst = pakDagenVerzameling(new Date("2020-01-01"), new Date("2030-12-31"));
+console.log(dagenLijst);
+process.exit();
+
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
 var clc = require("cli-color");
-const log = pakScript('logger');
+const log = pakScript("logger");
 
 async function init() {
-
   try {
-
     const installatie = pakScript("installatie");
     const dagenDatabase = pakScript("dagen-database");
     const scraper = pakScript("scraper");
@@ -57,11 +66,7 @@ async function init() {
     // indien vestigingen bekend maar verouderd > 7 dagen
     // async op achtergrond vernieuwen
     const vestigingenOpgezocht = await consolidatie.zoekInKvKAndereVestingenPerAdres();
-    console.log(
-      clc.bgWhite.black(
-        `\n\t\tKLAAR!\t\n\t${consolidatieAntwoord} adressen beschikbaar\t\n\t${vestigingenOpgezocht.length} vestigingen opgezocht`
-      )
-    );
+    console.log(clc.bgWhite.black(`\n\t\tKLAAR!\t\n\t${consolidatieAntwoord} adressen beschikbaar\t\n\t${vestigingenOpgezocht.length} vestigingen opgezocht`));
     printMarx.print();
   } catch (error) {
     console.error(error);
