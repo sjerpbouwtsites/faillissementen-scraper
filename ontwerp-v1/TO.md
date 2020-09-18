@@ -1,3 +1,7 @@
+## Nieuwe repositories
+
+repo van nieuwe backend: https://github.com/sjerpbouwtsites/kraak-server;
+
 ## Datamodel voorkant. Relaties tussen data.
 
 ![to p1](https://github.com/sjerpbouwtsites/faillissementen-scraper/blob/master/ontwerp-v1/to-1.jpg?raw=true)
