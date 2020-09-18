@@ -1,6 +1,8 @@
 ## Nieuwe repositories
 
 repo van nieuwe backend: https://github.com/sjerpbouwtsites/kraak-server;
+Hier kan je zien in src/kraak-worker.ts en scrapers/rechtbanken.ts wat ik bedoel met workers.
+Doordat de rechtbank worker doorgeeft aan de controller index.ts wanneer hij klaar is met één datum kan de rest van de app gelijk aan de slag met die data. In plaats van toe hoeven wachten totdat alle datums eindelijk gescraped zijn.
 
 ## Datamodel voorkant. Relaties tussen data.
 
