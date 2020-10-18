@@ -27,16 +27,16 @@
 //   process.exit();
 // }
 
-function pakDagenVerzameling(start, end) {
-  for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
-    arr.push(new Date(dt).toISOString().split("T")[0].replace(/-/g, ""));
-  }
-  return arr;
-}
+// function pakDagenVerzameling(start, end) {
+//   for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
+//     arr.push(new Date(dt).toISOString().split("T")[0].replace(/-/g, ""));
+//   }
+//   return arr;
+// }
 
-const dagenLijst = pakDagenVerzameling(new Date("2020-01-01"), new Date("2030-12-31"));
-console.log(dagenLijst);
-process.exit();
+// const dagenLijst = pakDagenVerzameling(new Date("2020-01-01"), new Date("2030-12-31"));
+// console.log(dagenLijst);
+// process.exit();
 
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
