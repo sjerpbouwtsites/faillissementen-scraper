@@ -240,7 +240,13 @@ function relevantePublicatieClusters(route) {
     }
   });
 }
-
+/**
+ * checks if geo request allready saved if so returns, otherwise does roudntrip.
+ * @param {*} adresObject
+ * @param {*} requestIndex
+ * @param {*} totaleAantalRequests
+ * @throws
+ */
 function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
   return new Promise((resolve, reject) => {
     axios
@@ -264,15 +270,12 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
         resolve(["200", b]);
       })
       .catch((axiosErr) => {
-        if (!axiosErr.response) {
-          reject(axiosErr);
-        }
-
-        if (axiosErr.response.status === 429) {
-          resolve(["429", adresObject]);
-        } else if (axiosErr.response.status === 404) {
-          resolve(["404", adresObject]);
+        const responseStatus = !!axiosErr && !!axiosErr.response ? axiosErr.response.status : null;
+        if ([429, 404].includes(responseStatus)) {
+          resolve([responseStatus, adresObject]);
         } else {
+          console.log("geolocatie error zonder duidelijke error?");
+          console.error(axiosErr);
           reject(axiosErr);
         }
       });

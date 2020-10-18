@@ -1,10 +1,6 @@
 const fs = require("fs");
 const config = require("../config.js");
-const {
-  schrijfOpslag,
-  maakOpslagPad,
-  DateNaarDatumGetal,
-} = require(config.nutsPad);
+const { schrijfOpslag, maakOpslagPad, DateNaarDatumGetal } = require(config.nutsPad);
 
 /**
  * CRUD voor de dagenDb.json.
@@ -17,14 +13,11 @@ const {
 
 function maakDagenDb() {
   return new Promise((resolve) => {
-    var dagenLijst = pakDagenVerzameling(
-      new Date(config.opties.startDatum),
-      new Date(config.opties.eindDatum)
-    );
-    console.log(dagenLijst)
+    var dagenLijst = pakDagenVerzameling(new Date(config.opties.startDatum), new Date(config.opties.eindDatum));
+    console.log(dagenLijst);
     const dagenVoorDb = dagenLijst.map((d) => {
-      const route  =ISONaarRechtspraak(d); 
-      const pad = maakOpslagPad('responses/rechtbank/'+route);
+      const route = ISONaarRechtspraak(d);
+      const pad = maakOpslagPad("responses/rechtbank/" + route);
       const meldingBestandBestaat = fs.existsSync(pad);
       return {
         datum: d,
@@ -32,7 +25,7 @@ function maakDagenDb() {
         gescraped: meldingBestandBestaat, // valt terug op false; van rechtbank;
         geconsolideerd: false, // adres en publicaties samengevoegd
         adresGepakt: false, // van locationIQ server latlng geplukt;
-        hadMelding: meldingBestandBestaat // indien melding niet bestaat, valt terug op false, init.
+        hadMelding: meldingBestandBestaat, // indien melding niet bestaat, valt terug op false, init.
       };
     });
     schrijfOpslag("dagenDb", dagenVoorDb);
@@ -74,12 +67,7 @@ function pakDagenData() {
     // Adres wordt vanaf locationIQ server gehaald na scrapen rechtbank
     let dagenAdresTePakken = dagenDb.filter((dbDag) => {
       const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
-      return (
-        dbDag.gescraped &&
-        dbDag.hadMelding &&
-        !dbDag.adresGepakt &&
-        vglMetVandaag <= vandaag
-      );
+      return dbDag.gescraped && dbDag.hadMelding && !dbDag.adresGepakt && vglMetVandaag <= vandaag;
     });
 
     // samenvoegen van adressen en rechtbank responses
@@ -87,28 +75,14 @@ function pakDagenData() {
     let dagenTeConsolideren = dagenDb.filter((dbDag) => {
       const vglMetVandaag = DateNaarDatumGetal(dbDag.datum);
       const consolidatieBool = !dbDag.geconsolideerd || config.opties.consolideerTelkensOpnieuw;
-      return (
-        dbDag.gescraped &&
-        dbDag.hadMelding &&
-        vglMetVandaag <= vandaag &&
-        consolidatieBool
-      );
+      return dbDag.gescraped && dbDag.hadMelding && vglMetVandaag <= vandaag && consolidatieBool;
     });
 
-    if(config.opties.debugDb) {
-       console.log(
-      "db status\n tot:",
-      dagenDb.length,
-      "te doen:",
-      dagenTeDoen.length,
-      "adres te pakken: ",
-      dagenAdresTePakken.length,
-      "te consolideren: ",
-      dagenTeConsolideren.length
-    );
-       } else {
-         console.log()
-       }
+    if (config.opties.debugDb) {
+      console.log("db status\n tot:", dagenDb.length, "te doen:", dagenTeDoen.length, "adres te pakken: ", dagenAdresTePakken.length, "te consolideren: ", dagenTeConsolideren.length);
+    } else {
+      console.log();
+    }
 
     resolve({
       dagen: dagenDb,
@@ -141,7 +115,6 @@ async function zetGescraped({ gescraped, hadMelding }) {
 
 // waarom is de ene met een promise en de andere niet
 async function schrijfAdressenGepakt(dagenAdresGepakt) {
-
   const dagenData = await pakDagenData();
 
   const nweDagenData = dagenData.dagen.map((dbDag) => {
@@ -158,9 +131,7 @@ async function schrijfGeconsolideerd(geconsolideerdDagen) {
   const dagenData = await pakDagenData();
 
   const nweDagenData = dagenData.dagen.map((dbDag) => {
-    const isNieuwGeconsolideerd = geconsolideerdDagen.some(
-      (h) => h.route === dbDag.route
-    );
+    const isNieuwGeconsolideerd = geconsolideerdDagen.some((h) => h.route === dbDag.route);
     return Object.assign(dbDag, {
       geconsolideerd: dbDag.geconsolideerd || isNieuwGeconsolideerd,
       adresGepakt: dbDag.geconsolideerd || isNieuwGeconsolideerd, // HACK om achter te fiksen dat adresGepakt niet meer meegenomen wordt...
@@ -184,11 +155,7 @@ module.exports = {
 // HULPJES VAN MAAKDAGENDB()
 
 function pakDagenVerzameling(start, end) {
-  for (
-    var arr = [], dt = new Date(start);
-    dt <= end;
-    dt.setDate(dt.getDate() + 1)
-  ) {
+  for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
     arr.push(new Date(dt));
   }
   return arr;

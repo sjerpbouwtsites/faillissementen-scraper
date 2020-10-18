@@ -1,5 +1,10 @@
 /* incl blog paneel */
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .uitleg-paneel,
 .blog-paneel {
   padding: 20px;
