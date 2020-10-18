@@ -265,7 +265,7 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
       })
       .catch((axiosErr) => {
         if (!axiosErr.response) {
-          throw new Error("geen axios response");
+          reject(axiosErr);
         }
 
         if (axiosErr.response.status === 429) {
