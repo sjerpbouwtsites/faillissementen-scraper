@@ -8,77 +8,66 @@ async function consolideerAdressen() {
   // losse json naar één json bestand
   // schrijf naar db dat adressen geconsolideerd
 
-  
   return new Promise((resolve) => {
-    dagenDb.pakDagenData().then((dagenData) => {
-      const dagenAdresTePakken = dagenData.dagenAdresTePakken
-      if (!dagenAdresTePakken.length) {
-        resolve({teConsolideren: []});
-        return;
-      }
-    
-      const adressenDb = pakAdressenDb();
+    dagenDb
+      .pakDagenData()
+      .then((dagenData) => {
+        const dagenAdresTePakken = dagenData.dagenAdresTePakken;
+        if (!dagenAdresTePakken.length) {
+          resolve({ teConsolideren: [] });
+          return;
+        }
 
-      // teConsolideren is wat verwerkt gaat worden
-      // nieuwGeconsolideerdeAdressen komt van & wordt adressen.json
-      return bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb);      
+        const adressenDb = pakAdressenDb();
 
-    }).then((vanVoorbereiding) =>{
-      const teConsolideren = !!vanVoorbereiding 
-        ? !!vanVoorbereiding.teConsolideren 
-          ? vanVoorbereiding.teConsolideren 
-          : []
-        : [];
-      const aantalTeConsolideren = teConsolideren.length;
-      if (!aantalTeConsolideren) {
-        resolve("klaar");
-      }
+        // teConsolideren is wat verwerkt gaat worden
+        // nieuwGeconsolideerdeAdressen komt van & wordt adressen.json
+        return bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb);
+      })
+      .then((vanVoorbereiding) => {
+        const teConsolideren = vanVoorbereiding ? (vanVoorbereiding.teConsolideren ? vanVoorbereiding.teConsolideren : []) : [];
+        const aantalTeConsolideren = teConsolideren.length;
+        if (!aantalTeConsolideren) {
+          resolve("klaar");
+        }
 
-      const exitTijd = aantalTeConsolideren * 1111 + 2000;
-      console.log("Adressen klaar over", exitTijd / 60000, " minuten");
+        const exitTijd = aantalTeConsolideren * 1111 + 2000;
+        console.log("Adressen klaar over", exitTijd / 60000, " minuten");
 
-      const lijstMetGeoPromises = teConsolideren.map((dagObject, index) => {
-        return new Promise((resolveGeoLos, rejectGeoLos) => {
-          setTimeout(() => {
-            geoRequestFunc(dagObject, index, aantalTeConsolideren)
-            .then(([statusCode, antwoordObject]) => {
-              antwoordObject.statusCode = statusCode;
-              if (['429', '404'].includes(statusCode)) {
-                rejectGeoLos(antwoordObject)
-              } else {
-                resolveGeoLos(antwoordObject)
-              }
-            }).catch(err => rejectGeoLos(err)); // @TODO onduidelijke staat
-          }, index * 1311);
+        const lijstMetGeoPromises = teConsolideren.map((dagObject, index) => {
+          return new Promise((resolveGeoLos, rejectGeoLos) => {
+            setTimeout(() => {
+              geoRequestFunc(dagObject, index, aantalTeConsolideren)
+                .then(([statusCode, antwoordObject]) => {
+                  antwoordObject.statusCode = statusCode;
+                  if (["429", "404"].includes(statusCode)) {
+                    rejectGeoLos(antwoordObject);
+                  } else {
+                    resolveGeoLos(antwoordObject);
+                  }
+                })
+                .catch((err) => rejectGeoLos(err)); // @TODO onduidelijke staat
+            }, index * 1311);
+          });
         });
 
+        Promise.allSettled(lijstMetGeoPromises).then((geoPromiseRes) => {
+          // gebruik nieuwGeconsolideerdeAdressen
+          const succesvolleAdressen = geoPromiseRes.filter((gpr) => gpr.status === "fulfilled").map((gpr) => gpr.value);
+
+          const gerateLimitteAdressen = geoPromiseRes.filter((gpr) => gpr.status !== "fulfilled" && gpr.value.statusCode === "429").map((gpr) => gpr.value);
+
+          const ongevondenAdressen = geoPromiseRes.filter((gpr) => gpr.status !== "fulfilled" && gpr.value.statusCode === "404").map((gpr) => gpr.value);
+
+          const nweAdresDb = pakAdressenDb().concat(succesvolleAdressen);
+
+          nuts.schrijfOpslag(`adressen`, nweAdresDb);
+          nuts.schrijfOpslag(`ratelimit-adressen`, gerateLimitteAdressen);
+          // @TODO schrijf opslag ongevonden adressen
+          dagenDb.schrijfAdressenGepakt(succesvolleAdressen);
+          resolve("");
+        });
       });
-
-      
-
-      Promise.allSettled(lijstMetGeoPromises).then((geoPromiseRes) => {
-        // gebruik nieuwGeconsolideerdeAdressen
-        const succesvolleAdressen = geoPromiseRes
-        .filter(gpr => gpr.status === 'fulfilled')
-        .map(gpr => gpr.value)
-        
-        const gerateLimitteAdressen = geoPromiseRes
-        .filter(gpr => gpr.status !== 'fulfilled' && gpr.value.statusCode === '429')
-        .map(gpr => gpr.value)
-
-        const ongevondenAdressen = geoPromiseRes
-        .filter(gpr => gpr.status !== 'fulfilled' && gpr.value.statusCode === '404')
-        .map(gpr => gpr.value)        
-
-        const nweAdresDb = pakAdressenDb().concat(succesvolleAdressen)
-
-        nuts.schrijfOpslag(`adressen`, nweAdresDb);
-        nuts.schrijfOpslag(`ratelimit-adressen`, gerateLimitteAdressen);
-        // @TODO schrijf opslag ongevonden adressen
-        dagenDb.schrijfAdressenGepakt(succesvolleAdressen);
-        resolve("");
-      });      
-    }) 
   });
 }
 
@@ -91,7 +80,7 @@ async function zoekAdressen() {
         const zoekAdresPromises = dagObjectenVerzameling.map((dagObject, index) => {
           return new Promise((resolveZoekAdres, rejectZoekAdres) => {
             const draaiTijd = index * 800;
-            setTimeout(function() {
+            setTimeout(function () {
               ///////////////////////////
               //////////////////////////
               relevantePublicatieClusters(dagObject.route)
@@ -110,14 +99,11 @@ async function zoekAdressen() {
                 });
             }, draaiTijd);
           });
-        
         });
-        
+
         Promise.allSettled(zoekAdresPromises)
           .then((zoekAdresPromisesRes) => {
-            const succesvolleAdressen = zoekAdresPromisesRes
-              .filter(zap => zap.status === 'fulfilled')
-              .map(zap => zap.value)
+            const succesvolleAdressen = zoekAdresPromisesRes.filter((zap) => zap.status === "fulfilled").map((zap) => zap.value);
             resolveZoekAdressen(succesvolleAdressen);
           })
           .catch((err) => {
@@ -130,8 +116,6 @@ async function zoekAdressen() {
     }
   });
 }
-
-
 
 function uniekeAdressenUitString(pcString) {
   const w = pcString
@@ -192,7 +176,7 @@ function uniekeAdressenUitString(pcString) {
         plaatsnaam: m[3],
       });
     })
-    .filter(function(value, index, self) {
+    .filter(function (value, index, self) {
       return self.indexOf(value) === index;
     })
     .map((json) => {
@@ -269,7 +253,7 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
         // voortgang printen naar console.
         if ((requestIndex + 1) % 25 === 0) {
           const aantalTeDoen = totaleAantalRequests - (requestIndex + 1);
-          const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 6000);
+          const tijdTeDoen = Math.floor((aantalTeDoen * 1311) / 60000);
           console.log(`${requestIndex + 1} geo-gegevens opgehaald; nog ${aantalTeDoen} te doen; duurt wss ${tijdTeDoen} minuten.`);
         }
         const b = Object.assign(adresObject, {
@@ -281,8 +265,7 @@ function geoRequestFunc(adresObject, requestIndex, totaleAantalRequests) {
       })
       .catch((axiosErr) => {
         if (!axiosErr.response) {
-          console.error(axiosErr);
-          return;
+          throw new Error("geen axios response");
         }
 
         if (axiosErr.response.status === 429) {
@@ -327,7 +310,7 @@ function bereidAdresBewerkVerzamelingenVoor(dagenAdresTePakken, adressenDb) {
         return !uniekeBestaandeAdressen.has(a.adres);
       });
 
-        // HIER
+    // HIER
     resolve({
       teConsolideren,
     });
@@ -365,15 +348,15 @@ function pakAdressenDb() {
   return adressenDb;
 }
 
-function lijstAlleHuidigeGeos(){
-  const geoPath = nuts.maakOpslagPad('responses/geo', '');
+function lijstAlleHuidigeGeos() {
+  const geoPath = nuts.maakOpslagPad("responses/geo", "");
 
-  return fs.readdirSync(geoPath).map(fileName => {
-    return path.join(fileName)
+  return fs.readdirSync(geoPath).map((fileName) => {
+    return path.join(fileName);
   });
 }
 
 module.exports = {
   zoekAdressen,
-  consolideerAdressen
+  consolideerAdressen,
 };
