@@ -4,7 +4,7 @@
   "description": "schraapt faillissementen van sites",
   "main": "index.js",
   "scripts": {
-    "doe": "node index.js",
+    "draai": "node index.js",
     "vanaf-beginNEENIET": "npm run opruimen; node index.js",
     "opruimenNEENIET": "clear; sudo rm -rf database;",
     "vanaf-adressenNEENIET": "clear; rm database/adressen.json; rm database/geconsolideerde-adressen.json; node index.js"

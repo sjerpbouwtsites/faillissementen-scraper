@@ -10,33 +10,33 @@
 /**
  * Als lager dan versie 14, niet draaien.
  */
-// try {
-//   const nodeversie = Number(process.versions.node.split('.')[0]);
-// console.log('node versie: ', nodeversie)
-//   if (typeof nodeversie !== 'number') {
-//     throw new Error({
-//       message: 'process object anders dan verwacht',
-//       process: process,
-//     })
-//   }
-//   if (nodeversie < 14) {
-//     throw new Error('node versie te laag. is22: ', nodeversie);
-//   }
-// } catch (error) {
-//   console.error(error);
-//   process.exit();
-// }
-
-function pakDagenVerzameling(start, end) {
-  for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
-    arr.push(new Date(dt).toISOString().split("T")[0].replace(/-/g, ""));
+try {
+  const nodeversie = Number(process.versions.node.split(".")[0]);
+  console.log("node versie: ", nodeversie);
+  if (typeof nodeversie !== "number") {
+    throw new Error({
+      message: "process object anders dan verwacht",
+      process: process,
+    });
   }
-  return arr;
+  if (nodeversie !== 12) {
+    throw new Error("de server draait op Node 12 aangezien plesk stom is. Graag ook lokaal gebruiken");
+  }
+} catch (error) {
+  console.error(error);
+  process.exit();
 }
 
-const dagenLijst = pakDagenVerzameling(new Date("2020-01-01"), new Date("2030-12-31"));
-console.log(dagenLijst);
-process.exit();
+// function pakDagenVerzameling(start, end) {
+//   for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
+//     arr.push(new Date(dt).toISOString().split("T")[0].replace(/-/g, ""));
+//   }
+//   return arr;
+// }
+
+// const dagenLijst = pakDagenVerzameling(new Date("2020-01-01"), new Date("2030-12-31"));
+// console.log(dagenLijst);
+// process.exit();
 
 const { nutsPad } = require("./config.js");
 const { pakScript } = require(nutsPad);
