@@ -1,4 +1,7 @@
-.uitleg-paneel {
+/* incl blog paneel */
+
+.uitleg-paneel,
+.blog-paneel {
   padding: 20px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -10,7 +13,7 @@
   max-width: 80ch;
   box-sizing: border-box;
   max-height: 80vh;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 .uitleg-paneel__kop:first-child {
@@ -51,6 +54,14 @@
 .open-sluit-knop.uitleg-paneel__open {
   position: fixed;
   bottom: 0;
+  top: auto;
+  right: auto;
+  left: 0;
+  z-index: 1000;
+}
+.open-sluit-knop.blog-paneel__open {
+  position: fixed;
+  bottom: 60px;
   top: auto;
   right: auto;
   left: 0;

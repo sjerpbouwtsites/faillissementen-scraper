@@ -116,7 +116,7 @@
       id="toon-uitleg-paneel"
       class="open-sluit-knop uitleg-paneel__open open-sluit-knop--met-tekst"
       data-toon="#uitleg-paneel"
-      data-sluit="#toon-uitleg-paneel"
+      data-sluit="#toon-uitleg-paneel, #toon-blog-paneel, #blog-paneel"
     >
       <span class="open-sluit-knop__tekst">Uitleg & achtergronden</span>
     </button>
@@ -127,7 +127,7 @@
       <button
         class="open-sluit-knop"
         data-sluit="#uitleg-paneel"
-        data-toon="#toon-uitleg-paneel"
+        data-toon="#toon-uitleg-paneel, #toon-blog-paneel"
       >
         <img src="goed/sluit.svg" alt="sluit paneel" width="30" height="30" />
       </button>
@@ -254,6 +254,89 @@
       </div>
     </aside>
     <!-- EIND uitleg paneel-->
+    <!-- START blog paneel -->
+    <button
+      id="toon-blog-paneel"
+      class="open-sluit-knop blog-paneel__open open-sluit-knop--met-tekst"
+      data-toon="#blog-paneel"
+      data-sluit="#toon-blog-paneel, #toon-uitleg-paneel, #uitleg-paneel"
+    >
+      <span class="open-sluit-knop__tekst">Blog & nieuws - v1 komt!</span>
+    </button>
+    <aside
+      id="blog-paneel"
+      class="blog-paneel heeft-open-sluit-knop verborgen"
+    >
+      <button
+        class="open-sluit-knop"
+        data-sluit="#blog-paneel"
+        data-toon="#toon-blog-paneel, #toon-uitleg-paneel"
+      >
+        <img src="goed/sluit.svg" alt="sluit paneel" width="30" height="30" />
+      </button>
+      <header class="uitleg-paneel__header uitleg-paneel__header--top">
+        <h2 class="uitleg-paneel__kop uitleg-paneel__kop--top">
+          Blog & nieuws kraakapp.nl
+        </h2>
+      </header>
+      <div class="uitleg-paneel__brood">
+        <p class="uitleg-paneel__tekst">
+          Na het succes van het prototype wordt het tijd voor de versie 1 van de kraakapp. Hoe gaat het, hoe loopt de app, waarom ging De Ligt naar Turijn, etc. 
+        </p>
+
+
+        <section class="uitleg-paneel__sectie">
+          <header class="uitleg-paneel__header">
+            <h3 class="uitleg-paneel__kop">
+              App lag er uit<br>
+              <small>18 okt 2020</small>
+            </h3>
+          </header>
+          <p class='uitleg-paneel__tekst'>
+            Bij het aanleggen van de versie1 heb ik door kopieeren en plakken de v0 geweld aangedaan en die lag er uit. Alsin: geen nieuwe data werd meegenomen. <br>
+            Nu is het nog niet opgelost, maar ben er al wel mee bezig.
+          </p>
+        </section>            
+
+        <section class="uitleg-paneel__sectie">
+          <header class="uitleg-paneel__header">
+            <h3 class="uitleg-paneel__kop">
+              Ik ben fucking ziek<br>
+              <small>13 okt 2020</small>
+            </h3>
+          </header>
+          <p class='uitleg-paneel__tekst'>
+            <strong>En daarom loopt dit project vertraging op.</strong><br>
+            Mijn lichaam is altijd wel krakkemikkig geweest, maar een clusterfuck aan zaken zorgt ervoor dat ik de afgelopen vooral op bed lig te creperen. Ik heb er geen beter woord voor helaas, het is wat het is. Niemand hoeft dit niet te lezen dus commentaren over zielig doen mogen mensen in hun reet steken. <br>
+            Anyway, het was altijd al bagger maar sinds m'n 17e functioneert mijn verteringsstelsel van mond tot kont in toenemende mate niet. Ontwikkelde van het onschuldige... onrustige buik zegmaar en af en toe 10 kilo er af door pijn toen ik net uit huis was. <br>
+            Het niveau van pijn dat ik nu met grote regelmaat ervaar is dusdanig dat ik vaak de pijngrens doorga en m'n lichaam er letterlijk mee ophoud. Doktoren weigeren 16 jaar te onderzoeken laat staan helpen, ook niet nadat ik al in 2009 halfdood met de ambulance was binnengereden en met regelmaat de deur platliep om om hulp te smeken. Het zorgsysteem en zijn helden, nou, misschien op TV, niet in mijn leven<br>
+            Deze zomer ben ik met episodes sterk gaan vermageren. Mentaal heb ik depressie & co denk ik uitstekend onder controle, ik voel me mentaal boven jan. Waar mijn lichaam sinds de zomer niet meer mee kan dealen is de grote hoeveelheid seksueel geweld, en niet nader toegelicht extreem geweld, die ik met zekere contacten heb meegemaakt. Mijn lichaam weigert stomweg om voedingsstoffen op te nemen van de stress tijdens de aanvallen, die dagen duren. Hierbij speelt verder de onmogelijke opgave een vast contract te regelen vanaf mijn ziektebed omdat....er anders geen manier is om een huis te krijgen. Thx stopera & banken. <br>
+            Met de dood heb ik mij reeds jaren verzoend, dus dat is prima. <br>Wat me dwars zit is dat ik niet de aandacht en zorg kan besteden aan dingen die er wel toe doen, zoals strijd en dan met name Vloerwerk, me familie, en in mindere mate een appje als dit. <br>Hoe verder? Ik heb ik me vorig jaar inschreven bij een huisarts in een rijk dorp, want artsen dissen ons arbeiders in Noord maar zijn superaardig tegen kleinburgers en rijken. Dankzij die stap eindelijk geven ze toe dat ik mogelijk iemand ziek ben. Ik heb nu kans op een telefonisch gesprek waarin ik mogelijk een onbekende overtuig me te onderzoeken, waarna ze later nog eens bepalen of ze dat wel nodig achten. M'n ziekenhuis staat.... in Noord. Bizar? Paranoia? Ik heb het op papier hier op me bureau.<br>Misschien maar naar de staatsloterij dan, meer zekerheid!
+            <br>
+            De strijd gaat door. Ik zal aan de app blijven werken. Maar het gaat ff anders dan gepland.
+          </p>
+        </section>
+    
+
+        <section class="uitleg-paneel__sectie">
+          <header class="uitleg-paneel__header">
+            <h3 class="uitleg-paneel__kop">
+              Versie 1 in ontwikkeling!<br>
+              <small>6 okt 2020</small>
+            </h3>
+          </header>
+          <p class='uitleg-paneel__tekst'>
+            <strong></strong><br>
+            Mijn lichaam is altijd wel krakkemikkig geweest, maar een clusterfuck aan zaken zorgt ervoor dat ik de afgelopen vooral op bed lig te creperen. Ik heb er geen beter woord voor helaas, het is wat het is.<br>
+            Anyway, het was altijd al bagger maar sinds m'n 17e functioneert mijn verteringsstelsel van mond tot kont in toenemende mate niet. Het niveau van pijn dat ik stelselmatig ervaar is dusdanig dat ik vaak de grens over ga en alle systemen uit gaan. Doktoren weigerden 16 jaar te onderzoeken laat staan helpen, ook niet nadat ik al in 2009 halfdood met de ambulance was binnengereden en eerder de deur platliep.<br>
+            Deze zomer ben ik met episodes sterk gaan vermageren. Mentaal heb ik depressie & co denk ik uitstekend onder controle, ik voel me mentaal boven jan. Waar mijn lichaam sinds de zomer niet meer mee kan dealen is de grote hoeveelheid seksueel geweld, en niet nader toegelicht extreem geweld, die ik met zekere contacten heb meegemaakt. Mijn lichaam weigert stomweg om voedingsstoffen op te nemen van de stress tijdens de 'episodes'. De stress wordt verder verhoofd door de onmogelijke opgave een vast contract te moet regelen vanaf mijn ziektebed omdat....ik anders dakloos wordt. Scheiding in Amsterdam in 2020, jezus, mijn familie woont hier 400 jaar verdomme.<br>
+            Met de dood heb ik mij reeds jaren verzoend, dus dat is prima. <br>Wat me dwars zit is dat ik niet de aandacht en zorg kan besteden aan dingen die er wel toe doen, zoals Vloerwerk en, in mindere mate, een appje als dit. 
+          </p>
+        </section>
+
+       </div>
+    </aside>
+    <!-- EIND uitleg paneel-->    
     <script type="module" src="./frontend/index.js"></script>
   </body>
 </html>
