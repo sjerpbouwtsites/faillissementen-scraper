@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sjerpbouwtsites/faillissementen-scraper#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint": "^7.1.0"
   },
   "devDependencies": {
