@@ -1,43 +1,39 @@
-const { opties, nutsPad, maanden } = require('../config.js');
-const fs = require('fs');
+const { opties, nutsPad, maanden } = require("../config.js");
+const fs = require("fs");
 const { pakScript, pakOpslag, schrijfOpslag, maakOpslagPad, DateNaarDatumGetal, schrijfTemp } = require(nutsPad);
-const dagenDb = pakScript('dagen-database');
-const axios = require('axios');
-const { parse } = require('node-html-parser');
+const dagenDb = pakScript("dagen-database");
+const axios = require("axios");
+const { parse } = require("node-html-parser");
 const nuts = require(nutsPad);
 
-async function consolideerResponsesEnAdressen () {
+async function consolideerResponsesEnAdressen() {
   return new Promise(async (resolve) => {
     const { dagenTeConsolideren } = await dagenDb.pakDagenData();
 
     // het is het continu reduceren van de objecten totdat alleen de publicaties over zijn.
     const publicatieData = maakPublicatieData(dagenTeConsolideren);
 
-    const adressen = pakOpslag('adressen')
-    const geconsolideerdeAdressen = pakOpslag('geconsolideerde-adressen');
+    const adressen = pakOpslag("adressen");
+    const geconsolideerdeAdressen = pakOpslag("geconsolideerde-adressen");
 
     const verrijkteAdressen = adressen.map((kaalAdres) => {
-
       // geef eerderGeconsolideerd terug indien niet telkens
       // opnieuw consolideren & reeds geconsolideerd
       if (!opties.consolideerTelkensOpnieuw) {
-        const eerderGeconsolideerd = geconsolideerdeAdressen.find(cAdres => cAdres.osm_id === kaalAdres.osm_id);
+        const eerderGeconsolideerd = geconsolideerdeAdressen.find((cAdres) => cAdres.osm_id === kaalAdres.osm_id);
         if (eerderGeconsolideerd) {
           return Object.assign(kaalAdres, eerderGeconsolideerd);
         }
       }
 
       //@TODO SLECHTE CHECK
-      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData, kaalAdres.straat)
+      const samengevoegdePublicaties = maakSamenGevoegdePublicaties(publicatieData, kaalAdres.straat);
       const datumRegexCap = samengevoegdePublicaties.match(/(\d{2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)+\s+(\d{4})/);
-      let datum = '';
-      if (!!datumRegexCap) {
-        const maand = maanden
-          .indexOf(datumRegexCap[2])
-          .toString()
-          .padStart(2, '0');
+      let datum = "";
+      if (datumRegexCap) {
+        const maand = maanden.indexOf(datumRegexCap[2]).toString().padStart(2, "0");
 
-        const dag = datumRegexCap[1].toString().padStart(2, '0');
+        const dag = datumRegexCap[1].toString().padStart(2, "0");
         datum = `${datumRegexCap[3]}-${maand}-${dag}`;
       }
       let kvkRegexCap = samengevoegdePublicaties.match(/KvK.*(\d{8})/g);
@@ -46,10 +42,10 @@ async function consolideerResponsesEnAdressen () {
       const regexCap = samengevoegdePublicaties.match(/[FSR].\d{1,4}\/.\d{1,4}\/.\d{1,4}\)[,]?([^,]*)[,]/);
       const hodnCap = samengevoegdePublicaties.match(/hodn(.*)corr/);
 
-      let bedrijfsNaam = !!regexCap ? regexCap[1].split('corr.adr')[0].trim() : 'onbekend';
+      let bedrijfsNaam = regexCap ? regexCap[1].split("corr.adr")[0].trim() : "onbekend";
 
-      if (bedrijfsNaam === 'onbekend' && !!hodnCap) {
-        bedrijfsNaam = hodnCap[1].trim().split('.V.')[0] + '.V.';
+      if (bedrijfsNaam === "onbekend" && !!hodnCap) {
+        bedrijfsNaam = hodnCap[1].trim().split(".V.")[0] + ".V.";
       }
 
       return Object.assign(kaalAdres, {
@@ -73,15 +69,15 @@ async function consolideerResponsesEnAdressen () {
 /**
  * haalt uit KvK alle adressen op per vestiging.
  */
-async function zoekInKvKAndereVestingenPerAdres () {
+async function zoekInKvKAndereVestingenPerAdres() {
   return new Promise((resolveAlleVestigingen, rejectAlleVestigingen) => {
     /**
      * geconsolideerde adressen
      */
-    const adressen = pakOpslag('geconsolideerde-adressen');
+    const adressen = pakOpslag("geconsolideerde-adressen");
     let { vestigingenNieuwTeHalen, vestigingenVerouderd } = pakNieuwTeHalenEnVerouderdeKvKLocaties(adressen);
     console.log(`Haal ${vestigingenNieuwTeHalen.length} kvk locaties op..... duurt ${Math.ceil((vestigingenNieuwTeHalen.length * 1643) / 60000)} minuten`);
-  
+
     const kvkPromises = vestigingenNieuwTeHalen.map((adresObject, adresObjectIndex) => {
       return new Promise((timeoutResolve, timeoutReject) => {
         setTimeout(() => {
@@ -99,10 +95,10 @@ async function zoekInKvKAndereVestingenPerAdres () {
 
     Promise.allSettled(kvkPromises)
       .then((respList) => {
-        console.log('klaar met alle kvk requests')
-        const mislukt = respList.filter((r) => r.status !== 'fulfilled');
+        console.log("klaar met alle kvk requests");
+        const mislukt = respList.filter((r) => r.status !== "fulfilled");
         // @TODO milsukten
-        const kvkSuccessen = respList.filter((r) => r.status === 'fulfilled');
+        const kvkSuccessen = respList.filter((r) => r.status === "fulfilled");
         kvkSuccessen.forEach((succes) => {
           const verwerktSucces = verwerkKvKHTML(succes.value.html, succes.value.osm_id);
           for (let osm_id in verwerktSucces) {
@@ -110,7 +106,7 @@ async function zoekInKvKAndereVestingenPerAdres () {
             // nu nieuw geconsolideerd adressen object maken
             const relevantAdres = adressen.find((adres) => adres.osm_id === osm_id);
             if (!relevantAdres) {
-              console.warn(' O NNO', osm_id);
+              console.warn(" O NNO", osm_id);
               return;
             }
 
@@ -119,7 +115,7 @@ async function zoekInKvKAndereVestingenPerAdres () {
           }
         });
 
-        schrijfOpslag('geconsolideerde-adressen', adressen);
+        schrijfOpslag("geconsolideerde-adressen", adressen);
 
         resolveAlleVestigingen(vestigingenNieuwTeHalen);
       })
@@ -135,56 +131,55 @@ async function zoekInKvKAndereVestingenPerAdres () {
 module.exports = { consolideerResponsesEnAdressen, zoekInKvKAndereVestingenPerAdres };
 
 /**
- * 
- * @param {*} publicatieData 
+ *
+ * @param {*} publicatieData
  */
-function maakSamenGevoegdePublicaties(publicatieData, straat){
+function maakSamenGevoegdePublicaties(publicatieData, straat) {
   const pubs = publicatieData
-  .map((publicatieReeks) => {
-    return publicatieReeks.filter((publicatie) => {
-      return publicatie.includes(straat);
-    });
-  })
-  .filter((pubs) => pubs.length);
+    .map((publicatieReeks) => {
+      return publicatieReeks.filter((publicatie) => {
+        return publicatie.includes(straat);
+      });
+    })
+    .filter((pubs) => pubs.length);
 
-return pubs.join('<hr>');  
+  return pubs.join("<hr>");
 }
-function verwerkKvKHTML (htmlVerzameling, osm_id) {
-  
+function verwerkKvKHTML(htmlVerzameling, osm_id) {
   if (htmlVerzameling.includes(undefined)) {
-    console.log(' deel HTML undefined?', htmlVerzameling)
+    console.log(" deel HTML undefined?", htmlVerzameling);
   }
   const htmlVerwerktPerRequest = htmlVerzameling.map((html) => {
     if (!html) {
-      console.log(' FOUT ', ' CONSOLE HTML VERWERKT PER REQUEST');
+      console.log(" FOUT ", " CONSOLE HTML VERWERKT PER REQUEST");
     }
     const aantalRes = Number(html.match(/ong>(\d+)</)[1]);
     const bewHTML = html.split('<li class="">').join('<li class="result-li">');
     parsedHTML = parse(bewHTML);
-    const vestigingData = parsedHTML.querySelectorAll('.result-li').map((resLi) => {
+    const vestigingData = parsedHTML.querySelectorAll(".result-li").map((resLi) => {
       const vestigingHTML = parse(resLi.innerHTML);
 
       // kvk, vestigingsnr, straat en nr, postcode, stad
-      const kvkMetaEl = vestigingHTML.querySelector('.kvk-meta');
+      const kvkMetaEl = vestigingHTML.querySelector(".kvk-meta");
       let kvkMeta;
-      if (kvkMetaEl !== 'undefined' && !!kvkMetaEl) {
-        kvkMeta= kvkMetaEl 
-        .innerHTML.split('</li>')
-        .map((blob) => blob.replace('<li>', '').trim())
-        .splice(0, 5);
+      if (kvkMetaEl !== "undefined" && !!kvkMetaEl) {
+        kvkMeta = kvkMetaEl.innerHTML
+          .split("</li>")
+          .map((blob) => blob.replace("<li>", "").trim())
+          .splice(0, 5);
       } else {
-        kvkMeta= '';
+        kvkMeta = "";
       }
 
-      const statusEl = vestigingHTML.querySelector('.status');
-      const snippetResEl = vestigingHTML.querySelector('.snippet-result');
+      const statusEl = vestigingHTML.querySelector(".status");
+      const snippetResEl = vestigingHTML.querySelector(".snippet-result");
       return {
         kvkMeta,
-        kvkLink: `https://www.kvk.nl${vestigingHTML.querySelector('.handelsnaamHeader a').getAttribute('href')}`,
-        isHoofdVestiging: resLi.innerHTML.includes('hoofdvestigingTag'),
-        handelsNaam: vestigingHTML.querySelector('.handelsnaamHeader').rawText,
-        uitgeschreven: statusEl !== 'undefined' ? statusEl.rawText.includes('uitgeschreven') : false,
-        werkzaamheden: snippetResEl !== 'undefined' ? vestigingHTML.querySelector('.snippet-result').rawText : false,
+        kvkLink: `https://www.kvk.nl${vestigingHTML.querySelector(".handelsnaamHeader a").getAttribute("href")}`,
+        isHoofdVestiging: resLi.innerHTML.includes("hoofdvestigingTag"),
+        handelsNaam: vestigingHTML.querySelector(".handelsnaamHeader").rawText,
+        uitgeschreven: typeof statusEl !== "undefined" ? statusEl.rawText.includes("uitgeschreven") : false,
+        werkzaamheden: typeof snippetResEl !== "undefined" ? vestigingHTML.querySelector(".snippet-result").rawText : false,
       };
     });
 
@@ -215,7 +210,7 @@ function verwerkKvKHTML (htmlVerzameling, osm_id) {
  * @param {*} resolve
  * @param {*} reject
  */
-function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, reject) {
+function kvkPromiseTimeoutFunc({ postcode, huisnummer, osm_id }, resolve, reject) {
   const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(postcode)}&huisnummer=${encodeURIComponent(huisnummer)}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=0&error=false&searchfield=uitgebreidzoeken`;
   axios
     .get(url)
@@ -233,7 +228,7 @@ function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, rejec
 
       const reqPromises = meerRequestStartPunt.map((startpunt, startpuntIndex) => {
         return new Promise((meerResolve, meerReject) => {
-          setTimeout(()=>{
+          setTimeout(() => {
             const url = `https://zoeken.kvk.nl/search.ashx?handelsnaam=&postcode=${encodeURIComponent(postcode)}&huisnummer=${encodeURIComponent(huisnummer)}&plaats=&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=0&zoekuitgeschreven=1&start=${startpunt}&error=false&searchfield=uitgebreidzoeken`;
             axios
               .get(url)
@@ -244,7 +239,7 @@ function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, rejec
                 console.log(err, " CONSOLE reqPromises error");
                 meerReject(err);
               });
-          }, startpuntIndex * 1643)
+          }, startpuntIndex * 1643);
         });
       });
       // originele resp ook in promise tbv promise all settles
@@ -255,7 +250,6 @@ function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, rejec
       );
 
       Promise.allSettled(reqPromises).then((allePaginasRes) => {
-  
         resolve({
           html: allePaginasRes.map((apr) => apr.value),
           osm_id,
@@ -265,10 +259,10 @@ function kvkPromiseTimeoutFunc ({ postcode, huisnummer, osm_id }, resolve, rejec
     .catch((err) => reject(err));
 }
 
-function maakPublicatieData (dagenTeConsolideren) {
+function maakPublicatieData(dagenTeConsolideren) {
   const toegestaneClusters = opties.toegestaneClusters;
   const ontoegestaneClusters = opties.ontoegestaneClusters;
-  schrijfTemp(dagenTeConsolideren)
+  schrijfTemp(dagenTeConsolideren);
   return dagenTeConsolideren
     .map((dag) => {
       const p = maakOpslagPad(`responses/rechtbank/${dag.route}`);
@@ -292,7 +286,7 @@ function maakPublicatieData (dagenTeConsolideren) {
       if (toegestaneClusters.includes(pco)) {
         return true;
       } else if (!ontoegestaneClusters.includes(pco)) {
-        console.log('pc cluster omschrijving onbekend: ' + pco);
+        console.log("pc cluster omschrijving onbekend: " + pco);
         return false;
       } else {
         return false;
@@ -307,7 +301,7 @@ function maakPublicatieData (dagenTeConsolideren) {
     })
     .flat()
     .map((p) => {
-      return p.Publicaties.map((p) => p.replace('corr.adr', ',corr.adr'));
+      return p.Publicaties.map((p) => p.replace("corr.adr", ",corr.adr"));
     });
 }
 
@@ -315,10 +309,10 @@ function maakPublicatieData (dagenTeConsolideren) {
  * Helper van zoekInKvKAndereVestingenPerAdres. Maak verzameligen met
  * nieuw te halen kvk locaties / vestigingen en verouderde locaties.
  * verouderde locaties zijn ouder dan een week.
- * 
- * @param {} adressen 
+ *
+ * @param {} adressen
  */
-function pakNieuwTeHalenEnVerouderdeKvKLocaties (adressen) {
+function pakNieuwTeHalenEnVerouderdeKvKLocaties(adressen) {
   let vestigingenNieuwTeHalen = adressen.filter((adres) => {
     return !adres.vestigingen;
   });
@@ -340,4 +334,3 @@ function pakNieuwTeHalenEnVerouderdeKvKLocaties (adressen) {
     vestigingenVerouderd,
   };
 }
-
